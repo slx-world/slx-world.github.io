@@ -1,0 +1,80 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "荒天帝",
+    "subtitle": "",
+    "icon": "https://slx-world.top/images/favicon.ico",
+    "description": "他年，我若立于万古诸天上，将与你们共岁月！",
+    "home_page_url": "https://slx-world.top",
+    "items": [
+        {
+            "id": "https://slx-world.top/test/first-blog/",
+            "url": "https://slx-world.top/test/first-blog/",
+            "title": "second blog",
+            "date_published": "2024-09-22T17:01:09.667Z",
+            "content_html": "<h1 id=\"first-blog\"><a class=\"anchor\" href=\"#first-blog\">#</a> First Blog</h1>\n",
+            "tags": [
+                "测试",
+                "Spring",
+                "Java",
+                "Python",
+                "MySQL",
+                "Hadoop",
+                "Flink"
+            ]
+        },
+        {
+            "id": "https://slx-world.top/hello-world/",
+            "url": "https://slx-world.top/hello-world/",
+            "title": "Hello World",
+            "date_published": "2024-09-22T17:01:09.651Z",
+            "content_html": "<p>Welcome to <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvLw==\">Hexo</span>! This is your very first post. Check <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv\">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=\">troubleshooting</span> or you can ask me on <span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==\">GitHub</span>.</p>\n<h2 id=\"quick-start\"><a class=\"anchor\" href=\"#quick-start\">#</a> Quick Start</h2>\n<h3 id=\"create-a-new-post\"><a class=\"anchor\" href=\"#create-a-new-post\">#</a> Create a new post</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo new <span class=\"string\">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s\">Writing</span></p>\n<h3 id=\"run-server\"><a class=\"anchor\" href=\"#run-server\">#</a> Run server</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo server</span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=\">Server</span></p>\n<h3 id=\"generate-static-files\"><a class=\"anchor\" href=\"#generate-static-files\">#</a> Generate static files</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo generate</span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s\">Generating</span></p>\n<h3 id=\"deploy-to-remote-sites\"><a class=\"anchor\" href=\"#deploy-to-remote-sites\">#</a> Deploy to remote sites</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo deploy</span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s\">Deployment</span></p>\n",
+            "tags": []
+        },
+        {
+            "id": "https://slx-world.top/backend/middleware/first-blog/",
+            "url": "https://slx-world.top/backend/middleware/first-blog/",
+            "title": "third blog",
+            "date_published": "2024-09-22T17:01:09.651Z",
+            "content_html": "<h1 id=\"first-blog\"><a class=\"anchor\" href=\"#first-blog\">#</a> First Blog</h1>\n",
+            "tags": [
+                "后端",
+                "中间件",
+                "Spring",
+                "Java",
+                "Python",
+                "MySQL",
+                "Hadoop",
+                "MQ"
+            ]
+        },
+        {
+            "id": "https://slx-world.top/backend/bigdata/framework/first-blog/",
+            "url": "https://slx-world.top/backend/bigdata/framework/first-blog/",
+            "title": "rebuild",
+            "date_published": "2024-09-22T17:01:09.651Z",
+            "content_html": "<h1 id=\"first-blog\"><a class=\"anchor\" href=\"#first-blog\">#</a> First Blog</h1>\n",
+            "tags": [
+                "后端",
+                "大数据",
+                "框架",
+                "Spring",
+                "Java",
+                "Python",
+                "MySQL",
+                "Hadoop",
+                "Flink"
+            ]
+        },
+        {
+            "id": "https://slx-world.top/tutorial/blog/hexo-shoka/index/",
+            "url": "https://slx-world.top/tutorial/blog/hexo-shoka/index/",
+            "title": "博客搭建",
+            "date_published": "2024-09-20T14:24:36.000Z",
+            "content_html": "<h1 id=\"构建成功\"><a class=\"anchor\" href=\"#构建成功\">#</a> 构建成功</h1>\n<h1 id=\"构建成功-2\"><a class=\"anchor\" href=\"#构建成功-2\">#</a> 构建成功</h1>\n<h1 id=\"构建成功-3\"><a class=\"anchor\" href=\"#构建成功-3\">#</a> 构建成功</h1>\n",
+            "tags": [
+                "教程",
+                "博客"
+            ]
+        }
+    ]
+}
