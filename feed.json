@@ -7,10 +7,18 @@
     "home_page_url": "https://slx-world.top",
     "items": [
         {
+            "id": "https://slx-world.top/hello-world/",
+            "url": "https://slx-world.top/hello-world/",
+            "title": "Hello World",
+            "date_published": "2024-10-01T17:08:20.362Z",
+            "content_html": "<p>Welcome to <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvLw==\">Hexo</span>! This is your very first post. Check <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv\">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=\">troubleshooting</span> or you can ask me on <span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==\">GitHub</span>.</p>\n<h2 id=\"quick-start\"><a class=\"anchor\" href=\"#quick-start\">#</a> Quick Start</h2>\n<h3 id=\"create-a-new-post\"><a class=\"anchor\" href=\"#create-a-new-post\">#</a> Create a new post</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo new <span class=\"string\">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s\">Writing</span></p>\n<h3 id=\"run-server\"><a class=\"anchor\" href=\"#run-server\">#</a> Run server</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo server</span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=\">Server</span></p>\n<h3 id=\"generate-static-files\"><a class=\"anchor\" href=\"#generate-static-files\">#</a> Generate static files</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo generate</span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s\">Generating</span></p>\n<h3 id=\"deploy-to-remote-sites\"><a class=\"anchor\" href=\"#deploy-to-remote-sites\">#</a> Deploy to remote sites</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo deploy</span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s\">Deployment</span></p>\n",
+            "tags": []
+        },
+        {
             "id": "https://slx-world.top/test/first-blog/",
             "url": "https://slx-world.top/test/first-blog/",
             "title": "second blog",
-            "date_published": "2024-09-23T08:04:00.834Z",
+            "date_published": "2024-10-01T17:08:20.362Z",
             "content_html": "<h1 id=\"first-blog\"><a class=\"anchor\" href=\"#first-blog\">#</a> First Blog</h1>\n",
             "tags": [
                 "测试",
@@ -23,27 +31,10 @@
             ]
         },
         {
-            "id": "https://slx-world.top/backend/middleware/first-blog/",
-            "url": "https://slx-world.top/backend/middleware/first-blog/",
-            "title": "third blog",
-            "date_published": "2024-09-23T08:04:00.834Z",
-            "content_html": "<h1 id=\"first-blog\"><a class=\"anchor\" href=\"#first-blog\">#</a> First Blog</h1>\n",
-            "tags": [
-                "后端",
-                "中间件",
-                "Spring",
-                "Java",
-                "Python",
-                "MySQL",
-                "Hadoop",
-                "MQ"
-            ]
-        },
-        {
-            "id": "https://slx-world.top/backend/bigdata/framework/first-blog/",
-            "url": "https://slx-world.top/backend/bigdata/framework/first-blog/",
+            "id": "https://slx-world.top/bigdata/framework/first-blog/",
+            "url": "https://slx-world.top/bigdata/framework/first-blog/",
             "title": "rebuild",
-            "date_published": "2024-09-23T08:04:00.834Z",
+            "date_published": "2024-10-01T17:08:20.362Z",
             "content_html": "<h1 id=\"first-blog\"><a class=\"anchor\" href=\"#first-blog\">#</a> First Blog</h1>\n",
             "tags": [
                 "后端",
@@ -58,19 +49,39 @@
             ]
         },
         {
-            "id": "https://slx-world.top/hello-world/",
-            "url": "https://slx-world.top/hello-world/",
-            "title": "Hello World",
-            "date_published": "2024-09-23T08:04:00.834Z",
-            "content_html": "<p>Welcome to <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvLw==\">Hexo</span>! This is your very first post. Check <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv\">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=\">troubleshooting</span> or you can ask me on <span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==\">GitHub</span>.</p>\n<h2 id=\"quick-start\"><a class=\"anchor\" href=\"#quick-start\">#</a> Quick Start</h2>\n<h3 id=\"create-a-new-post\"><a class=\"anchor\" href=\"#create-a-new-post\">#</a> Create a new post</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo new <span class=\"string\">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s\">Writing</span></p>\n<h3 id=\"run-server\"><a class=\"anchor\" href=\"#run-server\">#</a> Run server</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo server</span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=\">Server</span></p>\n<h3 id=\"generate-static-files\"><a class=\"anchor\" href=\"#generate-static-files\">#</a> Generate static files</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo generate</span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s\">Generating</span></p>\n<h3 id=\"deploy-to-remote-sites\"><a class=\"anchor\" href=\"#deploy-to-remote-sites\">#</a> Deploy to remote sites</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo deploy</span><br></pre></td></tr></table></figure></p>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s\">Deployment</span></p>\n",
-            "tags": []
+            "id": "https://slx-world.top/backend/middleware/first-blog/",
+            "url": "https://slx-world.top/backend/middleware/first-blog/",
+            "title": "third blog",
+            "date_published": "2024-10-01T17:08:20.346Z",
+            "content_html": "<h1 id=\"first-blog\"><a class=\"anchor\" href=\"#first-blog\">#</a> First Blog</h1>\n",
+            "tags": [
+                "后端",
+                "中间件",
+                "Spring",
+                "Java",
+                "Python",
+                "MySQL",
+                "Hadoop",
+                "MQ"
+            ]
         },
         {
-            "id": "https://slx-world.top/tutorial/blog/hexo-shoka/index/",
-            "url": "https://slx-world.top/tutorial/blog/hexo-shoka/index/",
-            "title": "博客搭建",
+            "id": "https://slx-world.top/tutorial/blog/gitee-typora-picgo/",
+            "url": "https://slx-world.top/tutorial/blog/gitee-typora-picgo/",
+            "title": "图床搭建",
             "date_published": "2024-09-20T14:24:36.000Z",
-            "content_html": "<h1 id=\"构建成功\"><a class=\"anchor\" href=\"#构建成功\">#</a> 构建成功</h1>\n<h1 id=\"构建成功-2\"><a class=\"anchor\" href=\"#构建成功-2\">#</a> 构建成功</h1>\n<h1 id=\"构建成功-3\"><a class=\"anchor\" href=\"#构建成功-3\">#</a> 构建成功</h1>\n",
+            "content_html": "<h1 id=\"软件安装\"><a class=\"anchor\" href=\"#软件安装\">#</a> 软件安装</h1>\n<h2 id=\"安装-git\"><a class=\"anchor\" href=\"#安装-git\">#</a> 安装 Git</h2>\n<p>略</p>\n<h2 id=\"安装-picgo\"><a class=\"anchor\" href=\"#安装-picgo\">#</a> 安装 Picgo</h2>\n<p>下载地址：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==\">https://github.com/Molunerfinn/PicGo/releases/</span></p>\n<div class=\"note info\">\n<p><span class=\"green\">推荐使用 2.3.1 正式版</span></p>\n</div>\n<p><img data-src=\"https://gitee.com/slx-world/slx-world.github.io/raw/master/image-20241001213835429.png\" alt=\"image-20241001213835429\" /></p>\n<h2 id=\"安装-typora\"><a class=\"anchor\" href=\"#安装-typora\">#</a> 安装 Typora</h2>\n<p>略</p>\n<h1 id=\"git-设置\"><a class=\"anchor\" href=\"#git-设置\">#</a> Git 设置</h1>\n<h2 id=\"创建仓库\"><a class=\"anchor\" href=\"#创建仓库\">#</a> 创建仓库</h2>\n<p>该仓库用于存放图片，以便博客访问预览</p>\n<p><img data-src=\"https://gitee.com/slx-world/slx-world.github.io/raw/master/image-20241001215937691.png\" alt=\"image-20241001215937691\" /></p>\n<h2 id=\"生成私人令牌\"><a class=\"anchor\" href=\"#生成私人令牌\">#</a> 生成私人令牌</h2>\n<p><img data-src=\"https://gitee.com/slx-world/slx-world.github.io/raw/master/image-20241001220215986.png\" alt=\"image-20241001220215986\" /></p>\n<div class=\"note info\">\n<p>私人令牌仅在生成的时候可见，记得将其<span class=\"red\">复制保存</span>，以便备用</p>\n</div>\n<h1 id=\"picgo-设置\"><a class=\"anchor\" href=\"#picgo-设置\">#</a> Picgo 设置</h1>\n<h2 id=\"安装-gitee-插件\"><a class=\"anchor\" href=\"#安装-gitee-插件\">#</a> 安装 Gitee 插件</h2>\n<p><img data-src=\"https://gitee.com/slx-world/slx-world.github.io/raw/master/image-20241001221151379.png\" alt=\"image-20241001221151379\" /></p>\n<h2 id=\"设置-gitee-信息\"><a class=\"anchor\" href=\"#设置-gitee-信息\">#</a> 设置 Gitee 信息</h2>\n<ul>\n<li><span class=\"blue\">用户名</span></li>\n<li><span class=\"blue\">仓库名</span></li>\n<li><span class=\"blue\">私人令牌</span></li>\n</ul>\n<p><img data-src=\"https://gitee.com/slx-world/slx-world.github.io/raw/master/image-20241001222007037.png\" alt=\"image-20241001222007037\" /></p>\n<h2 id=\"上传测试\"><a class=\"anchor\" href=\"#上传测试\">#</a> 上传测试</h2>\n<p>在 <span class=\"yellow\">上传区</span> 中上传图片</p>\n<p><img data-src=\"https://gitee.com/slx-world/slx-world.github.io/raw/master/image-20241001222710147.png\" alt=\"image-20241001222710147\" /></p>\n<p>在 <span class=\"yellow\">相册</span> 中可以看见已上传成功的图片</p>\n<p><img data-src=\"https://gitee.com/slx-world/slx-world.github.io/raw/master/image-20241001222844084.png\" alt=\"image-20241001222844084\" /></p>\n<p>查看 Gitee 是否上传成功</p>\n<p><img data-src=\"https://gitee.com/slx-world/slx-world.github.io/raw/master/image-20241001223349844.png\" alt=\"image-20241001223349844\" /></p>\n<h1 id=\"typora-设置\"><a class=\"anchor\" href=\"#typora-设置\">#</a> Typora 设置</h1>\n<h2 id=\"设置图像并验证\"><a class=\"anchor\" href=\"#设置图像并验证\">#</a> 设置图像并验证</h2>\n<div class=\"note info\">\n<p><span class=\"yellow\">文件</span> -&gt; <span class=\"yellow\">偏好设置</span> -&gt; <span class=\"yellow\">图像</span></p>\n</div>\n<p><img data-src=\"https://gitee.com/slx-world/slx-world.github.io/raw/master/image-20241001225158438.png\" alt=\"image-20241001225158438\" /></p>\n<p>设置完后，点击 <span class=\"yellow\">验证图片上传选项</span></p>\n<p><img data-src=\"https://gitee.com/slx-world/slx-world.github.io/raw/master/image-20241001230715514.png\" alt=\"image-20241001230715514\" /></p>\n<p>至此，个人图床搭建完毕，感谢大家的阅览与支持！😘</p>\n<p><img data-src=\"https://gitee.com/slx-world/slx-world.github.io/raw/master/image-20241001231222695.png\" alt=\"image-20241001231222695\" /></p>\n",
+            "tags": [
+                "教程",
+                "博客"
+            ]
+        },
+        {
+            "id": "https://slx-world.top/tutorial/blog/hexo-shoka/",
+            "url": "https://slx-world.top/tutorial/blog/hexo-shoka/",
+            "title": "基于 Hexo 和 Shoka 搭建个人博客",
+            "date_published": "2024-09-20T14:24:36.000Z",
+            "content_html": "<h1 id=\"1-创建仓库\"><a class=\"anchor\" href=\"#1-创建仓库\">#</a> 1. 创建仓库</h1>\n<p>1.1 创建一个存放<strong>网站静态资源</strong>的仓库，命名规范为：<strong><span class=\"exturl\" data-url=\"aHR0cDovL3huLS1lcXI5MjRhdnhvLmdpdGh1Yi5pbw==\">用户名.github.io</span></strong>，同时创建<strong> master</strong> 分支</p>\n<p><img data-src=\"D:%5Cworkspace%5Chexo-shoka-source%5Csource_posts%5Ctutorial%5Cblog%5Chexo-shoka%5Cimages%5Cimage-20240927205124342.png\" alt=\"image-20240927205124342\" /></p>\n<p>1.2 紧接着创建一个存放<strong>博客源码</strong>的仓库，名字随便起，注意分支与上述仓库的分支保持一致！！！</p>\n<h1 id=\"2-安装hexo\"><a class=\"anchor\" href=\"#2-安装hexo\">#</a> 2. 安装 Hexo</h1>\n<p>2.1 将存放博客源码的仓库克隆下来，然后进入到该文件夹内，在 cmd 命令行窗口中执行以下命令：</p>\n<p><figure class=\"highlight shell\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>\n<p><img data-src=\"D:%5Cworkspace%5Chexo-shoka-source%5Csource_posts%5Ctutorial%5Cblog%5Chexo-shoka%5Cimages%5Cimage-20240927224315498.png\" alt=\"image-20240927224315498\" /></p>\n<p>网站的相关配置请参考：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==\">https://hexo.io/zh-cn/docs/configuration</span></p>\n<h1 id=\"3-克隆shoka\"><a class=\"anchor\" href=\"#3-克隆shoka\">#</a> 3. 克隆 Shoka</h1>\n<p>3.1 进入到 <strong>themes</strong> 目录，将 Shoka 主题克隆下来，同时将其名字更改为 <strong>shoka</strong></p>\n<p><figure class=\"highlight shell\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">git clone https://github.com/amehime/hexo-theme-shoka.git .</span><br></pre></td></tr></table></figure></p>\n<p><img data-src=\"D:%5Cworkspace%5Chexo-shoka-source%5Csource_posts%5Ctutorial%5Cblog%5Chexo-shoka%5Cimages%5Cimage-20240927223707958.png\" alt=\"image-20240927223707958\" /></p>\n<p>主题的相关配置请参考：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv\">https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/config/</span></p>\n<h1 id=\"4-持续集成\"><a class=\"anchor\" href=\"#4-持续集成\">#</a> 4. 持续集成</h1>\n<p>4.1 创建一个项目，同时选择</p>\n<p><img data-src=\"D:%5Cworkspace%5Chexo-shoka-source%5Csource_posts%5Ctutorial%5Cblog%5Chexo-shoka%5Cimages%5Cimage-20240927225312674.png\" alt=\"image-20240927225312674\" /></p>\n<p>4.2 创建 Access Token 并加密</p>\n<p><img data-src=\"D:%5Cworkspace%5Chexo-shoka-source%5Csource_posts%5Ctutorial%5Cblog%5Chexo-shoka%5Cimages%5Cimage-20240927232403717.png\" alt=\"image-20240927232403717\" /></p>\n<dl>\n<dt><span class=\"blue\">AppVeyor 登陆页面</span> (<span class=\"exturl\" data-url=\"aHR0cHM6Ly9jaS5hcHB2ZXlvci5jb20vbG9naW4=\">https://ci.appveyor.com/login</span>)</dt>\n<dd>kissing_heart:<br />\n💍<br />\n🎶</dd>\n</dl>\n<h1 id=\"\"><a class=\"anchor\" href=\"#\">#</a> 😘</h1>\n<p>++ 下划线 ++<br />\n++ 波浪线 ++{.wavy}<br />\n++ 着重点 ++{.dot}<br />\n++ 紫色下划线 ++{.primary}<br />\n++ 绿色波浪线 ++{.wavy .success}<br />\n++ 黄色着重点 ++{.dot .warning}<br />\n~~ 删除线～～<br />\n~~ 红色删除线～～{.danger}<br />\n== 荧光高亮 ==<br />\n<span class=\"rainbow\"> 赤橙黄绿青蓝紫</span><br />\n<span class=\"red\">红色</span><br />\n<span class=\"pink\">粉色</span><br />\n<span class=\"orange\">橙色</span><br />\n<span class=\"yellow\">黄色</span><br />\n<span class=\"green\">绿色</span><br />\n<span class=\"aqua\">靛青</span><br />\n<span class=\"blue\">蓝色</span><br />\n<span class=\"purple\">紫色</span><br />\n<span class=\"grey\">灰色</span><br />\n快捷键 <span class=\"kbd\">Ctrl</span> + <span class=\"kbd red\">C</span><br />\nH<sub>2</sub>0<br />\n29<sup>th</sup></p>\n",
             "tags": [
                 "教程",
                 "博客"
