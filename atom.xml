@@ -8,14 +8,15 @@
     <author>
       <name>Mr.Song</name>
     </author>
-    <updated>2024-10-02T02:05:04.426Z</updated>
+    <updated>2024-10-02T03:25:01.814Z</updated>
     <category term="柳神，火灵儿" />
     <entry>
         <id>https://slx-world.top/test/first-blog/</id>
         <title>second blog</title>
         <link rel="alternate" href="https://slx-world.top/test/first-blog/"/>
         <content type="html">&lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002095308759.png&#34; alt=&#34;image-20241002095308759&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002095308759.png&#34; alt=&#34;image-20241002095308759&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002103744094.png&#34; alt=&#34;image-20241002103744094&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="测试" scheme="https://slx-world.top/categories/test/" />
         <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
@@ -24,7 +25,7 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-        <updated>2024-10-02T02:05:04.426Z</updated>
+        <updated>2024-10-02T03:25:01.814Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/hello-world/</id>
@@ -45,7 +46,7 @@
 &lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2024-10-02T02:05:04.410Z</updated>
+        <updated>2024-10-02T03:25:01.798Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/backend/middleware/first-blog/</id>
@@ -61,7 +62,7 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
-        <updated>2024-10-02T02:05:04.410Z</updated>
+        <updated>2024-10-02T03:25:01.798Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/bigdata/framework/first-blog/</id>
@@ -78,7 +79,7 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-        <updated>2024-10-02T02:05:04.410Z</updated>
+        <updated>2024-10-02T03:25:01.798Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/tutorial/blog/gitee-typora-picgo/</id>
@@ -92,47 +93,47 @@
 &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;&lt;span class=&#34;green&#34;&gt;推荐使用 2.3.1 正式版&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001213835429.png&#34; alt=&#34;image-20241001213835429&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001213835429.png&#34; alt=&#34;image-20241001213835429&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;安装-typora&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-typora&#34;&gt;#&lt;/a&gt; 安装 Typora&lt;/h2&gt;
 &lt;p&gt;略&lt;/p&gt;
 &lt;h1 id=&#34;git-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-设置&#34;&gt;#&lt;/a&gt; Git 设置&lt;/h1&gt;
 &lt;h2 id=&#34;创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建仓库&#34;&gt;#&lt;/a&gt; 创建仓库&lt;/h2&gt;
 &lt;p&gt;该仓库用于存放图片，以便博客访问预览&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001215937691.png&#34; alt=&#34;image-20241001215937691&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001215937691.png&#34; alt=&#34;image-20241001215937691&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;生成私人令牌&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成私人令牌&#34;&gt;#&lt;/a&gt; 生成私人令牌&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001220215986.png&#34; alt=&#34;image-20241001220215986&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001220215986.png&#34; alt=&#34;image-20241001220215986&#34; /&gt;&lt;/p&gt;
 &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;私人令牌仅在生成的时候可见，记得将其&lt;span class=&#34;red&#34;&gt;复制保存&lt;/span&gt;，以便备用&lt;/p&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;picgo-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-设置&#34;&gt;#&lt;/a&gt; Picgo 设置&lt;/h1&gt;
 &lt;h2 id=&#34;安装-gitee-插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-gitee-插件&#34;&gt;#&lt;/a&gt; 安装 Gitee 插件&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001221151379.png&#34; alt=&#34;image-20241001221151379&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001221151379.png&#34; alt=&#34;image-20241001221151379&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;设置-gitee-信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置-gitee-信息&#34;&gt;#&lt;/a&gt; 设置 Gitee 信息&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;blue&#34;&gt;用户名&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;blue&#34;&gt;仓库名&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;blue&#34;&gt;私人令牌&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222007037.png&#34; alt=&#34;image-20241001222007037&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222007037.png&#34; alt=&#34;image-20241001222007037&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;上传测试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#上传测试&#34;&gt;#&lt;/a&gt; 上传测试&lt;/h2&gt;
 &lt;p&gt;在 &lt;span class=&#34;yellow&#34;&gt;上传区&lt;/span&gt; 中上传图片&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222710147.png&#34; alt=&#34;image-20241001222710147&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222710147.png&#34; alt=&#34;image-20241001222710147&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;在 &lt;span class=&#34;yellow&#34;&gt;相册&lt;/span&gt; 中可以看见已上传成功的图片&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222844084.png&#34; alt=&#34;image-20241001222844084&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222844084.png&#34; alt=&#34;image-20241001222844084&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;查看 Gitee 是否已上传成功&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001223349844.png&#34; alt=&#34;image-20241001223349844&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001223349844.png&#34; alt=&#34;image-20241001223349844&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;typora-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-设置&#34;&gt;#&lt;/a&gt; Typora 设置&lt;/h1&gt;
 &lt;h2 id=&#34;设置图像并验证&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置图像并验证&#34;&gt;#&lt;/a&gt; 设置图像并验证&lt;/h2&gt;
 &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;文件&lt;/span&gt; -&amp;gt; &lt;span class=&#34;yellow&#34;&gt;偏好设置&lt;/span&gt; -&amp;gt; &lt;span class=&#34;yellow&#34;&gt;图像&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001225158438.png&#34; alt=&#34;image-20241001225158438&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001225158438.png&#34; alt=&#34;image-20241001225158438&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;设置完后，点击 &lt;span class=&#34;yellow&#34;&gt;验证图片上传选项&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001230715514.png&#34; alt=&#34;image-20241001230715514&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001230715514.png&#34; alt=&#34;image-20241001230715514&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;至此，个人图床搭建完毕，感谢大家的阅览与支持！😘&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001231222695.png&#34; alt=&#34;image-20241001231222695&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/avatar.jpg&#34; alt=&#34;avatar&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/20240918-090800.jpg&#34; alt=&#34;20240918-090800&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001231222695.png&#34; alt=&#34;image-20241001231222695&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/avatar.jpg&#34; alt=&#34;avatar&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/20240918-090800.jpg&#34; alt=&#34;20240918-090800&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="教程" scheme="https://slx-world.top/categories/tutorial/" />
         <category term="博客" scheme="https://slx-world.top/tags/blog/" />
