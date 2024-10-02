@@ -10,14 +10,14 @@
         </author>
         <description>他年，我若立于万古诸天上，将与你们共岁月！</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 02 Oct 2024 05:10:30 +0000</pubDate>
-        <lastBuildDate>Wed, 02 Oct 2024 05:10:30 +0000</lastBuildDate>
+        <pubDate>Wed, 02 Oct 2024 08:45:04 +0000</pubDate>
+        <lastBuildDate>Wed, 02 Oct 2024 08:45:04 +0000</lastBuildDate>
         <category term="柳神，火灵儿" />
         <item>
             <guid isPermalink="true">https://slx-world.top/hello-world/</guid>
             <title>Hello World</title>
             <link>https://slx-world.top/hello-world/</link>
-            <pubDate>Wed, 02 Oct 2024 05:10:30 +0000</pubDate>
+            <pubDate>Wed, 02 Oct 2024 08:45:04 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
@@ -45,7 +45,7 @@
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
             <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Wed, 02 Oct 2024 05:10:30 +0000</pubDate>
+            <pubDate>Wed, 02 Oct 2024 08:45:04 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002095308759.png&#34; alt=&#34;image-20241002095308759&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002103744094.png&#34; alt=&#34;image-20241002103744094&#34; /&gt;&lt;/p&gt;
@@ -64,7 +64,7 @@
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
             <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Wed, 02 Oct 2024 05:10:30 +0000</pubDate>
+            <pubDate>Wed, 02 Oct 2024 08:45:04 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
  ]]></description>
         </item>
@@ -80,25 +80,23 @@
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
             <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
-            <pubDate>Wed, 02 Oct 2024 05:10:30 +0000</pubDate>
+            <pubDate>Wed, 02 Oct 2024 08:45:04 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/tutorial/blog/gitee-typora-picgo/</guid>
-            <title>图床搭建</title>
-            <link>https://slx-world.top/tutorial/blog/gitee-typora-picgo/</link>
+            <guid isPermalink="true">https://slx-world.top/tutorial/blog/gitee-picgo-typora/</guid>
+            <title>图床搭建（Gitee 版）</title>
+            <link>https://slx-world.top/tutorial/blog/gitee-picgo-typora/</link>
             <category term="教程" scheme="https://slx-world.top/categories/tutorial/" />
             <category term="博客" scheme="https://slx-world.top/tags/blog/" />
             <pubDate>Fri, 20 Sep 2024 14:24:36 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;软件安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件安装&#34;&gt;#&lt;/a&gt; 软件安装&lt;/h1&gt;
 &lt;h2 id=&#34;安装-git&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-git&#34;&gt;#&lt;/a&gt; 安装 Git&lt;/h2&gt;
 &lt;p&gt;略&lt;/p&gt;
-&lt;h2 id=&#34;安装-picgo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-picgo&#34;&gt;#&lt;/a&gt; 安装 Picgo&lt;/h2&gt;
-&lt;p&gt;下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;https://github.com/Molunerfinn/PicGo/releases/&lt;/span&gt;&lt;/p&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;green&#34;&gt;推荐使用 2.3.1 正式版&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
+&lt;h2 id=&#34;安装-picgo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-picgo&#34;&gt;#&lt;/a&gt; 安装 PicGo&lt;/h2&gt;
+&lt;p&gt;下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;https://github.com/Molunerfinn/PicGo/releases/&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;green&#34;&gt; 推荐使用 2.3.1 正式版&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001213835429.png&#34; alt=&#34;image-20241001213835429&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;安装-typora&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-typora&#34;&gt;#&lt;/a&gt; 安装 Typora&lt;/h2&gt;
 &lt;p&gt;略&lt;/p&gt;
@@ -109,37 +107,87 @@
 &lt;h2 id=&#34;生成私人令牌&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成私人令牌&#34;&gt;#&lt;/a&gt; 生成私人令牌&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001220215986.png&#34; alt=&#34;image-20241001220215986&#34; /&gt;&lt;/p&gt;
 &lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;私人令牌仅在生成的时候可见，记得将其&lt;span class=&#34;red&#34;&gt;复制保存&lt;/span&gt;，以便备用&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;私人令牌仅在生成的时候可见，记得将其复制保存，以防备用！！！&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;h1 id=&#34;picgo-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-设置&#34;&gt;#&lt;/a&gt; Picgo 设置&lt;/h1&gt;
+&lt;h1 id=&#34;picgo-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-设置&#34;&gt;#&lt;/a&gt; PicGo 设置&lt;/h1&gt;
 &lt;h2 id=&#34;安装-gitee-插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-gitee-插件&#34;&gt;#&lt;/a&gt; 安装 Gitee 插件&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001221151379.png&#34; alt=&#34;image-20241001221151379&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;设置-gitee-信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置-gitee-信息&#34;&gt;#&lt;/a&gt; 设置 Gitee 信息&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;blue&#34;&gt;用户名&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;blue&#34;&gt;仓库名&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;blue&#34;&gt;私人令牌&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;用户名&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;仓库名&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;私人令牌&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222007037.png&#34; alt=&#34;image-20241001222007037&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;上传测试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#上传测试&#34;&gt;#&lt;/a&gt; 上传测试&lt;/h2&gt;
-&lt;p&gt;在 &lt;span class=&#34;yellow&#34;&gt;上传区&lt;/span&gt; 中上传图片&lt;/p&gt;
+&lt;p&gt;在 &lt;span class=&#34;green&#34;&gt;上传区&lt;/span&gt; 中上传图片&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222710147.png&#34; alt=&#34;image-20241001222710147&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;在 &lt;span class=&#34;yellow&#34;&gt;相册&lt;/span&gt; 中可以看见已上传成功的图片&lt;/p&gt;
+&lt;p&gt;在 &lt;span class=&#34;green&#34;&gt;相册&lt;/span&gt; 中可以看见已上传成功的图片&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222844084.png&#34; alt=&#34;image-20241001222844084&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;查看 Gitee 是否已上传成功&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001223349844.png&#34; alt=&#34;image-20241001223349844&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;typora-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-设置&#34;&gt;#&lt;/a&gt; Typora 设置&lt;/h1&gt;
 &lt;h2 id=&#34;设置图像并验证&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置图像并验证&#34;&gt;#&lt;/a&gt; 设置图像并验证&lt;/h2&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;文件&lt;/span&gt; -&amp;gt; &lt;span class=&#34;yellow&#34;&gt;偏好设置&lt;/span&gt; -&amp;gt; &lt;span class=&#34;yellow&#34;&gt;图像&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;右上角 &lt;span class=&#34;green&#34;&gt;文件 -&amp;gt; 偏好设置 -&amp;gt; 图像&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001225158438.png&#34; alt=&#34;image-20241001225158438&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;设置完后，点击 &lt;span class=&#34;yellow&#34;&gt;验证图片上传选项&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;设置完后，点击 &lt;span class=&#34;green&#34;&gt;验证图片上传选项&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001230715514.png&#34; alt=&#34;image-20241001230715514&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;至此，个人图床搭建完毕，感谢大家的阅览与支持！😘&lt;/p&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;p&gt;&lt;strong&gt;至此，个人图床搭建完毕，感谢大家的阅览与支持&lt;/strong&gt;！！！ 😘💍🛩&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001231222695.png&#34; alt=&#34;image-20241001231222695&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/avatar.jpg&#34; alt=&#34;avatar&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/20240918-090800.jpg&#34; alt=&#34;20240918-090800&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://slx-world.top/tutorial/blog/github-picgo-typora/</guid>
+            <title>图床搭建（GitHub 版）</title>
+            <link>https://slx-world.top/tutorial/blog/github-picgo-typora/</link>
+            <category term="教程" scheme="https://slx-world.top/categories/tutorial/" />
+            <category term="博客" scheme="https://slx-world.top/tags/blog/" />
+            <pubDate>Fri, 20 Sep 2024 14:24:36 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;软件安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件安装&#34;&gt;#&lt;/a&gt; 软件安装&lt;/h1&gt;
+&lt;h2 id=&#34;git-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-安装&#34;&gt;#&lt;/a&gt; Git 安装&lt;/h2&gt;
+&lt;p&gt;略&lt;/p&gt;
+&lt;h2 id=&#34;picgo-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-安装&#34;&gt;#&lt;/a&gt; PicGo 安装&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;PicGo 下载链接&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;typora-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-安装&#34;&gt;#&lt;/a&gt; Typora 安装&lt;/h2&gt;
+&lt;p&gt;略&lt;/p&gt;
+&lt;h1 id=&#34;github-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#github-设置&#34;&gt;#&lt;/a&gt; GitHub 设置&lt;/h1&gt;
+&lt;h2 id=&#34;创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建仓库&#34;&gt;#&lt;/a&gt; 创建仓库&lt;/h2&gt;
+&lt;p&gt;该仓库用于存放图片&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002144038707.png&#34; alt=&#34;image-20241002144038707&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;生成令牌&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成令牌&#34;&gt;#&lt;/a&gt; 生成令牌&lt;/h2&gt;
+&lt;p&gt;点击 &lt;span class=&#34;green&#34;&gt;头像&lt;/span&gt;，来到 &lt;span class=&#34;green&#34;&gt;Settings -&amp;gt; Developer Settings -&amp;gt; Personal access tokens&lt;/span&gt;，然后点击 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL3BlcnNvbmFsLWFjY2Vzcy10b2tlbnMvbmV3&#34;&gt;Generate new token&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002144413095.png&#34; alt=&#34;image-20241002144413095&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;仓库授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#仓库授权&#34;&gt;#&lt;/a&gt; 仓库授权&lt;/h2&gt;
+&lt;p&gt;选定 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 创建好的仓库&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002145941587.png&#34; alt=&#34;image-20241002145941587&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;仓库权限&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;账户权限&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;均全部授权即可&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002150150970.png&#34; alt=&#34;image-20241002150150970&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;完成后，点击 &lt;span class=&#34;green&#34;&gt;Generate token&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;token 仅在生成的时候可见，记得复制保存下来，以防备用！！！&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;picgo-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-设置&#34;&gt;#&lt;/a&gt; PicGo 设置&lt;/h1&gt;
+&lt;h2 id=&#34;图床设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图床设置&#34;&gt;#&lt;/a&gt; 图床设置&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;设定仓库名：用户名 / 仓库，根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 的仓库而定&lt;/li&gt;
+&lt;li&gt;设定分支：根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 的仓库而定&lt;/li&gt;
+&lt;li&gt;设定 Token：粘贴上 &lt;span class=&#34;red&#34;&gt;2.2&lt;/span&gt; 的令牌&lt;/li&gt;
+&lt;li&gt;设定存储路径：可选&lt;/li&gt;
+&lt;li&gt;设定自定义域名：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbWFnZXMud2VzZXJ2Lm5sLz91cmw9aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doLyVFNyU5NCVBOCVFNiU4OCVCNyVFNSU5MCU4RC8lRTQlQkIlOTMlRTUlQkElOTNAJUU1JTg4JTg2JUU2JTk0JUFG&#34;&gt;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/ 用户名 / 仓库 @分支&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002152655936.png&#34; alt=&#34;image-20241002152655936&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;相关信息配置好后，点击 &lt;span class=&#34;blue&#34;&gt;确定&lt;/span&gt;，并 &lt;span class=&#34;green&#34;&gt;设为默认图床&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;typora-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-设置&#34;&gt;#&lt;/a&gt; Typora 设置&lt;/h1&gt;
+&lt;p&gt;详情请看 &lt;a href=&#34;https://slx-world.top/tutorial/blog/gitee-typora-picgo/&#34;&gt;图床搭建（Gitee 版）&lt;/a&gt;，这里不再赘述&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;&lt;strong&gt;承蒙厚爱，愚文一篇，敬请一览！！！&lt;/strong&gt;&lt;/span&gt;😘😘😘&lt;/p&gt;
  ]]></description>
         </item>
         <item>
