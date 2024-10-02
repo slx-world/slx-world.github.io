@@ -10,31 +10,14 @@
         </author>
         <description>他年，我若立于万古诸天上，将与你们共岁月！</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 02 Oct 2024 13:44:16 +0000</pubDate>
-        <lastBuildDate>Wed, 02 Oct 2024 13:44:16 +0000</lastBuildDate>
+        <pubDate>Wed, 02 Oct 2024 14:36:02 +0000</pubDate>
+        <lastBuildDate>Wed, 02 Oct 2024 14:36:02 +0000</lastBuildDate>
         <category term="柳神，火灵儿" />
-        <item>
-            <guid isPermalink="true">https://slx-world.top/test/first-blog/</guid>
-            <title>second blog</title>
-            <link>https://slx-world.top/test/first-blog/</link>
-            <category term="测试" scheme="https://slx-world.top/categories/test/" />
-            <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
-            <category term="Java" scheme="https://slx-world.top/tags/java/" />
-            <category term="Python" scheme="https://slx-world.top/tags/python/" />
-            <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
-            <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
-            <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Wed, 02 Oct 2024 13:44:16 +0000</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002095308759.png&#34; alt=&#34;image-20241002095308759&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002103744094.png&#34; alt=&#34;image-20241002103744094&#34; /&gt;&lt;/p&gt;
- ]]></description>
-        </item>
         <item>
             <guid isPermalink="true">https://slx-world.top/hello-world/</guid>
             <title>Hello World</title>
             <link>https://slx-world.top/hello-world/</link>
-            <pubDate>Wed, 02 Oct 2024 13:44:16 +0000</pubDate>
+            <pubDate>Wed, 02 Oct 2024 14:36:02 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
@@ -52,19 +35,20 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/backend/middleware/first-blog/</guid>
-            <title>third blog</title>
-            <link>https://slx-world.top/backend/middleware/first-blog/</link>
-            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
-            <category term="中间件" scheme="https://slx-world.top/categories/backend/middleware/" />
+            <guid isPermalink="true">https://slx-world.top/test/first-blog/</guid>
+            <title>second blog</title>
+            <link>https://slx-world.top/test/first-blog/</link>
+            <category term="测试" scheme="https://slx-world.top/categories/test/" />
             <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
             <category term="Java" scheme="https://slx-world.top/tags/java/" />
             <category term="Python" scheme="https://slx-world.top/tags/python/" />
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
-            <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
-            <pubDate>Wed, 02 Oct 2024 13:44:16 +0000</pubDate>
+            <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
+            <pubDate>Wed, 02 Oct 2024 14:36:02 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002095308759.png&#34; alt=&#34;image-20241002095308759&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002103744094.png&#34; alt=&#34;image-20241002103744094&#34; /&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -80,7 +64,23 @@
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
             <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Wed, 02 Oct 2024 13:44:16 +0000</pubDate>
+            <pubDate>Wed, 02 Oct 2024 14:36:02 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://slx-world.top/backend/middleware/first-blog/</guid>
+            <title>third blog</title>
+            <link>https://slx-world.top/backend/middleware/first-blog/</link>
+            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
+            <category term="中间件" scheme="https://slx-world.top/categories/backend/middleware/" />
+            <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
+            <category term="Java" scheme="https://slx-world.top/tags/java/" />
+            <category term="Python" scheme="https://slx-world.top/tags/python/" />
+            <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
+            <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
+            <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
+            <pubDate>Wed, 02 Oct 2024 14:36:02 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
  ]]></description>
         </item>
@@ -103,14 +103,14 @@
 &lt;h2 id=&#34;typora-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-安装&#34;&gt;#&lt;/a&gt; Typora 安装&lt;/h2&gt;
 &lt;p class=&#34;blue&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMTJxZ0c3Q1Q0X3lnb3FkLUNEZ2djTEE/cHdkPWU3bWc=&#34;&gt;Typora1.9.4 百度网盘&lt;/span&gt;.&lt;/p&gt;
 &lt;p class=&#34;blue&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3MvYWdqXzN6SGhzdUJRc0QydEhUUTRGZw==&#34;&gt;Typora1.9.4 安装教程&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;解压后，将 &lt;span class=&#34;green&#34;&gt;Crack&lt;/span&gt; 中的 &lt;span class=&#34;yellow&#34;&gt;winmm.dll&lt;/span&gt; 文件复制粘贴到 Typora 的安装目录即可&lt;/p&gt;
+&lt;p&gt;解压后，将 &lt;span class=&#34;red&#34;&gt;Crack&lt;/span&gt; 中的 &lt;span class=&#34;red&#34;&gt;winmm.dll&lt;/span&gt; 文件复制粘贴到 Typora 的安装目录即可&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002200235854.png&#34; alt=&#34;image-20241002200235854&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;github-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#github-设置&#34;&gt;#&lt;/a&gt; GitHub 设置&lt;/h1&gt;
 &lt;h2 id=&#34;创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建仓库&#34;&gt;#&lt;/a&gt; 创建仓库&lt;/h2&gt;
 &lt;p&gt;该仓库用于存放博客图片&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002144038707.png&#34; alt=&#34;image-20241002144038707&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;生成令牌&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成令牌&#34;&gt;#&lt;/a&gt; 生成令牌&lt;/h2&gt;
-&lt;p&gt;点击 &lt;span class=&#34;green&#34;&gt;头像&lt;/span&gt;，来到 &lt;span class=&#34;green&#34;&gt;Settings -&amp;gt; Developer Settings -&amp;gt; Personal access tokens&lt;/span&gt;，然后点击 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL3BlcnNvbmFsLWFjY2Vzcy10b2tlbnMvbmV3&#34;&gt;Generate new token&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;右上角点击 &lt;span class=&#34;green&#34;&gt;头像&lt;/span&gt;，来到 &lt;span class=&#34;green&#34;&gt;Settings -&amp;gt; Developer Settings -&amp;gt; Personal access tokens&lt;/span&gt;，然后点击 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL3BlcnNvbmFsLWFjY2Vzcy10b2tlbnMvbmV3&#34;&gt;Generate new token&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002200555213.png&#34; alt=&#34;image-20241002200555213&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;仓库授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#仓库授权&#34;&gt;#&lt;/a&gt; 仓库授权&lt;/h2&gt;
 &lt;p&gt;选定 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 创建好的仓库&lt;/p&gt;
@@ -139,7 +139,7 @@
 &lt;p&gt;相关信息配置好后，点击 &lt;span class=&#34;blue&#34;&gt;确定&lt;/span&gt;，并 &lt;span class=&#34;green&#34;&gt;设为默认图床&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;typora-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-设置&#34;&gt;#&lt;/a&gt; Typora 设置&lt;/h1&gt;
 &lt;h2 id=&#34;设置图像并验证&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置图像并验证&#34;&gt;#&lt;/a&gt; 设置图像并验证&lt;/h2&gt;
-&lt;p&gt;右上角 &lt;span class=&#34;green&#34;&gt;文件 -&amp;gt; 偏好设置 -&amp;gt; 图像&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;左上角点击 &lt;span class=&#34;green&#34;&gt;文件 -&amp;gt; 偏好设置 -&amp;gt; 图像&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001225158438.png&#34; alt=&#34;image-20241001225158438&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;设置完后，点击 &lt;span class=&#34;green&#34;&gt;验证图片上传选项&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002201849398.png&#34; alt=&#34;image-20241002201849398&#34; /&gt;&lt;/p&gt;
