@@ -8,7 +8,7 @@
     <author>
       <name>Mr.Song</name>
     </author>
-    <updated>2024-10-02T09:09:06.222Z</updated>
+    <updated>2024-10-02T13:44:16.721Z</updated>
     <category term="柳神，火灵儿" />
     <entry>
         <id>https://slx-world.top/test/first-blog/</id>
@@ -25,7 +25,7 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-        <updated>2024-10-02T09:09:06.222Z</updated>
+        <updated>2024-10-02T13:44:16.721Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/hello-world/</id>
@@ -46,7 +46,7 @@
 &lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2024-10-02T09:09:06.207Z</updated>
+        <updated>2024-10-02T13:44:16.706Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/backend/middleware/first-blog/</id>
@@ -62,7 +62,7 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
-        <updated>2024-10-02T09:09:06.207Z</updated>
+        <updated>2024-10-02T13:44:16.706Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/bigdata/framework/first-blog/</id>
@@ -79,82 +79,33 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-        <updated>2024-10-02T09:09:06.207Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/tutorial/blog/gitee-picgo-typora/</id>
-        <title>图床搭建（Gitee 版）</title>
-        <link rel="alternate" href="https://slx-world.top/tutorial/blog/gitee-picgo-typora/"/>
-        <content type="html">&lt;h1 id=&#34;软件安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件安装&#34;&gt;#&lt;/a&gt; 软件安装&lt;/h1&gt;
-&lt;h2 id=&#34;安装-git&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-git&#34;&gt;#&lt;/a&gt; 安装 Git&lt;/h2&gt;
-&lt;p&gt;略&lt;/p&gt;
-&lt;h2 id=&#34;安装-picgo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-picgo&#34;&gt;#&lt;/a&gt; 安装 PicGo&lt;/h2&gt;
-&lt;p&gt;下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;https://github.com/Molunerfinn/PicGo/releases/&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;green&#34;&gt; 推荐使用 2.3.1 正式版&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001213835429.png&#34; alt=&#34;image-20241001213835429&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;安装-typora&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-typora&#34;&gt;#&lt;/a&gt; 安装 Typora&lt;/h2&gt;
-&lt;p&gt;略&lt;/p&gt;
-&lt;h1 id=&#34;git-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-设置&#34;&gt;#&lt;/a&gt; Git 设置&lt;/h1&gt;
-&lt;h2 id=&#34;创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建仓库&#34;&gt;#&lt;/a&gt; 创建仓库&lt;/h2&gt;
-&lt;p&gt;该仓库用于存放图片，以便博客访问预览&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001215937691.png&#34; alt=&#34;image-20241001215937691&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;生成私人令牌&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成私人令牌&#34;&gt;#&lt;/a&gt; 生成私人令牌&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001220215986.png&#34; alt=&#34;image-20241001220215986&#34; /&gt;&lt;/p&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;私人令牌仅在生成的时候可见，记得将其复制保存，以防备用！！！&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id=&#34;picgo-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-设置&#34;&gt;#&lt;/a&gt; PicGo 设置&lt;/h1&gt;
-&lt;h2 id=&#34;安装-gitee-插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装-gitee-插件&#34;&gt;#&lt;/a&gt; 安装 Gitee 插件&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001221151379.png&#34; alt=&#34;image-20241001221151379&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;设置-gitee-信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置-gitee-信息&#34;&gt;#&lt;/a&gt; 设置 Gitee 信息&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;用户名&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;仓库名&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;私人令牌&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222007037.png&#34; alt=&#34;image-20241001222007037&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;上传测试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#上传测试&#34;&gt;#&lt;/a&gt; 上传测试&lt;/h2&gt;
-&lt;p&gt;在 &lt;span class=&#34;green&#34;&gt;上传区&lt;/span&gt; 中上传图片&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222710147.png&#34; alt=&#34;image-20241001222710147&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;在 &lt;span class=&#34;green&#34;&gt;相册&lt;/span&gt; 中可以看见已上传成功的图片&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001222844084.png&#34; alt=&#34;image-20241001222844084&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;查看 Gitee 是否已上传成功&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001223349844.png&#34; alt=&#34;image-20241001223349844&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;typora-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-设置&#34;&gt;#&lt;/a&gt; Typora 设置&lt;/h1&gt;
-&lt;h2 id=&#34;设置图像并验证&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置图像并验证&#34;&gt;#&lt;/a&gt; 设置图像并验证&lt;/h2&gt;
-&lt;p&gt;右上角 &lt;span class=&#34;green&#34;&gt;文件 -&amp;gt; 偏好设置 -&amp;gt; 图像&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001225158438.png&#34; alt=&#34;image-20241001225158438&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;设置完后，点击 &lt;span class=&#34;green&#34;&gt;验证图片上传选项&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001230715514.png&#34; alt=&#34;image-20241001230715514&#34; /&gt;&lt;/p&gt;
-&lt;div class=&#34;note success&#34;&gt;
-&lt;p&gt;&lt;strong&gt;至此，个人图床搭建完毕，感谢大家的阅览与支持&lt;/strong&gt;！！！ 😘💍🛩&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001231222695.png&#34; alt=&#34;image-20241001231222695&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/avatar.jpg&#34; alt=&#34;avatar&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/20240918-090800.jpg&#34; alt=&#34;20240918-090800&#34; /&gt;&lt;/p&gt;
-</content>
-        <category term="教程" scheme="https://slx-world.top/categories/tutorial/" />
-        <category term="博客" scheme="https://slx-world.top/tags/blog/" />
-        <updated>2024-09-20T14:24:36.000Z</updated>
+        <updated>2024-10-02T13:44:16.706Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/tutorial/blog/github-picgo-typora/</id>
-        <title>图床搭建（GitHub 版）</title>
+        <title>图床搭建</title>
         <link rel="alternate" href="https://slx-world.top/tutorial/blog/github-picgo-typora/"/>
         <content type="html">&lt;h1 id=&#34;软件安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件安装&#34;&gt;#&lt;/a&gt; 软件安装&lt;/h1&gt;
 &lt;h2 id=&#34;git-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-安装&#34;&gt;#&lt;/a&gt; Git 安装&lt;/h2&gt;
 &lt;p&gt;略&lt;/p&gt;
 &lt;h2 id=&#34;picgo-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-安装&#34;&gt;#&lt;/a&gt; PicGo 安装&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;PicGo 下载链接&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;PicGo 下载链接&lt;/span&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;https://github.com/Molunerfinn/PicGo/releases/&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;推荐使用 2.3.1 正式版&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001213835429.png&#34; alt=&#34;image-20241001213835429&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;typora-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-安装&#34;&gt;#&lt;/a&gt; Typora 安装&lt;/h2&gt;
-&lt;p&gt;略&lt;/p&gt;
+&lt;p class=&#34;blue&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMTJxZ0c3Q1Q0X3lnb3FkLUNEZ2djTEE/cHdkPWU3bWc=&#34;&gt;Typora1.9.4 百度网盘&lt;/span&gt;.&lt;/p&gt;
+&lt;p class=&#34;blue&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3MvYWdqXzN6SGhzdUJRc0QydEhUUTRGZw==&#34;&gt;Typora1.9.4 安装教程&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;解压后，将 &lt;span class=&#34;green&#34;&gt;Crack&lt;/span&gt; 中的 &lt;span class=&#34;yellow&#34;&gt;winmm.dll&lt;/span&gt; 文件复制粘贴到 Typora 的安装目录即可&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002200235854.png&#34; alt=&#34;image-20241002200235854&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;github-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#github-设置&#34;&gt;#&lt;/a&gt; GitHub 设置&lt;/h1&gt;
 &lt;h2 id=&#34;创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建仓库&#34;&gt;#&lt;/a&gt; 创建仓库&lt;/h2&gt;
-&lt;p&gt;该仓库用于存放图片&lt;/p&gt;
+&lt;p&gt;该仓库用于存放博客图片&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002144038707.png&#34; alt=&#34;image-20241002144038707&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;生成令牌&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成令牌&#34;&gt;#&lt;/a&gt; 生成令牌&lt;/h2&gt;
 &lt;p&gt;点击 &lt;span class=&#34;green&#34;&gt;头像&lt;/span&gt;，来到 &lt;span class=&#34;green&#34;&gt;Settings -&amp;gt; Developer Settings -&amp;gt; Personal access tokens&lt;/span&gt;，然后点击 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL3BlcnNvbmFsLWFjY2Vzcy10b2tlbnMvbmV3&#34;&gt;Generate new token&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002144413095.png&#34; alt=&#34;image-20241002144413095&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002200555213.png&#34; alt=&#34;image-20241002200555213&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;仓库授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#仓库授权&#34;&gt;#&lt;/a&gt; 仓库授权&lt;/h2&gt;
 &lt;p&gt;选定 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 创建好的仓库&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002145941587.png&#34; alt=&#34;image-20241002145941587&#34; /&gt;&lt;/p&gt;
@@ -170,18 +121,25 @@
 &lt;/div&gt;
 &lt;h1 id=&#34;picgo-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-设置&#34;&gt;#&lt;/a&gt; PicGo 设置&lt;/h1&gt;
 &lt;h2 id=&#34;图床设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图床设置&#34;&gt;#&lt;/a&gt; 图床设置&lt;/h2&gt;
+&lt;p&gt;点击 &lt;span class=&#34;green&#34;&gt;GitHub&lt;/span&gt; 选项，进行 &lt;span class=&#34;green&#34;&gt;GitHub 设置&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;设定仓库名：用户名 / 仓库，根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 的仓库而定&lt;/li&gt;
 &lt;li&gt;设定分支：根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 的仓库而定&lt;/li&gt;
-&lt;li&gt;设定 Token：粘贴上 &lt;span class=&#34;red&#34;&gt;2.2&lt;/span&gt; 的令牌&lt;/li&gt;
+&lt;li&gt;设定 Token：复制粘贴 &lt;span class=&#34;red&#34;&gt;2.2&lt;/span&gt; 的令牌&lt;/li&gt;
 &lt;li&gt;设定存储路径：可选&lt;/li&gt;
 &lt;li&gt;设定自定义域名：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbWFnZXMud2VzZXJ2Lm5sLz91cmw9aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doLyVFNyU5NCVBOCVFNiU4OCVCNyVFNSU5MCU4RC8lRTQlQkIlOTMlRTUlQkElOTNAJUU1JTg4JTg2JUU2JTk0JUFG&#34;&gt;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/ 用户名 / 仓库 @分支&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002152655936.png&#34; alt=&#34;image-20241002152655936&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;相关信息配置好后，点击 &lt;span class=&#34;blue&#34;&gt;确定&lt;/span&gt;，并 &lt;span class=&#34;green&#34;&gt;设为默认图床&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;typora-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-设置&#34;&gt;#&lt;/a&gt; Typora 设置&lt;/h1&gt;
-&lt;p&gt;详情请看 &lt;a href=&#34;https://slx-world.top/tutorial/blog/gitee-picgo-typora/&#34;&gt;图床搭建（Gitee 版）&lt;/a&gt;，这里不再赘述&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;&lt;strong&gt;承蒙厚爱，愚文一篇，敬请一览！！！&lt;/strong&gt;&lt;/span&gt;😘😘😘&lt;/p&gt;
+&lt;h2 id=&#34;设置图像并验证&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置图像并验证&#34;&gt;#&lt;/a&gt; 设置图像并验证&lt;/h2&gt;
+&lt;p&gt;右上角 &lt;span class=&#34;green&#34;&gt;文件 -&amp;gt; 偏好设置 -&amp;gt; 图像&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001225158438.png&#34; alt=&#34;image-20241001225158438&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;设置完后，点击 &lt;span class=&#34;green&#34;&gt;验证图片上传选项&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002201849398.png&#34; alt=&#34;image-20241002201849398&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;&lt;strong&gt;至此，个人图床搭建完毕，感谢大家的阅览与支持！！！&lt;/strong&gt;&lt;/span&gt; 😘💍🛩&lt;/p&gt;
+&lt;/div&gt;
 </content>
         <category term="教程" scheme="https://slx-world.top/categories/tutorial/" />
         <category term="博客" scheme="https://slx-world.top/tags/blog/" />
@@ -189,56 +147,11 @@
     </entry>
     <entry>
         <id>https://slx-world.top/tutorial/blog/hexo-shoka/</id>
-        <title>基于 Hexo 和 Shoka 搭建个人博客</title>
+        <title>博客搭建</title>
         <link rel="alternate" href="https://slx-world.top/tutorial/blog/hexo-shoka/"/>
-        <content type="html">&lt;h1 id=&#34;1-创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-创建仓库&#34;&gt;#&lt;/a&gt; 1. 创建仓库&lt;/h1&gt;
-&lt;p&gt;1.1 创建一个存放&lt;strong&gt;网站静态资源&lt;/strong&gt;的仓库，命名规范为：&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS1lcXI5MjRhdnhvLmdpdGh1Yi5pbw==&#34;&gt;用户名.github.io&lt;/span&gt;&lt;/strong&gt;，同时创建&lt;strong&gt; master&lt;/strong&gt; 分支&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5Cworkspace%5Chexo-shoka-source%5Csource_posts%5Ctutorial%5Cblog%5Chexo-shoka%5Cimages%5Cimage-20240927205124342.png&#34; alt=&#34;image-20240927205124342&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;1.2 紧接着创建一个存放&lt;strong&gt;博客源码&lt;/strong&gt;的仓库，名字随便起，注意分支与上述仓库的分支保持一致！！！&lt;/p&gt;
-&lt;h1 id=&#34;2-安装hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-安装hexo&#34;&gt;#&lt;/a&gt; 2. 安装 Hexo&lt;/h1&gt;
-&lt;p&gt;2.1 将存放博客源码的仓库克隆下来，然后进入到该文件夹内，在 cmd 命令行窗口中执行以下命令：&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install -g hexo-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5Cworkspace%5Chexo-shoka-source%5Csource_posts%5Ctutorial%5Cblog%5Chexo-shoka%5Cimages%5Cimage-20240927224315498.png&#34; alt=&#34;image-20240927224315498&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;网站的相关配置请参考：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==&#34;&gt;https://hexo.io/zh-cn/docs/configuration&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&#34;3-克隆shoka&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-克隆shoka&#34;&gt;#&lt;/a&gt; 3. 克隆 Shoka&lt;/h1&gt;
-&lt;p&gt;3.1 进入到 &lt;strong&gt;themes&lt;/strong&gt; 目录，将 Shoka 主题克隆下来，同时将其名字更改为 &lt;strong&gt;shoka&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git clone https://github.com/amehime/hexo-theme-shoka.git .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5Cworkspace%5Chexo-shoka-source%5Csource_posts%5Ctutorial%5Cblog%5Chexo-shoka%5Cimages%5Cimage-20240927223707958.png&#34; alt=&#34;image-20240927223707958&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;主题的相关配置请参考：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/config/&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&#34;4-持续集成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-持续集成&#34;&gt;#&lt;/a&gt; 4. 持续集成&lt;/h1&gt;
-&lt;p&gt;4.1 创建一个项目，同时选择&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5Cworkspace%5Chexo-shoka-source%5Csource_posts%5Ctutorial%5Cblog%5Chexo-shoka%5Cimages%5Cimage-20240927225312674.png&#34; alt=&#34;image-20240927225312674&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;4.2 创建 Access Token 并加密&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5Cworkspace%5Chexo-shoka-source%5Csource_posts%5Ctutorial%5Cblog%5Chexo-shoka%5Cimages%5Cimage-20240927232403717.png&#34; alt=&#34;image-20240927232403717&#34; /&gt;&lt;/p&gt;
-&lt;dl&gt;
-&lt;dt&gt;&lt;span class=&#34;blue&#34;&gt;AppVeyor 登陆页面&lt;/span&gt; (&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jaS5hcHB2ZXlvci5jb20vbG9naW4=&#34;&gt;https://ci.appveyor.com/login&lt;/span&gt;)&lt;/dt&gt;
-&lt;dd&gt;kissing_heart:&lt;br /&gt;
-💍&lt;br /&gt;
-🎶&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; 😘&lt;/h1&gt;
-&lt;p&gt;++ 下划线 ++&lt;br /&gt;
-++ 波浪线 ++{.wavy}&lt;br /&gt;
-++ 着重点 ++{.dot}&lt;br /&gt;
-++ 紫色下划线 ++{.primary}&lt;br /&gt;
-++ 绿色波浪线 ++{.wavy .success}&lt;br /&gt;
-++ 黄色着重点 ++{.dot .warning}&lt;br /&gt;
-~~ 删除线～～&lt;br /&gt;
-~~ 红色删除线～～{.danger}&lt;br /&gt;
-== 荧光高亮 ==&lt;br /&gt;
-&lt;span class=&#34;rainbow&#34;&gt; 赤橙黄绿青蓝紫&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;red&#34;&gt;红色&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;pink&#34;&gt;粉色&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;orange&#34;&gt;橙色&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;yellow&#34;&gt;黄色&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;green&#34;&gt;绿色&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;aqua&#34;&gt;靛青&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;blue&#34;&gt;蓝色&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;purple&#34;&gt;紫色&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;grey&#34;&gt;灰色&lt;/span&gt;&lt;br /&gt;
-快捷键 &lt;span class=&#34;kbd&#34;&gt;Ctrl&lt;/span&gt; + &lt;span class=&#34;kbd red&#34;&gt;C&lt;/span&gt;&lt;br /&gt;
-H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
-29&lt;sup&gt;th&lt;/sup&gt;&lt;/p&gt;
+        <content type="html">&lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; 💮&lt;/h1&gt;
+&lt;h1 id=&#34;-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-2&#34;&gt;#&lt;/a&gt; &lt;/h1&gt;
+&lt;h1 id=&#34;-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-3&#34;&gt;#&lt;/a&gt; &lt;/h1&gt;
 </content>
         <category term="教程" scheme="https://slx-world.top/categories/tutorial/" />
         <category term="博客" scheme="https://slx-world.top/tags/blog/" />
