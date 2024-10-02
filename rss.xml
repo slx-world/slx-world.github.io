@@ -10,14 +10,31 @@
         </author>
         <description>他年，我若立于万古诸天上，将与你们共岁月！</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 02 Oct 2024 08:45:04 +0000</pubDate>
-        <lastBuildDate>Wed, 02 Oct 2024 08:45:04 +0000</lastBuildDate>
+        <pubDate>Wed, 02 Oct 2024 09:09:06 +0000</pubDate>
+        <lastBuildDate>Wed, 02 Oct 2024 09:09:06 +0000</lastBuildDate>
         <category term="柳神，火灵儿" />
+        <item>
+            <guid isPermalink="true">https://slx-world.top/test/first-blog/</guid>
+            <title>second blog</title>
+            <link>https://slx-world.top/test/first-blog/</link>
+            <category term="测试" scheme="https://slx-world.top/categories/test/" />
+            <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
+            <category term="Java" scheme="https://slx-world.top/tags/java/" />
+            <category term="Python" scheme="https://slx-world.top/tags/python/" />
+            <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
+            <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
+            <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
+            <pubDate>Wed, 02 Oct 2024 09:09:06 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002095308759.png&#34; alt=&#34;image-20241002095308759&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002103744094.png&#34; alt=&#34;image-20241002103744094&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://slx-world.top/hello-world/</guid>
             <title>Hello World</title>
             <link>https://slx-world.top/hello-world/</link>
-            <pubDate>Wed, 02 Oct 2024 08:45:04 +0000</pubDate>
+            <pubDate>Wed, 02 Oct 2024 09:09:06 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
@@ -35,20 +52,19 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/test/first-blog/</guid>
-            <title>second blog</title>
-            <link>https://slx-world.top/test/first-blog/</link>
-            <category term="测试" scheme="https://slx-world.top/categories/test/" />
+            <guid isPermalink="true">https://slx-world.top/backend/middleware/first-blog/</guid>
+            <title>third blog</title>
+            <link>https://slx-world.top/backend/middleware/first-blog/</link>
+            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
+            <category term="中间件" scheme="https://slx-world.top/categories/backend/middleware/" />
             <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
             <category term="Java" scheme="https://slx-world.top/tags/java/" />
             <category term="Python" scheme="https://slx-world.top/tags/python/" />
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
-            <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Wed, 02 Oct 2024 08:45:04 +0000</pubDate>
+            <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
+            <pubDate>Wed, 02 Oct 2024 09:09:06 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002095308759.png&#34; alt=&#34;image-20241002095308759&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002103744094.png&#34; alt=&#34;image-20241002103744094&#34; /&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -64,23 +80,7 @@
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
             <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Wed, 02 Oct 2024 08:45:04 +0000</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://slx-world.top/backend/middleware/first-blog/</guid>
-            <title>third blog</title>
-            <link>https://slx-world.top/backend/middleware/first-blog/</link>
-            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
-            <category term="中间件" scheme="https://slx-world.top/categories/backend/middleware/" />
-            <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
-            <category term="Java" scheme="https://slx-world.top/tags/java/" />
-            <category term="Python" scheme="https://slx-world.top/tags/python/" />
-            <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
-            <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
-            <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
-            <pubDate>Wed, 02 Oct 2024 08:45:04 +0000</pubDate>
+            <pubDate>Wed, 02 Oct 2024 09:09:06 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
  ]]></description>
         </item>
@@ -186,7 +186,7 @@
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002152655936.png&#34; alt=&#34;image-20241002152655936&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;相关信息配置好后，点击 &lt;span class=&#34;blue&#34;&gt;确定&lt;/span&gt;，并 &lt;span class=&#34;green&#34;&gt;设为默认图床&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;typora-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-设置&#34;&gt;#&lt;/a&gt; Typora 设置&lt;/h1&gt;
-&lt;p&gt;详情请看 &lt;a href=&#34;https://slx-world.top/tutorial/blog/gitee-typora-picgo/&#34;&gt;图床搭建（Gitee 版）&lt;/a&gt;，这里不再赘述&lt;/p&gt;
+&lt;p&gt;详情请看 &lt;a href=&#34;https://slx-world.top/tutorial/blog/gitee-picgo-typora/&#34;&gt;图床搭建（Gitee 版）&lt;/a&gt;，这里不再赘述&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;&lt;strong&gt;承蒙厚爱，愚文一篇，敬请一览！！！&lt;/strong&gt;&lt;/span&gt;😘😘😘&lt;/p&gt;
  ]]></description>
         </item>
