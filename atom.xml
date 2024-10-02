@@ -8,13 +8,14 @@
     <author>
       <name>Mr.Song</name>
     </author>
-    <updated>2024-10-01T21:14:25.424Z</updated>
+    <updated>2024-10-02T02:05:04.426Z</updated>
     <category term="柳神，火灵儿" />
     <entry>
         <id>https://slx-world.top/test/first-blog/</id>
         <title>second blog</title>
         <link rel="alternate" href="https://slx-world.top/test/first-blog/"/>
         <content type="html">&lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002095308759.png&#34; alt=&#34;image-20241002095308759&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="测试" scheme="https://slx-world.top/categories/test/" />
         <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
@@ -23,7 +24,7 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-        <updated>2024-10-01T21:14:25.424Z</updated>
+        <updated>2024-10-02T02:05:04.426Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/hello-world/</id>
@@ -44,7 +45,7 @@
 &lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2024-10-01T21:14:25.408Z</updated>
+        <updated>2024-10-02T02:05:04.410Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/backend/middleware/first-blog/</id>
@@ -60,7 +61,7 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
-        <updated>2024-10-01T21:14:25.408Z</updated>
+        <updated>2024-10-02T02:05:04.410Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/bigdata/framework/first-blog/</id>
@@ -77,7 +78,7 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-        <updated>2024-10-01T21:14:25.408Z</updated>
+        <updated>2024-10-02T02:05:04.410Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/tutorial/blog/gitee-typora-picgo/</id>
