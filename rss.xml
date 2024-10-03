@@ -10,14 +10,31 @@
         </author>
         <description>他年，我若立于万古诸天上，将与你们共岁月！</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 02 Oct 2024 14:36:02 +0000</pubDate>
-        <lastBuildDate>Wed, 02 Oct 2024 14:36:02 +0000</lastBuildDate>
+        <pubDate>Thu, 03 Oct 2024 17:45:22 +0000</pubDate>
+        <lastBuildDate>Thu, 03 Oct 2024 17:45:22 +0000</lastBuildDate>
         <category term="柳神，火灵儿" />
+        <item>
+            <guid isPermalink="true">https://slx-world.top/test/first-blog/</guid>
+            <title>second blog</title>
+            <link>https://slx-world.top/test/first-blog/</link>
+            <category term="测试" scheme="https://slx-world.top/categories/test/" />
+            <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
+            <category term="Java" scheme="https://slx-world.top/tags/java/" />
+            <category term="Python" scheme="https://slx-world.top/tags/python/" />
+            <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
+            <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
+            <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
+            <pubDate>Thu, 03 Oct 2024 17:45:22 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002095308759.png&#34; alt=&#34;image-20241002095308759&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002103744094.png&#34; alt=&#34;image-20241002103744094&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://slx-world.top/hello-world/</guid>
             <title>Hello World</title>
             <link>https://slx-world.top/hello-world/</link>
-            <pubDate>Wed, 02 Oct 2024 14:36:02 +0000</pubDate>
+            <pubDate>Thu, 03 Oct 2024 17:45:22 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
@@ -35,20 +52,19 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/test/first-blog/</guid>
-            <title>second blog</title>
-            <link>https://slx-world.top/test/first-blog/</link>
-            <category term="测试" scheme="https://slx-world.top/categories/test/" />
+            <guid isPermalink="true">https://slx-world.top/backend/middleware/first-blog/</guid>
+            <title>third blog</title>
+            <link>https://slx-world.top/backend/middleware/first-blog/</link>
+            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
+            <category term="中间件" scheme="https://slx-world.top/categories/backend/middleware/" />
             <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
             <category term="Java" scheme="https://slx-world.top/tags/java/" />
             <category term="Python" scheme="https://slx-world.top/tags/python/" />
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
-            <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Wed, 02 Oct 2024 14:36:02 +0000</pubDate>
+            <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
+            <pubDate>Thu, 03 Oct 2024 17:45:22 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002095308759.png&#34; alt=&#34;image-20241002095308759&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002103744094.png&#34; alt=&#34;image-20241002103744094&#34; /&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -64,25 +80,18 @@
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
             <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Wed, 02 Oct 2024 14:36:02 +0000</pubDate>
+            <pubDate>Thu, 03 Oct 2024 17:45:22 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/backend/middleware/first-blog/</guid>
-            <title>third blog</title>
-            <link>https://slx-world.top/backend/middleware/first-blog/</link>
-            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
-            <category term="中间件" scheme="https://slx-world.top/categories/backend/middleware/" />
-            <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
-            <category term="Java" scheme="https://slx-world.top/tags/java/" />
-            <category term="Python" scheme="https://slx-world.top/tags/python/" />
-            <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
-            <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
-            <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
-            <pubDate>Wed, 02 Oct 2024 14:36:02 +0000</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
- ]]></description>
+            <guid isPermalink="true">https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/</guid>
+            <title>备份与持续集成</title>
+            <link>https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/</link>
+            <category term="教程" scheme="https://slx-world.top/categories/tutorial/" />
+            <category term="博客" scheme="https://slx-world.top/tags/blog/" />
+            <pubDate>Thu, 03 Oct 2024 14:24:36 +0000</pubDate>
+            <description><![CDATA[  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://slx-world.top/tutorial/blog/github-picgo-typora/</guid>
@@ -91,61 +100,95 @@
             <category term="教程" scheme="https://slx-world.top/categories/tutorial/" />
             <category term="博客" scheme="https://slx-world.top/tags/blog/" />
             <pubDate>Fri, 20 Sep 2024 14:24:36 +0000</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;软件安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件安装&#34;&gt;#&lt;/a&gt; 软件安装&lt;/h1&gt;
-&lt;h2 id=&#34;git-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-安装&#34;&gt;#&lt;/a&gt; Git 安装&lt;/h2&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;️软件安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️软件安装&#34;&gt;#&lt;/a&gt; ❄️软件安装&lt;/h1&gt;
+&lt;h2 id=&#34;git-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-安装&#34;&gt;#&lt;/a&gt; 💓Git 安装&lt;/h2&gt;
 &lt;p&gt;略&lt;/p&gt;
-&lt;h2 id=&#34;picgo-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-安装&#34;&gt;#&lt;/a&gt; PicGo 安装&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;PicGo 下载链接&lt;/span&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;https://github.com/Molunerfinn/PicGo/releases/&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;picgo-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-安装&#34;&gt;#&lt;/a&gt; 💓PicGo 安装&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Molunerfinn/PicGo/releases/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;PicGo 下载链接&lt;/ins&gt;&lt;/a&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;https://github.com/Molunerfinn/PicGo/releases/&lt;/span&gt;&lt;/p&gt;
 &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;推荐使用 2.3.1 正式版&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001213835429.png&#34; alt=&#34;image-20241001213835429&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;typora-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-安装&#34;&gt;#&lt;/a&gt; Typora 安装&lt;/h2&gt;
-&lt;p class=&#34;blue&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMTJxZ0c3Q1Q0X3lnb3FkLUNEZ2djTEE/cHdkPWU3bWc=&#34;&gt;Typora1.9.4 百度网盘&lt;/span&gt;.&lt;/p&gt;
-&lt;p class=&#34;blue&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3MvYWdqXzN6SGhzdUJRc0QydEhUUTRGZw==&#34;&gt;Typora1.9.4 安装教程&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;解压后，将 &lt;span class=&#34;red&#34;&gt;Crack&lt;/span&gt; 中的 &lt;span class=&#34;red&#34;&gt;winmm.dll&lt;/span&gt; 文件复制粘贴到 Typora 的安装目录即可&lt;/p&gt;
+&lt;h2 id=&#34;typora-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-安装&#34;&gt;#&lt;/a&gt; 💓Typora 安装&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://pan.baidu.com/s/12qgG7CT4_ygoqd-CDggcLA?pwd=e7mg&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Typora1.9.4 百度网盘&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/agj_3zHhsuBQsD2tHTQ4Fg&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Typora1.9.4 安装教程&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;解压后，将 &lt;span class=&#34;yellow&#34;&gt;Crack&lt;/span&gt; 中的 &lt;span class=&#34;yellow&#34;&gt;winmm.dll&lt;/span&gt; 文件复制粘贴到 Typora 的安装目录即可&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002200235854.png&#34; alt=&#34;image-20241002200235854&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;github-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#github-设置&#34;&gt;#&lt;/a&gt; GitHub 设置&lt;/h1&gt;
-&lt;h2 id=&#34;创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建仓库&#34;&gt;#&lt;/a&gt; 创建仓库&lt;/h2&gt;
+&lt;h1 id=&#34;️github-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️github-设置&#34;&gt;#&lt;/a&gt; ❄️GitHub 设置&lt;/h1&gt;
+&lt;h2 id=&#34;创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建仓库&#34;&gt;#&lt;/a&gt; 💓创建仓库&lt;/h2&gt;
 &lt;p&gt;该仓库用于存放博客图片&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002144038707.png&#34; alt=&#34;image-20241002144038707&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;生成令牌&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成令牌&#34;&gt;#&lt;/a&gt; 生成令牌&lt;/h2&gt;
+&lt;h2 id=&#34;生成令牌&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成令牌&#34;&gt;#&lt;/a&gt; 💓生成令牌&lt;/h2&gt;
 &lt;p&gt;右上角点击 &lt;span class=&#34;green&#34;&gt;头像&lt;/span&gt;，来到 &lt;span class=&#34;green&#34;&gt;Settings -&amp;gt; Developer Settings -&amp;gt; Personal access tokens&lt;/span&gt;，然后点击 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL3BlcnNvbmFsLWFjY2Vzcy10b2tlbnMvbmV3&#34;&gt;Generate new token&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002200555213.png&#34; alt=&#34;image-20241002200555213&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;仓库授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#仓库授权&#34;&gt;#&lt;/a&gt; 仓库授权&lt;/h2&gt;
-&lt;p&gt;选定 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 创建好的仓库&lt;/p&gt;
+&lt;h2 id=&#34;仓库授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#仓库授权&#34;&gt;#&lt;/a&gt; 💓仓库授权&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;选定 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 中已创建好的仓库&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002145941587.png&#34; alt=&#34;image-20241002145941587&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;权限设置&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;仓库权限&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;账户权限&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;均全部授权即可&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002150150970.png&#34; alt=&#34;image-20241002150150970&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;完成后，点击 &lt;span class=&#34;green&#34;&gt;Generate token&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;token 仅在生成的时候可见，记得复制保存下来，以防备用！！！&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;token 仅在生成的时候可见，记得复制保存下来，以防备用！！！&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;h1 id=&#34;picgo-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-设置&#34;&gt;#&lt;/a&gt; PicGo 设置&lt;/h1&gt;
-&lt;h2 id=&#34;图床设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图床设置&#34;&gt;#&lt;/a&gt; 图床设置&lt;/h2&gt;
+&lt;h1 id=&#34;️picgo-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️picgo-设置&#34;&gt;#&lt;/a&gt; ❄️PicGo 设置&lt;/h1&gt;
+&lt;h2 id=&#34;图床设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图床设置&#34;&gt;#&lt;/a&gt; 💓图床设置&lt;/h2&gt;
 &lt;p&gt;点击 &lt;span class=&#34;green&#34;&gt;GitHub&lt;/span&gt; 选项，进行 &lt;span class=&#34;green&#34;&gt;GitHub 设置&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;设定仓库名：用户名 / 仓库，根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 的仓库而定&lt;/li&gt;
-&lt;li&gt;设定分支：根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 的仓库而定&lt;/li&gt;
-&lt;li&gt;设定 Token：复制粘贴 &lt;span class=&#34;red&#34;&gt;2.2&lt;/span&gt; 的令牌&lt;/li&gt;
+&lt;li&gt;设定仓库名：用户名 / 仓库，根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 中的仓库而定&lt;/li&gt;
+&lt;li&gt;设定分支：根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 中的仓库而定&lt;/li&gt;
+&lt;li&gt;设定 Token：复制粘贴 &lt;span class=&#34;red&#34;&gt;2.2&lt;/span&gt; 中的令牌&lt;/li&gt;
 &lt;li&gt;设定存储路径：可选&lt;/li&gt;
 &lt;li&gt;设定自定义域名：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbWFnZXMud2VzZXJ2Lm5sLz91cmw9aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doLyVFNyU5NCVBOCVFNiU4OCVCNyVFNSU5MCU4RC8lRTQlQkIlOTMlRTUlQkElOTNAJUU1JTg4JTg2JUU2JTk0JUFG&#34;&gt;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/ 用户名 / 仓库 @分支&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002152655936.png&#34; alt=&#34;image-20241002152655936&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;相关信息配置好后，点击 &lt;span class=&#34;blue&#34;&gt;确定&lt;/span&gt;，并 &lt;span class=&#34;green&#34;&gt;设为默认图床&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&#34;typora-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-设置&#34;&gt;#&lt;/a&gt; Typora 设置&lt;/h1&gt;
-&lt;h2 id=&#34;设置图像并验证&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置图像并验证&#34;&gt;#&lt;/a&gt; 设置图像并验证&lt;/h2&gt;
+&lt;h1 id=&#34;️站点配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️站点配置&#34;&gt;#&lt;/a&gt; ❄️站点配置&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;来到 &lt;span class=&#34;yellow&#34;&gt;hexo 目录 \ themes \ shoka \ scripts \ helpers&lt;/span&gt;，修改 &lt;span class=&#34;red&#34;&gt;engine.js&lt;/span&gt; 代码&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption&gt;&lt;span&gt;engine.js 代码&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; parseImage = &lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;img, size&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (img.&lt;span class=&#34;title function_&#34;&gt;startsWith&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;//&amp;#x27;&lt;/span&gt;) || img.&lt;span class=&#34;title function_&#34;&gt;startsWith&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;http&amp;#x27;&lt;/span&gt;)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; img&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125; &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;https://tva&amp;#x27;&lt;/span&gt;+randomServer+&lt;span class=&#34;string&#34;&gt;&amp;#x27;.sinaimg.cn/&amp;#x27;&lt;/span&gt;+size+&lt;span class=&#34;string&#34;&gt;&amp;#x27;/&amp;#x27;&lt;/span&gt;+img&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;具体配置为：&lt;span class=&#34;red&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbWFnZXMud2VzZXJ2Lm5sLz91cmw9aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doLyVFNyU5NCVBOCVFNiU4OCVCNyVFNSU5MCU4RC8lRTQlQkIlOTMlRTUlQkElOTNAJUU1JTg4JTg2JUU2JTk0JUFGLw==&#34;&gt;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/ 用户名 / 仓库 @分支 /&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbWFnZXMud2VzZXJ2Lm5sLz91cmw9&#34;&gt;https://images.weserv.nl/?url=&lt;/span&gt;&lt;/span&gt;：图缓存链接，让图片快速加载&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如，我的配置是这样的：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption&gt;&lt;span&gt;engine.js 代码&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; parseImage = &lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;img, size&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (img.&lt;span class=&#34;title function_&#34;&gt;startsWith&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;//&amp;#x27;&lt;/span&gt;) || img.&lt;span class=&#34;title function_&#34;&gt;startsWith&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;http&amp;#x27;&lt;/span&gt;)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; img&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125; &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// return &amp;#x27;https://tva&amp;#x27;+randomServer+&amp;#x27;.sinaimg.cn/&amp;#x27;+size+&amp;#x27;/&amp;#x27;+img&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// return &amp;#x27;https://images.weserv.nl/?url=https://raw.githubusercontent.com/slx-world/blog-images/master/&amp;#x27;+img&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/&amp;#x27;&lt;/span&gt;+img&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;️typora-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️typora-设置&#34;&gt;#&lt;/a&gt; ❄️Typora 设置&lt;/h1&gt;
+&lt;h2 id=&#34;设置图像并验证&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置图像并验证&#34;&gt;#&lt;/a&gt; 💓设置图像并验证&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
 &lt;p&gt;左上角点击 &lt;span class=&#34;green&#34;&gt;文件 -&amp;gt; 偏好设置 -&amp;gt; 图像&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001225158438.png&#34; alt=&#34;image-20241001225158438&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;设置完后，点击 &lt;span class=&#34;green&#34;&gt;验证图片上传选项&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002201849398.png&#34; alt=&#34;image-20241002201849398&#34; /&gt;&lt;/p&gt;
-&lt;div class=&#34;note success&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;&lt;strong&gt;至此，个人图床搭建完毕，感谢大家的阅览与支持！！！&lt;/strong&gt;&lt;/span&gt; 😘💍🛩&lt;/p&gt;
-&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;label success&#34;&gt;✔️success&lt;/span&gt;[&lt;strong&gt;至此，个人图床搭建完毕，感谢大家的阅览与支持&lt;/strong&gt;]👇😘💍&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -155,9 +198,225 @@
             <category term="教程" scheme="https://slx-world.top/categories/tutorial/" />
             <category term="博客" scheme="https://slx-world.top/tags/blog/" />
             <pubDate>Fri, 20 Sep 2024 14:24:36 +0000</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; 💮&lt;/h1&gt;
-&lt;h1 id=&#34;-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-2&#34;&gt;#&lt;/a&gt; &lt;/h1&gt;
-&lt;h1 id=&#34;-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-3&#34;&gt;#&lt;/a&gt; &lt;/h1&gt;
+            <description><![CDATA[ &lt;p&gt;💛&lt;/p&gt;
+&lt;div class=&#34;note primary&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://slx-world.top/tutorial/blog/github-picgo-typora/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;图床搭建&lt;/ins&gt;&lt;/a&gt; 🏳️‍🌈 &lt;a href=&#34;https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;备份与持续集成&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;新建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#新建仓库&#34;&gt;#&lt;/a&gt; 🌸新建仓库&lt;/h1&gt;
+&lt;h2 id=&#34;更改默认分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#更改默认分支&#34;&gt;#&lt;/a&gt; 💝更改默认分支&lt;/h2&gt;
+&lt;p&gt;右上角点击 &lt;span class=&#34;green&#34;&gt;头像&lt;/span&gt;，来到 &lt;span class=&#34;green&#34;&gt;Settings -&amp;gt; Repositories&lt;/span&gt;，改为 &lt;span class=&#34;red&#34;&gt;master&lt;/span&gt; 分支&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003121637152.png&#34; alt=&#34;image-20241003121637152&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建仓库&#34;&gt;#&lt;/a&gt; 💝创建仓库&lt;/h2&gt;
+&lt;p&gt;该仓库用来存放博客部署的静态网页文件，如 js、css、html 等等&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;仓库命名必须是：&lt;span class=&#34;red&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS1lcXI5MjRhdnhvLmdpdGh1Yi5pbw==&#34;&gt;用户名.github.io&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;分支：&lt;span class=&#34;red&#34;&gt;master&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003120123561.png&#34; alt=&#34;image-20241003120123561&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;软件安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件安装&#34;&gt;#&lt;/a&gt; 🌸软件安装&lt;/h1&gt;
+&lt;h2 id=&#34;git-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-安装&#34;&gt;#&lt;/a&gt; 💝Git 安装&lt;/h2&gt;
+&lt;p&gt;略&lt;/p&gt;
+&lt;h2 id=&#34;nodejs-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#nodejs-安装&#34;&gt;#&lt;/a&gt; 💝Nodejs 安装&lt;/h2&gt;
+&lt;p&gt;👉 &lt;a href=&#34;https://blog.csdn.net/Nicolecocol/article/details/136788200?fromshare=blogdetail&amp;amp;sharetype=blogdetail&amp;amp;sharerId=136788200&amp;amp;sharerefer=PC&amp;amp;sharesource=&amp;amp;sharefrom=from_link&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Nodejs 安装教程&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;hexo-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo-安装&#34;&gt;#&lt;/a&gt; 💝Hexo 安装&lt;/h2&gt;
+&lt;p&gt;新建目录，不必与 &lt;span class=&#34;red&#34;&gt;1.2&lt;/span&gt; 的仓库名一致，然后进入该目录，在 &lt;span class=&#34;yellow&#34;&gt;cmd&lt;/span&gt; 命令行窗口中，执行以下命令：&lt;br /&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption&gt;&lt;span&gt;cmd 命令行窗口&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;主题安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主题安装&#34;&gt;#&lt;/a&gt; 🌸主题安装&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;这里使用 &lt;span class=&#34;yellow&#34;&gt;shoka&lt;/span&gt; 主题&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003090750454.png&#34; alt=&#34;image-20241003090750454&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 hexo 安装目录中，执行以下 &lt;span class=&#34;yellow&#34;&gt;git&lt;/span&gt; 命令：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption&gt;&lt;span&gt;git 命令行窗口&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;clone&lt;/span&gt; https://github.com/amehime/hexo-theme-shoka.git ./themes/shoka&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;其他更多主题，请看 👉 &lt;a href=&#34;https://hexo.io/themes/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Hexo 主题&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;应用主题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#应用主题&#34;&gt;#&lt;/a&gt; 🌸应用主题&lt;/h1&gt;
+&lt;p&gt;修改站点配置文件 &lt;span class=&#34;yellow&#34;&gt;_config.yml&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 站点配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;theme:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;shoka&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003100150562.png&#34; alt=&#34;image-20241003100150562&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;站点配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#站点配置&#34;&gt;#&lt;/a&gt; 🌸站点配置&lt;/h1&gt;
+&lt;p&gt;详情请看 👉 &lt;a href=&#34;https://hexo.io/zh-cn/docs/configuration&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Hexo 官方文档配置&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;站点配置文件为：&lt;span class=&#34;yellow&#34;&gt;_config.yml&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003082315541.png&#34; alt=&#34;image-20241003082315541&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;渲染配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#渲染配置&#34;&gt;#&lt;/a&gt; 💝渲染配置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;卸载默认的 &lt;span class=&#34;yellow&#34;&gt;hexo-renderer-marked&lt;/span&gt;，以及 &lt;span class=&#34;yellow&#34;&gt;其他 markdown 文件渲染器&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption&gt;&lt;span&gt;cmd 命令行窗口&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm un hexo-renderer-marked --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装 &lt;span class=&#34;yellow&#34;&gt;hexo-renderer-multi-markdown-it&lt;/span&gt;，用于 md 文件渲染器，压缩 css/js/html&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption&gt;&lt;span&gt;cmd 命令行窗口&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm i hexo-renderer-multi-markdown-it --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加入 &lt;span class=&#34;yellow&#34;&gt;markdown&lt;/span&gt; 配置，用来渲染 md 文件&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 站点配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;markdown:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;render:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 渲染器设置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;html:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 过滤 HTML 标签&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;xhtmlOut:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 使用 &amp;#x27;/&amp;#x27; 来闭合单标签 （比如 &amp;lt;br /&amp;gt;）。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;breaks:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 转换段落里的 &amp;#x27;\n&amp;#x27; 到 &amp;lt;br&amp;gt;。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;linkify:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 将类似 URL 的文本自动转换为链接。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;typographer:&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;quotes:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;“”‘’&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;plugins:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# markdown-it 插件设置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;plugin:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;name:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;markdown-it-toc-and-anchor&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;options:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 文章目录以及锚点应用的 class 名称，shoka 主题必须设置成这样&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attr&#34;&gt;tocClassName:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;toc&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attr&#34;&gt;anchorClassName:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;anchor&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;plugin:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;name:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;markdown-it-multimd-table&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;options:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attr&#34;&gt;multiline:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attr&#34;&gt;rowspan:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attr&#34;&gt;headerless:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;plugin:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;name:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;./markdown-it-furigana&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;options:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attr&#34;&gt;fallbackParens:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;()&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;plugin:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;name:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;./markdown-it-spoiler&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;options:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attr&#34;&gt;title:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;你知道得太多了&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加入 &lt;span class=&#34;yellow&#34;&gt;minify&lt;/span&gt; 配置，压缩 css/js/html&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 站点配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;minify:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;html:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;exclude:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 排除 hexo-feed 用到的模板文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;**/json.ejs&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;**/atom.ejs&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;**/rss.ejs&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;css:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;exclude:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;**/*.min.css&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;js:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;mangle:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;toplevel:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;output:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;compress:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;exclude:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;**/*.min.js&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;停用默认代码高亮功能，否则代码块的 mac 样式不能正常显示&lt;/p&gt;
+&lt;p&gt;找到 &lt;span class=&#34;yellow&#34;&gt;highlight&lt;/span&gt; 和 &lt;span class=&#34;yellow&#34;&gt;prismjs&lt;/span&gt;，把 &lt;span class=&#34;yellow&#34;&gt;enable&lt;/span&gt; 改成 &lt;span class=&#34;red&#34;&gt;false&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 站点配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;highlight:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;prismjs:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;翻转配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#翻转配置&#34;&gt;#&lt;/a&gt; 💝翻转配置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装 &lt;span class=&#34;yellow&#34;&gt;hexo-autoprefixer&lt;/span&gt;，缺少该插件，首页卡片翻转效果在部分浏览器中将无法正常显示。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加入有关配置：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 站点配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;autoprefixer:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;exclude:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.min.css&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;搜索配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搜索配置&#34;&gt;#&lt;/a&gt; 💝搜索配置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装 &lt;span class=&#34;yellow&#34;&gt;hexo-algoliasearch&lt;/span&gt;，用于站内搜索&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加入有关配置：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 站点配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;algolia:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;appId:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#Your appId&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;apiKey:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#Your apiKey&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;adminApiKey:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#Your adminApiKey&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;chunkSize:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;5000&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;indexName:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#&amp;quot;shoka&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;fields:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;title&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#必须配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#必须配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;categories&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#推荐配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;content:strip:truncate,0,2000&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;gallery&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;photos&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;tags&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;feed-配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#feed-配置&#34;&gt;#&lt;/a&gt; 💝Feed 配置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装 &lt;span class=&#34;yellow&#34;&gt;hexo-feed&lt;/span&gt;，用于生成 Feed 文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加入有关配置：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 站点配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;feed:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;limit:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;order_by:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;-date&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;tag_dir:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;category_dir:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;rss:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;template:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;themes/shoka/layout/_alternate/rss.ejs&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;output:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;rss.xml&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;atom:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;template:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;themes/shoka/layout/_alternate/atom.ejs&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;output:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;atom.xml&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;jsonFeed:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;template:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;themes/shoka/layout/_alternate/json.ejs&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;output:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;feed.json&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;seo-优化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#seo-优化&#34;&gt;#&lt;/a&gt; 💝SEO 优化&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;推荐安装 &lt;span class=&#34;yellow&#34;&gt;hexo-filter-nofollow&lt;/span&gt;，用于优化 SEO&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption&gt;&lt;span&gt;cmd 命令行窗口&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-filter-nofollow --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加入有关配置：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 站点配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;nofollow:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#是否启用&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;field:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;site&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#site全站，post仅文章&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;exclude:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;slx-world.top&amp;#x27;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#例外网站&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;slx-world.github.io&amp;#x27;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003202648758.png&#34; alt=&#34;image-20241003202648758&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;配置部署信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置部署信息&#34;&gt;#&lt;/a&gt; 💝配置部署信息&lt;/h2&gt;
+&lt;p&gt;配置好 &lt;span class=&#34;red&#34;&gt;1.2&lt;/span&gt; 中的仓库信息&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 站点配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;deploy:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;type:&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#部署方式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;repo:&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#仓库地址，记得与 1.2 中的仓库保持一致！！！&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;branch:&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#分支，记得与 1.2 中的仓库保持一致！！！&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003130236618.png&#34; alt=&#34;image-20241003130236618&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;主题配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主题配置&#34;&gt;#&lt;/a&gt; 🌸主题配置&lt;/h1&gt;
+&lt;div class=&#34;note primary&#34;&gt;
+&lt;p&gt;详情请看 👉  &lt;a href=&#34;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/config/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;基本配置&lt;/ins&gt;&lt;/a&gt; 🏳️‍🌈 &lt;a href=&#34;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/display/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;界面显示&lt;/ins&gt;&lt;/a&gt; 🏳️‍🌈 &lt;a href=&#34;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/special/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;特殊功能&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;统计配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#统计配置&#34;&gt;#&lt;/a&gt; 💝统计配置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装 &lt;span class=&#34;yellow&#34;&gt;hexo-symbols-count-time&lt;/span&gt;，用于文章或站点字数及阅读时间统计&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不需要修改站点配置文件，直接使用插件默认配置就行&lt;/p&gt;
+&lt;p&gt;但是需要修改主题配置文件，找到两处 count，修改为 true&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 主题配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 页尾全站统计&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;footer:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;since:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;2010&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;count:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 文章界面统计&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;post:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;count:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;评论配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#评论配置&#34;&gt;#&lt;/a&gt; 💝评论配置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96AppID%E5%92%8CAppKey&#34;&gt;&lt;ins class=&#34;info&#34;&gt;获取 AppID 和 AppKey&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加入有关配置：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 主题配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;valine:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;appId:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#Your_appId&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;appKey:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#Your_appkey&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;placeholder:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;ヽ(○´∀`)ﾉ♪&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# Comment box placeholder&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;avatar:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;mp&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;pageSize:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# Pagination size&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;lang:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;zh-CN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;visitor:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 文章访问量统计&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;NoRecordIP:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 不记录 IP&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;serverURLs:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;powerMode:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 默认打开评论框输入特效&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;tagMeta:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;visitor:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;新朋友&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;master:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;主人&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;friend:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;小伙伴&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;investor:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;金主粑粑&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;tagColor:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;master:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;var(--color-orange)&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;friend:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;var(--color-aqua)&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;investor:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;var(--color-pink)&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;tagMember:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;master:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;# - hash of master@email.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;# - hash of master2@email.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;friend:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;# - hash of friend@email.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;# - hash of friend2@email.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;investor:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;# - hash of investor1@email.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;tag 标签显示在评论者名字的后面，默认是 &lt;span class=&#34;yellow&#34;&gt;tagMeta.visitor&lt;/span&gt; 对应的值。 在 &lt;span class=&#34;yellow&#34;&gt;tagMeta&lt;/span&gt; 和 &lt;span class=&#34;yellow&#34;&gt;tagColor&lt;/span&gt; 中，除了 [visitor] 这个 key 不能修改外，其他 key 都可以换一换，但需要保证一致性&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;_config.yml 主题配置文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;tagMeta:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;visitor:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;游客&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;admin:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;管理员&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;waifu:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;我老婆&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;tagColor:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;visitor:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;#855194&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;admin:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;#a77c59&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;waifu:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;#ed6ea0&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;tagMember:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;admin:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;# - hash of admin@email.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;waifu:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;# - hash of waifu@email.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在文章 &lt;span class=&#34;yellow&#34;&gt;Front Matter&lt;/span&gt; 中也可以配置上述参数，当访问该文章页面时，将覆盖全局配置。 尤其可以用来配置一个特殊的 &lt;span class=&#34;yellow&#34;&gt;placeholder&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption&gt;&lt;span&gt;front matter&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;valine:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;placeholder:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;1. 提问前请先仔细阅读本文档⚡\n2. 页面显示问题💥，请提供控制台截图📸或者您的测试网址\n3. 其他任何报错💣，请提供详细描述和截图📸，祝食用愉快💪&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;评论通知与管理工具建议使用 &lt;a href=&#34;https://github.com/DesertsP/Valine-Admin&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Valine-Admin&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;注意 &lt;span class=&#34;yellow&#34;&gt;SITE_URL&lt;/span&gt; 需要以 &lt;span class=&#34;yellow&#34;&gt;/&lt;/span&gt; 结尾&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003202648758.png&#34; alt=&#34;image-20241003202648758&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;测试发布&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试发布&#34;&gt;#&lt;/a&gt; 🌸测试发布&lt;/h1&gt;
+&lt;h2 id=&#34;测试效果&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试效果&#34;&gt;#&lt;/a&gt; 💝测试效果&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;上述工作完成后，我们就可以进行测试了&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption&gt;&lt;span&gt;cmd 命令行窗口&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003131616841.png&#34; alt=&#34;image-20241003131616841&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;访问 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xvY2FsaG9zdDo0MDAwLw==&#34;&gt;http://localhost:4000/&lt;/span&gt; 看到的效果如下：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003150120513.png&#34; alt=&#34;image-20241003150120513&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;部署发布&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部署发布&#34;&gt;#&lt;/a&gt; 💝部署发布&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装 &lt;span class=&#34;yellow&#34;&gt;hexo-deployer-git&lt;/span&gt; 自动部署发布工具&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption&gt;&lt;span&gt;cmd 命令行窗口&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;测试没问题后，将生成的静态网页文件发布到 &lt;span class=&#34;yellow&#34;&gt;Github pages&lt;/span&gt; 中&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption&gt;&lt;span&gt;cmd 命令行窗口&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最后，在浏览器输入 &lt;span class=&#34;red&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS1lcXI5MjRhdnhvLmdpdGh1Yi5pbw==&#34;&gt;http:// 用户名.github.io&lt;/span&gt;&lt;/span&gt; 就可以访问了&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;自定义域名&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自定义域名&#34;&gt;#&lt;/a&gt; 🌸自定义域名&lt;/h1&gt;
+&lt;h2 id=&#34;购买域名&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#购买域名&#34;&gt;#&lt;/a&gt; 💝购买域名&lt;/h2&gt;
+&lt;p&gt;前往阿里云购买 &lt;a href=&#34;https://wanwang.aliyun.com/domain/?spm=5176.8048432.J_BH-sN9LTwtajbkmYL1i7V.d_menu_1.7cdf69a3Eyue22&#34;&gt;&lt;ins class=&#34;info&#34;&gt;域名注册&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;关联域名&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关联域名&#34;&gt;#&lt;/a&gt; 💝关联域名&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;ping &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS1lcXI5MjRhdnhvLmdpdGh1Yi5pbw==&#34;&gt;用户名.github.io&lt;/span&gt;&lt;/span&gt;，获取 ip 地址&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003233953152.png&#34; alt=&#34;image-20241003233953152&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将 &lt;span class=&#34;yellow&#34;&gt;ip&lt;/span&gt; 与 &lt;span class=&#34;yellow&#34;&gt;域名&lt;/span&gt; 进行关联&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003234458146.png&#34; alt=&#34;image-20241003234458146&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;配置域名&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置域名&#34;&gt;#&lt;/a&gt; 💝配置域名&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;span class=&#34;green&#34;&gt;hexo 安装目录 /source&lt;/span&gt;，新建 &lt;span class=&#34;red&#34;&gt;CNAME&lt;/span&gt; 文件&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003154427827.png&#34; alt=&#34;image-20241003154427827&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将注册好的域名添加进去&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003155339947.png&#34; alt=&#34;image-20241003155339947&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;来到仓库的 &lt;span class=&#34;green&#34;&gt;Settings -&amp;gt; Pages&lt;/span&gt;，配置好域名&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241003155844436.png&#34; alt=&#34;image-20241003155844436&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最后，重新部署即可！！！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note primary&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://slx-world.top/tutorial/blog/github-picgo-typora/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;图床搭建&lt;/ins&gt;&lt;/a&gt; 🏳️‍🌈 &lt;a href=&#34;https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;备份与持续集成&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;span class=&#34;label success&#34;&gt;✔️success&lt;/span&gt;&lt;span class=&#34;rainbow&#34;&gt;&lt;strong&gt; 至此，个人博客搭建完毕😎😎🌸🌸&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;&lt;strong&gt;愚文一篇，承蒙厚爱👇😍💖&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
