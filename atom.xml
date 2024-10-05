@@ -8,7 +8,7 @@
     <author>
       <name>Mr.Song</name>
     </author>
-    <updated>2024-10-05T15:34:42.603Z</updated>
+    <updated>2024-10-05T16:05:20.096Z</updated>
     <category term="柳神，火灵儿" />
     <entry>
         <id>https://slx-world.top/hello-world/</id>
@@ -25,7 +25,7 @@
 &lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2024-10-05T15:34:42.603Z</updated>
+        <updated>2024-10-05T16:05:20.096Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/bigdata/first-blog/</id>
@@ -42,7 +42,7 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-        <updated>2024-10-05T15:34:42.603Z</updated>
+        <updated>2024-10-05T16:05:20.096Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/test/first-blog/</id>
@@ -57,14 +57,14 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-        <updated>2024-10-05T15:34:42.603Z</updated>
+        <updated>2024-10-05T16:05:20.096Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/backend/maven/maven-basic/</id>
         <title></title>
         <link rel="alternate" href="https://slx-world.top/backend/maven/maven-basic/"/>
         <content type="html"></content>
-        <updated>2024-10-05T15:34:42.587Z</updated>
+        <updated>2024-10-05T16:05:20.096Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/backend/middleware/first-blog/</id>
@@ -80,7 +80,7 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
-        <updated>2024-10-05T15:34:42.587Z</updated>
+        <updated>2024-10-05T16:05:20.096Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/</id>
