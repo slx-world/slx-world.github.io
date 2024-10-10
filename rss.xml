@@ -10,8 +10,8 @@
         </author>
         <description>他年，我若立于万古诸天上，将与你们共岁月！</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 06 Oct 2024 16:32:49 +0000</pubDate>
-        <lastBuildDate>Sun, 06 Oct 2024 16:32:49 +0000</lastBuildDate>
+        <pubDate>Thu, 10 Oct 2024 13:43:48 +0000</pubDate>
+        <lastBuildDate>Thu, 10 Oct 2024 13:43:48 +0000</lastBuildDate>
         <category term="柳神，火灵儿" />
         <item>
             <guid isPermalink="true">https://slx-world.top/test/first-blog/</guid>
@@ -24,7 +24,7 @@
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
             <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Sun, 06 Oct 2024 16:32:49 +0000</pubDate>
+            <pubDate>Thu, 10 Oct 2024 13:43:48 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;span&gt;a 行高亮&lt;/span&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWU=&#34;&gt;参考链接&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token import&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;java&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;util&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt; in &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;in&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 输入 Scan 之后，按下键盘 Alt + “/” 键，Eclipse 下自动补全。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;println &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;in&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;nextLine &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;println &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Hello&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;world.&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h 命令行提示符&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;[root@localhost] $&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;pwd&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;/usr/home/chris/bin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ls&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-la&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;[admin@remotehost] #&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;total &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;[admin@remotehost] #&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;drwxr-xr-x   &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; chris  chris     &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; Jan &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;16&lt;/span&gt;:48 &lt;span class=&#34;token builtin class-name&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;[admin@remotehost] #&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;drwxr--r-x  &lt;span class=&#34;token number&#34;&gt;45&lt;/span&gt; chris  chris     &lt;span class=&#34;token number&#34;&gt;92&lt;/span&gt; Feb &lt;span class=&#34;token number&#34;&gt;14&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt;:10 &lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;-rwxr-xr-x   &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; chris  chris    &lt;span class=&#34;token number&#34;&gt;444&lt;/span&gt; Aug &lt;span class=&#34;token number&#34;&gt;25&lt;/span&gt;  &lt;span class=&#34;token number&#34;&gt;2013&lt;/span&gt; backup&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;-rwxr-xr-x   &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; chris  chris    &lt;span class=&#34;token number&#34;&gt;642&lt;/span&gt; Jan &lt;span class=&#34;token number&#34;&gt;17&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;14&lt;/span&gt;:42 deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;[root@localhost] $&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-A&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;[root@localhost] $&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit &lt;span class=&#34;token parameter variable&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;update&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
@@ -32,7 +32,7 @@
             <guid isPermalink="true">https://slx-world.top/hello-world/</guid>
             <title>Hello World</title>
             <link>https://slx-world.top/hello-world/</link>
-            <pubDate>Sun, 06 Oct 2024 16:32:49 +0000</pubDate>
+            <pubDate>Thu, 10 Oct 2024 13:43:48 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
@@ -58,7 +58,7 @@
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
             <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Sun, 06 Oct 2024 16:32:49 +0000</pubDate>
+            <pubDate>Thu, 10 Oct 2024 13:43:48 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
  ]]></description>
         </item>
@@ -74,16 +74,116 @@
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
             <category term="MQ" scheme="https://slx-world.top/tags/mq/" />
-            <pubDate>Sun, 06 Oct 2024 16:32:49 +0000</pubDate>
+            <pubDate>Thu, 10 Oct 2024 13:43:48 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/backend/tool/maven/maven-basic/</guid>
+            <guid isPermalink="true">https://slx-world.top/backend/devops/maven/maven-basic/</guid>
             <title></title>
-            <link>https://slx-world.top/backend/tool/maven/maven-basic/</link>
-            <pubDate>Sun, 06 Oct 2024 16:32:49 +0000</pubDate>
+            <link>https://slx-world.top/backend/devops/maven/maven-basic/</link>
+            <pubDate>Thu, 10 Oct 2024 13:43:48 +0000</pubDate>
             <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://slx-world.top/Interview/database/mysql/mysql/</guid>
+            <title>MySQL 面试题</title>
+            <link>https://slx-world.top/Interview/database/mysql/mysql/</link>
+            <category term="面试题" scheme="https://slx-world.top/categories/interview/" />
+            <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
+            <pubDate>Wed, 09 Oct 2024 16:00:00 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;innodb-与-myisam-的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#innodb-与-myisam-的区别&#34;&gt;#&lt;/a&gt; 🚩InnoDB 与 MyISAM 的区别&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;MyISAM：&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不支持事务，但每次查询都是原子性的；&lt;/li&gt;
+&lt;li&gt;支持表级锁，即每次操作都是整个表加锁；&lt;/li&gt;
+&lt;li&gt;存储表的总行数；&lt;/li&gt;
+&lt;li&gt;一个 MyISAM 表有 3 个文件：索引文件、表结构文件、数据文件；&lt;/li&gt;
+&lt;li&gt;采用非聚集索引，索引文件的数据域存储指向数据文件的指针，辅索引和主索引基本一致，但是辅索引不用保证唯一性。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;InnoDB：&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;支持 ACID 的事务，支持事务的 4 种隔离级别；&lt;/li&gt;
+&lt;li&gt;支持行级锁及外键约束，因此可以支持写并发；&lt;/li&gt;
+&lt;li&gt;不存储表的总行数；&lt;/li&gt;
+&lt;li&gt;一个 InnoDB 引擎存储在一个文件空间（共享表空间、表大小不受操作系统控制，一个表可能分布在多个文件里），也有可能为多个（设置为独立表空间，表大小受操作系统文件大小限制，一般为 2G），受操作系统文件大小的限制；&lt;/li&gt;
+&lt;li&gt;主键索引采用聚集索引（索引的数据域存储数据文件本身），辅索引的数据域存储主键的值；因此从辅索引查找数据，需要先通过辅索引找到主键值，再访问主键索引树；索引最好使用自增主键，防止插入数据时，为维持 B+ 树结构，文件的大小调整。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;常见的索引类型有哪些&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常见的索引类型有哪些&#34;&gt;#&lt;/a&gt; 🚩常见的索引类型有哪些？&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;普通索引&lt;/span&gt;：允许被索引的数据列包含重复的值。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;唯一索引&lt;/span&gt;：可以保证数据记录的唯一性。&lt;span class=&#34;red&#34;&gt;主键&lt;/span&gt;：是一种特殊的唯一索引，在 一张表中只能定义一个主键索引，主键用于唯一标识一条记录，使用 PRIMARY KEY 来创建。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;联合索引&lt;/span&gt;：索引可以覆盖多个数据列，如 &lt;span class=&#34;red&#34;&gt;INDEX(column A, column B)&lt;/span&gt; 索引。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;全文索引&lt;/span&gt;：通过建立 倒排索引，可以极大的提升检索效率，解决判断字段是否包含的问题，是目前搜索引擎使用的一种关键技术。可以通过 &lt;span class=&#34;red&#34;&gt;ALTER TABLE table_name ADD FULLTEXT(column)&lt;/span&gt;，创建全文索引索引可以极大的提高数据的查询速度。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;通过使用索引，可以在查询的过程中，使用优化隐藏器，提高系统的性能。 但是会降低插入、删除、更新表的速度，因为在执行这些写操作时，还要操作索引文件，索引需要占物理空间，除了数据表占数据空间之外，每一个索引还要占一定的物理空间，如果要建立聚簇索引，那么需要的空间就会更大，如果非聚集索引很多，一旦聚集索引改变，那么所有非聚集索引都会跟着变。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;什么情况下会导致索引失效&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么情况下会导致索引失效&#34;&gt;#&lt;/a&gt; 🚩什么情况下会导致索引失效？&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;where 后面使用函数&lt;/li&gt;
+&lt;li&gt;相同字段使用 or&lt;/li&gt;
+&lt;li&gt;模糊查询 % 放在前边&lt;/li&gt;
+&lt;li&gt;类型转换&lt;/li&gt;
+&lt;li&gt;联合索引，最佳左前缀匹配原则&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;如何优化-sql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#如何优化-sql&#34;&gt;#&lt;/a&gt; 🚩如何优化 SQL？&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;避免使用 * 号&lt;/li&gt;
+&lt;li&gt;使用 like 模糊查询，% 不要放在前面&lt;/li&gt;
+&lt;li&gt;使用 where 后面不要使用函数&lt;/li&gt;
+&lt;li&gt;相同的索引字段不要使用 or 条件&lt;/li&gt;
+&lt;li&gt;类型不匹配查询&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;acid-是什么acid-靠什么保证&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#acid-是什么acid-靠什么保证&#34;&gt;#&lt;/a&gt; 🚩ACID 是什么？ACID 靠什么保证？&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;A = Atomicity 原子性：&lt;/li&gt;
+&lt;li&gt;C = Consistency 一致性：&lt;/li&gt;
+&lt;li&gt;I = Isolation 隔离性：&lt;/li&gt;
+&lt;li&gt;D = Durability 持久性：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;并发事务带来哪些问题怎么解决&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#并发事务带来哪些问题怎么解决&#34;&gt;#&lt;/a&gt; 🚩并发事务带来哪些问题？怎么解决？&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;脏读：&lt;/li&gt;
+&lt;li&gt;不可重复读：&lt;/li&gt;
+&lt;li&gt;幻读：&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://slx-world.top/backend/devops/docker/docker/</guid>
+            <title>Docker 命令</title>
+            <link>https://slx-world.top/backend/devops/docker/docker/</link>
+            <pubDate>Tue, 08 Oct 2024 16:00:00 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;️docker-命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️docker-命令&#34;&gt;#&lt;/a&gt; ⛵️Docker 命令&lt;/h1&gt;
+&lt;h2 id=&#34;docker-进程相关命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-进程相关命令&#34;&gt;#&lt;/a&gt; 🐬Docker 进程相关命令&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 进程相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 启动 Docker 服务&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl start &lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 停止 Docker 服务&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl stop &lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 重启 Docker 服务&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl restart &lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 查看 Docker 服务状态&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl status &lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 设置开机自启动 Docker 服务&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl &lt;span class=&#34;token builtin class-name&#34;&gt;enable&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;docker-镜像相关命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-镜像相关命令&#34;&gt;#&lt;/a&gt; 🐬Docker 镜像相关命令&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 镜像相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 查看镜像：查看本地所有镜像&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; images&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; images &lt;span class=&#34;token parameter variable&#34;&gt;-q&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 查看所有镜像的 id&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 搜索镜像：从网络中查找需要的镜像&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; search 镜像名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 拉取镜像：从 Docker 仓库下载镜像到本地，镜像名称格式为：名称：版本号，&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 如果不指定版本号，则默认是最新的版本，如果不知道镜像版本号，可以去 docker hub 查看&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; search 镜像名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 删除镜像：删除本地镜像&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; rmi 镜像id &lt;span class=&#34;token comment&#34;&gt;# 删除指定本地镜像&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; rmi &lt;span class=&#34;token string&#34;&gt;&#39;docker images -q&#39;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 删除本地所有镜像&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;docker-容器相关命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-容器相关命令&#34;&gt;#&lt;/a&gt; 🐬Docker 容器相关命令&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 查看容器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ps&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 查看正在运行的容器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ps&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 查看所有容器，包括已停止运行的容器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 创建并启动容器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; run 参数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;docker-容器相关命令-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-容器相关命令-2&#34;&gt;#&lt;/a&gt; 🐬Docker 容器相关命令&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 容器相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 进入容器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;exec&lt;/span&gt; 参数 &lt;span class=&#34;token comment&#34;&gt;# 退出容器，容器不会关闭&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 停止容器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; stop 容器名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 启动容器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; start 容器名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 删除容器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;rm&lt;/span&gt; 容器名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 查看容器信息&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; inspect 容器名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;️docker-容器的数据卷&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️docker-容器的数据卷&#34;&gt;#&lt;/a&gt; ⛵️Docker 容器的数据卷&lt;/h1&gt;
+&lt;h2 id=&#34;概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概念&#34;&gt;#&lt;/a&gt; 🐬概念&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;数据卷是宿主机的一个目录或文件&lt;/li&gt;
+&lt;li&gt;当容器目录和数据卷目录绑定后，对方的修改会立即同步&lt;/li&gt;
+&lt;li&gt;一个数据卷可以被多个容器同时挂载&lt;/li&gt;
+&lt;li&gt;一个容器也可以被挂载多个数据卷&lt;/li&gt;
+&lt;li&gt;数据卷和容器之间是多对多关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#作用&#34;&gt;#&lt;/a&gt; 🐬作用&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;容器数据持久化&lt;/li&gt;
+&lt;li&gt;外部机器和容器间接通信&lt;/li&gt;
+&lt;li&gt;容器之间数据交换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置&#34;&gt;#&lt;/a&gt; 🐬配置&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 创建并启动容器时，使用 -v 参数设置容器卷&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; run &lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;. &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt; 宿主机目录（文件）:容器内目录（文件）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div class=&#34;note info&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;目录必须是绝对路径&lt;/li&gt;
+&lt;li&gt;如果目录不存在，则会自动创建&lt;/li&gt;
+&lt;li&gt;可以挂载多个数据卷&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/</guid>
@@ -170,10 +270,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/backend/tool/maven/maven-advanced/</guid>
+            <guid isPermalink="true">https://slx-world.top/backend/devops/maven/maven-advanced/</guid>
             <title>Maven 高级</title>
-            <link>https://slx-world.top/backend/tool/maven/maven-advanced/</link>
+            <link>https://slx-world.top/backend/devops/maven/maven-advanced/</link>
             <category term="后端" scheme="https://slx-world.top/categories/backend/" />
+            <category term="运维开发" scheme="https://slx-world.top/categories/backend/devops/" />
             <category term="Maven" scheme="https://slx-world.top/tags/Maven/" />
             <pubDate>Tue, 01 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;聚合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合&#34;&gt;#&lt;/a&gt; ✨聚合&lt;/h1&gt;
