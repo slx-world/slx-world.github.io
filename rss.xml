@@ -10,35 +10,14 @@
         </author>
         <description>他年，我若立于万古诸天上，将与你们共岁月！</description>
         <language>zh-CN</language>
-        <pubDate>Sat, 19 Oct 2024 08:28:16 +0000</pubDate>
-        <lastBuildDate>Sat, 19 Oct 2024 08:28:16 +0000</lastBuildDate>
+        <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
+        <lastBuildDate>Sat, 19 Oct 2024 08:55:25 +0000</lastBuildDate>
         <category term="柳神，火灵儿" />
-        <item>
-            <guid isPermalink="true">https://slx-world.top/test/test-basis/day03/</guid>
-            <title></title>
-            <link>https://slx-world.top/test/test-basis/day03/</link>
-            <pubDate>Sat, 19 Oct 2024 08:28:16 +0000</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://slx-world.top/test/test-basis/day04/</guid>
-            <title></title>
-            <link>https://slx-world.top/test/test-basis/day04/</link>
-            <pubDate>Sat, 19 Oct 2024 08:28:16 +0000</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://slx-world.top/test/test-basis/day05/</guid>
-            <title></title>
-            <link>https://slx-world.top/test/test-basis/day05/</link>
-            <pubDate>Sat, 19 Oct 2024 08:28:16 +0000</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
         <item>
             <guid isPermalink="true">https://slx-world.top/hello-world/</guid>
             <title>Hello World</title>
             <link>https://slx-world.top/hello-world/</link>
-            <pubDate>Sat, 19 Oct 2024 08:28:16 +0000</pubDate>
+            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
@@ -64,7 +43,7 @@
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
             <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Sat, 19 Oct 2024 08:28:16 +0000</pubDate>
+            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
  ]]></description>
         </item>
@@ -74,7 +53,7 @@
             <link>https://slx-world.top/bigdata/zookeeper/zk-notes/</link>
             <category term="大数据" scheme="https://slx-world.top/categories/bigdata/" />
             <category term="Zookeeper" scheme="https://slx-world.top/tags/Zookeeper/" />
-            <pubDate>Sat, 19 Oct 2024 08:28:16 +0000</pubDate>
+            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;zookeeper-数据模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#zookeeper-数据模型&#34;&gt;#&lt;/a&gt; 🌨Zookeeper 数据模型&lt;/h1&gt;
 &lt;p&gt;ZooKeeper 是一个树形目录服务，其数据模型和 Unix 的文件系统目录树很类似，拥有一个层次化结构。&lt;/p&gt;
 &lt;p&gt;这里面的每一个节点都被称为： ZNode，每个节点上都会保存自己的数据和节点信息。&lt;/p&gt;
@@ -149,10 +128,31 @@
  ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">https://slx-world.top/test/test-basis/day03/</guid>
+            <title></title>
+            <link>https://slx-world.top/test/test-basis/day03/</link>
+            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://slx-world.top/test/test-basis/day04/</guid>
+            <title></title>
+            <link>https://slx-world.top/test/test-basis/day04/</link>
+            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://slx-world.top/test/test-basis/day05/</guid>
+            <title></title>
+            <link>https://slx-world.top/test/test-basis/day05/</link>
+            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://slx-world.top/backend/devops/maven/maven-basic/</guid>
             <title></title>
             <link>https://slx-world.top/backend/devops/maven/maven-basic/</link>
-            <pubDate>Sat, 19 Oct 2024 08:28:16 +0000</pubDate>
+            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
         <item>
@@ -167,8 +167,8 @@
 &lt;p&gt;在所有测试数据中，具有某种共同特征的数据集合进行划分&lt;/p&gt;
 &lt;h2 id=&#34;分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分类&#34;&gt;#&lt;/a&gt; 🌱分类&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;有效等价类&lt;/span&gt;：满足需求的数据集合&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;无效等价类&lt;/span&gt;：不满足需求的数据集合&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;有效等价类&lt;/span&gt;：满足需求的数据集合&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;无效等价类&lt;/span&gt;：不满足需求的数据集合&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤&#34;&gt;#&lt;/a&gt; 🌱步骤&lt;/h2&gt;
 &lt;ol&gt;
@@ -179,9 +179,9 @@
 &lt;h2 id=&#34;适用场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#适用场景&#34;&gt;#&lt;/a&gt; 🌱适用场景&lt;/h2&gt;
 &lt;p&gt;针对需要有大量数据测试输入，但是没办法穷举测试的地方&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;输入框&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;下拉列表&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;单选复选框&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;输入框&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;下拉列表&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;单选复选框&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;典型代表：页面的输入框类测试&lt;/p&gt;
 &lt;h1 id=&#34;边界值分析法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#边界值分析法&#34;&gt;#&lt;/a&gt; 🌺边界值分析法&lt;/h1&gt;
@@ -195,82 +195,82 @@
             <category term="测试基础" scheme="https://slx-world.top/tags/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/" />
             <pubDate>Wed, 09 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;软件测试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件测试&#34;&gt;#&lt;/a&gt; 🌺软件测试&lt;/h1&gt;
-&lt;p&gt;软件：控制计算机硬件工作的工具&lt;/p&gt;
-&lt;p&gt;软件测试：使用&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;技术&lt;/strong&gt;&lt;/span&gt;手段&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;验证&lt;/strong&gt;&lt;/span&gt;软件是否满足使用需求&lt;/p&gt;
-&lt;p&gt;软件测试&lt;span class=&#34;yellow&#34;&gt;目的&lt;/span&gt;：减少软件&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;缺陷&lt;/strong&gt;&lt;/span&gt;（bug），保障软件质量！&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;软件&lt;/span&gt;：控制计算机硬件工作的工具&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;软件测试&lt;/span&gt;：使用&lt;span class=&#34;yellow&#34;&gt;技术&lt;/span&gt;手段&lt;span class=&#34;yellow&#34;&gt;验证&lt;/span&gt;软件是否满足使用需求&lt;/p&gt;
+&lt;p&gt;软件测试&lt;span class=&#34;yellow&#34;&gt;目的&lt;/span&gt;：减少软件&lt;span class=&#34;yellow&#34;&gt;缺陷&lt;/span&gt;（bug），保障软件质量！&lt;/p&gt;
 &lt;h1 id=&#34;测试技能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试技能&#34;&gt;#&lt;/a&gt; 🌺测试技能&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;功能测试&lt;/span&gt;：验证程序的&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;功能&lt;/strong&gt;&lt;/span&gt;是否满足需求&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;自动化测试&lt;/span&gt;：使用&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;代码&lt;/strong&gt;&lt;/span&gt;或&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;工具&lt;/strong&gt;&lt;/span&gt;代替手工，对项目进行测试&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;接口测试&lt;/span&gt;：使用&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;代码&lt;/strong&gt;&lt;/span&gt;或&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;工具&lt;/strong&gt;&lt;/span&gt;对服务端提供的接口进行测试&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;性能测试&lt;/span&gt;：模拟&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;多人&lt;/strong&gt;&lt;/span&gt;使用软件，查找服务器缺陷&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;功能测试&lt;/span&gt;：验证程序的&lt;span class=&#34;yellow&#34;&gt;功能&lt;/span&gt;是否满足需求&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;自动化测试&lt;/span&gt;：使用&lt;span class=&#34;yellow&#34;&gt;代码&lt;/span&gt;或&lt;span class=&#34;yellow&#34;&gt;工具&lt;/span&gt;代替手工，对项目进行测试&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;接口测试&lt;/span&gt;：使用&lt;span class=&#34;yellow&#34;&gt;代码&lt;/span&gt;或&lt;span class=&#34;yellow&#34;&gt;工具&lt;/span&gt;对服务端提供的接口进行测试&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;性能测试&lt;/span&gt;：模拟&lt;span class=&#34;yellow&#34;&gt;多人&lt;/span&gt;使用软件，查找服务器缺陷&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;测试分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试分类&#34;&gt;#&lt;/a&gt; 🌺测试分类&lt;/h1&gt;
 &lt;h2 id=&#34;按测试阶段划分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#按测试阶段划分&#34;&gt;#&lt;/a&gt; 🌱按测试阶段划分&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;单元测试&lt;/span&gt;：针对程序源代码进行测试&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;单元测试&lt;/span&gt;：针对程序源代码进行测试&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;集成测试&lt;/span&gt;：又称&lt;span class=&#34;red&#34;&gt;接口测试&lt;/span&gt;，针对模块之间访问地址进行测试&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;集成测试&lt;/span&gt;：又称&lt;span class=&#34;rainbow&#34;&gt;接口测试&lt;/span&gt;，针对模块之间访问地址进行测试&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;系统测试&lt;/span&gt;：对整个系统进行测试，包括功能、兼容、文档等测试&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;系统测试&lt;/span&gt;：对整个系统进行测试，包括功能、兼容、文档等测试&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;验收测试&lt;/span&gt;：主要分为&lt;span class=&#34;red&#34;&gt;内测&lt;/span&gt;、&lt;span class=&#34;red&#34;&gt;公测&lt;/span&gt;，使用不同人群来发掘项目缺陷&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;验收测试&lt;/span&gt;：主要分为&lt;span class=&#34;rainbow&#34;&gt;内测&lt;/span&gt;、&lt;span class=&#34;rainbow&#34;&gt;公测&lt;/span&gt;，使用不同人群来发掘项目缺陷&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;按代码可见度划分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#按代码可见度划分&#34;&gt;#&lt;/a&gt; 🌱按代码可见度划分&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;黑盒测试&lt;/span&gt;：不关注源代码，针对程序 UI 功能进行测试。源代码不可见，UI 功能可见&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;灰盒测试&lt;/span&gt;：针对程序部分代码进行测试（接口）。&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;部分&lt;/strong&gt;&lt;/span&gt;源代码可见，UI 功能不可见&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;白盒测试&lt;/span&gt;：针对程序源代码进行测试。全部代码可见，UI 功能不可见&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;黑盒测试&lt;/span&gt;：不关注源代码，针对程序 UI 功能进行测试。源代码不可见，UI 功能可见&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;灰盒测试&lt;/span&gt;：针对程序部分代码进行测试（接口）。&lt;span class=&#34;yellow&#34;&gt;部分&lt;/span&gt;源代码可见，UI 功能不可见&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;白盒测试&lt;/span&gt;：针对程序源代码进行测试。全部代码可见，UI 功能不可见&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;其他&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其他&#34;&gt;#&lt;/a&gt; 🌱其他&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;性能测试&lt;/span&gt;：归属&lt;span class=&#34;red&#34;&gt;专项测试&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;自动化测试&lt;/span&gt;：归属&lt;span class=&#34;red&#34;&gt;功能测试&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;性能测试&lt;/span&gt;：归属&lt;span class=&#34;rainbow&#34;&gt;专项测试&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;自动化测试&lt;/span&gt;：归属&lt;span class=&#34;rainbow&#34;&gt;功能测试&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;质量模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#质量模型&#34;&gt;#&lt;/a&gt; 🌺质量模型&lt;/h1&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;功能性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;性能&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;兼容性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;易用性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;可靠性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;安全&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;可维护性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;可移植性&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;功能性&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;性能&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;兼容性&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;易用性&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;可靠性&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;安全&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;可维护性&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;可移植性&lt;/span&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1 id=&#34;测试流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试流程&#34;&gt;#&lt;/a&gt; 🌺测试流程&lt;/h1&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;需求评审&lt;/span&gt;：确保各部门理解一致&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;需求评审&lt;/span&gt;：确保各部门理解一致&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;计划编写&lt;/span&gt;：测什么、谁来测、怎么测&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;计划编写&lt;/span&gt;：测什么、谁来测、怎么测&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;用例设计&lt;/span&gt;：验证项目是否符合需求的操作文档&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;用例设计&lt;/span&gt;：验证项目是否符合需求的操作文档&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;用例执行&lt;/span&gt;：项目模块开发完成，开始执行用例文档实施测试&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;用例执行&lt;/span&gt;：项目模块开发完成，开始执行用例文档，实施测试&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;缺陷管理&lt;/span&gt;：对缺陷进行管理的过程&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷管理&lt;/span&gt;：对缺陷进行管理的过程&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;测试报告&lt;/span&gt;：实施测试结果文档&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;测试报告&lt;/span&gt;：实施测试结果文档&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1 id=&#34;测试用例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试用例&#34;&gt;#&lt;/a&gt; 🌺测试用例&lt;/h1&gt;
-&lt;p&gt;&lt;span class=&#34;red&#34;&gt;用例&lt;/span&gt;：用户使用的案例&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;red&#34;&gt;测试用例&lt;/span&gt;：是为测试项目而设计的&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;执行文档&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;用例&lt;/span&gt;：用户使用的案例&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;测试用例&lt;/span&gt;：是为测试项目而设计的&lt;span class=&#34;yellow&#34;&gt;执行文档&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;测试用例的&lt;span class=&#34;yellow&#34;&gt;作用&lt;/span&gt;：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;防止漏测&lt;/li&gt;
@@ -278,26 +278,26 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;用例设计&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用例设计&#34;&gt;#&lt;/a&gt; 🌱用例设计&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;用例编号&lt;/span&gt;：项目_模块_编号&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;用例标题&lt;/span&gt;：预期结果（测试点）&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;项目 / 模块&lt;/span&gt;：所属项目或模块&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;优先级&lt;/span&gt;：表示用例的重要程度或者影响力 P0～P4 (P0 最高）&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;前置条件&lt;/span&gt;：要执行此条用例，有哪些前置操作&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;测试步骤&lt;/span&gt;：描述操作步骤&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;测试数据&lt;/span&gt;：操作的数据，没有的话可以为空&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;预期结果&lt;/span&gt;：期望达到的结果&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;用例编号&lt;/span&gt;：项目_模块_编号&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;用例标题&lt;/span&gt;：预期结果（测试点）&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;项目 / 模块&lt;/span&gt;：所属项目或模块&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;优先级&lt;/span&gt;：表示用例的重要程度或者影响力 P0～P4 (P0 最高）&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;前置条件&lt;/span&gt;：要执行此条用例，有哪些前置操作&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;测试步骤&lt;/span&gt;：描述操作步骤&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;测试数据&lt;/span&gt;：操作的数据，没有的话可以为空&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;预期结果&lt;/span&gt;：期望达到的结果&lt;/li&gt;
 &lt;/ol&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;span class=&#34;red&#34;&gt;用例编号&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;red&#34;&gt;用例标题&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;red&#34;&gt;项目 / 模块&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;red&#34;&gt;优先级&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;red&#34;&gt;前置条件&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;red&#34;&gt;测试步骤&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;red&#34;&gt;测试数据&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;red&#34;&gt;预期结果&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;用例编号&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;用例标题&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;项目 / 模块&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;优先级&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;前置条件&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;测试步骤&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;测试数据&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;预期结果&lt;/span&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
@@ -313,7 +313,6 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h1&gt;
  ]]></description>
         </item>
         <item>
