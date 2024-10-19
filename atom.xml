@@ -8,8 +8,29 @@
     <author>
       <name>Mr.Song</name>
     </author>
-    <updated>2024-10-19T08:55:25.324Z</updated>
+    <updated>2024-10-19T13:05:33.213Z</updated>
     <category term="柳神，火灵儿" />
+    <entry>
+        <id>https://slx-world.top/test/test-basis/day03/</id>
+        <title></title>
+        <link rel="alternate" href="https://slx-world.top/test/test-basis/day03/"/>
+        <content type="html"></content>
+        <updated>2024-10-19T13:05:33.213Z</updated>
+    </entry>
+    <entry>
+        <id>https://slx-world.top/test/test-basis/day04/</id>
+        <title></title>
+        <link rel="alternate" href="https://slx-world.top/test/test-basis/day04/"/>
+        <content type="html"></content>
+        <updated>2024-10-19T13:05:33.213Z</updated>
+    </entry>
+    <entry>
+        <id>https://slx-world.top/test/test-basis/day05/</id>
+        <title></title>
+        <link rel="alternate" href="https://slx-world.top/test/test-basis/day05/"/>
+        <content type="html"></content>
+        <updated>2024-10-19T13:05:33.213Z</updated>
+    </entry>
     <entry>
         <id>https://slx-world.top/hello-world/</id>
         <title>Hello World</title>
@@ -25,7 +46,7 @@
 &lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2024-10-19T08:55:25.324Z</updated>
+        <updated>2024-10-19T13:05:33.198Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/bigdata/first-blog/</id>
@@ -42,7 +63,7 @@
         <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
         <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
         <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-        <updated>2024-10-19T08:55:25.324Z</updated>
+        <updated>2024-10-19T13:05:33.198Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/bigdata/zookeeper/zk-notes/</id>
@@ -122,35 +143,14 @@
 </content>
         <category term="大数据" scheme="https://slx-world.top/categories/bigdata/" />
         <category term="Zookeeper" scheme="https://slx-world.top/tags/Zookeeper/" />
-        <updated>2024-10-19T08:55:25.324Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/test/test-basis/day03/</id>
-        <title></title>
-        <link rel="alternate" href="https://slx-world.top/test/test-basis/day03/"/>
-        <content type="html"></content>
-        <updated>2024-10-19T08:55:25.324Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/test/test-basis/day04/</id>
-        <title></title>
-        <link rel="alternate" href="https://slx-world.top/test/test-basis/day04/"/>
-        <content type="html"></content>
-        <updated>2024-10-19T08:55:25.324Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/test/test-basis/day05/</id>
-        <title></title>
-        <link rel="alternate" href="https://slx-world.top/test/test-basis/day05/"/>
-        <content type="html"></content>
-        <updated>2024-10-19T08:55:25.324Z</updated>
+        <updated>2024-10-19T13:05:33.198Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/backend/devops/maven/maven-basic/</id>
         <title></title>
         <link rel="alternate" href="https://slx-world.top/backend/devops/maven/maven-basic/"/>
         <content type="html"></content>
-        <updated>2024-10-19T08:55:25.308Z</updated>
+        <updated>2024-10-19T13:05:33.198Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/test/test-basis/day02/</id>
@@ -179,6 +179,96 @@
 &lt;/ul&gt;
 &lt;p&gt;典型代表：页面的输入框类测试&lt;/p&gt;
 &lt;h1 id=&#34;边界值分析法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#边界值分析法&#34;&gt;#&lt;/a&gt; 🌺边界值分析法&lt;/h1&gt;
+&lt;h2 id=&#34;边界范围节点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#边界范围节点&#34;&gt;#&lt;/a&gt; 🌱边界范围节点&lt;/h2&gt;
+&lt;p&gt;选取正好等于、刚好大于、刚好小于边界的值作为测试数据&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;上点&lt;/span&gt;：边界上的点（正好等于）&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;离点&lt;/span&gt;：距离上点最近的点（刚好大于、刚好小于）&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;内点&lt;/span&gt;：范围内的点（区间范围内的数据）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;步骤-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤-2&#34;&gt;#&lt;/a&gt; 🌱步骤&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;明确需求&lt;/li&gt;
+&lt;li&gt;确定有效和无效等价类&lt;/li&gt;
+&lt;li&gt;确定边界范围值&lt;/li&gt;
+&lt;li&gt;提取数据编写测试用例&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;使用场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用场景&#34;&gt;#&lt;/a&gt; 🌱使用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在等价类的基础上，针对有边界范围的测试数据输入的地方（重点关注边界）&lt;/li&gt;
+&lt;li&gt;常见词语描述：大小、尺寸、重量、最大、最小、至多、至少等修饰词语&lt;/li&gt;
+&lt;li&gt;典型代表：有边界范围的&lt;span class=&#34;yellow&#34;&gt;输入框&lt;/span&gt;类测试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;判定表法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#判定表法&#34;&gt;#&lt;/a&gt; 🌺判定表法&lt;/h1&gt;
+&lt;h2 id=&#34;定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义&#34;&gt;#&lt;/a&gt; 🌱定义&lt;/h2&gt;
+&lt;p&gt;是一种以&lt;span class=&#34;yellow&#34;&gt;表格&lt;/span&gt;形式表达多条件逻辑判断的工具&lt;/p&gt;
+&lt;h2 id=&#34;组成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#组成&#34;&gt;#&lt;/a&gt; 🌱组成&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;条件桩&lt;/span&gt;：列出问题中的所有条件，列出条件的次序无关紧要&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;动作桩&lt;/span&gt;：列出问题中可能采取的操作，操作的排序顺序没有约束&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;条件项&lt;/span&gt;：列出条件对应的取值，所有可能情况下的真假值&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;动作项&lt;/span&gt;：列出条件项的、各种取值情况下应该采取的动作结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;规则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#规则&#34;&gt;#&lt;/a&gt; 🌱规则&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;判定表中贯穿条件项和动作项的一列就是一条规则&lt;/li&gt;
+&lt;li&gt;假设有 n 个条件，每个条件的取值有两个（0,1），全组合有 2 的 n 次方种规则&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;步骤-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤-3&#34;&gt;#&lt;/a&gt; 🌱步骤&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;明确需求&lt;/li&gt;
+&lt;li&gt;画出判定表
+&lt;ol&gt;
+&lt;li&gt;列出条件桩和动作桩&lt;/li&gt;
+&lt;li&gt;填写条件项、对条件进行全组合&lt;/li&gt;
+&lt;li&gt;根据条件项的组合确定动作项&lt;/li&gt;
+&lt;li&gt;简化、合并相似规则（有相同的动作）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;根据规则编写测试用例&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;使用场景-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用场景-2&#34;&gt;#&lt;/a&gt; 🌱使用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;有多个输入条件，多个输出结果，输入条件之间有&lt;span class=&#34;yellow&#34;&gt;组合&lt;/span&gt;关系，输入条件和输出结果之间有依赖（制约）关系&lt;/li&gt;
+&lt;li&gt;判定表一般适用于条件组合数量较少的情况（比如 4 个条件以下）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;场景法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#场景法&#34;&gt;#&lt;/a&gt; 🌺场景法&lt;/h1&gt;
+&lt;h2 id=&#34;流程图&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#流程图&#34;&gt;#&lt;/a&gt; 🌱流程图&lt;/h2&gt;
+&lt;p&gt;使用标准图形和箭头来表达程序或业务的走向&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241019192905832.png&#34; alt=&#34;image-20241019192905832&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;流程图对测试人员有什么作用？&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;能够看懂流程图，设计业务用例&lt;/li&gt;
+&lt;li&gt;当需求文档信息不全时，能够根据需求，梳理出流程&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;网页版工具：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucHJvY2Vzc29uLmNvbS8=&#34;&gt;https://www.processon.com/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Windows 工具：visio&lt;/p&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#介绍&#34;&gt;#&lt;/a&gt; 🌱介绍&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;说明：&lt;/p&gt;
+&lt;p&gt;场景法也可以叫流程图法，是用流程图描述用户的使用场景，然后通过覆盖流程路径来设计测试用例&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;意义：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;用户使用角度&lt;/span&gt;：用户平时使用的不是单个功能，而是多个功能组合起来进行使用&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;测试人员角度&lt;/span&gt;：平时测试的都是单个功能点进行测试，容易忽略多个功能的组合测试&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;适用场景-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#适用场景-2&#34;&gt;#&lt;/a&gt; 🌱适用场景&lt;/h2&gt;
+&lt;p&gt;根据实际的应用场景，来测试业务用例，可以使用场景法&lt;/p&gt;
+&lt;h1 id=&#34;错误推测法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#错误推测法&#34;&gt;#&lt;/a&gt; 🌺错误推测法&lt;/h1&gt;
+&lt;h2 id=&#34;定义-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义-2&#34;&gt;#&lt;/a&gt; 🌱定义&lt;/h2&gt;
+&lt;p&gt;通过经验推测系统可能出现的问题&lt;/p&gt;
+&lt;h2 id=&#34;思想&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#思想&#34;&gt;#&lt;/a&gt; 🌱思想&lt;/h2&gt;
+&lt;p&gt;根据经验列举出可能出现问题的清单，根据清单分析问题可能原因，推测发现缺陷&lt;/p&gt;
+&lt;h2 id=&#34;场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#场景&#34;&gt;#&lt;/a&gt; 🌱场景&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;时间紧，任务量大时，根据之前项目类似经验找出易出错的模块重点测试&lt;/li&gt;
+&lt;li&gt;时间宽裕，通过该方法列出之前出现问题较多的模块再次测试&lt;/li&gt;
+&lt;/ol&gt;
 </content>
         <category term="测试" scheme="https://slx-world.top/categories/test/" />
         <category term="测试基础" scheme="https://slx-world.top/tags/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/" />

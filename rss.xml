@@ -10,14 +10,35 @@
         </author>
         <description>他年，我若立于万古诸天上，将与你们共岁月！</description>
         <language>zh-CN</language>
-        <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
-        <lastBuildDate>Sat, 19 Oct 2024 08:55:25 +0000</lastBuildDate>
+        <pubDate>Sat, 19 Oct 2024 13:05:33 +0000</pubDate>
+        <lastBuildDate>Sat, 19 Oct 2024 13:05:33 +0000</lastBuildDate>
         <category term="柳神，火灵儿" />
+        <item>
+            <guid isPermalink="true">https://slx-world.top/test/test-basis/day03/</guid>
+            <title></title>
+            <link>https://slx-world.top/test/test-basis/day03/</link>
+            <pubDate>Sat, 19 Oct 2024 13:05:33 +0000</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://slx-world.top/test/test-basis/day04/</guid>
+            <title></title>
+            <link>https://slx-world.top/test/test-basis/day04/</link>
+            <pubDate>Sat, 19 Oct 2024 13:05:33 +0000</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://slx-world.top/test/test-basis/day05/</guid>
+            <title></title>
+            <link>https://slx-world.top/test/test-basis/day05/</link>
+            <pubDate>Sat, 19 Oct 2024 13:05:33 +0000</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://slx-world.top/hello-world/</guid>
             <title>Hello World</title>
             <link>https://slx-world.top/hello-world/</link>
-            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
+            <pubDate>Sat, 19 Oct 2024 13:05:33 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
@@ -43,7 +64,7 @@
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
             <category term="Flink" scheme="https://slx-world.top/tags/flink/" />
-            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
+            <pubDate>Sat, 19 Oct 2024 13:05:33 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#first-blog&#34;&gt;#&lt;/a&gt; First Blog&lt;/h1&gt;
  ]]></description>
         </item>
@@ -53,7 +74,7 @@
             <link>https://slx-world.top/bigdata/zookeeper/zk-notes/</link>
             <category term="大数据" scheme="https://slx-world.top/categories/bigdata/" />
             <category term="Zookeeper" scheme="https://slx-world.top/tags/Zookeeper/" />
-            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
+            <pubDate>Sat, 19 Oct 2024 13:05:33 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;zookeeper-数据模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#zookeeper-数据模型&#34;&gt;#&lt;/a&gt; 🌨Zookeeper 数据模型&lt;/h1&gt;
 &lt;p&gt;ZooKeeper 是一个树形目录服务，其数据模型和 Unix 的文件系统目录树很类似，拥有一个层次化结构。&lt;/p&gt;
 &lt;p&gt;这里面的每一个节点都被称为： ZNode，每个节点上都会保存自己的数据和节点信息。&lt;/p&gt;
@@ -128,31 +149,10 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/test/test-basis/day03/</guid>
-            <title></title>
-            <link>https://slx-world.top/test/test-basis/day03/</link>
-            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://slx-world.top/test/test-basis/day04/</guid>
-            <title></title>
-            <link>https://slx-world.top/test/test-basis/day04/</link>
-            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://slx-world.top/test/test-basis/day05/</guid>
-            <title></title>
-            <link>https://slx-world.top/test/test-basis/day05/</link>
-            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
-        <item>
             <guid isPermalink="true">https://slx-world.top/backend/devops/maven/maven-basic/</guid>
             <title></title>
             <link>https://slx-world.top/backend/devops/maven/maven-basic/</link>
-            <pubDate>Sat, 19 Oct 2024 08:55:25 +0000</pubDate>
+            <pubDate>Sat, 19 Oct 2024 13:05:33 +0000</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
         <item>
@@ -185,6 +185,96 @@
 &lt;/ul&gt;
 &lt;p&gt;典型代表：页面的输入框类测试&lt;/p&gt;
 &lt;h1 id=&#34;边界值分析法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#边界值分析法&#34;&gt;#&lt;/a&gt; 🌺边界值分析法&lt;/h1&gt;
+&lt;h2 id=&#34;边界范围节点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#边界范围节点&#34;&gt;#&lt;/a&gt; 🌱边界范围节点&lt;/h2&gt;
+&lt;p&gt;选取正好等于、刚好大于、刚好小于边界的值作为测试数据&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;上点&lt;/span&gt;：边界上的点（正好等于）&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;离点&lt;/span&gt;：距离上点最近的点（刚好大于、刚好小于）&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;内点&lt;/span&gt;：范围内的点（区间范围内的数据）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;步骤-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤-2&#34;&gt;#&lt;/a&gt; 🌱步骤&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;明确需求&lt;/li&gt;
+&lt;li&gt;确定有效和无效等价类&lt;/li&gt;
+&lt;li&gt;确定边界范围值&lt;/li&gt;
+&lt;li&gt;提取数据编写测试用例&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;使用场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用场景&#34;&gt;#&lt;/a&gt; 🌱使用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在等价类的基础上，针对有边界范围的测试数据输入的地方（重点关注边界）&lt;/li&gt;
+&lt;li&gt;常见词语描述：大小、尺寸、重量、最大、最小、至多、至少等修饰词语&lt;/li&gt;
+&lt;li&gt;典型代表：有边界范围的&lt;span class=&#34;yellow&#34;&gt;输入框&lt;/span&gt;类测试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;判定表法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#判定表法&#34;&gt;#&lt;/a&gt; 🌺判定表法&lt;/h1&gt;
+&lt;h2 id=&#34;定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义&#34;&gt;#&lt;/a&gt; 🌱定义&lt;/h2&gt;
+&lt;p&gt;是一种以&lt;span class=&#34;yellow&#34;&gt;表格&lt;/span&gt;形式表达多条件逻辑判断的工具&lt;/p&gt;
+&lt;h2 id=&#34;组成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#组成&#34;&gt;#&lt;/a&gt; 🌱组成&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;条件桩&lt;/span&gt;：列出问题中的所有条件，列出条件的次序无关紧要&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;动作桩&lt;/span&gt;：列出问题中可能采取的操作，操作的排序顺序没有约束&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;条件项&lt;/span&gt;：列出条件对应的取值，所有可能情况下的真假值&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;动作项&lt;/span&gt;：列出条件项的、各种取值情况下应该采取的动作结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;规则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#规则&#34;&gt;#&lt;/a&gt; 🌱规则&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;判定表中贯穿条件项和动作项的一列就是一条规则&lt;/li&gt;
+&lt;li&gt;假设有 n 个条件，每个条件的取值有两个（0,1），全组合有 2 的 n 次方种规则&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;步骤-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤-3&#34;&gt;#&lt;/a&gt; 🌱步骤&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;明确需求&lt;/li&gt;
+&lt;li&gt;画出判定表
+&lt;ol&gt;
+&lt;li&gt;列出条件桩和动作桩&lt;/li&gt;
+&lt;li&gt;填写条件项、对条件进行全组合&lt;/li&gt;
+&lt;li&gt;根据条件项的组合确定动作项&lt;/li&gt;
+&lt;li&gt;简化、合并相似规则（有相同的动作）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;根据规则编写测试用例&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;使用场景-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用场景-2&#34;&gt;#&lt;/a&gt; 🌱使用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;有多个输入条件，多个输出结果，输入条件之间有&lt;span class=&#34;yellow&#34;&gt;组合&lt;/span&gt;关系，输入条件和输出结果之间有依赖（制约）关系&lt;/li&gt;
+&lt;li&gt;判定表一般适用于条件组合数量较少的情况（比如 4 个条件以下）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;场景法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#场景法&#34;&gt;#&lt;/a&gt; 🌺场景法&lt;/h1&gt;
+&lt;h2 id=&#34;流程图&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#流程图&#34;&gt;#&lt;/a&gt; 🌱流程图&lt;/h2&gt;
+&lt;p&gt;使用标准图形和箭头来表达程序或业务的走向&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241019192905832.png&#34; alt=&#34;image-20241019192905832&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;流程图对测试人员有什么作用？&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;能够看懂流程图，设计业务用例&lt;/li&gt;
+&lt;li&gt;当需求文档信息不全时，能够根据需求，梳理出流程&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;网页版工具：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucHJvY2Vzc29uLmNvbS8=&#34;&gt;https://www.processon.com/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Windows 工具：visio&lt;/p&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#介绍&#34;&gt;#&lt;/a&gt; 🌱介绍&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;说明：&lt;/p&gt;
+&lt;p&gt;场景法也可以叫流程图法，是用流程图描述用户的使用场景，然后通过覆盖流程路径来设计测试用例&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;意义：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;用户使用角度&lt;/span&gt;：用户平时使用的不是单个功能，而是多个功能组合起来进行使用&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;测试人员角度&lt;/span&gt;：平时测试的都是单个功能点进行测试，容易忽略多个功能的组合测试&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;适用场景-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#适用场景-2&#34;&gt;#&lt;/a&gt; 🌱适用场景&lt;/h2&gt;
+&lt;p&gt;根据实际的应用场景，来测试业务用例，可以使用场景法&lt;/p&gt;
+&lt;h1 id=&#34;错误推测法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#错误推测法&#34;&gt;#&lt;/a&gt; 🌺错误推测法&lt;/h1&gt;
+&lt;h2 id=&#34;定义-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义-2&#34;&gt;#&lt;/a&gt; 🌱定义&lt;/h2&gt;
+&lt;p&gt;通过经验推测系统可能出现的问题&lt;/p&gt;
+&lt;h2 id=&#34;思想&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#思想&#34;&gt;#&lt;/a&gt; 🌱思想&lt;/h2&gt;
+&lt;p&gt;根据经验列举出可能出现问题的清单，根据清单分析问题可能原因，推测发现缺陷&lt;/p&gt;
+&lt;h2 id=&#34;场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#场景&#34;&gt;#&lt;/a&gt; 🌱场景&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;时间紧，任务量大时，根据之前项目类似经验找出易出错的模块重点测试&lt;/li&gt;
+&lt;li&gt;时间宽裕，通过该方法列出之前出现问题较多的模块再次测试&lt;/li&gt;
+&lt;/ol&gt;
  ]]></description>
         </item>
         <item>
