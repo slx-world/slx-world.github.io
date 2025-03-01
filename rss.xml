@@ -10,14 +10,14 @@
         </author>
         <description>他年，我若立于万古诸天上，将与你们共岁月！</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 25 Oct 2024 20:25:54 +0000</pubDate>
-        <lastBuildDate>Fri, 25 Oct 2024 20:25:54 +0000</lastBuildDate>
+        <pubDate>Sat, 01 Mar 2025 17:26:35 +0000</pubDate>
+        <lastBuildDate>Sat, 01 Mar 2025 17:26:35 +0000</lastBuildDate>
         <category term="柳神，火灵儿" />
         <item>
             <guid isPermalink="true">https://slx-world.top/hello-world/</guid>
             <title>Hello World</title>
             <link>https://slx-world.top/hello-world/</link>
-            <pubDate>Fri, 25 Oct 2024 20:25:54 +0000</pubDate>
+            <pubDate>Sat, 01 Mar 2025 17:26:35 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
@@ -31,32 +31,331 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/backend/ssm/springboot/springboot-notes/</guid>
-            <title></title>
-            <link>https://slx-world.top/backend/ssm/springboot/springboot-notes/</link>
-            <pubDate>Fri, 25 Oct 2024 20:25:54 +0000</pubDate>
-            <description><![CDATA[  ]]></description>
+            <guid isPermalink="true">https://slx-world.top/bigdata/sql/day01/</guid>
+            <title>MySQL 条件查询</title>
+            <link>https://slx-world.top/bigdata/sql/day01/</link>
+            <category term="大数据" scheme="https://slx-world.top/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" />
+            <category term="SQL" scheme="https://slx-world.top/tags/sql/" />
+            <pubDate>Sun, 10 Nov 2024 16:00:00 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;比较运算符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#比较运算符&#34;&gt;#&lt;/a&gt; 比较运算符&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;等于&lt;/td&gt;
+&lt;td&gt;=&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;大于&lt;/td&gt;
+&lt;td&gt;&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;大于等于&lt;/td&gt;
+&lt;td&gt;&amp;gt;=&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小于&lt;/td&gt;
+&lt;td&gt;&amp;lt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小于等于&lt;/td&gt;
+&lt;td&gt;&amp;lt;=&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;不等于&lt;/td&gt;
+&lt;td&gt;!= 或 &lt;span class=&#34;red&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;逻辑运算符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#逻辑运算符&#34;&gt;#&lt;/a&gt; 逻辑运算符&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;与&lt;/th&gt;
+&lt;th&gt;and&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;或&lt;/td&gt;
+&lt;td&gt;or&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;非&lt;/td&gt;
+&lt;td&gt;not&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;where-条件查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#where-条件查询&#34;&gt;#&lt;/a&gt; where 条件查询&lt;/h1&gt;
+&lt;h2 id=&#34;模糊查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模糊查询&#34;&gt;#&lt;/a&gt; 模糊查询&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;like&lt;/span&gt; 是模糊查询关键字&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;%&lt;/span&gt;：多个任意字符&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;_&lt;/span&gt;：一个任意字符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;范围查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#范围查询&#34;&gt;#&lt;/a&gt; 范围查询&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;between ... and ...&lt;/span&gt;：在一个连续的范围内查询&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;in&lt;/span&gt;：在一个非连续的范围内查询&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;空判断查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#空判断查询&#34;&gt;#&lt;/a&gt; 空判断查询&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;判断为空使用：&lt;span class=&#34;red&#34;&gt;is null&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;判断非空使用：&lt;span class=&#34;red&#34;&gt;is not null&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;note warning&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;不能使用 &lt;span class=&#34;yellow&#34;&gt;= null&lt;/span&gt; 判断为空&lt;/li&gt;
+&lt;li&gt;不能使用 &lt;span class=&#34;yellow&#34;&gt;!= null&lt;/span&gt; 判断非空&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;order-by-排序查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#order-by-排序查询&#34;&gt;#&lt;/a&gt; order by 排序查询&lt;/h1&gt;
+&lt;p&gt;排序使用 &lt;span class=&#34;red&#34;&gt;order by&lt;/span&gt; 关键字&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;asc&lt;/span&gt;：升序&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;desc&lt;/span&gt;：降序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;limit-分页查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#limit-分页查询&#34;&gt;#&lt;/a&gt; limit 分页查询&lt;/h1&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;limit 分页查询&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;limit&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;当前页码 &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; 每页数量&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; 每页数量&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;扩展mysql-五子句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#扩展mysql-五子句&#34;&gt;#&lt;/a&gt; 扩展：MySQL 五子句&lt;/h1&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;MySQL 五子句&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; 数据表 &lt;span class=&#34;token keyword&#34;&gt;where&lt;/span&gt; 子句 &lt;span class=&#34;token keyword&#34;&gt;group&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;by&lt;/span&gt; 分组子句 &lt;span class=&#34;token keyword&#34;&gt;having&lt;/span&gt; 子句 &lt;span class=&#34;token keyword&#34;&gt;order&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;by&lt;/span&gt; 子句 &lt;span class=&#34;token keyword&#34;&gt;limit&lt;/span&gt; 子句&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol&gt;
+&lt;li&gt;where&lt;/li&gt;
+&lt;li&gt;group by&lt;/li&gt;
+&lt;li&gt;having&lt;/li&gt;
+&lt;li&gt;order by&lt;/li&gt;
+&lt;li&gt;limit&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;合称 MySQL 五子句，五子句顺序不能颠倒&lt;/p&gt;
+&lt;h1 id=&#34;聚合函数组函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合函数组函数&#34;&gt;#&lt;/a&gt; 聚合函数（组函数）&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;总行数&lt;/th&gt;
+&lt;th&gt;count(col)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;最大值&lt;/td&gt;
+&lt;td&gt;max(col)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;最小值&lt;/td&gt;
+&lt;td&gt;min(col)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;求和&lt;/td&gt;
+&lt;td&gt;sum(col)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;求平均&lt;/td&gt;
+&lt;td&gt;avg(col)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;ifnull()&lt;/span&gt; 函数：表示判断指定字段的值是否为 null，如果为空，则使用自己提供的值&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;ifnull (字段，默认值)&lt;/span&gt;：如果这个字段为 null，系统会自动将其设置为默认值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;聚合函数的特点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合函数的特点&#34;&gt;#&lt;/a&gt; 聚合函数的特点&lt;/h2&gt;
+&lt;p&gt;聚合函数默认忽略字段为 null 的记录，如果想要列值为 null 的记录也参与计算，必须使用 &lt;span class=&#34;red&#34;&gt;ifnull()&lt;/span&gt; 函数对 null 值做替换&lt;/p&gt;
+&lt;h1 id=&#34;分组查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分组查询&#34;&gt;#&lt;/a&gt; 分组查询&lt;/h1&gt;
+&lt;h2 id=&#34;分组查询介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分组查询介绍&#34;&gt;#&lt;/a&gt; 分组查询介绍&lt;/h2&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;分组查询语法&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;group&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;by&lt;/span&gt; 列名 &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;having&lt;/span&gt; 条件表达式&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;with rollup&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;列名：是指按照指定字段的值进行分组&lt;/li&gt;
+&lt;li&gt;having 条件表达式：用来过滤分组后的数据&lt;/li&gt;
+&lt;li&gt;with rollup：在所有记录的最后加上一条记录，显示 select 查询时聚合函数的统计和计算结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;group-by-的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by-的使用&#34;&gt;#&lt;/a&gt; group by 的使用&lt;/h2&gt;
+&lt;p&gt;group by 可用于单个字段分组，也可用于多个字段分组&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;group by 可以实现去重操作&lt;/li&gt;
+&lt;li&gt;group by 的作用是为了实现分组统计，&lt;span class=&#34;yellow&#34;&gt;group by&lt;/span&gt; 与&lt;span class=&#34;yellow&#34;&gt;聚合函数&lt;/span&gt;搭配使用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;group-by-搭配-group_concat&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by-搭配-group_concat&#34;&gt;#&lt;/a&gt; group by 搭配 group_concat ()&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;group_concat (字段名)&lt;/span&gt;：统计每个分组指定字段的信息集合，每个信息之间使用逗号进行分割&lt;/p&gt;
+&lt;h2 id=&#34;group-by-搭配-having&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by-搭配-having&#34;&gt;#&lt;/a&gt; group by 搭配 having&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;having&lt;/span&gt; 作用和 where 类似，都是过滤数据的，但 having 是过滤分组数据的，只能用于 group by&lt;/p&gt;
+&lt;h2 id=&#34;group-by-搭配-with-rollup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by-搭配-with-rollup&#34;&gt;#&lt;/a&gt; group by 搭配 with rollup&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;with rollup&lt;/span&gt; 的作用是：在最后记录后面新增一行，显示 select 查询时聚合函数的统计和计算结果&lt;/p&gt;
+&lt;h1 id=&#34;连接查询之内-外-自连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#连接查询之内-外-自连接&#34;&gt;#&lt;/a&gt; 连接查询之内、外、自连接&lt;/h1&gt;
+&lt;h2 id=&#34;交叉连接了解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#交叉连接了解&#34;&gt;#&lt;/a&gt; 交叉连接（了解）&lt;/h2&gt;
+&lt;p&gt;没有意思，但是它是所有连接的基础。其功能就是将表 1 和表 2 中的每一条数据进行连接。&lt;/p&gt;
+&lt;p&gt;结果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;字段数 = 表 1 字段 + 表 2 的字段&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;记录数 = 表 1 中的总数量 * 表 2 中的总数量（笛卡尔积）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;交叉连接&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; students &lt;span class=&#34;token keyword&#34;&gt;cross&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; classes&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;或&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;交叉连接&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; students&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; classes&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;内连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内连接&#34;&gt;#&lt;/a&gt; 内连接&lt;/h2&gt;
+&lt;p&gt;连接查询可以分为:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;内连接查询&lt;/li&gt;
+&lt;li&gt;左连接查询&lt;/li&gt;
+&lt;li&gt;右连接查询&lt;/li&gt;
+&lt;li&gt;自连接查询&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;内连接查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内连接查询&#34;&gt;#&lt;/a&gt; 内连接查询&lt;/h3&gt;
+&lt;p&gt;查询两个表中符合条件的共有记录&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241114232701203.png&#34; alt=&#34;image-20241114232701203&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;内连接查询语法格式:&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;内连接查询&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; 字段 &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;inner&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;on&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;inner join&lt;/span&gt;：内连接查询关键字&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;on&lt;/span&gt;：连接查询条件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;左外连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#左外连接&#34;&gt;#&lt;/a&gt; 左外连接&lt;/h2&gt;
+&lt;h3 id=&#34;左连接查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#左连接查询&#34;&gt;#&lt;/a&gt; 左连接查询&lt;/h3&gt;
+&lt;p&gt;以左表为主根据条件查询右表数据，如果根据条件查询右表数据不存在使用 null 值填充&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241114233245081.png&#34; alt=&#34;image-20241114233245081&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;左连接查询语法格式:&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;左连接查询&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; 字段 &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;on&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;left join&lt;/span&gt;：左连接查询关键字&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;on&lt;/span&gt;：连接查询条件&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;表 1&lt;/span&gt;：左表&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;表 2&lt;/span&gt;：右表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;右外连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#右外连接&#34;&gt;#&lt;/a&gt; 右外连接&lt;/h2&gt;
+&lt;h3 id=&#34;右外连接查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#右外连接查询&#34;&gt;#&lt;/a&gt; 右外连接查询&lt;/h3&gt;
+&lt;p&gt;以右表为主根据条件查询左表数据，如果根据条件查询左表数据不存在使用 null 值填充&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241114233628006.png&#34; alt=&#34;image-20241114233628006&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;右连接查询语法格式:&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;右外连接查询&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; 字段 &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;right&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;on&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;right join&lt;/span&gt;：右连接查询关键字&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;on&lt;/span&gt;：连接查询条件&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;表 1&lt;/span&gt;：左表&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;表 2&lt;/span&gt;：右表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;自连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自连接&#34;&gt;#&lt;/a&gt; 自连接&lt;/h2&gt;
+&lt;h3 id=&#34;自连接查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自连接查询&#34;&gt;#&lt;/a&gt; 自连接查询&lt;/h3&gt;
+&lt;p&gt;左表和右表是同一个表，根据连接查询条件查询两个表中的数据。&lt;/p&gt;
+&lt;h1 id=&#34;子查询三步走&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#子查询三步走&#34;&gt;#&lt;/a&gt; 子查询（三步走）&lt;/h1&gt;
+&lt;p&gt;在一个 select 语句中，嵌入了另外一个 select 语句，那么被嵌入的 select 语句称之为子查询语句，外部那个 select 语句则称为主查询.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;主查询和子查询的关系:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;子查询是嵌入到主查询中&lt;/li&gt;
+&lt;li&gt;子查询是辅助主查询的，要么充当条件，要么充当数据源（数据表）&lt;/li&gt;
+&lt;li&gt;子查询是可以独立存在的语句，是一条完整的 select 语句&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;子查询是一个完整的 SQL 语句，子查询被嵌入到一对小括号里面&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;数据库设计三范式了解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库设计三范式了解&#34;&gt;#&lt;/a&gt; 数据库设计三范式（了解）&lt;/h1&gt;
+&lt;p&gt;范式：对设计数据库提出的一些规范，目前有迹可寻的共有 8 种范式，一般遵守 3 范式即可。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一范式（1NF）：强调的是列的&lt;span class=&#34;red&#34;&gt;原子性&lt;/span&gt;，即列不能够再分成其他几列。&lt;/li&gt;
+&lt;li&gt;第二范式（2NF）：满足 1NF，另外包含两部分内容，一是表必须有&lt;span class=&#34;red&#34;&gt;一个主键&lt;/span&gt;；二是&lt;span class=&#34;red&#34;&gt;非主键字段 必须完全依赖于主键，而不能只依赖于主键的一部分&lt;/span&gt;。（一个表中只能有一类数据）&lt;/li&gt;
+&lt;li&gt;第三范式（3NF）：满足 2NF，另外&lt;span class=&#34;red&#34;&gt;非主键列必须直接依赖于主键，不能存在传递依赖&lt;/span&gt;。即不能存在：非主键列 A 依赖于非主键列 B，非主键列 B 依赖于主键的情况。（非主键字段必须直接依赖主键）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;e-r-模型的介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#e-r-模型的介绍&#34;&gt;#&lt;/a&gt; E-R 模型的介绍&lt;/h2&gt;
+&lt;p&gt;E-R 模型即&lt;span class=&#34;red&#34;&gt;实体 - 关系&lt;/span&gt;模型，E-R 模型就是描述数据库存储数据的结构模型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;E-R 模型的使用场景:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对于大型公司开发项目，我们需要根据产品经理的设计，我们先使用建模工具，如: power designer，db desinger 等这些软件来画出实体 - 关系模型（E-R 模型）&lt;/li&gt;
+&lt;li&gt;然后根据三范式设计数据库表结构&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;E-R 模型的效果图:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241114235251067.png&#34; alt=&#34;image-20241114235251067&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实体：用矩形表示，并标注实体名称&lt;/li&gt;
+&lt;li&gt;属性：用椭圆表示，并标注属性名称，&lt;/li&gt;
+&lt;li&gt;关系：用菱形表示，并标注关系名称&lt;/li&gt;
+&lt;li&gt;一对一&lt;/li&gt;
+&lt;li&gt;一对多&lt;/li&gt;
+&lt;li&gt;多对多&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;外键扩展&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#外键扩展&#34;&gt;#&lt;/a&gt; 外键（扩展）&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;主键：&lt;span class=&#34;red&#34;&gt;primary key&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;外键：&lt;span class=&#34;red&#34;&gt;foreign key&lt;/span&gt;（应用场景：在两表或多表关联的时候设置的，用于标志两个表之间的联系）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;外键约束作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#外键约束作用&#34;&gt;#&lt;/a&gt; 外键约束作用&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;外键约束：对外键字段的值进行更新和插入时会和引用表中字段的数据进行验证，数据如果不合法则更新和插入会失败，保证数据的有效性。&lt;/li&gt;
+&lt;li&gt;外键设计原则：保证两张表的关联关系，保证数据的一致性。在选择时，一般在一个表中时关联字段，在另外一个表中是主键，则这个字段建议设置为外键。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;SET FOREIGN_KEY_CHECKS=0 外键检查&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;添加外键约束:&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;alter&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;table&lt;/span&gt; 从表 &lt;span class=&#34;token keyword&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;foreign&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;外键字段&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;references&lt;/span&gt; 主表&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;主键字段&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除外键约束:&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;alter&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;table&lt;/span&gt; 表名 &lt;span class=&#34;token keyword&#34;&gt;drop&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;foreign&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;key&lt;/span&gt; 外键名&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/backend/ssm/springmvc/day01/</guid>
-            <title></title>
-            <link>https://slx-world.top/backend/ssm/springmvc/day01/</link>
-            <pubDate>Fri, 25 Oct 2024 20:25:54 +0000</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://slx-world.top/backend/ssm/springmvc/day02/</guid>
-            <title></title>
-            <link>https://slx-world.top/backend/ssm/springmvc/day02/</link>
-            <pubDate>Fri, 25 Oct 2024 20:25:54 +0000</pubDate>
-            <description><![CDATA[  ]]></description>
+            <guid isPermalink="true">https://slx-world.top/bigdata/sql/day02/</guid>
+            <title>窗口函数</title>
+            <link>https://slx-world.top/bigdata/sql/day02/</link>
+            <category term="大数据" scheme="https://slx-world.top/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" />
+            <category term="SQL" scheme="https://slx-world.top/tags/sql/" />
+            <pubDate>Sun, 10 Nov 2024 16:00:00 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;窗口函数简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#窗口函数简介&#34;&gt;#&lt;/a&gt; 窗口函数简介&lt;/h1&gt;
+&lt;h2 id=&#34;什么是窗口函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是窗口函数&#34;&gt;#&lt;/a&gt; 什么是窗口函数&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;窗口函数是类似于可以返回聚合值的函数，例如 SUM ()，COUNT ()，MAX ()。但是窗口函数又与普通的聚合函数不同，它不会对结果进行分组，使得输出中的行数与输入中的行数相同。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个窗口函数大概看起来是这样：&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;SUM&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;OVER&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;PARTITION&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;BY&lt;/span&gt; ___ &lt;span class=&#34;token keyword&#34;&gt;ORDER&lt;/span&gt; BY___&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;Table&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;聚合功能：在上述例子中，我们用了 SUM ()，但是你也可以用 COUNT ()， AVAVG () 之类的计算功能&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PAPARTITION BY：你只需将它看成 GROUP BY 子句，但是在窗口函数中，你要写 PAPARTITION BY&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ORDER BY：ORDER BY 和普通查询语句中的 ORDER BY 没什么不同。注意，输出的顺序要仔细考虑&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;窗口函数的优点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#窗口函数的优点&#34;&gt;#&lt;/a&gt; 窗口函数的优点&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;简单&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;窗口函数更易于使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;快速&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这一点与上一点相关，使用窗口函数比使用替代方法要快得多。当你处理成百上千个千兆字节的数据时，这非常有用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;多功能性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最重要的是，窗口函数具有多种功能，比如，添加移动平均线，添加行号和滞后数据，等等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;over&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#over&#34;&gt;#&lt;/a&gt; over()&lt;/h1&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://slx-world.top/test/test-basis/day05/</guid>
             <title>测试基础 Day05</title>
             <link>https://slx-world.top/test/test-basis/day05/</link>
-            <category term="测试" scheme="https://slx-world.top/categories/test/" />
-            <category term="测试基础" scheme="https://slx-world.top/tags/test-basis/" />
+            <category term="Test" scheme="https://slx-world.top/categories/test/" />
+            <category term="Test-Basis" scheme="https://slx-world.top/tags/test-basis/" />
             <pubDate>Sun, 13 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
@@ -64,8 +363,8 @@
             <guid isPermalink="true">https://slx-world.top/test/test-basis/day04/</guid>
             <title>测试基础 Day04</title>
             <link>https://slx-world.top/test/test-basis/day04/</link>
-            <category term="测试" scheme="https://slx-world.top/categories/test/" />
-            <category term="测试基础" scheme="https://slx-world.top/tags/test-basis/" />
+            <category term="Test" scheme="https://slx-world.top/categories/test/" />
+            <category term="Test-Basis" scheme="https://slx-world.top/tags/test-basis/" />
             <pubDate>Sat, 12 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;html-介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html-介绍&#34;&gt;#&lt;/a&gt; 🌺HTML 介绍&lt;/h1&gt;
 &lt;p&gt;Web 前端三大核心技术&lt;/p&gt;
@@ -130,18 +429,173 @@
             <guid isPermalink="true">https://slx-world.top/backend/ssm/spring/day03/</guid>
             <title>Spring_day03</title>
             <link>https://slx-world.top/backend/ssm/spring/day03/</link>
-            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
-            <category term="框架" scheme="https://slx-world.top/categories/backend/framework/" />
+            <category term="Backend" scheme="https://slx-world.top/categories/backend/" />
+            <category term="Framework" scheme="https://slx-world.top/categories/backend/framework/" />
             <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
             <pubDate>Sat, 12 Oct 2024 16:00:00 +0000</pubDate>
-            <description><![CDATA[  ]]></description>
+            <description><![CDATA[ &lt;h1 id=&#34;aop-核心概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#aop-核心概念&#34;&gt;#&lt;/a&gt; AOP 核心概念&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;连接点（JoinPoint）：程序执行过程中的任意位置，粒度为执行方法、抛出异常、设置变量等&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 SpringAOP 中，理解为方法的执行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切入点（Pointcut）：匹配连接点的式子&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 SpringAOP 中，一个切入点可以描述一个具体方法，也可也匹配多个方法
+&lt;ul&gt;
+&lt;li&gt;一个具体的方法：如 com.itheima.dao 包下的 BookDao 接口中的无形参无返回值的 save 方法&lt;/li&gt;
+&lt;li&gt;匹配多个方法：所有的 save 方法，所有的 get 开头的方法，所有以 Dao 结尾的接口中的任意方法，所有带有一个参数的方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;连接点范围要比切入点范围大，是切入点的方法也一定是连接点，但是是连接点的方法就不一定要被增强，所以可能不是切入点。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通知（Advice）：在切入点处执行的操作，也就是共性功能&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 SpringAOP 中，功能最终以方法的形式呈现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通知类：定义通知的类&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切面（Aspect）：描述通知与切入点的对应关系&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;知识点1enableaspectjautoproxy&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#知识点1enableaspectjautoproxy&#34;&gt;#&lt;/a&gt; 知识点 1：@EnableAspectJAutoProxy&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;@EnableAspectJAutoProxy&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;类型&lt;/td&gt;
+&lt;td&gt;配置类注解&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;位置&lt;/td&gt;
+&lt;td&gt;配置类定义上方&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;作用&lt;/td&gt;
+&lt;td&gt;开启注解格式 AOP 功能&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;知识点2aspect&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#知识点2aspect&#34;&gt;#&lt;/a&gt; 知识点 2：@Aspect&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;@Aspect&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;类型&lt;/td&gt;
+&lt;td&gt;类注解&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;位置&lt;/td&gt;
+&lt;td&gt;切面类定义上方&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;作用&lt;/td&gt;
+&lt;td&gt;设置当前类为 AOP 切面类&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;知识点3pointcut&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#知识点3pointcut&#34;&gt;#&lt;/a&gt; 知识点 3：@Pointcut&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;@Pointcut&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;类型&lt;/td&gt;
+&lt;td&gt;方法注解&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;位置&lt;/td&gt;
+&lt;td&gt;切入点方法定义上方&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;作用&lt;/td&gt;
+&lt;td&gt;设置切入点方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;属性&lt;/td&gt;
+&lt;td&gt;value（默认）：切入点表达式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;知识点4before&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#知识点4before&#34;&gt;#&lt;/a&gt; 知识点 4：@Before&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;@Before&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;类型&lt;/td&gt;
+&lt;td&gt;方法注解&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;位置&lt;/td&gt;
+&lt;td&gt;通知方法定义上方&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;作用&lt;/td&gt;
+&lt;td&gt;设置当前通知方法与切入点之间的绑定关系，当前通知方法在原始切入点方法前运行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;aop-工作流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#aop-工作流程&#34;&gt;#&lt;/a&gt; AOP 工作流程&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Spring 容器启动&lt;/li&gt;
+&lt;li&gt;读取所有切面配置中的切入点&lt;/li&gt;
+&lt;li&gt;初始化 bean&lt;/li&gt;
+&lt;li&gt;获取 bean，执行方法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;目标对象 (Target)：原始功能去掉共性功能对应的类产生的对象，这种对象是无法直接完成最终工作的&lt;/li&gt;
+&lt;li&gt;代理 (Proxy)：目标对象无法直接完成工作，需要对其进行功能回填，通过原始对象的代理对象实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目标对象就是要增强的类对应的对象，也叫原始对象，不能说它不能运行，只能说它在运行的过程中对于要增强的内容是缺失的。&lt;/p&gt;
+&lt;p&gt;SpringAOP 是在不改变原有设计（代码）的前提下对其进行增强的，它的底层采用的是代理模式实现的，所以要对原始对象进行增强，就需要对原始对象创建代理对象，在代理对象中的方法把通知内容加进去，就实现了增强，这就是我们所说的代理（Proxy）。&lt;/p&gt;
+&lt;h1 id=&#34;aop-切入点表达式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#aop-切入点表达式&#34;&gt;#&lt;/a&gt; AOP 切入点表达式&lt;/h1&gt;
+&lt;h2 id=&#34;语法格式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#语法格式&#34;&gt;#&lt;/a&gt; 语法格式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;切入点：要进行增强的方法&lt;/li&gt;
+&lt;li&gt;切入点表达式：要进行增强的方法的描述方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;切入点表达式标准格式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;动作关键字 (访问修饰符 返回值 包名。类 / 接口名。方法名 (参数) 异常名）&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/bigdata/zookeeper/zk-notes/</guid>
-            <title>Zookeeper 学习笔记</title>
-            <link>https://slx-world.top/bigdata/zookeeper/zk-notes/</link>
-            <category term="大数据" scheme="https://slx-world.top/categories/bigdata/" />
-            <category term="Zookeeper" scheme="https://slx-world.top/tags/Zookeeper/" />
+            <guid isPermalink="true">https://slx-world.top/bigdata/zk/zk-notes/</guid>
+            <title>Zookeeper 笔记</title>
+            <link>https://slx-world.top/bigdata/zk/zk-notes/</link>
+            <category term="大数据" scheme="https://slx-world.top/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" />
+            <category term="Zookeeper" scheme="https://slx-world.top/tags/zk/" />
             <pubDate>Fri, 11 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;zookeeper-数据模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#zookeeper-数据模型&#34;&gt;#&lt;/a&gt; 🌨Zookeeper 数据模型&lt;/h1&gt;
 &lt;p&gt;ZooKeeper 是一个树形目录服务，其数据模型和 Unix 的文件系统目录树很类似，拥有一个层次化结构。&lt;/p&gt;
@@ -220,8 +674,8 @@
             <guid isPermalink="true">https://slx-world.top/test/test-basis/day03/</guid>
             <title>测试基础 Day03</title>
             <link>https://slx-world.top/test/test-basis/day03/</link>
-            <category term="测试" scheme="https://slx-world.top/categories/test/" />
-            <category term="测试基础" scheme="https://slx-world.top/tags/test-basis/" />
+            <category term="Test" scheme="https://slx-world.top/categories/test/" />
+            <category term="Test-Basis" scheme="https://slx-world.top/tags/test-basis/" />
             <pubDate>Fri, 11 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;缺陷介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缺陷介绍&#34;&gt;#&lt;/a&gt; 🌺缺陷介绍&lt;/h1&gt;
 &lt;h2 id=&#34;定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义&#34;&gt;#&lt;/a&gt; 🌱定义&lt;/h2&gt;
@@ -345,8 +799,8 @@
             <guid isPermalink="true">https://slx-world.top/backend/ssm/spring/day02/</guid>
             <title>Spring_day02</title>
             <link>https://slx-world.top/backend/ssm/spring/day02/</link>
-            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
-            <category term="框架" scheme="https://slx-world.top/categories/backend/framework/" />
+            <category term="Backend" scheme="https://slx-world.top/categories/backend/" />
+            <category term="Framework" scheme="https://slx-world.top/categories/backend/framework/" />
             <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
             <pubDate>Fri, 11 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;加载-properties-文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#加载-properties-文件&#34;&gt;#&lt;/a&gt; 加载 properties 文件&lt;/h1&gt;
@@ -615,8 +1069,8 @@
             <guid isPermalink="true">https://slx-world.top/Interview/test/security-testing/</guid>
             <title>安全测试</title>
             <link>https://slx-world.top/Interview/test/security-testing/</link>
-            <category term="面试题" scheme="https://slx-world.top/categories/interview/" />
-            <category term="面试题" scheme="https://slx-world.top/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" />
+            <category term="Interview" scheme="https://slx-world.top/categories/interview/" />
+            <category term="Interview" scheme="https://slx-world.top/tags/interview/" />
             <pubDate>Thu, 10 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;https-与-http-的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#https-与-http-的区别&#34;&gt;#&lt;/a&gt; ❓HTTPS 与 HTTP 的区别？&lt;/h1&gt;
 &lt;ul&gt;
@@ -696,7 +1150,7 @@
             <title>Python 基础</title>
             <link>https://slx-world.top/test/python/python-fundamentals/</link>
             <category term="Python" scheme="https://slx-world.top/categories/Python/" />
-            <category term="测试" scheme="https://slx-world.top/categories/Python/test/" />
+            <category term="测试" scheme="https://slx-world.top/categories/Python/%E6%B5%8B%E8%AF%95/" />
             <category term="Python" scheme="https://slx-world.top/tags/python/" />
             <pubDate>Thu, 10 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h1&gt;
@@ -922,8 +1376,8 @@
             <guid isPermalink="true">https://slx-world.top/test/test-basis/day02/</guid>
             <title>测试基础 Day02</title>
             <link>https://slx-world.top/test/test-basis/day02/</link>
-            <category term="测试" scheme="https://slx-world.top/categories/test/" />
-            <category term="测试基础" scheme="https://slx-world.top/tags/test-basis/" />
+            <category term="Test" scheme="https://slx-world.top/categories/test/" />
+            <category term="Test-Basis" scheme="https://slx-world.top/tags/test-basis/" />
             <pubDate>Thu, 10 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;等价类划分法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#等价类划分法&#34;&gt;#&lt;/a&gt; 🌺等价类划分法&lt;/h1&gt;
 &lt;h2 id=&#34;说明&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#说明&#34;&gt;#&lt;/a&gt; 🌱说明&lt;/h2&gt;
@@ -1060,8 +1514,8 @@
             <guid isPermalink="true">https://slx-world.top/backend/ssm/spring/day01/</guid>
             <title>Spring_day01</title>
             <link>https://slx-world.top/backend/ssm/spring/day01/</link>
-            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
-            <category term="框架" scheme="https://slx-world.top/categories/backend/framework/" />
+            <category term="Backend" scheme="https://slx-world.top/categories/backend/" />
+            <category term="Framework" scheme="https://slx-world.top/categories/backend/framework/" />
             <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
             <pubDate>Thu, 10 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;系统架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#系统架构&#34;&gt;#&lt;/a&gt; 🌲系统架构&lt;/h1&gt;
@@ -1335,7 +1789,7 @@
             <guid isPermalink="true">https://slx-world.top/Interview/database/mysql/</guid>
             <title>MySQL 面试题</title>
             <link>https://slx-world.top/Interview/database/mysql/</link>
-            <category term="面试题" scheme="https://slx-world.top/categories/interview/" />
+            <category term="Interview" scheme="https://slx-world.top/categories/interview/" />
             <category term="MySQL" scheme="https://slx-world.top/tags/mysql/" />
             <pubDate>Wed, 09 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;innodb-与-myisam-的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#innodb-与-myisam-的区别&#34;&gt;#&lt;/a&gt; 🚩InnoDB 与 MyISAM 的区别&lt;/h1&gt;
@@ -1451,8 +1905,8 @@
             <guid isPermalink="true">https://slx-world.top/test/test-basis/day01/</guid>
             <title>测试基础 Day01</title>
             <link>https://slx-world.top/test/test-basis/day01/</link>
-            <category term="测试" scheme="https://slx-world.top/categories/test/" />
-            <category term="测试基础" scheme="https://slx-world.top/tags/test-basis/" />
+            <category term="Test" scheme="https://slx-world.top/categories/test/" />
+            <category term="Test-Basis" scheme="https://slx-world.top/tags/test-basis/" />
             <pubDate>Wed, 09 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;软件测试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件测试&#34;&gt;#&lt;/a&gt; 🌺软件测试&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;软件&lt;/span&gt;：控制计算机硬件工作的工具&lt;/p&gt;
@@ -1576,12 +2030,12 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/backend/devops/docker/docker-notes/</guid>
-            <title>Docker 学习笔记</title>
-            <link>https://slx-world.top/backend/devops/docker/docker-notes/</link>
-            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
-            <category term="运维开发" scheme="https://slx-world.top/categories/backend/devops/" />
-            <category term="Docker" scheme="https://slx-world.top/tags/Docker/" />
+            <guid isPermalink="true">https://slx-world.top/devops/docker/docker-notes/</guid>
+            <title>Docker 笔记</title>
+            <link>https://slx-world.top/devops/docker/docker-notes/</link>
+            <category term="Backend" scheme="https://slx-world.top/categories/backend/" />
+            <category term="DevOps" scheme="https://slx-world.top/categories/backend/devops/" />
+            <category term="Docker" scheme="https://slx-world.top/tags/docker/" />
             <pubDate>Tue, 08 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;️docker-命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️docker-命令&#34;&gt;#&lt;/a&gt; ⛵️Docker 命令&lt;/h1&gt;
 &lt;h2 id=&#34;进程相关&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程相关&#34;&gt;#&lt;/a&gt; 🐬进程相关&lt;/h2&gt;
@@ -1636,8 +2090,8 @@
             <guid isPermalink="true">https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/</guid>
             <title>三、备份与持续集成</title>
             <link>https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/</link>
-            <category term="教程" scheme="https://slx-world.top/categories/tutorial/" />
-            <category term="博客" scheme="https://slx-world.top/tags/blog/" />
+            <category term="Tutorial" scheme="https://slx-world.top/categories/tutorial/" />
+            <category term="Blog" scheme="https://slx-world.top/tags/blog/" />
             <pubDate>Thu, 03 Oct 2024 14:24:36 +0000</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note primary&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://slx-world.top/tutorial/blog/hexo-shoka/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;一、博客搭建&lt;/ins&gt;&lt;/a&gt; ✈️ &lt;a href=&#34;https://slx-world.top/tutorial/blog/github-picgo-typora/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;二、图床搭建&lt;/ins&gt;&lt;/a&gt; ✈️ &lt;a href=&#34;https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;三、备份与持续集成&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1717,12 +2171,12 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/backend/devops/maven/maven-advanced/</guid>
+            <guid isPermalink="true">https://slx-world.top/devops/maven/maven-advanced/</guid>
             <title>Maven 高级</title>
-            <link>https://slx-world.top/backend/devops/maven/maven-advanced/</link>
-            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
-            <category term="运维开发" scheme="https://slx-world.top/categories/backend/devops/" />
-            <category term="Maven" scheme="https://slx-world.top/tags/Maven/" />
+            <link>https://slx-world.top/devops/maven/maven-advanced/</link>
+            <category term="Backend" scheme="https://slx-world.top/categories/backend/" />
+            <category term="DevOps" scheme="https://slx-world.top/categories/backend/devops/" />
+            <category term="Maven" scheme="https://slx-world.top/tags/maven/" />
             <pubDate>Tue, 01 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;聚合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合&#34;&gt;#&lt;/a&gt; ✨聚合&lt;/h1&gt;
 &lt;p&gt;聚合用于快速构建 Maven 工程，一次性构建多个项目 / 模块。&lt;/p&gt;
@@ -1758,14 +2212,116 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://slx-world.top/backend/devops/maven/maven-fundamentals/</guid>
+            <guid isPermalink="true">https://slx-world.top/devops/maven/maven-fundamentals/</guid>
             <title>Maven 基础</title>
-            <link>https://slx-world.top/backend/devops/maven/maven-fundamentals/</link>
-            <category term="后端" scheme="https://slx-world.top/categories/backend/" />
-            <category term="运维开发" scheme="https://slx-world.top/categories/backend/devops/" />
-            <category term="Maven" scheme="https://slx-world.top/tags/Maven/" />
+            <link>https://slx-world.top/devops/maven/maven-fundamentals/</link>
+            <category term="Backend" scheme="https://slx-world.top/categories/backend/" />
+            <category term="DevOps" scheme="https://slx-world.top/categories/backend/devops/" />
+            <category term="Maven" scheme="https://slx-world.top/tags/maven/" />
             <pubDate>Tue, 01 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://slx-world.top/tutorial/blog/github-picgo-typora/</guid>
+            <title>二、图床搭建</title>
+            <link>https://slx-world.top/tutorial/blog/github-picgo-typora/</link>
+            <category term="Tutorial" scheme="https://slx-world.top/categories/tutorial/" />
+            <category term="Blog" scheme="https://slx-world.top/tags/blog/" />
+            <pubDate>Fri, 20 Sep 2024 14:24:36 +0000</pubDate>
+            <description><![CDATA[ &lt;div class=&#34;note primary&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://slx-world.top/tutorial/blog/hexo-shoka/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;一、博客搭建&lt;/ins&gt;&lt;/a&gt; ✈️ &lt;a href=&#34;https://slx-world.top/tutorial/blog/github-picgo-typora/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;二、图床搭建&lt;/ins&gt;&lt;/a&gt; ✈️ &lt;a href=&#34;https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;三、备份与持续集成&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;软件安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件安装&#34;&gt;#&lt;/a&gt; 🎀软件安装&lt;/h1&gt;
+&lt;h2 id=&#34;git-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-安装&#34;&gt;#&lt;/a&gt; 💗Git 安装&lt;/h2&gt;
+&lt;p&gt;略&lt;/p&gt;
+&lt;h2 id=&#34;picgo-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-安装&#34;&gt;#&lt;/a&gt; 💗PicGo 安装&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Molunerfinn/PicGo/releases/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;PicGo 下载链接&lt;/ins&gt;&lt;/a&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;https://github.com/Molunerfinn/PicGo/releases/&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;推荐使用 2.3.1 正式版&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001213835429.png&#34; alt=&#34;image-20241001213835429&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;typora-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-安装&#34;&gt;#&lt;/a&gt; 💗Typora 安装&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://pan.baidu.com/s/12qgG7CT4_ygoqd-CDggcLA?pwd=e7mg&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Typora1.9.4 百度网盘&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/agj_3zHhsuBQsD2tHTQ4Fg&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Typora1.9.4 安装教程&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://markdown.com.cn/intro.html&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Markdown 官方教程&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;解压后，将 &lt;span class=&#34;yellow&#34;&gt;Crack&lt;/span&gt; 中的 &lt;span class=&#34;yellow&#34;&gt;winmm.dll&lt;/span&gt; 文件复制粘贴到 Typora 的安装目录即可&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002200235854.png&#34; alt=&#34;image-20241002200235854&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;github-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#github-设置&#34;&gt;#&lt;/a&gt; 🎀GitHub 设置&lt;/h1&gt;
+&lt;h2 id=&#34;创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建仓库&#34;&gt;#&lt;/a&gt; 💗创建仓库&lt;/h2&gt;
+&lt;p&gt;该仓库用于存放博客图片&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002144038707.png&#34; alt=&#34;image-20241002144038707&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;生成令牌&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成令牌&#34;&gt;#&lt;/a&gt; 💗生成令牌&lt;/h2&gt;
+&lt;p&gt;右上角点击 &lt;span class=&#34;green&#34;&gt;头像&lt;/span&gt;，来到 &lt;span class=&#34;green&#34;&gt;Settings -&amp;gt; Developer Settings -&amp;gt; Personal access tokens&lt;/span&gt;，然后点击 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL3BlcnNvbmFsLWFjY2Vzcy10b2tlbnMvbmV3&#34;&gt;Generate new token&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002200555213.png&#34; alt=&#34;image-20241002200555213&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;仓库授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#仓库授权&#34;&gt;#&lt;/a&gt; 💗仓库授权&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;选定 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 中已创建好的仓库&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002145941587.png&#34; alt=&#34;image-20241002145941587&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;权限设置&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;仓库权限&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;账户权限&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;均全部授权即可&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002150150970.png&#34; alt=&#34;image-20241002150150970&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;完成后，点击 &lt;span class=&#34;green&#34;&gt;Generate token&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;token 仅在生成的时候可见，记得复制保存下来，以防备用！！！&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;picgo-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-设置&#34;&gt;#&lt;/a&gt; 🎀PicGo 设置&lt;/h1&gt;
+&lt;h2 id=&#34;图床设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图床设置&#34;&gt;#&lt;/a&gt; 💗图床设置&lt;/h2&gt;
+&lt;p&gt;点击 &lt;span class=&#34;green&#34;&gt;GitHub&lt;/span&gt; 选项，进行 &lt;span class=&#34;green&#34;&gt;GitHub 设置&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;设定仓库名：用户名 / 仓库，根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 中的仓库而定&lt;/li&gt;
+&lt;li&gt;设定分支：根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 中的仓库而定&lt;/li&gt;
+&lt;li&gt;设定 Token：复制粘贴 &lt;span class=&#34;red&#34;&gt;2.2&lt;/span&gt; 中的令牌&lt;/li&gt;
+&lt;li&gt;设定存储路径：可选&lt;/li&gt;
+&lt;li&gt;设定自定义域名：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbWFnZXMud2VzZXJ2Lm5sLz91cmw9aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doLyVFNyU5NCVBOCVFNiU4OCVCNyVFNSU5MCU4RC8lRTQlQkIlOTMlRTUlQkElOTNAJUU1JTg4JTg2JUU2JTk0JUFG&#34;&gt;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/ 用户名 / 仓库 @分支&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002152655936.png&#34; alt=&#34;image-20241002152655936&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;相关信息配置好后，点击 &lt;span class=&#34;blue&#34;&gt;确定&lt;/span&gt;，并 &lt;span class=&#34;green&#34;&gt;设为默认图床&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;站点配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#站点配置&#34;&gt;#&lt;/a&gt; 🎀站点配置&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;来到 &lt;span class=&#34;yellow&#34;&gt;hexo 目录 \themes\shoka\scripts\helpers&lt;/span&gt;，修改 &lt;span class=&#34;red&#34;&gt;engine.js&lt;/span&gt; 代码&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;span&gt;engine.js 代码&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;token function-variable function&#34;&gt;parseImage&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;img&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; size&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;//&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;http&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;https://tva&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;randomServer&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;.sinaimg.cn/&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;size&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;/&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;具体配置为：&lt;span class=&#34;red&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbWFnZXMud2VzZXJ2Lm5sLz91cmw9aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doLyVFNyU5NCVBOCVFNiU4OCVCNyVFNSU5MCU4RC8lRTQlQkIlOTMlRTUlQkElOTNAJUU1JTg4JTg2JUU2JTk0JUFGLw==&#34;&gt;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/ 用户名 / 仓库 @分支 /&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbWFnZXMud2VzZXJ2Lm5sLz91cmw9&#34;&gt;https://images.weserv.nl/?url=&lt;/span&gt;&lt;/span&gt;：图缓存链接，让图片快速加载&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如，我的配置是这样的：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;span&gt;engine.js 代码&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;token function-variable function&#34;&gt;parseImage&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;img&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; size&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;//&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;http&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;// return &#39;https://tva&#39;+randomServer+&#39;.sinaimg.cn/&#39;+size+&#39;/&#39;+img&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;// return &#39;https://images.weserv.nl/?url=https://raw.githubusercontent.com/slx-world/blog-images/master/&#39;+img&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	  &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;typora-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-设置&#34;&gt;#&lt;/a&gt; 🎀Typora 设置&lt;/h1&gt;
+&lt;h2 id=&#34;设置图像并验证&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置图像并验证&#34;&gt;#&lt;/a&gt; 💗设置图像并验证&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;左上角点击 &lt;span class=&#34;green&#34;&gt;文件 -&amp;gt; 偏好设置 -&amp;gt; 图像&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001225158438.png&#34; alt=&#34;image-20241001225158438&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置完后，点击 &lt;span class=&#34;green&#34;&gt;验证图片上传选项&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002201849398.png&#34; alt=&#34;image-20241002201849398&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;label success&#34;&gt;✔️success&lt;/span&gt;&lt;span class=&#34;rainbow&#34;&gt;&lt;strong&gt; 至此，个人图床搭建完毕，感谢大家的品阅与支持&lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;👇😘💍&lt;/strong&gt;&lt;/p&gt;
+ ]]></description>
         </item>
     </channel>
 </rss>
