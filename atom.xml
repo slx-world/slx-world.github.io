@@ -8,7 +8,7 @@
     <author>
       <name>Mr.Song</name>
     </author>
-    <updated>2025-03-02T07:59:20.909Z</updated>
+    <updated>2025-03-03T12:54:03.253Z</updated>
     <category term="柳神，火灵儿" />
     <entry>
         <id>https://slx-world.top/hello-world/</id>
@@ -25,7 +25,195 @@
 &lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2025-03-02T07:59:20.909Z</updated>
+        <updated>2025-03-03T12:54:03.253Z</updated>
+    </entry>
+    <entry>
+        <id>https://slx-world.top/backend/framework/mybatisplus/mybatisplus-notes/</id>
+        <title>MyBatisPlus 笔记</title>
+        <link rel="alternate" href="https://slx-world.top/backend/framework/mybatisplus/mybatisplus-notes/"/>
+        <content type="html">&lt;h1 id=&#34;核心功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#核心功能&#34;&gt;#&lt;/a&gt; 核心功能&lt;/h1&gt;
+&lt;h2 id=&#34;条件构造器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#条件构造器&#34;&gt;#&lt;/a&gt; 🧂条件构造器&lt;/h2&gt;
+&lt;p&gt;除了新增以外，修改、删除、查询的 SQL 语句都需要指定 where 条件。因此 BaseMapper 中提供的相关方法除了以 &lt;code&gt;id&lt;/code&gt;  作为 &lt;code&gt;where&lt;/code&gt;  条件以外，还支持更加复杂的 &lt;code&gt;where&lt;/code&gt;  条件。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1688117068580-3abcd2bb-fbf8-4430-8f2a-dcf130f05f70.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;参数中的 &lt;code&gt;Wrapper&lt;/code&gt;  就是条件构造的抽象类，其下有很多默认实现，继承关系如图：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1688117775304-84915c47-d2d9-49f4-90fb-99270d9353c7.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Wrapper&lt;/code&gt;  的子类 &lt;code&gt;AbstractWrapper&lt;/code&gt;  提供了 where 中包含的所有条件构造方法：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1688117979051-e388959d-86ba-4aa9-9d57-cd9fd84fc00f.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;而 QueryWrapper 在 AbstractWrapper 的基础上拓展了一个 select 方法，允许指定查询字段：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1688118137162-ffcf1fe3-57cb-46ef-b069-9d576e9f0184.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;而 UpdateWrapper 在 AbstractWrapper 的基础上拓展了一个 set 方法，允许指定 SQL 中的 SET 部分：&lt;br /&gt;
+&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1688118200333-0c97025d-1bd9-4f3b-a486-7e6a1cf3604d.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;service-接口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#service-接口&#34;&gt;#&lt;/a&gt; 🧂Service 接口&lt;/h2&gt;
+&lt;p&gt;MybatisPlus 不仅提供了 BaseMapper，还提供了通用的 Service 接口及默认实现，封装了一些常用的 service 模板方法。&lt;br /&gt;
+通用接口为 &lt;code&gt;IService&lt;/code&gt; ，默认实现为 &lt;code&gt;ServiceImpl&lt;/code&gt; ，其中封装的方法可以分为以下几类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;save&lt;/code&gt; ：新增&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;remove&lt;/code&gt; ：删除&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;update&lt;/code&gt; ：更新&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;get&lt;/code&gt; ：查询单个结果&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;list&lt;/code&gt; ：查询集合结果&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;count&lt;/code&gt; ：计数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;page&lt;/code&gt; ：分页查询&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;crud&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#crud&#34;&gt;#&lt;/a&gt; 🧂CRUD&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;新增&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1688175852334-462e40db-e880-4131-adaa-5fc14360ff73.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;save&lt;/code&gt;  是新增单个元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;saveBatch&lt;/code&gt;  是批量新增&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;saveOrUpdate&lt;/code&gt;  是根据 id 判断，如果数据存在就更新，不存在则新增&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;saveOrUpdateBatch&lt;/code&gt;  是批量的新增或修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;删除：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1688176052341-b6c0528d-bb35-452d-9087-ea5ee2708bd4.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;removeById&lt;/code&gt; ：根据 id 删除&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;removeByIds&lt;/code&gt; ：根据 id 批量删除&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;removeByMap&lt;/code&gt; ：根据 Map 中的键值对为条件删除&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;remove(Wrapper&amp;lt;T&amp;gt;)&lt;/code&gt; ：根据 Wrapper 条件删除&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~~removeBatchByIds~~&lt;/code&gt; ：暂不支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;修改：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1688176292104-2d148912-019b-46c2-8537-54b9b1274abd.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;updateById&lt;/code&gt; ：根据 id 修改&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;update(Wrapper&amp;lt;T&amp;gt;)&lt;/code&gt; ：根据 &lt;code&gt;UpdateWrapper&lt;/code&gt;  修改， &lt;code&gt;Wrapper&lt;/code&gt;  中包含 &lt;code&gt;set&lt;/code&gt;  和 &lt;code&gt;where&lt;/code&gt;  部分&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;update(T，Wrapper&amp;lt;T&amp;gt;)&lt;/code&gt; ：按照 &lt;code&gt;T&lt;/code&gt;  内的数据修改与 &lt;code&gt;Wrapper&lt;/code&gt;  匹配到的数据&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;updateBatchById&lt;/code&gt; ：根据 id 批量修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Get：&lt;/strong&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1688176734766-5df895e7-950a-4050-aa14-996ba9f6efc7.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;getById&lt;/code&gt; ：根据 id 查询 1 条数据&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getOne(Wrapper&amp;lt;T&amp;gt;)&lt;/code&gt; ：根据 &lt;code&gt;Wrapper&lt;/code&gt;  查询 1 条数据&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getBaseMapper&lt;/code&gt; ：获取 &lt;code&gt;Service&lt;/code&gt;  内的 &lt;code&gt;BaseMapper&lt;/code&gt;  实现，某些时候需要直接调用 &lt;code&gt;Mapper&lt;/code&gt;  内的自定义 &lt;code&gt;SQL&lt;/code&gt;  时可以用这个方法获取到 &lt;code&gt;Mapper&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;List：&lt;/strong&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1688176798210-d60284da-3862-422b-9621-2eec6b77c7ee.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;listByIds&lt;/code&gt; ：根据 id 批量查询&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;list(Wrapper&amp;lt;T&amp;gt;)&lt;/code&gt; ：根据 Wrapper 条件查询多条数据&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;list()&lt;/code&gt; ：查询所有&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Count&lt;/strong&gt;：&lt;br /&gt;
+&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1688176988135-5c605f58-87f5-42de-8613-ba3e7f7c36b4.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;count()&lt;/code&gt; ：统计所有数量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;count(Wrapper&amp;lt;T&amp;gt;)&lt;/code&gt; ：统计符合 &lt;code&gt;Wrapper&lt;/code&gt;  条件的数据数量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;getBaseMapper&lt;/strong&gt;：&lt;br /&gt;
+当我们在 service 中要调用 Mapper 中自定义 SQL 时，就必须获取 service 对应的 Mapper，就可以通过这个方法：&lt;br /&gt;
+&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1689651515691-7a4ff31d-e73e-443e-a088-62af40589fa5.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;基本用法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本用法&#34;&gt;#&lt;/a&gt; 基本用法&lt;/h3&gt;
+</content>
+        <category term="Backend" scheme="https://slx-world.top/categories/backend/" />
+        <category term="Framework" scheme="https://slx-world.top/categories/backend/framework/" />
+        <category term="MyBatisPlus" scheme="https://slx-world.top/tags/MyBatisPlus/" />
+        <updated>2024-11-21T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://slx-world.top/backend/framework/dubbo/dubbo-notes/</id>
+        <title>Dubbo 笔记</title>
+        <link rel="alternate" href="https://slx-world.top/backend/framework/dubbo/dubbo-notes/"/>
+        <content type="html">&lt;h1 id=&#34;️dubbo-概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️dubbo-概念&#34;&gt;#&lt;/a&gt; ⚓️Dubbo 概念&lt;/h1&gt;
+&lt;p&gt;Dubbo 是阿里巴巴公司开源的一个高性能、轻量级的 Java RPC 框架。&lt;/p&gt;
+&lt;p&gt;致力于提供高性能和透明化的 RPC 远程服务调用方案，以及 SOA 服务治理方案。&lt;/p&gt;
+&lt;p&gt;官网：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2R1YmJvLmFwYWNoZS5vcmcv&#34;&gt;http://dubbo.apache.org&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/dubbo/image-20250303185436948.png&#34; alt=&#34;image-20250303185436948&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;节点角色说明：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;&lt;strong&gt;Provider&lt;/strong&gt;&lt;/span&gt;：暴露服务的服务提供方&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/span&gt;：服务运行容器&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;&lt;strong&gt;Consumer&lt;/strong&gt;&lt;/span&gt;：调用远程服务的服务消费方&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;&lt;strong&gt;Registry&lt;/strong&gt;&lt;/span&gt;：服务注册与发现的注册中心&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;&lt;strong&gt;Monitor&lt;/strong&gt;&lt;/span&gt;：统计服务的调用次数和调用时间的监控中心&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;️dubbo-高级特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️dubbo-高级特性&#34;&gt;#&lt;/a&gt; ⚓️Dubbo 高级特性&lt;/h1&gt;
+&lt;h2 id=&#34;dubbo-admin&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dubbo-admin&#34;&gt;#&lt;/a&gt; 🔩dubbo-admin&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;dubbo-admin 管理平台，是图形化的服务管理页面&lt;/li&gt;
+&lt;li&gt;从注册中心中获取到所有的提供者 / 消费者进行配置管理&lt;/li&gt;
+&lt;li&gt;路由规则、动态配置、服务降级、访问控制、权重调整、负载均衡等管理功能&lt;/li&gt;
+&lt;li&gt;dubbo-admin 是一个前后端分离的项目。前端使用 vue，后端使用 springboot&lt;/li&gt;
+&lt;li&gt;安装 dubbo-admin 其实就是部署该项目&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;序列化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序列化&#34;&gt;#&lt;/a&gt; 🔩序列化&lt;/h2&gt;
+&lt;p&gt;&lt;span ​.​r​e​d​=&#34;&#34;&gt;&lt;strong&gt;两个机器传输数据，如何传输 Java 对象&lt;/strong&gt;​&lt;/span&gt;❓&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/dubbo/image-20250303202530115.png&#34; alt=&#34;image-20250303202530115&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;dubbo 内部已经将序列化和反序列化的过程内部封装了&lt;/li&gt;
+&lt;li&gt;我们只需要在定义 pojo 类时实现 Serializable 接口即可&lt;/li&gt;
+&lt;li&gt;一般会定义一个公共的 pojo 模块，让生产者和消费者都依赖该模块&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;地址缓存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#地址缓存&#34;&gt;#&lt;/a&gt; 🔩地址缓存&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;&lt;strong&gt;注册中心挂了，服务是否可以正常访问？&lt;/strong&gt;&lt;/span&gt;❓&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可以，因为 dubbo 服务消费者在第一次调用时，会将服务提供方地址缓存到本地，以后在调用则不会访问注册中心。&lt;/li&gt;
+&lt;li&gt;当服务提供者地址发生变化时，注册中心会通知服务消费者。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;超时与重试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#超时与重试&#34;&gt;#&lt;/a&gt; 🔩超时与重试&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/dubbo/image-20250303202815424.png&#34; alt=&#34;image-20250303202815424&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;服务消费者在调用服务提供者的时候发生了阻塞、等待的情形，这个时候，服务消费者会一直等待下去&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在某个峰值时刻，大量的请求都在同时请求服务消费者，会造成线程的大量堆积，势必会造成雪崩&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dubbo 利用超时机制来解决这个问题，设置一个超时时间，在这个时间段内，无法完成服务访问，则自动断开连接。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 timeout 属性配置超时时间，默认值 1000，单位毫秒。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置了超时时间，在这个时间段内，无法完成服务访问，则自动断开连接。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果出现网络抖动，则这一次请求就会失败。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dubbo 提供重试机制来避免类似问题的发生。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过 retries  属性来设置重试次数。默认为 2 次。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;多版本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多版本&#34;&gt;#&lt;/a&gt; 🔩多版本&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;灰度发布：当出现新功能时，会让一部分用户先使用新功能，用户反馈没问题时，再将所有用户迁移到新功能。&lt;/li&gt;
+&lt;li&gt;dubbo 中使用 version 属性来设置和调用同一个接口的不同版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/dubbo/image-20250303203251448.png&#34; alt=&#34;image-20250303203251448&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;负载均衡&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#负载均衡&#34;&gt;#&lt;/a&gt; 🔩负载均衡&lt;/h2&gt;
+&lt;p&gt;负载均衡策略（4 种）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Random &lt;/span&gt;：按权重随机，默认值。按权重设置随机概率。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;RoundRobin &lt;/span&gt; ：按权重轮询。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;LeastActive &lt;/span&gt;：最少活跃调用数，相同活跃数的随机。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;ConsistentHash &lt;/span&gt;：一致性 Hash，相同参数的请求总是发到同一提供者。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/dubbo/image-20250303203534332.png&#34; alt=&#34;image-20250303203534332&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;集群容错&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#集群容错&#34;&gt;#&lt;/a&gt; 🔩集群容错&lt;/h2&gt;
+&lt;p&gt;集群容错模式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Failover Cluster&lt;/span&gt;：失败重试。默认值。当出现失败，重试其它服务器 ，默认重试 2 次，使用 retries 配置。一般用于读操作&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Failfast Cluster &lt;/span&gt;：快速失败，只发起一次调用，失败立即报错。通常用于写操作。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Failsafe Cluster &lt;/span&gt;：失败安全，出现异常时，直接忽略。返回一个空结果。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Failback Cluster &lt;/span&gt;：失败自动恢复，后台记录失败请求，定时重发。通常用于消息通知操作。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Forking Cluster&lt;/span&gt; ：并行调用多个服务器，只要一个成功即返回。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Broadcast  Cluster &lt;/span&gt;：广播调用所有提供者，逐个调用，任意一台报错则报错。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/dubbo/image-20250303204059546.png&#34; alt=&#34;image-20250303204059546&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;服务降级&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务降级&#34;&gt;#&lt;/a&gt; 🔩服务降级&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Random LoadBalance&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="Backend" scheme="https://slx-world.top/categories/backend/" />
+        <category term="Framework" scheme="https://slx-world.top/categories/backend/framework/" />
+        <category term="Dubbo" scheme="https://slx-world.top/tags/Dubbo/" />
+        <updated>2024-11-11T16:00:00.000Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/bigdata/sql/day01/</id>
@@ -346,6 +534,84 @@
         <category term="BigData" scheme="https://slx-world.top/categories/bigdata/" />
         <category term="SQL" scheme="https://slx-world.top/tags/sql/" />
         <updated>2024-11-10T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://slx-world.top/bigdata/hadoop/introduction/</id>
+        <title>Hadoop 入门</title>
+        <link rel="alternate" href="https://slx-world.top/bigdata/hadoop/introduction/"/>
+        <content type="html">&lt;h1 id=&#34;hadoop-概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hadoop-概述&#34;&gt;#&lt;/a&gt; 😽Hadoop 概述&lt;/h1&gt;
+&lt;h2 id=&#34;hadoop-是什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hadoop-是什么&#34;&gt;#&lt;/a&gt; 🍖Hadoop 是什么&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Hadoop 是一个由 Apache 基金会所开发的分布式系统基础架构&lt;/li&gt;
+&lt;li&gt;主要解决，海量数据的&lt;span class=&#34;red&#34;&gt;存储&lt;/span&gt;和&lt;span class=&#34;red&#34;&gt;分析计算&lt;/span&gt;问题。&lt;/li&gt;
+&lt;li&gt;广义上来说，Hadoop 通常是指一个更广泛的概念 ——Hadoop 生态圈。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;hadoop-优势4-高&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hadoop-优势4-高&#34;&gt;#&lt;/a&gt; 🍖Hadoop 优势（4 高）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;高可靠性&lt;/span&gt;：Hadoop 底层维护多个数据副本，所以即使 Hadoop 某个计算元素或存储出现故障，也不会导致数据的丢失。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;高扩展性&lt;/span&gt;：在集群间分配任务数据，可方便的扩展数以千计的节点。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;高效性&lt;/span&gt;：在 MapReduce 的思想下，Hadoop 是并行工作的，以加快任务处理速度。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;高容错性&lt;/span&gt;：能够自动将失败的任务重新分配。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;hadoop-组成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hadoop-组成&#34;&gt;#&lt;/a&gt; 🍖Hadoop 组成&lt;/h2&gt;
+&lt;p&gt;Hadoop 1.x 组成：​​&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;MapReduce（计算 + 资源调度）&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;HDFS（数据存储）&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Common（辅助工具）&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hadoop 2.x/ 3.x 组成：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;MapReduce（计算）&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;Yarn（资源调度）&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;HDFS（数据存储）&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Common（辅助工具）&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hdfs-架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hdfs-架构&#34;&gt;#&lt;/a&gt; 🐶HDFS 架构&lt;/h3&gt;
+&lt;p&gt;Hadoop Distributed File System，简称 HDFS，是一个分布式文件系统。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;NameNode（nn）：存储文件的&lt;span class=&#34;red&#34;&gt;元数据&lt;/span&gt;，如&lt;span class=&#34;red&#34;&gt;文件名&lt;/span&gt;，&lt;span class=&#34;red&#34;&gt;文件目录结构&lt;/span&gt;，&lt;span class=&#34;red&#34;&gt;文件属性&lt;/span&gt;（生成时间、副本数、文件权限），以及每个文件的&lt;span class=&#34;red&#34;&gt;块列表&lt;/span&gt;和&lt;span class=&#34;red&#34;&gt;块所在的 DataNode&lt;/span&gt; 等。&lt;/li&gt;
+&lt;li&gt;DataNode (dn)：在本地文件系统存储&lt;span class=&#34;red&#34;&gt;文件块数据&lt;/span&gt;，以及&lt;span class=&#34;red&#34;&gt;块数据的校验和&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;Secondary NameNode(2nn)：&lt;span class=&#34;red&#34;&gt;每隔一段时间对 NameNode 元数据备份&lt;/span&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/bigdata/hadoop/image-20250302193347478.png&#34; alt=&#34;image-20250302193347478&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;yarn-架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#yarn-架构&#34;&gt;#&lt;/a&gt; 🐶Yarn 架构&lt;/h3&gt;
+&lt;p&gt;Yet Another Resource Negotiator 简称 YARN ，另一种资源协调者，是 Hadoop 的资源管理器。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ResourceManager（RM）：整个集群资源（内存、CPU 等）的老大&lt;/li&gt;
+&lt;li&gt;NodeManager（NM）：单个节点服务器资源老大&lt;/li&gt;
+&lt;li&gt;ApplicationMaster（AM）：单个任务运行的老大&lt;/li&gt;
+&lt;li&gt;Container：容器，相当一台独立的服务器，里面封装了任务运行所需要的资源，如&lt;span class=&#34;red&#34;&gt;内存、CPU、磁盘、网络&lt;/span&gt;等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/bigdata/hadoop/image-20250302193047871.png&#34; alt=&#34;image-20250302193047871&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;note primary&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;客户端可以有多个&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;集群上可以运行多个 ApplicationMaster&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;每个 NodeManager 上可以有多个 Container&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;mapreduce-架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mapreduce-架构&#34;&gt;#&lt;/a&gt; 🐶MapReduce 架构&lt;/h3&gt;
+&lt;p&gt;MapReduce 将计算过程分为两个阶段：Map 和 Reduce&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Map 阶段&lt;span class=&#34;red&#34;&gt;并行&lt;/span&gt;处理输入数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reduce 阶段对 Map 结果进行&lt;span class=&#34;red&#34;&gt;汇总&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/bigdata/hadoop/image-20250302193857335.png&#34; alt=&#34;image-20250302193857335&#34; /&gt;&lt;/p&gt;
+</content>
+        <category term="BigData" scheme="https://slx-world.top/categories/bigdata/" />
+        <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
+        <updated>2024-10-27T16:00:00.000Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/backend/database/redis/distributed-cache/</id>
@@ -2487,156 +2753,5 @@
         <category term="Tutorial" scheme="https://slx-world.top/categories/tutorial/" />
         <category term="Blog" scheme="https://slx-world.top/tags/blog/" />
         <updated>2024-10-03T14:24:36.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/devops/maven/maven-advanced/</id>
-        <title>Maven 高级</title>
-        <link rel="alternate" href="https://slx-world.top/devops/maven/maven-advanced/"/>
-        <content type="html">&lt;h1 id=&#34;聚合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合&#34;&gt;#&lt;/a&gt; ✨聚合&lt;/h1&gt;
-&lt;p&gt;聚合用于快速构建 Maven 工程，一次性构建多个项目 / 模块。&lt;/p&gt;
-&lt;h2 id=&#34;制作方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#制作方式&#34;&gt;#&lt;/a&gt; 💖制作方式&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;创建一个空模块，打包方式定义为 &lt;span class=&#34;yellow&#34;&gt;pom&lt;/span&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight xml&#34;&gt;&lt;figcaption data-lang=&#34;XML&#34;&gt;&lt;span&gt;父 pom.xml&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;packaging&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;pom&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;packaging&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;定义构建时关联的其他模块&lt;/p&gt;
-&lt;figure class=&#34;highlight xml&#34;&gt;&lt;figcaption data-lang=&#34;XML&#34;&gt;&lt;span&gt;父 pom.xml&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;modules&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;module&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;../ssm_controller&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;module&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;module&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;../ssm_service&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;module&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;module&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;../ssm_dao&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;module&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;module&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;../ssm_pojo&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;module&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;modules&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;参与聚合的模块在构建时的执行顺序与模块之间的依赖关系有关，与配置顺序无关&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;继承&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#继承&#34;&gt;#&lt;/a&gt; ✨继承&lt;/h1&gt;
-&lt;p&gt;子模块通过继承实现沿用父模块中的配置，与 Java 中的继承类似&lt;/p&gt;
-&lt;h2 id=&#34;制作方式-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#制作方式-2&#34;&gt;#&lt;/a&gt; 💖制作方式&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;在子模块中声明父工程的坐标及位置&lt;/p&gt;
-&lt;figure class=&#34;highlight xml&#34;&gt;&lt;figcaption data-lang=&#34;XML&#34;&gt;&lt;span&gt;子 pom.xml&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;parent&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;com.itheima&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;ssm&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;version&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;1.0-SNAPSHOT&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;version&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- 填写父工程的 pom.xml 文件位置 --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;relativePath&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;../ssm/pom.xml&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;relativePath&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;parent&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在父工程中定义依赖管理&lt;/p&gt;
-&lt;figure class=&#34;highlight xml&#34;&gt;&lt;figcaption data-lang=&#34;XML&#34;&gt;&lt;span&gt;父 pom.xml&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;dependencyManagement&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;dependencies&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;org.springframework&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;spring-context&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;version&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;5.1.9.RELEASE&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;version&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;dependencies&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;dependencyManagement&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在子模块中定义依赖关系，继承父工程的依赖，无需声明版本号&lt;/p&gt;
-&lt;figure class=&#34;highlight xml&#34;&gt;&lt;figcaption data-lang=&#34;XML&#34;&gt;&lt;span&gt;子 pom.xml&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;dependencies&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;org.springframework&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;spring-context&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;dependencies&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;继承的资源有：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241005163026816.png&#34; alt=&#34;image-20241005163026816&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;继承与聚合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#继承与聚合&#34;&gt;#&lt;/a&gt; ✨继承与聚合&lt;/h1&gt;
-</content>
-        <category term="DevOps" scheme="https://slx-world.top/categories/devops/" />
-        <category term="Maven" scheme="https://slx-world.top/tags/maven/" />
-        <updated>2024-10-01T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/devops/maven/maven-fundamentals/</id>
-        <title>Maven 基础</title>
-        <link rel="alternate" href="https://slx-world.top/devops/maven/maven-fundamentals/"/>
-        <content type="html"></content>
-        <category term="DevOps" scheme="https://slx-world.top/categories/devops/" />
-        <category term="Maven" scheme="https://slx-world.top/tags/maven/" />
-        <updated>2024-10-01T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/tutorial/blog/github-picgo-typora/</id>
-        <title>二、图床搭建</title>
-        <link rel="alternate" href="https://slx-world.top/tutorial/blog/github-picgo-typora/"/>
-        <content type="html">&lt;div class=&#34;note primary&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://slx-world.top/tutorial/blog/hexo-shoka/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;一、博客搭建&lt;/ins&gt;&lt;/a&gt; ✈️ &lt;a href=&#34;https://slx-world.top/tutorial/blog/github-picgo-typora/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;二、图床搭建&lt;/ins&gt;&lt;/a&gt; ✈️ &lt;a href=&#34;https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;三、备份与持续集成&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id=&#34;软件安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件安装&#34;&gt;#&lt;/a&gt; 🎀软件安装&lt;/h1&gt;
-&lt;h2 id=&#34;git-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-安装&#34;&gt;#&lt;/a&gt; 💗Git 安装&lt;/h2&gt;
-&lt;p&gt;略&lt;/p&gt;
-&lt;h2 id=&#34;picgo-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-安装&#34;&gt;#&lt;/a&gt; 💗PicGo 安装&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/Molunerfinn/PicGo/releases/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;PicGo 下载链接&lt;/ins&gt;&lt;/a&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01vbHVuZXJmaW5uL1BpY0dvL3JlbGVhc2VzLw==&#34;&gt;https://github.com/Molunerfinn/PicGo/releases/&lt;/span&gt;&lt;/p&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;推荐使用 2.3.1 正式版&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001213835429.png&#34; alt=&#34;image-20241001213835429&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;typora-安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-安装&#34;&gt;#&lt;/a&gt; 💗Typora 安装&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://pan.baidu.com/s/12qgG7CT4_ygoqd-CDggcLA?pwd=e7mg&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Typora1.9.4 百度网盘&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/agj_3zHhsuBQsD2tHTQ4Fg&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Typora1.9.4 安装教程&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://markdown.com.cn/intro.html&#34;&gt;&lt;ins class=&#34;info&#34;&gt;Markdown 官方教程&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;解压后，将 &lt;span class=&#34;yellow&#34;&gt;Crack&lt;/span&gt; 中的 &lt;span class=&#34;yellow&#34;&gt;winmm.dll&lt;/span&gt; 文件复制粘贴到 Typora 的安装目录即可&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002200235854.png&#34; alt=&#34;image-20241002200235854&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;github-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#github-设置&#34;&gt;#&lt;/a&gt; 🎀GitHub 设置&lt;/h1&gt;
-&lt;h2 id=&#34;创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建仓库&#34;&gt;#&lt;/a&gt; 💗创建仓库&lt;/h2&gt;
-&lt;p&gt;该仓库用于存放博客图片&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002144038707.png&#34; alt=&#34;image-20241002144038707&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;生成令牌&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成令牌&#34;&gt;#&lt;/a&gt; 💗生成令牌&lt;/h2&gt;
-&lt;p&gt;右上角点击 &lt;span class=&#34;green&#34;&gt;头像&lt;/span&gt;，来到 &lt;span class=&#34;green&#34;&gt;Settings -&amp;gt; Developer Settings -&amp;gt; Personal access tokens&lt;/span&gt;，然后点击 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL3BlcnNvbmFsLWFjY2Vzcy10b2tlbnMvbmV3&#34;&gt;Generate new token&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002200555213.png&#34; alt=&#34;image-20241002200555213&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;仓库授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#仓库授权&#34;&gt;#&lt;/a&gt; 💗仓库授权&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;选定 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 中已创建好的仓库&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002145941587.png&#34; alt=&#34;image-20241002145941587&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;权限设置&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;仓库权限&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;账户权限&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;均全部授权即可&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002150150970.png&#34; alt=&#34;image-20241002150150970&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;完成后，点击 &lt;span class=&#34;green&#34;&gt;Generate token&lt;/span&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;&lt;strong&gt;token 仅在生成的时候可见，记得复制保存下来，以防备用！！！&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id=&#34;picgo-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#picgo-设置&#34;&gt;#&lt;/a&gt; 🎀PicGo 设置&lt;/h1&gt;
-&lt;h2 id=&#34;图床设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图床设置&#34;&gt;#&lt;/a&gt; 💗图床设置&lt;/h2&gt;
-&lt;p&gt;点击 &lt;span class=&#34;green&#34;&gt;GitHub&lt;/span&gt; 选项，进行 &lt;span class=&#34;green&#34;&gt;GitHub 设置&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;设定仓库名：用户名 / 仓库，根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 中的仓库而定&lt;/li&gt;
-&lt;li&gt;设定分支：根据 &lt;span class=&#34;red&#34;&gt;2.1&lt;/span&gt; 中的仓库而定&lt;/li&gt;
-&lt;li&gt;设定 Token：复制粘贴 &lt;span class=&#34;red&#34;&gt;2.2&lt;/span&gt; 中的令牌&lt;/li&gt;
-&lt;li&gt;设定存储路径：可选&lt;/li&gt;
-&lt;li&gt;设定自定义域名：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbWFnZXMud2VzZXJ2Lm5sLz91cmw9aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doLyVFNyU5NCVBOCVFNiU4OCVCNyVFNSU5MCU4RC8lRTQlQkIlOTMlRTUlQkElOTNAJUU1JTg4JTg2JUU2JTk0JUFG&#34;&gt;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/ 用户名 / 仓库 @分支&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002152655936.png&#34; alt=&#34;image-20241002152655936&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;相关信息配置好后，点击 &lt;span class=&#34;blue&#34;&gt;确定&lt;/span&gt;，并 &lt;span class=&#34;green&#34;&gt;设为默认图床&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&#34;站点配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#站点配置&#34;&gt;#&lt;/a&gt; 🎀站点配置&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;来到 &lt;span class=&#34;yellow&#34;&gt;hexo 目录 \themes\shoka\scripts\helpers&lt;/span&gt;，修改 &lt;span class=&#34;red&#34;&gt;engine.js&lt;/span&gt; 代码&lt;/p&gt;
-&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;span&gt;engine.js 代码&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;token function-variable function&#34;&gt;parseImage&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;img&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; size&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;//&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;http&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;https://tva&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;randomServer&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;.sinaimg.cn/&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;size&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;/&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;具体配置为：&lt;span class=&#34;red&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbWFnZXMud2VzZXJ2Lm5sLz91cmw9aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doLyVFNyU5NCVBOCVFNiU4OCVCNyVFNSU5MCU4RC8lRTQlQkIlOTMlRTUlQkElOTNAJUU1JTg4JTg2JUU2JTk0JUFGLw==&#34;&gt;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/ 用户名 / 仓库 @分支 /&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbWFnZXMud2VzZXJ2Lm5sLz91cmw9&#34;&gt;https://images.weserv.nl/?url=&lt;/span&gt;&lt;/span&gt;：图缓存链接，让图片快速加载&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;例如，我的配置是这样的：&lt;/p&gt;
-&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;span&gt;engine.js 代码&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;token function-variable function&#34;&gt;parseImage&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;img&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; size&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;//&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;http&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;// return &#39;https://tva&#39;+randomServer+&#39;.sinaimg.cn/&#39;+size+&#39;/&#39;+img&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;// return &#39;https://images.weserv.nl/?url=https://raw.githubusercontent.com/slx-world/blog-images/master/&#39;+img&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	  &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;typora-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora-设置&#34;&gt;#&lt;/a&gt; 🎀Typora 设置&lt;/h1&gt;
-&lt;h2 id=&#34;设置图像并验证&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置图像并验证&#34;&gt;#&lt;/a&gt; 💗设置图像并验证&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;左上角点击 &lt;span class=&#34;green&#34;&gt;文件 -&amp;gt; 偏好设置 -&amp;gt; 图像&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241001225158438.png&#34; alt=&#34;image-20241001225158438&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;设置完后，点击 &lt;span class=&#34;green&#34;&gt;验证图片上传选项&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241002201849398.png&#34; alt=&#34;image-20241002201849398&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;span class=&#34;label success&#34;&gt;✔️success&lt;/span&gt;&lt;span class=&#34;rainbow&#34;&gt;&lt;strong&gt; 至此，个人图床搭建完毕，感谢大家的品阅与支持&lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;👇😘💍&lt;/strong&gt;&lt;/p&gt;
-</content>
-        <category term="Tutorial" scheme="https://slx-world.top/categories/tutorial/" />
-        <category term="Blog" scheme="https://slx-world.top/tags/blog/" />
-        <updated>2024-09-20T14:24:36.000Z</updated>
     </entry>
 </feed>
