@@ -10,14 +10,14 @@
         </author>
         <description>他年，我若立于万古诸天上，将与你们共岁月！</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 03 Mar 2025 12:54:03 +0000</pubDate>
-        <lastBuildDate>Mon, 03 Mar 2025 12:54:03 +0000</lastBuildDate>
+        <pubDate>Tue, 04 Mar 2025 04:37:00 +0000</pubDate>
+        <lastBuildDate>Tue, 04 Mar 2025 04:37:00 +0000</lastBuildDate>
         <category term="柳神，火灵儿" />
         <item>
             <guid isPermalink="true">https://slx-world.top/hello-world/</guid>
             <title>Hello World</title>
             <link>https://slx-world.top/hello-world/</link>
-            <pubDate>Mon, 03 Mar 2025 12:54:03 +0000</pubDate>
+            <pubDate>Tue, 04 Mar 2025 04:37:00 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
@@ -112,6 +112,184 @@
 当我们在 service 中要调用 Mapper 中自定义 SQL 时，就必须获取 service 对应的 Mapper，就可以通过这个方法：&lt;br /&gt;
 &lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/framework/mybatisplus/1689651515691-7a4ff31d-e73e-443e-a088-62af40589fa5.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;基本用法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本用法&#34;&gt;#&lt;/a&gt; 基本用法&lt;/h3&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://slx-world.top/devops/git/git-notes/</guid>
+            <title>Git 笔记</title>
+            <link>https://slx-world.top/devops/git/git-notes/</link>
+            <category term="DevOps" scheme="https://slx-world.top/categories/devops/" />
+            <category term="Git" scheme="https://slx-world.top/tags/git/" />
+            <pubDate>Mon, 11 Nov 2024 16:00:00 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;git-概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-概述&#34;&gt;#&lt;/a&gt; 🍨Git 概述&lt;/h1&gt;
+&lt;h2 id=&#34;git-工作流程图&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-工作流程图&#34;&gt;#&lt;/a&gt; 🍉Git 工作流程图&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/devops/git/image-20250303211159483.png&#34; alt=&#34;image-20250303211159483&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;命令如下：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;clone（克隆）: 从远程仓库中克隆代码到本地仓库&lt;/li&gt;
+&lt;li&gt;checkout （检出）: 从本地仓库中检出一个仓库分支然后进行修订&lt;/li&gt;
+&lt;li&gt;add（添加）: 在提交前先将代码提交到暂存区&lt;/li&gt;
+&lt;li&gt;commit（提交）: 提交到本地仓库。本地仓库中保存修改的各个历史版本&lt;/li&gt;
+&lt;li&gt;fetch (抓取) ： 从远程库，抓取到本地仓库，不进行任何的合并动作，一般操作比较少。&lt;/li&gt;
+&lt;li&gt;pull (拉取) ： 从远程库拉到本地库，自动进行合并 (merge)，然后放到到工作区，相当于 fetch+merge&lt;/li&gt;
+&lt;li&gt;push（推送） : 修改完成后，需要和团队成员共享代码时，将代码推送到远程仓库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;git-环境配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-环境配置&#34;&gt;#&lt;/a&gt; 🍨Git 环境配置&lt;/h1&gt;
+&lt;h2 id=&#34;下载与安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载与安装&#34;&gt;#&lt;/a&gt; 🍉下载与安装&lt;/h2&gt;
+&lt;p&gt;下载地址：  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZA==&#34;&gt;https://git-scm.com/download&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;基本配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本配置&#34;&gt;#&lt;/a&gt; 🍉基本配置&lt;/h2&gt;
+&lt;p&gt;设置用户信息&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; user.name &lt;span class=&#34;token string&#34;&gt;&#39;用户名&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; user.email &lt;span class=&#34;token string&#34;&gt;&#39;邮箱&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查看配置信息&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; user.name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; user.email&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;为常用指令配置别名可选&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为常用指令配置别名可选&#34;&gt;#&lt;/a&gt; 🍉为常用指令配置别名（可选）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;打开用户目录，创建 &lt;code&gt; .bashrc&lt;/code&gt;  文件&lt;/p&gt;
+&lt;p&gt;部分 windows 系统不允许用户创建点号开头的文件，可以打开 gitBash, 执行  &lt;code&gt;touch ~/.bashrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/devops/git/image-20250303212600381.png&#34; alt=&#34;image-20250303212600381&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在  &lt;code&gt;.bashrc&lt;/code&gt;  文件中输入如下内容：&lt;/p&gt;
+&lt;figure class=&#34;highlight sh&#34;&gt;&lt;figcaption data-lang=&#34;sh&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#用于输出 git 提交日志&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;alias&lt;/span&gt; git-log&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;git log --pretty=oneline --all --graph --abbrev-commit&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token comment&#34;&gt;#用于输出当前目录所有文件及基本信息&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;token assign-left variable&#34;&gt;ll&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&#39;ls &lt;span class=&#34;token parameter variable&#34;&gt;-al&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开 gitBash，执行  &lt;code&gt;source ~/.bashrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/devops/git/image-20250303212729464.png&#34; alt=&#34;image-20250303212729464&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;解决-gitbash-乱码问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决-gitbash-乱码问题&#34;&gt;#&lt;/a&gt; 🍉解决 GitBash 乱码问题&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;打开 GitBash 执行下面命令&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;GitBash命令行&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; core.quotepath &lt;span class=&#34;token boolean&#34;&gt;false&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;$&amp;#123;git_home&amp;#125;/etc/bash.bashrc&lt;/code&gt;  文件最后加入下面两行&lt;/p&gt;
+&lt;figure class=&#34;highlight properties&#34;&gt;&lt;figcaption data-lang=&#34;.properties&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key attr-name&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token value attr-value&#34;&gt;LANG=&#34;zh_CN.UTF-8&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key attr-name&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token value attr-value&#34;&gt;LC_ALL=&#34;zh_CN.UTF-8&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;git-常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-常用命令&#34;&gt;#&lt;/a&gt; 🍨Git 常用命令&lt;/h1&gt;
+&lt;h2 id=&#34;基础操作命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基础操作命令&#34;&gt;#&lt;/a&gt; 🍉基础操作命令&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/devops/git/image-20250304082828122.png&#34; alt=&#34;image-20250304082828122&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;查看修改的状态status&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看修改的状态status&#34;&gt;#&lt;/a&gt; 🍠查看修改的状态（status）&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; status&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;添加工作区到暂存区add&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#添加工作区到暂存区add&#34;&gt;#&lt;/a&gt; 🍠添加工作区到暂存区（add）&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; 单个文件名&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;通配符&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;将所有修改加入暂存区： &lt;code&gt;git add .&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;提交暂存区到本地仓库commit&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提交暂存区到本地仓库commit&#34;&gt;#&lt;/a&gt; 🍠提交暂存区到本地仓库（commit）&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit &lt;span class=&#34;token parameter variable&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;注释内容&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;查看提交日志log&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看提交日志log&#34;&gt;#&lt;/a&gt; 🍠查看提交日志（log）&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; log &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;参数&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-all&lt;/code&gt;  显示所有分支&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--pretty=oneline&lt;/code&gt;  将提交信息显示为一行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--abbrev-commit&lt;/code&gt;  使得输出的 commitId 更简短&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--graph&lt;/code&gt;  以图的形式显示&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;版本回退&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#版本回退&#34;&gt;#&lt;/a&gt; 🍠版本回退&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; reset &lt;span class=&#34;token parameter variable&#34;&gt;--hard&lt;/span&gt; commitID&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;commitID 可以使用  &lt;code&gt;git-log&lt;/code&gt;  或  &lt;code&gt;git log&lt;/code&gt;  指令查看&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;如何查看已经删除的记录❓&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git reflog&lt;/code&gt;  这个指令可以看到已经删除的提交记录&lt;/p&gt;
+&lt;h3 id=&#34;添加文件至忽略列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#添加文件至忽略列表&#34;&gt;#&lt;/a&gt; 🍠添加文件至忽略列表&lt;/h3&gt;
+&lt;p&gt;一般我们总会有些文件无需纳入 Git 的管理，也不希望它们总出现在未跟踪文件列表。 通常都是些自动 生成的文件，比如日志文件，或者编译过程中创建的临时文件等。 在这种情况下，我们可以在工作目录 中创建一个名为 .gitignore 的文件（文件名称固定），列出要忽略的文件模式。下面是一个示例：&lt;/p&gt;
+&lt;figure class=&#34;highlight properties&#34;&gt;&lt;figcaption data-lang=&#34;.properties&#34;&gt;&lt;span&gt;.gitignore&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# no .a files&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*.a&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# but do track lib.a, even though you&#39;re ignoring .a files above&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;!lib.a&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# only ignore the TODO file in the current directory, not subdir/TODO&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;/TODO&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# ignore all files in the build/ directory&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;build/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# ignore doc/notes.txt, but not doc/server/arch.txt&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;doc/*.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# ignore all .pdf files in the doc/ directory&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;doc/**/*.pdf&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分支&#34;&gt;#&lt;/a&gt; 🍉分支&lt;/h2&gt;
+&lt;h3 id=&#34;查看本地分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看本地分支&#34;&gt;#&lt;/a&gt; 🍠查看本地分支&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; branch&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;创建本地分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建本地分支&#34;&gt;#&lt;/a&gt; 🍠创建本地分支&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; branch 分支名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;切换分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#切换分支&#34;&gt;#&lt;/a&gt; 🍠切换分支&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; checkout 分支名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;创建并切换&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; checkout &lt;span class=&#34;token parameter variable&#34;&gt;-b&lt;/span&gt; 分支名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;合并分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#合并分支&#34;&gt;#&lt;/a&gt; 🍠合并分支&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; merge 分支名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;删除分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除分支&#34;&gt;#&lt;/a&gt; 🍠删除分支&lt;/h3&gt;
+&lt;div class=&#34;note warning&#34;&gt;
+&lt;p&gt;不能删除当前分支，只能删除其他分支&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;git branch -d b1&lt;/code&gt;  删除分支时，需要做各种检查&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git branch -D b2&lt;/code&gt;  不做任何检查，强制删除&lt;/p&gt;
+&lt;h3 id=&#34;解决冲突&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决冲突&#34;&gt;#&lt;/a&gt; 🍠解决冲突&lt;/h3&gt;
+&lt;p&gt;当两个分支上对文件的修改可能会存在冲突，例如同时修改了同一个文件的同一行，这时就需要手动解决冲突，解决冲突步骤如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;处理文件中冲突的地方&lt;/li&gt;
+&lt;li&gt;将解决完冲突的文件加入暂存区 (add)&lt;/li&gt;
+&lt;li&gt;提交到仓库 (commit) 冲突部分的内容处理如下所示：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;开发中分支使用原则与流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#开发中分支使用原则与流程&#34;&gt;#&lt;/a&gt; 🍠开发中分支使用原则与流程&lt;/h3&gt;
+&lt;p&gt;几乎所有的版本控制系统都以某种形式支持分支。 使用分支意味着你可以把你的工作从开发主线上分离 开来进行重大的 Bug 修改、开发新的功能，以免影响开发主线。 在开发中，一般有如下分支使用原则与流程：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;master （生产） 分支&lt;/p&gt;
+&lt;p&gt;线上分支，主分支，中小规模项目作为线上运行的应用对应的分支；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;develop（开发）分支&lt;/p&gt;
+&lt;p&gt;是从 master 创建的分支，一般作为开发部门的主要开发分支，如果没有其他并行开发不同期上线 要求，都可以在此版本进行开发，阶段开发完成后，需要是合并到 master 分支，准备上线。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;feature/xxxx 分支&lt;/p&gt;
+&lt;p&gt;从 develop 创建的分支，一般是同期并行开发，但不同期上线时创建的分支，分支上的研发任务完 成后合并到 develop 分支。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hotfix/xxxx 分支&lt;/p&gt;
+&lt;p&gt;从 master 派生的分支，一般作为线上 bug 修复使用，修复完成后需要合并到 master、test、 develop 分支。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;还有一些其他分支，在此不再详述，例如 test 分支（用于代码测试）、pre 分支（预上线分支）等等&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/devops/git/image-20250304094129815.png&#34; alt=&#34;image-20250304094129815&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;git-远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-远程仓库&#34;&gt;#&lt;/a&gt; 🍨Git 远程仓库&lt;/h1&gt;
+&lt;h2 id=&#34;配置-ssh-公钥&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置-ssh-公钥&#34;&gt;#&lt;/a&gt; 🍉配置 SSH 公钥&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;生成 SSH 公钥&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ssh-keygen &lt;span class=&#34;token parameter variable&#34;&gt;-t&lt;/span&gt; rsa&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;不断回车 如果公钥已经存在，则自动覆盖 ​​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gitee 设置账户公钥&lt;/p&gt;
+&lt;p&gt;获取公钥&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;cat&lt;/span&gt; ~/.ssh/id_rsa.pub&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;验证是否配置成功&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-T&lt;/span&gt; git@gitee.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;操作远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作远程仓库&#34;&gt;#&lt;/a&gt; 🍉操作远程仓库&lt;/h2&gt;
+&lt;h3 id=&#34;添加远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#添加远程仓库&#34;&gt;#&lt;/a&gt; 🍠添加远程仓库&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;此操作是先初始化本地库，然后与已创建的远程库进行对接。&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; remote &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;远端名称&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;仓库路径&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;查看远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看远程仓库&#34;&gt;#&lt;/a&gt; 🍠查看远程仓库&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; remote&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;推送到远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推送到远程仓库&#34;&gt;#&lt;/a&gt; 🍠推送到远程仓库&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;-f&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;--set-upstream&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;远端名称 &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;本地分支名&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;:远端分支名&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如果远程分支名和本地分支名称相同，则可以只写本地分支&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-f&lt;/code&gt;  表示强制覆盖&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;--set-upstream&lt;/code&gt;  推送到远端的同时并且建立起和远端分支的关联关系&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;sh&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push --set-upstream origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;如果 &lt;code&gt;当前分支已经和远端分支关联&lt;/code&gt; ，则可以省略分支名和远端名&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git push&lt;/code&gt;  将 master 分支推送到已关联的远端分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;本地分支与远程分支的关联关系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#本地分支与远程分支的关联关系&#34;&gt;#&lt;/a&gt; 🍠本地分支与远程分支的关联关系&lt;/h3&gt;
+&lt;p&gt;查看关联关系我们可以使用   &lt;code&gt;git branch -vv&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;从远程仓库克隆&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#从远程仓库克隆&#34;&gt;#&lt;/a&gt; 🍠从远程仓库克隆&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; clone &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;仓库路径&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;本地目录&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;本地目录可以省略，会自动生成一个目录&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;从远程仓库中抓取和拉取&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#从远程仓库中抓取和拉取&#34;&gt;#&lt;/a&gt; 🍠从远程仓库中抓取和拉取&lt;/h3&gt;
+&lt;p&gt;远程分支和本地的分支一样，我们可以进行 merge 操作，只是需要先把远端仓库里的更新都下载到本 地，再进行操作。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;抓取命令： &lt;code&gt;git fetch [remote name] [branch name]&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;抓取指令就是将仓库里的更新都抓取到本地，不会进行合并&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;如果不指定远端名称和分支名，则抓取所有分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;拉取命令： &lt;code&gt;git pull [remote name] [branch name]&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;拉取指令就是将远端仓库的修改拉到本地并自动进行合并，等同于 fetch+merge&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;如果不指定远端名称和分支名，则抓取所有并更新当前分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;解决合并冲突&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决合并冲突&#34;&gt;#&lt;/a&gt; 🍠解决合并冲突&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/devops/git/image-20250304122905844.png&#34; alt=&#34;image-20250304122905844&#34; /&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -547,18 +725,18 @@
             <pubDate>Sun, 27 Oct 2024 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;hadoop-概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hadoop-概述&#34;&gt;#&lt;/a&gt; 😽Hadoop 概述&lt;/h1&gt;
 &lt;h2 id=&#34;hadoop-是什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hadoop-是什么&#34;&gt;#&lt;/a&gt; 🍖Hadoop 是什么&lt;/h2&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;Hadoop 是一个由 Apache 基金会所开发的分布式系统基础架构&lt;/li&gt;
 &lt;li&gt;主要解决，海量数据的&lt;span class=&#34;red&#34;&gt;存储&lt;/span&gt;和&lt;span class=&#34;red&#34;&gt;分析计算&lt;/span&gt;问题。&lt;/li&gt;
 &lt;li&gt;广义上来说，Hadoop 通常是指一个更广泛的概念 ——Hadoop 生态圈。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;hadoop-优势4-高&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hadoop-优势4-高&#34;&gt;#&lt;/a&gt; 🍖Hadoop 优势（4 高）&lt;/h2&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;red&#34;&gt;高可靠性&lt;/span&gt;：Hadoop 底层维护多个数据副本，所以即使 Hadoop 某个计算元素或存储出现故障，也不会导致数据的丢失。&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;red&#34;&gt;高扩展性&lt;/span&gt;：在集群间分配任务数据，可方便的扩展数以千计的节点。&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;red&#34;&gt;高效性&lt;/span&gt;：在 MapReduce 的思想下，Hadoop 是并行工作的，以加快任务处理速度。&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;red&#34;&gt;高容错性&lt;/span&gt;：能够自动将失败的任务重新分配。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;hadoop-组成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hadoop-组成&#34;&gt;#&lt;/a&gt; 🍖Hadoop 组成&lt;/h2&gt;
 &lt;p&gt;Hadoop 1.x 组成：​​&lt;/p&gt;
 &lt;ul&gt;
@@ -575,23 +753,23 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;hdfs-架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hdfs-架构&#34;&gt;#&lt;/a&gt; 🐶HDFS 架构&lt;/h3&gt;
 &lt;p&gt;Hadoop Distributed File System，简称 HDFS，是一个分布式文件系统。&lt;/p&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;NameNode（nn）：存储文件的&lt;span class=&#34;red&#34;&gt;元数据&lt;/span&gt;，如&lt;span class=&#34;red&#34;&gt;文件名&lt;/span&gt;，&lt;span class=&#34;red&#34;&gt;文件目录结构&lt;/span&gt;，&lt;span class=&#34;red&#34;&gt;文件属性&lt;/span&gt;（生成时间、副本数、文件权限），以及每个文件的&lt;span class=&#34;red&#34;&gt;块列表&lt;/span&gt;和&lt;span class=&#34;red&#34;&gt;块所在的 DataNode&lt;/span&gt; 等。&lt;/li&gt;
 &lt;li&gt;DataNode (dn)：在本地文件系统存储&lt;span class=&#34;red&#34;&gt;文件块数据&lt;/span&gt;，以及&lt;span class=&#34;red&#34;&gt;块数据的校验和&lt;/span&gt;。&lt;/li&gt;
 &lt;li&gt;Secondary NameNode(2nn)：&lt;span class=&#34;red&#34;&gt;每隔一段时间对 NameNode 元数据备份&lt;/span&gt;。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/bigdata/hadoop/image-20250302193347478.png&#34; alt=&#34;image-20250302193347478&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;yarn-架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#yarn-架构&#34;&gt;#&lt;/a&gt; 🐶Yarn 架构&lt;/h3&gt;
 &lt;p&gt;Yet Another Resource Negotiator 简称 YARN ，另一种资源协调者，是 Hadoop 的资源管理器。&lt;/p&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;ResourceManager（RM）：整个集群资源（内存、CPU 等）的老大&lt;/li&gt;
 &lt;li&gt;NodeManager（NM）：单个节点服务器资源老大&lt;/li&gt;
 &lt;li&gt;ApplicationMaster（AM）：单个任务运行的老大&lt;/li&gt;
 &lt;li&gt;Container：容器，相当一台独立的服务器，里面封装了任务运行所需要的资源，如&lt;span class=&#34;red&#34;&gt;内存、CPU、磁盘、网络&lt;/span&gt;等。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/bigdata/hadoop/image-20250302193047871.png&#34; alt=&#34;image-20250302193047871&#34; /&gt;&lt;/p&gt;
 &lt;div class=&#34;note primary&#34;&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;客户端可以有多个&lt;/p&gt;
 &lt;/li&gt;
@@ -601,18 +779,18 @@
 &lt;li&gt;
 &lt;p&gt;每个 NodeManager 上可以有多个 Container&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;mapreduce-架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mapreduce-架构&#34;&gt;#&lt;/a&gt; 🐶MapReduce 架构&lt;/h3&gt;
 &lt;p&gt;MapReduce 将计算过程分为两个阶段：Map 和 Reduce&lt;/p&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Map 阶段&lt;span class=&#34;red&#34;&gt;并行&lt;/span&gt;处理输入数据&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Reduce 阶段对 Map 结果进行&lt;span class=&#34;red&#34;&gt;汇总&lt;/span&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/bigdata/hadoop/image-20250302193857335.png&#34; alt=&#34;image-20250302193857335&#34; /&gt;&lt;/p&gt;
  ]]></description>
         </item>
@@ -2671,90 +2849,6 @@
 &lt;li&gt;可以挂载多个数据卷&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/</guid>
-            <title>三、备份与持续集成</title>
-            <link>https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/</link>
-            <category term="Tutorial" scheme="https://slx-world.top/categories/tutorial/" />
-            <category term="Blog" scheme="https://slx-world.top/tags/blog/" />
-            <pubDate>Thu, 03 Oct 2024 14:24:36 +0000</pubDate>
-            <description><![CDATA[ &lt;div class=&#34;note primary&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://slx-world.top/tutorial/blog/hexo-shoka/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;一、博客搭建&lt;/ins&gt;&lt;/a&gt; ✈️ &lt;a href=&#34;https://slx-world.top/tutorial/blog/github-picgo-typora/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;二、图床搭建&lt;/ins&gt;&lt;/a&gt; ✈️ &lt;a href=&#34;https://slx-world.top/tutorial/blog/hexo-shoka-appveyor/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;三、备份与持续集成&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id=&#34;创建备份仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建备份仓库&#34;&gt;#&lt;/a&gt; 🔆创建备份仓库&lt;/h1&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;yellow&#34;&gt;该仓库用于备份博客源码，名字可以随便起，记得与本地仓库保持一致即可，且分支必须保持与先前存放站点文件的仓库一样！！！&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id=&#34;持续集成配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#持续集成配置&#34;&gt;#&lt;/a&gt; 🔆持续集成配置&lt;/h1&gt;
-&lt;h2 id=&#34;登录-appveyor&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#登录-appveyor&#34;&gt;#&lt;/a&gt; 🥀登录 AppVeyor&lt;/h2&gt;
-&lt;p&gt;直接使用 &lt;span class=&#34;yellow&#34;&gt;GitHub&lt;/span&gt; 授权登录即可 👉 &lt;a href=&#34;https://ci.appveyor.com/login&#34;&gt;&lt;ins class=&#34;info&#34;&gt;AppVeyor 登录页&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241004235221432.png&#34; alt=&#34;image-20241004235221432&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;新建项目&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#新建项目&#34;&gt;#&lt;/a&gt; 🥀新建项目&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;点击 &lt;span class=&#34;green&#34;&gt;NEW PROJECT&lt;/span&gt;，然后再点击 &lt;span class=&#34;green&#34;&gt;Import existing installations&lt;/span&gt;，将 &lt;span class=&#34;yellow&#34;&gt;AppVeyor&lt;/span&gt; 授权为 &lt;span class=&#34;yellow&#34;&gt;GitHub App&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241005002305224.png&#34; alt=&#34;image-20241005002305224&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241005001316429.png&#34; alt=&#34;image-20241005001316429&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;选定 &lt;span class=&#34;red&#34;&gt;1&lt;/span&gt; 中的仓库作为新项目&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241005003342842.png&#34; alt=&#34;image-20241005003342842&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;编写构建脚本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编写构建脚本&#34;&gt;#&lt;/a&gt; 🥀编写构建脚本&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;新建 Access Token&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;略&lt;/span&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;将生成好的 Access Token 用 AppVeyor 进行 &lt;span class=&#34;yellow&#34;&gt;加密&lt;/span&gt;，随即将密文 &lt;span class=&#34;yellow&#34;&gt;复制保存&lt;/span&gt; 下来，以防备用&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241005004031868.png&#34; alt=&#34;image-20241005004031868&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在 Hexo 目录中创建并编写 &lt;span class=&#34;yellow&#34;&gt;appveyor.yml&lt;/span&gt; 构建脚本，并将密文配置上去&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241005005145834.png&#34; alt=&#34;image-20241005005145834&#34; /&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;span&gt;appveyor.yml&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;clone_depth&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;environment&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;access_token&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;secure&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# Access Token 加密后的密文&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;install&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; node &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;version&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; npm &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;version&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; npm install&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; npm install hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;cli &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; hexo &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;version&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; npm un hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;renderer&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;marked &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; npm i hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;renderer&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;markdown&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;it&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;plus hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;renderer&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;multi&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;markdown&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;it markdown&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;it&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;prism hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;autoprefixer hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;algoliasearch hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;symbols&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;count&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;time hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;feed hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;filter&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;nofollow &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; npm list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;build_script&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; hexo algolia&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;artifacts&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; public&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;on_success&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; git config &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;global credential.helper store&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;ps&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; Add&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;Content &#34;$env&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;USERPROFILE\.git&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;credentials&#34; &#34;https&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;//$($env&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;access_token)&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;oauth&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;basic@github.com`n&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; git config &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;global user.email &#34;%GIT_USER_EMAIL%&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; git config &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;global user.name &#34;%GIT_USER_NAME%&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; git clone &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;depth 5 &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;q &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;branch=%TARGET_BRANCH% %STATIC_SITE_REPO% %TEMP%\static&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;site&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; cd %TEMP%\static&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;site&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; del * /f /q&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; for /d %%p IN (&lt;span class=&#34;token important&#34;&gt;*)&lt;/span&gt; do rmdir &#34;%%p&#34; /s /q&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; SETLOCAL EnableDelayedExpansion &amp;amp; robocopy &#34;%APPVEYOR_BUILD_FOLDER%\public&#34; &#34;%TEMP%\static&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;site&#34; /e &amp;amp; IF &lt;span class=&#34;token tag&#34;&gt;!ERRORLEVEL&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;!&lt;/span&gt; EQU 1 (exit 0) ELSE (IF &lt;span class=&#34;token tag&#34;&gt;!ERRORLEVEL&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;!&lt;/span&gt; EQU 3 (exit 0) ELSE (exit 1))&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; git add &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;A&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; if &#34;%APPVEYOR_REPO_BRANCH%&#34;==&#34;master&#34; if not defined APPVEYOR_PULL_REQUEST_NUMBER (git diff &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;quiet &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;exit&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;code &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;cached &lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt; git commit &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;m &#34;Update Static Site&#34; &lt;span class=&#34;token important&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git push origin %TARGET_BRANCH% &lt;span class=&#34;token important&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; appveyor AddMessage &#34;Static Site Updated&#34;)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;环境变量设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#环境变量设置&#34;&gt;#&lt;/a&gt; 🥀环境变量设置&lt;/h2&gt;
-&lt;p&gt;添加并设置如下 &lt;span class=&#34;yellow&#34;&gt;4&lt;/span&gt; 个环境变量：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;STATIC_SITE_REPO&lt;/span&gt;：&lt;span class=&#34;yellow&#34;&gt;博客站点 Github 仓库地址&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;TARGET_BRANCH&lt;/span&gt;：&lt;span class=&#34;yellow&#34;&gt;博客站点仓库的 branch（默认是 master）&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;GIT_USER_EMAIL&lt;/span&gt;：&lt;span class=&#34;yellow&#34;&gt;GitHub 账号的邮箱&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;GIT_USER_NAME&lt;/span&gt;：&lt;span class=&#34;yellow&#34;&gt;GitHub 账号的用户名&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241005010707541.png&#34; alt=&#34;image-20241005010707541&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;上传备份&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#上传备份&#34;&gt;#&lt;/a&gt; 🔆上传备份&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;需要备份的文件有：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;source&lt;/span&gt; 目录的所有文件&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;scaffolds&lt;/span&gt; 目录的所有文件&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;themes&lt;/span&gt; 目录的所有文件&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;_config.landscape.yml&lt;/span&gt; 文件&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;_config.yml&lt;/span&gt; 文件&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;appveyor.yml&lt;/span&gt; 文件&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;package.json&lt;/span&gt; 文件&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;编辑 &lt;span class=&#34;yellow&#34;&gt;.ignore&lt;/span&gt; 文件，添加不需要备份的文件&lt;/p&gt;
-&lt;figure class=&#34;highlight tex&#34;&gt;&lt;figcaption data-lang=&#34;TeX&#34;&gt;&lt;span&gt;.ignore文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.DS_Store&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Thumbs.db&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;db.json&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*.log&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;node_modules/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;public/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.deploy*/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;_multiconfig.yml&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;package-lock.json&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;将本地博客源码上传到备份仓库&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;git 命令行窗口&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-A&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit &lt;span class=&#34;token parameter variable&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;备份博客源码&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;观察构建情况&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#观察构建情况&#34;&gt;#&lt;/a&gt; 🔆观察构建情况&lt;/h1&gt;
-&lt;p&gt;博客源码成功推送到备份仓库时，会直接触发 Appveyor 构建，执行 &lt;span class=&#34;yellow&#34;&gt;appveyor.yml&lt;/span&gt; 构建脚本&lt;/p&gt;
-&lt;p&gt;当观察到有 &lt;span class=&#34;green&#34;&gt;Build success&lt;/span&gt; 字样时，即为构建成功&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241005014140785.png&#34; alt=&#34;image-20241005014140785&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;可以来到 &lt;span class=&#34;yellow&#34;&gt;站点仓库&lt;/span&gt; 查看最新的提交记录&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241005014532714.png&#34; alt=&#34;image-20241005014532714&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;label success&#34;&gt;😎success&lt;/span&gt;&lt;span class=&#34;rainbow&#34;&gt;&lt;strong&gt; 至此，一个完美的博客就此诞生了，感谢大家的陪伴与支持&lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;🎆🎆🎆🌸🌸🌸&lt;/strong&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
