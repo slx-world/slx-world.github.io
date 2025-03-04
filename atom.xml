@@ -8,7 +8,7 @@
     <author>
       <name>Mr.Song</name>
     </author>
-    <updated>2025-03-04T06:02:14.739Z</updated>
+    <updated>2025-03-04T08:02:58.460Z</updated>
     <category term="柳神，火灵儿" />
     <entry>
         <id>https://slx-world.top/hello-world/</id>
@@ -25,7 +25,14 @@
 &lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2025-03-04T06:02:14.739Z</updated>
+        <updated>2025-03-04T08:02:58.460Z</updated>
+    </entry>
+    <entry>
+        <id>https://slx-world.top/bigdata/hadoop/mapreduce/</id>
+        <title></title>
+        <link rel="alternate" href="https://slx-world.top/bigdata/hadoop/mapreduce/"/>
+        <content type="html"></content>
+        <updated>2025-03-04T08:02:58.460Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/backend/framework/mybatisplus/mybatisplus-notes/</id>
@@ -110,6 +117,18 @@
         <category term="Framework" scheme="https://slx-world.top/categories/backend/framework/" />
         <category term="MyBatisPlus" scheme="https://slx-world.top/tags/MyBatisPlus/" />
         <updated>2024-11-21T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://slx-world.top/bigdata/hadoop/hdfs/</id>
+        <title>HDFS</title>
+        <link rel="alternate" href="https://slx-world.top/bigdata/hadoop/hdfs/"/>
+        <content type="html">&lt;h1 id=&#34;hdfs-概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hdfs-概述&#34;&gt;#&lt;/a&gt; HDFS 概述&lt;/h1&gt;
+&lt;h2 id=&#34;hdfs-定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hdfs-定义&#34;&gt;#&lt;/a&gt; HDFS 定义&lt;/h2&gt;
+&lt;p&gt;HDFS（Hadoop Distributed File System），它是一个文件系统，用于存储文件，通过目录树来定位文件；其次，它是分布式的，由很多服务器联合起来实现其功能，集群中的服务器有各自的角色。HDFS 的使用场景： &lt;code&gt;适合一次写入，多次读出的场景&lt;/code&gt; 。一个文件经过创建、写入和关闭之后就不需要改变。&lt;/p&gt;
+</content>
+        <category term="BigData" scheme="https://slx-world.top/categories/bigdata/" />
+        <category term="Hadoop" scheme="https://slx-world.top/tags/hadoop/" />
+        <updated>2024-11-15T16:00:00.000Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/devops/git/git-notes/</id>
@@ -2665,387 +2684,5 @@
         <category term="Framework" scheme="https://slx-world.top/categories/backend/framework/" />
         <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
         <updated>2024-10-10T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/test/test-basis/day01/</id>
-        <title>测试基础 Day01</title>
-        <link rel="alternate" href="https://slx-world.top/test/test-basis/day01/"/>
-        <content type="html">&lt;h1 id=&#34;软件测试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件测试&#34;&gt;#&lt;/a&gt; 🌺软件测试&lt;/h1&gt;
-&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;软件&lt;/span&gt;：控制计算机硬件工作的工具&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;软件测试&lt;/span&gt;：使用&lt;span class=&#34;yellow&#34;&gt;技术&lt;/span&gt;手段&lt;span class=&#34;yellow&#34;&gt;验证&lt;/span&gt;软件是否满足使用需求&lt;/p&gt;
-&lt;p&gt;软件测试&lt;span class=&#34;yellow&#34;&gt;目的&lt;/span&gt;：减少软件&lt;span class=&#34;yellow&#34;&gt;缺陷&lt;/span&gt;（bug），保障软件质量&lt;/p&gt;
-&lt;h1 id=&#34;测试技能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试技能&#34;&gt;#&lt;/a&gt; 🌺测试技能&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;功能测试&lt;/span&gt;：验证程序的&lt;span class=&#34;yellow&#34;&gt;功能&lt;/span&gt;是否满足需求&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;自动化测试&lt;/span&gt;：使用&lt;span class=&#34;yellow&#34;&gt;代码&lt;/span&gt;或&lt;span class=&#34;yellow&#34;&gt;工具&lt;/span&gt;代替手工，对项目进行测试&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;接口测试&lt;/span&gt;：使用&lt;span class=&#34;yellow&#34;&gt;代码&lt;/span&gt;或&lt;span class=&#34;yellow&#34;&gt;工具&lt;/span&gt;对服务端提供的接口进行测试&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;性能测试&lt;/span&gt;：模拟&lt;span class=&#34;yellow&#34;&gt;多人&lt;/span&gt;使用软件，查找服务器缺陷&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;测试分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试分类&#34;&gt;#&lt;/a&gt; 🌺测试分类&lt;/h1&gt;
-&lt;h2 id=&#34;按测试阶段划分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#按测试阶段划分&#34;&gt;#&lt;/a&gt; 🌱按测试阶段划分&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;单元测试&lt;/span&gt;：针对程序源代码进行测试&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;集成测试&lt;/span&gt;：又称&lt;span class=&#34;rainbow&#34;&gt;接口测试&lt;/span&gt;，针对模块之间访问地址进行测试&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;系统测试&lt;/span&gt;：对整个系统进行测试，包括功能、兼容、文档等测试&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;验收测试&lt;/span&gt;：主要分为&lt;span class=&#34;rainbow&#34;&gt;内测&lt;/span&gt;、&lt;span class=&#34;rainbow&#34;&gt;公测&lt;/span&gt;，使用不同人群来发掘项目缺陷&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;按代码可见度划分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#按代码可见度划分&#34;&gt;#&lt;/a&gt; 🌱按代码可见度划分&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;黑盒测试&lt;/span&gt;：不关注源代码，针对程序 UI 功能进行测试。源代码不可见，UI 功能可见&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;灰盒测试&lt;/span&gt;：针对程序部分代码进行测试（接口）。&lt;span class=&#34;yellow&#34;&gt;部分&lt;/span&gt;源代码可见，UI 功能不可见&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;白盒测试&lt;/span&gt;：针对程序源代码进行测试。全部代码可见，UI 功能不可见&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;其他&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其他&#34;&gt;#&lt;/a&gt; 🌱其他&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;性能测试&lt;/span&gt;：归属&lt;span class=&#34;rainbow&#34;&gt;专项测试&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;自动化测试&lt;/span&gt;：归属&lt;span class=&#34;rainbow&#34;&gt;功能测试&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;质量模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#质量模型&#34;&gt;#&lt;/a&gt; 🌺质量模型&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;功能性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;性能&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;兼容性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;易用性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;可靠性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;安全&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;可维护性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;可移植性&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;测试流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试流程&#34;&gt;#&lt;/a&gt; 🌺测试流程&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;需求评审&lt;/span&gt;：确保各部门需求理解一致&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;计划编写&lt;/span&gt;：测什么、谁来测、怎么测&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;用例设计&lt;/span&gt;：验证项目是否符合需求的操作文档&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;用例执行&lt;/span&gt;：项目模块开发完成，开始执行用例文档，实施测试&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷管理&lt;/span&gt;：对缺陷进行管理的过程&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;⬇️&lt;/strong&gt;&lt;/p&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;测试报告&lt;/span&gt;：实施测试结果文档&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;测试用例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试用例&#34;&gt;#&lt;/a&gt; 🌺测试用例&lt;/h1&gt;
-&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;用例&lt;/span&gt;：用户使用的案例&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;rainbow&#34;&gt;测试用例&lt;/span&gt;：是为测试项目而设计的&lt;span class=&#34;yellow&#34;&gt;执行文档&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;测试用例的&lt;span class=&#34;yellow&#34;&gt;作用&lt;/span&gt;：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;防止漏测&lt;/li&gt;
-&lt;li&gt;实施测试的标准&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;用例设计&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用例设计&#34;&gt;#&lt;/a&gt; 🌱用例设计&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;用例编号&lt;/span&gt;：项目_模块_编号&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;用例标题&lt;/span&gt;：预期结果（测试点）&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;项目 / 模块&lt;/span&gt;：所属项目或模块&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;优先级&lt;/span&gt;：表示用例的重要程度或者影响力 P0～P4 (P0 最高）&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;前置条件&lt;/span&gt;：要执行此条用例，有哪些前置操作&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;测试步骤&lt;/span&gt;：描述操作步骤&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;测试数据&lt;/span&gt;：操作的数据，没有的话可以为空&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;预期结果&lt;/span&gt;：期望达到的结果&lt;/li&gt;
-&lt;/ol&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;用例编号&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;用例标题&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;项目 / 模块&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;优先级&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;前置条件&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;测试步骤&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;测试数据&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;预期结果&lt;/span&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</content>
-        <category term="Test" scheme="https://slx-world.top/categories/test/" />
-        <category term="Test-Basis" scheme="https://slx-world.top/tags/test-basis/" />
-        <updated>2024-10-09T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/devops/docker/docker-notes/</id>
-        <title>Docker 笔记</title>
-        <link rel="alternate" href="https://slx-world.top/devops/docker/docker-notes/"/>
-        <content type="html">&lt;h1 id=&#34;️初识-docker&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️初识-docker&#34;&gt;#&lt;/a&gt; ⛵️初识 Docker&lt;/h1&gt;
-&lt;h2 id=&#34;docker-概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-概念&#34;&gt;#&lt;/a&gt; 🐬Docker 概念&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Docker 是一个开源的应用容器引擎・&lt;/li&gt;
-&lt;li&gt;诞生于 2013 年初，基于 Go 语言实现， dotCloud 公司出品（后改名为 Docker Inc）&lt;/li&gt;
-&lt;li&gt;Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上。&lt;/li&gt;
-&lt;li&gt;容器是完全使用沙箱机制，相互隔离&lt;/li&gt;
-&lt;li&gt;容器性能开销极低。&lt;/li&gt;
-&lt;li&gt;Docker 从 17.03 版 版本之后分为 CE（Community Edition: 社区版） 和 EE（Enterprise Edition: 企业版）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;docker-架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-架构&#34;&gt;#&lt;/a&gt; 🐬Docker 架构&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/devops/docker/image-20250304130323777.png&#34; alt=&#34;image-20250304130323777&#34; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;镜像（Image）&lt;/code&gt; ：Docker 镜像（Image），就相当于是一个 root 文件系统。比如官方镜像 ubuntu:16.04 就包含了完整的一套 Ubuntu16.04 最小系统的 root 文件系统。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;容器（Container）&lt;/code&gt; ：镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的类和对象一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;仓库（Repository）&lt;/code&gt; ：仓库可看成一个代码控制中心，用来保存镜像&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;️docker-命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️docker-命令&#34;&gt;#&lt;/a&gt; ⛵️Docker 命令&lt;/h1&gt;
-&lt;h2 id=&#34;docker-进程相关命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-进程相关命令&#34;&gt;#&lt;/a&gt; 🐬Docker 进程相关命令&lt;/h2&gt;
-&lt;p&gt;启动 Docker 服务&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 进程相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl start &lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;停止 Docker 服务&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 进程相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl stop &lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;重启 Docker 服务&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 进程相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl restart &lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查看 Docker 服务状态&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 进程相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl status &lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;设置开机自启动 Docker 服务&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 进程相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl &lt;span class=&#34;token builtin class-name&#34;&gt;enable&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;docker-镜像相关命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-镜像相关命令&#34;&gt;#&lt;/a&gt; 🐬Docker 镜像相关命令&lt;/h2&gt;
-&lt;p&gt;查看镜像：查看本地所有镜像&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 镜像相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; images&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; images &lt;span class=&#34;token parameter variable&#34;&gt;-q&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 查看所有镜像的 id&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;搜索镜像：从网络中查找需要的镜像&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 镜像相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; search 镜像名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;拉取镜像：从 Docker 仓库下载镜像到本地，镜像名称格式为：名称：版本号&lt;/p&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;如果不指定版本号，则默认是最新的版本，如果不知道镜像版本号，可以去 docker hub 查看&lt;/p&gt;
-&lt;/div&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 镜像相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; search 镜像名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;删除镜像：删除本地镜像&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 镜像相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; rmi 镜像id &lt;span class=&#34;token comment&#34;&gt;# 删除指定本地镜像&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; rmi &lt;span class=&#34;token string&#34;&gt;&#39;docker images -q&#39;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 删除本地所有镜像&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;docker-容器相关命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-容器相关命令&#34;&gt;#&lt;/a&gt; 🐬Docker 容器相关命令&lt;/h2&gt;
-&lt;p&gt;查看容器&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ps&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 查看正在运行的容器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ps&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 查看所有容器，包括已停止运行的容器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;创建并启动容器&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; run 参数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;进入容器&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 容器相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;exec&lt;/span&gt; 参数 &lt;span class=&#34;token comment&#34;&gt;# 退出容器，容器不会关闭&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;停止容器&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 容器相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; stop 容器名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;启动容器&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 容器相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; start 容器名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;删除容器&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 容器相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;rm&lt;/span&gt; 容器名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查看容器信息&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Docker 容器相关命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; inspect 容器名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;️docker-容器数据卷&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️docker-容器数据卷&#34;&gt;#&lt;/a&gt; ⛵️Docker 容器数据卷&lt;/h1&gt;
-&lt;h2 id=&#34;数据卷概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据卷概念&#34;&gt;#&lt;/a&gt; 🐬数据卷概念&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;数据卷是宿主机的一个目录或文件&lt;/li&gt;
-&lt;li&gt;当容器目录和数据卷目录绑定后，对方的修改会立即同步&lt;/li&gt;
-&lt;li&gt;一个数据卷可以被多个容器同时挂载&lt;/li&gt;
-&lt;li&gt;一个容器也可以被挂载多个数据卷&lt;/li&gt;
-&lt;li&gt;数据卷和容器之间是多对多关系&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;数据卷作用&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;容器数据持久化&lt;/li&gt;
-&lt;li&gt;外部机器和容器间接通信&lt;/li&gt;
-&lt;li&gt;容器之间数据交换&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;配置数据卷&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置数据卷&#34;&gt;#&lt;/a&gt; 🐬配置数据卷&lt;/h2&gt;
-&lt;p&gt;创建并启动容器时，使用 -v 参数设置容器卷&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; run &lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;. &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt; 宿主机目录（文件）:容器内目录（文件）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div class=&#34;note info&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;目录必须是绝对路径&lt;/li&gt;
-&lt;li&gt;如果目录不存在，则会自动创建&lt;/li&gt;
-&lt;li&gt;可以挂载多个数据卷&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;数据卷容器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据卷容器&#34;&gt;#&lt;/a&gt; 🐬数据卷容器&lt;/h2&gt;
-&lt;p&gt;多容器进行数据交换&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;多个容器挂载同一个数据卷&lt;/li&gt;
-&lt;li&gt;数据卷容器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/devops/docker/image-20250304125742681.png&#34; alt=&#34;image-20250304125742681&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;️dockerfile&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️dockerfile&#34;&gt;#&lt;/a&gt; ⛵️Dockerfile&lt;/h1&gt;
-&lt;h2 id=&#34;dockerfile-镜像原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dockerfile-镜像原理&#34;&gt;#&lt;/a&gt; 🐬Dockerfile 镜像原理&lt;/h2&gt;
-&lt;p&gt;操作系统组成部分：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;进程调度子系统&lt;/li&gt;
-&lt;li&gt;进程通信子系统&lt;/li&gt;
-&lt;li&gt;内存管理子系统&lt;/li&gt;
-&lt;li&gt;设备管理子系统&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;文件管理子系统&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;网络通信子系统&lt;/li&gt;
-&lt;li&gt;作业控制子系统&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Linux 文件系统由 &lt;code&gt;bootfs&lt;/code&gt;  和 &lt;code&gt;rootfs&lt;/code&gt;  两部分组成&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;bootfs：包含 bootloader（引导加载程序）和 kernel（内核）&lt;/li&gt;
-&lt;li&gt;rootfs： root 文件系统，包含的就是典型 Linux 系统中的 /dev，/proc，/bin，/etc 等标准目录和文件&lt;/li&gt;
-&lt;li&gt;不同的 linux 发行版，bootfs 基本一样，而 rootfs 不同，如 ubuntu，centos 等&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Docker 镜像是由特殊的文件系统叠加而成&lt;/li&gt;
-&lt;li&gt;最底端是 bootfs，并使用宿主机的 bootfs&lt;/li&gt;
-&lt;li&gt;第二层是 root 文件系统 rootfs, 称为 base image&lt;/li&gt;
-&lt;li&gt;然后再往上可以叠加其他的镜像文件&lt;/li&gt;
-&lt;li&gt;统一文件系统（Union File System）技术能够将不同的层整合成一个文件系统，为这些层提供了一个统一的视角，这样就隐藏了多层的存在，在用户的角度看来，只存在一个文件系统。・&lt;/li&gt;
-&lt;li&gt;一个镜像可以放在另一个镜像的上面。位于下面的镜像称为父镜像，最底部的镜像成为基础镜像。&lt;/li&gt;
-&lt;li&gt;当从一个镜像启动容器时，Docker 会在最顶层加载一个读写文件系统作为容器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/devops/docker/image-20250304132825228.png&#34; alt=&#34;image-20250304132825228&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;镜像制作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#镜像制作&#34;&gt;#&lt;/a&gt; 🐬镜像制作&lt;/h2&gt;
-&lt;p&gt;Docker 镜像如何制作❓&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;容器转为镜像&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; commit 容器id 镜像名称:版本号&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; save &lt;span class=&#34;token parameter variable&#34;&gt;-o&lt;/span&gt; 压缩文件名称 镜像名称:版本号&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; load –i 压缩文件名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dockerfile&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/devops/docker/image-20250304132255649.png&#34; alt=&#34;image-20250304132255649&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;dockerfile-概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dockerfile-概念&#34;&gt;#&lt;/a&gt; 🐬Dockerfile 概念&lt;/h2&gt;
-&lt;p&gt;Dockerfile 是一个文本文件，包含了一条条的指令，每一条指令构建一层，基于基础镜像，最终构建出一个新的镜像&lt;/p&gt;
-&lt;p&gt;Dochub 网址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZG9ja2VyLmNvbQ==&#34;&gt;https://hub.docker.com&lt;/span&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;关键字&lt;/th&gt;
-&lt;th&gt;作用&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;FROM&lt;/td&gt;
-&lt;td&gt;指定父镜像&lt;/td&gt;
-&lt;td&gt;指定 dockerfile 基于那个 image 构建&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;MAINTAINER&lt;/td&gt;
-&lt;td&gt;作者信息&lt;/td&gt;
-&lt;td&gt;用来标明这个 dockerfile 谁写的&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;LABEL&lt;/td&gt;
-&lt;td&gt;标签&lt;/td&gt;
-&lt;td&gt;用来标明 dockerfile 的标签 可以使用 Label 代替 Maintainer 最终都是在 docker image 基本信息中可以查看&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;RUN&lt;/td&gt;
-&lt;td&gt;执行命令&lt;/td&gt;
-&lt;td&gt;执行一段命令 默认是 /bin/sh 格式: RUN command 或者 RUN [&amp;quot;command&amp;quot; , &amp;quot;param1&amp;quot;,&amp;quot;param2&amp;quot;]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CMD&lt;/td&gt;
-&lt;td&gt;容器启动命令&lt;/td&gt;
-&lt;td&gt;提供启动容器时候的默认命令 和 ENTRYPOINT 配合使用。格式 CMD command param1 param2 或者 CMD [&amp;quot;command&amp;quot; , &amp;quot;param1&amp;quot;,&amp;quot;param2&amp;quot;]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ENTRYPOINT&lt;/td&gt;
-&lt;td&gt;入口&lt;/td&gt;
-&lt;td&gt;一般在制作一些执行就关闭的容器中会使用&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;COPY&lt;/td&gt;
-&lt;td&gt;复制文件&lt;/td&gt;
-&lt;td&gt;build 的时候复制文件到 image 中&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ADD&lt;/td&gt;
-&lt;td&gt;添加文件&lt;/td&gt;
-&lt;td&gt;build 的时候添加文件到 image 中 不仅仅局限于当前 build 上下文 可以来源于远程服务&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ENV&lt;/td&gt;
-&lt;td&gt;环境变量&lt;/td&gt;
-&lt;td&gt;指定 build 时候的环境变量 可以在启动的容器的时候 通过 - e 覆盖 格式 ENV name=value&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ARG&lt;/td&gt;
-&lt;td&gt;构建参数&lt;/td&gt;
-&lt;td&gt;构建参数 只在构建的时候使用的参数 如果有 ENV 那么 ENV 的相同名字的值始终覆盖 arg 的参数&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;VOLUME&lt;/td&gt;
-&lt;td&gt;定义外部可以挂载的数据卷&lt;/td&gt;
-&lt;td&gt;指定 build 的 image 那些目录可以启动的时候挂载到文件系统中 启动容器的时候使用 -v 绑定 格式 VOLUME [&amp;quot;目录&amp;quot;]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;EXPOSE&lt;/td&gt;
-&lt;td&gt;暴露端口&lt;/td&gt;
-&lt;td&gt;定义容器运行的时候监听的端口 启动容器的使用 - p 来绑定暴露端口 格式: EXPOSE 8080 或者 EXPOSE 8080/udp&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;WORKDIR&lt;/td&gt;
-&lt;td&gt;工作目录&lt;/td&gt;
-&lt;td&gt;指定容器内部的工作目录 如果没有创建则自动创建 如果指定 / 使用的是绝对地址 如果不是 / 开头那么是在上一条 workdir 的路径的相对路径&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;USER&lt;/td&gt;
-&lt;td&gt;指定执行用户&lt;/td&gt;
-&lt;td&gt;指定 build 或者启动的时候 用户 在 RUN CMD ENTRYPONT 执行的时候的用户&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;HEALTHCHECK&lt;/td&gt;
-&lt;td&gt;健康检查&lt;/td&gt;
-&lt;td&gt;指定监测当前容器的健康监测的命令 基本上没用 因为很多时候 应用本身有健康监测机制&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ONBUILD&lt;/td&gt;
-&lt;td&gt;触发器&lt;/td&gt;
-&lt;td&gt;当存在 ONBUILD 关键字的镜像作为基础镜像的时候 当执行 FROM 完成之后 会执行 ONBUILD 的命令 但是不影响当前镜像 用处也不怎么大&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;STOPSIGNAL&lt;/td&gt;
-&lt;td&gt;发送信号量到宿主机&lt;/td&gt;
-&lt;td&gt;该 STOPSIGNAL 指令设置将发送到容器的系统调用信号以退出。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;SHELL&lt;/td&gt;
-&lt;td&gt;指定执行脚本的 shell&lt;/td&gt;
-&lt;td&gt;指定 RUN CMD ENTRYPOINT 执行命令的时候 使用的 shell&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id=&#34;️docker-服务编排&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️docker-服务编排&#34;&gt;#&lt;/a&gt; ⛵️Docker 服务编排&lt;/h1&gt;
-&lt;p&gt;服务编排：  &lt;code&gt;按照一定的业务规则批量管理容器&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;docker-compose&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-compose&#34;&gt;#&lt;/a&gt; 🐬Docker Compose&lt;/h2&gt;
-&lt;p&gt;Docker Compose 是一个编排多容器分布式部署的工具，提供命令集管理容器化应用的完整开发周期，包括服务构建，启动和停止。使用步骤：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;利用 Dockerfile 定义运行环境镜像&lt;/li&gt;
-&lt;li&gt;使用 docker-compose.yml 定义组成应用的各服务&lt;/li&gt;
-&lt;li&gt;运行 docker-compose up 启动应用&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;docker-私有仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-私有仓库&#34;&gt;#&lt;/a&gt; 🐬Docker 私有仓库&lt;/h2&gt;
-&lt;p&gt;Docker 官方的 Docker hub（&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZG9ja2VyLmNvbQ==&#34;&gt;https://hub.docker.com&lt;/span&gt;）是一个用于管理公共镜像的仓库，我们可以从上面拉取镜像到本地，也可以把我们自己的镜像推送上去。但是，有时候我们的服务器无法访问互联网，或者你不希望将自己的镜像放到公网当中，那么我们就需要搭建自己的私有仓库来存储和管理自己的镜像。&lt;/p&gt;
-&lt;h1 id=&#34;️docker-相关概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️docker-相关概念&#34;&gt;#&lt;/a&gt; ⛵️Docker 相关概念&lt;/h1&gt;
-&lt;p&gt;容器就是将软件打包成标准化单元，以用于开发、交付和部署。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;容器镜像是轻量的、可执行的独立软件包 ，包含软件运行所需的所有内容：代码、运行时环境、系统工具、系统库和设置。&lt;/li&gt;
-&lt;li&gt;容器化软件在任何环境中都能够始终如一地运行。&lt;/li&gt;
-&lt;li&gt;容器赋予了软件独立性，使其免受外在环境差异的影响，从而有助于减少团队间在相同基础设施上运行不同软件时的冲突。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;docker 容器虚拟化 与 传统虚拟机比较&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;相同：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;容器和虚拟机具有相似的资源隔离和分配优势&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;不同：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;容器虚拟化的是操作系统，虚拟机虚拟化的是硬件。&lt;/li&gt;
-&lt;li&gt;传统虚拟机可以运行不同的操作系统，容器只能运行同一类型操作系统&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/devops/docker/image-20250304135759740.png&#34; alt=&#34;image-20250304135759740&#34; /&gt;&lt;/p&gt;
-</content>
-        <category term="DevOps" scheme="https://slx-world.top/categories/devops/" />
-        <category term="Docker" scheme="https://slx-world.top/tags/docker/" />
-        <updated>2024-10-08T16:00:00.000Z</updated>
     </entry>
 </feed>
