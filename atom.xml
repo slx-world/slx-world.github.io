@@ -8,7 +8,7 @@
     <author>
       <name>Mr.Song</name>
     </author>
-    <updated>2025-03-04T13:16:20.963Z</updated>
+    <updated>2025-03-05T13:39:11.154Z</updated>
     <category term="柳神，火灵儿" />
     <entry>
         <id>https://slx-world.top/hello-world/</id>
@@ -25,14 +25,14 @@
 &lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2025-03-04T13:16:20.963Z</updated>
+        <updated>2025-03-05T13:39:11.154Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/bigdata/hadoop/mapreduce/</id>
         <title></title>
         <link rel="alternate" href="https://slx-world.top/bigdata/hadoop/mapreduce/"/>
         <content type="html"></content>
-        <updated>2025-03-04T13:16:20.947Z</updated>
+        <updated>2025-03-05T13:39:11.154Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/backend/framework/mybatisplus/mybatisplus-notes/</id>
@@ -122,9 +122,9 @@
         <id>https://slx-world.top/backend/database/mysql/basic-chapter/</id>
         <title>MySQL 基础篇</title>
         <link rel="alternate" href="https://slx-world.top/backend/database/mysql/basic-chapter/"/>
-        <content type="html">&lt;h1 id=&#34;sql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sql&#34;&gt;#&lt;/a&gt; SQL&lt;/h1&gt;
+        <content type="html">&lt;h1 id=&#34;sql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sql&#34;&gt;#&lt;/a&gt; 👛SQL&lt;/h1&gt;
 &lt;p&gt;全称 Structured Query Language，结构化查询语言。操作关系型数据库的编程语言，定义了一套操作关系型数据库统一标准&lt;/p&gt;
-&lt;h2 id=&#34;sql-通用语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sql-通用语法&#34;&gt;#&lt;/a&gt; SQL 通用语法&lt;/h2&gt;
+&lt;h2 id=&#34;sql-通用语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sql-通用语法&#34;&gt;#&lt;/a&gt; 🏆SQL 通用语法&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;SQL 语句可以单行或多行书写，以分号结尾。&lt;/li&gt;
 &lt;li&gt;SQL 语句可以使用空格 / 缩进来增强语句的可读性。&lt;/li&gt;
@@ -136,7 +136,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;sql-分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sql-分类&#34;&gt;#&lt;/a&gt; SQL 分类&lt;/h2&gt;
+&lt;h2 id=&#34;sql-分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sql-分类&#34;&gt;#&lt;/a&gt; 🏆SQL 分类&lt;/h2&gt;
 &lt;p&gt;SQL 语句，根据其功能，主要分为四类： &lt;code&gt;DDL&lt;/code&gt; 、 &lt;code&gt;DML&lt;/code&gt; 、 &lt;code&gt;DQL&lt;/code&gt; 、 &lt;code&gt;DCL&lt;/code&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -169,9 +169,9 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;ddl&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ddl&#34;&gt;#&lt;/a&gt; DDL&lt;/h2&gt;
+&lt;h2 id=&#34;ddl&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ddl&#34;&gt;#&lt;/a&gt; 🏆DDL&lt;/h2&gt;
 &lt;p&gt;Data Definition Language，数据定义语言，用来定义数据库对象 (数据库，表，字段)&lt;/p&gt;
-&lt;h3 id=&#34;数据库操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库操作&#34;&gt;#&lt;/a&gt; 数据库操作&lt;/h3&gt;
+&lt;h3 id=&#34;数据库操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库操作&#34;&gt;#&lt;/a&gt; 🎁数据库操作&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;查询所有数据库&lt;/p&gt;
@@ -189,8 +189,8 @@
 &lt;p&gt;切换数据库&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;use&lt;/span&gt; 数据库名 &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;表操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表操作&#34;&gt;#&lt;/a&gt; 表操作&lt;/h3&gt;
-&lt;h4 id=&#34;表操作-查询创建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表操作-查询创建&#34;&gt;#&lt;/a&gt; 表操作 - 查询创建&lt;/h4&gt;
+&lt;h3 id=&#34;表操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表操作&#34;&gt;#&lt;/a&gt; 🎁表操作&lt;/h3&gt;
+&lt;h4 id=&#34;表操作-查询创建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表操作-查询创建&#34;&gt;#&lt;/a&gt; 🏀表操作 - 查询创建&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;查询当前数据库所有表&lt;/p&gt;
@@ -208,7 +208,7 @@
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;表操作-数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表操作-数据类型&#34;&gt;#&lt;/a&gt; 表操作 - 数据类型&lt;/h4&gt;
+&lt;h4 id=&#34;表操作-数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表操作-数据类型&#34;&gt;#&lt;/a&gt; 🏀表操作 - 数据类型&lt;/h4&gt;
 &lt;p&gt;MySQL 中的数据类型有很多，主要分为三类： &lt;code&gt;数值类型&lt;/code&gt; 、 &lt;code&gt;字符串类型&lt;/code&gt; 、 &lt;code&gt;日期时间类型&lt;/code&gt; 。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -401,7 +401,7 @@
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;表操作-修改&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表操作-修改&#34;&gt;#&lt;/a&gt; 表操作 - 修改&lt;/h4&gt;
+&lt;h4 id=&#34;表操作-修改&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表操作-修改&#34;&gt;#&lt;/a&gt; 🏀表操作 - 修改&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;添加字段&lt;/p&gt;
@@ -419,7 +419,7 @@
 &lt;p&gt;修改表名&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;ALTER&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt; 表名 &lt;span class=&#34;token keyword&#34;&gt;RENAME&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TO&lt;/span&gt; 新表名&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;表操作-删除&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表操作-删除&#34;&gt;#&lt;/a&gt; 表操作 - 删除&lt;/h4&gt;
+&lt;h4 id=&#34;表操作-删除&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表操作-删除&#34;&gt;#&lt;/a&gt; 🏀表操作 - 删除&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;删除表&lt;/p&gt;
@@ -431,14 +431,14 @@
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;dml&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dml&#34;&gt;#&lt;/a&gt; DML&lt;/h2&gt;
+&lt;h2 id=&#34;dml&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dml&#34;&gt;#&lt;/a&gt; 🏆DML&lt;/h2&gt;
 &lt;p&gt;DML 英文全称是 Data Manipulation Language (数据操作语言)，用来对数据库中表的数据记录进行增、删、改操作。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;添加数据（INSERT）&lt;/li&gt;
 &lt;li&gt;修改数据（UPDATE）&lt;/li&gt;
 &lt;li&gt;删除数据（DELETE）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;添加数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#添加数据&#34;&gt;#&lt;/a&gt; 添加数据&lt;/h3&gt;
+&lt;h3 id=&#34;添加数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#添加数据&#34;&gt;#&lt;/a&gt; 🎁添加数据&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;给指定字段添加数据&lt;/p&gt;
@@ -464,12 +464,12 @@
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;修改数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修改数据&#34;&gt;#&lt;/a&gt; 修改数据&lt;/h3&gt;
+&lt;h3 id=&#34;修改数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修改数据&#34;&gt;#&lt;/a&gt; 🎁修改数据&lt;/h3&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;UPDATE&lt;/span&gt; 表名 &lt;span class=&#34;token keyword&#34;&gt;SET&lt;/span&gt; 字段名&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; 值&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; 字段名&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; 值&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;WHERE&lt;/span&gt; 条件 &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;注意事项:&lt;/p&gt;
 &lt;p&gt;修改语句的条件可以有，也可以没有，如果没有条件，则会修改整张表的所有数据。&lt;/p&gt;
 &lt;/div&gt;
-&lt;h3 id=&#34;删除数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除数据&#34;&gt;#&lt;/a&gt; 删除数据&lt;/h3&gt;
+&lt;h3 id=&#34;删除数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除数据&#34;&gt;#&lt;/a&gt; 🎁删除数据&lt;/h3&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;DELETE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; 表名 &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;WHERE&lt;/span&gt; 条件 &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;注意事项:&lt;/p&gt;
 &lt;ul&gt;
@@ -478,9 +478,9 @@
 &lt;li&gt;当进行删除全部数据操作时，datagrip 会提示我们，询问是否确认删除，我们直接点击 Execute 即可。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h2 id=&#34;dql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dql&#34;&gt;#&lt;/a&gt; DQL&lt;/h2&gt;
+&lt;h2 id=&#34;dql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dql&#34;&gt;#&lt;/a&gt; 🏆DQL&lt;/h2&gt;
 &lt;p&gt;DQL 英文全称是 Data Query Language (数据查询语言)，数据查询语言，用来查询数据库中表的记录。&lt;/p&gt;
-&lt;h3 id=&#34;基本语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本语法&#34;&gt;#&lt;/a&gt; 基本语法&lt;/h3&gt;
+&lt;h3 id=&#34;基本语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本语法&#34;&gt;#&lt;/a&gt; 🎁基本语法&lt;/h3&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; 字段列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; 表名列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;WHERE&lt;/span&gt; 条件列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;GROUP&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;BY&lt;/span&gt; 分组字段列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;HAVING&lt;/span&gt; 分组后条件列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;ORDER&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;BY&lt;/span&gt; 排序字段列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;LIMIT&lt;/span&gt; 分页参数&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
 &lt;li&gt;基本查询（不带任何条件）&lt;/li&gt;
 &lt;li&gt;条件查询（WHERE）&lt;/li&gt;
@@ -489,7 +489,7 @@
 &lt;li&gt;排序查询（order by）&lt;/li&gt;
 &lt;li&gt;分页查询（limit）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;基础查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基础查询&#34;&gt;#&lt;/a&gt; 基础查询&lt;/h3&gt;
+&lt;h3 id=&#34;基础查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基础查询&#34;&gt;#&lt;/a&gt; 🎁基础查询&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;查询多个字段&lt;/p&gt;
@@ -504,7 +504,7 @@
 &lt;p&gt;去除重复记录&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;DISTINCT&lt;/span&gt; 字段列表 &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; 表名&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;条件查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#条件查询&#34;&gt;#&lt;/a&gt; 条件查询&lt;/h3&gt;
+&lt;h3 id=&#34;条件查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#条件查询&#34;&gt;#&lt;/a&gt; 🎁条件查询&lt;/h3&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; 字段列表 &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; 表名 &lt;span class=&#34;token keyword&#34;&gt;WHERE&lt;/span&gt; 条件列表 &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;常用的比较运算符如下:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -580,7 +580,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;聚合函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合函数&#34;&gt;#&lt;/a&gt; 聚合函数&lt;/h3&gt;
+&lt;h3 id=&#34;聚合函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合函数&#34;&gt;#&lt;/a&gt; 🎁聚合函数&lt;/h3&gt;
 &lt;p&gt;将一列数据作为一个整体，进行纵向计算 。&lt;/p&gt;
 &lt;p&gt;常见的聚合函数如下：&lt;/p&gt;
 &lt;table&gt;
@@ -616,7 +616,7 @@
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; 聚合函数&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;字段列表&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; 表名 &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;注意 : NULL 值是不参与所有聚合函数运算的。&lt;/p&gt;
 &lt;/div&gt;
-&lt;h3 id=&#34;分组查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分组查询&#34;&gt;#&lt;/a&gt; 分组查询&lt;/h3&gt;
+&lt;h3 id=&#34;分组查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分组查询&#34;&gt;#&lt;/a&gt; 🎁分组查询&lt;/h3&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; 字段列表 &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; 表名 &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;WHERE&lt;/span&gt; 条件 &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;GROUP&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;BY&lt;/span&gt; 分组字段名 &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;HAVING&lt;/span&gt; 分组后过滤条件 &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;where 与 having 区别执行时机不同：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;where 是分组之前进行过滤，不满足 where 条件，不参与分组；&lt;/li&gt;
@@ -630,7 +630,7 @@
 &lt;li&gt;支持多字段分组，具体语法为 : group by columnA,columnB&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h3 id=&#34;排序查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#排序查询&#34;&gt;#&lt;/a&gt; 排序查询&lt;/h3&gt;
+&lt;h3 id=&#34;排序查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#排序查询&#34;&gt;#&lt;/a&gt; 🎁排序查询&lt;/h3&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; 字段列表 &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; 表名 &lt;span class=&#34;token keyword&#34;&gt;ORDER&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;BY&lt;/span&gt; 字段&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; 排序方式&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; 字段&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; 排序方式&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;排序方式&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;ASC : 升序 (默认值)&lt;/li&gt;
@@ -643,7 +643,7 @@
 &lt;li&gt;如果是多字段排序，当第一个字段值相同时，才会根据第二个字段进行排序；&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h3 id=&#34;分页查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分页查询&#34;&gt;#&lt;/a&gt; 分页查询&lt;/h3&gt;
+&lt;h3 id=&#34;分页查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分页查询&#34;&gt;#&lt;/a&gt; 🎁分页查询&lt;/h3&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; 字段列表 &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; 表名 &lt;span class=&#34;token keyword&#34;&gt;LIMIT&lt;/span&gt; 起始索引&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; 查询记录数 &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;注意事项:&lt;/p&gt;
 &lt;ul&gt;
@@ -652,16 +652,24 @@
 &lt;li&gt;如果查询的是第一页数据，起始索引可以省略，直接简写为 limit 10。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h3 id=&#34;执行顺序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#执行顺序&#34;&gt;#&lt;/a&gt; 执行顺序&lt;/h3&gt;
+&lt;h3 id=&#34;执行顺序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#执行顺序&#34;&gt;#&lt;/a&gt; 🎁执行顺序&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/backend/database/mysql/image-20250304205442412.png&#34; alt=&#34;image-20250304205442412&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;dcl&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dcl&#34;&gt;#&lt;/a&gt; DCL&lt;/h2&gt;
+&lt;h2 id=&#34;dcl&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dcl&#34;&gt;#&lt;/a&gt; 🏆DCL&lt;/h2&gt;
 &lt;p&gt;DCL 英文全称是 Data Control Language (数据控制语言)，用来管理数据库用户、控制数据库的访问权限。&lt;/p&gt;
-&lt;h3 id=&#34;管理用户&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#管理用户&#34;&gt;#&lt;/a&gt; 管理用户&lt;/h3&gt;
+&lt;h3 id=&#34;管理用户&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#管理用户&#34;&gt;#&lt;/a&gt; 🎁管理用户&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;查询用户&lt;/li&gt;
-&lt;li&gt;创建用户&lt;/li&gt;
-&lt;li&gt;修改用户密码&lt;/li&gt;
-&lt;li&gt;删除用户&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查询用户&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; mysql&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建用户&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;USER&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;用户名&#39;&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;@&#39;主机名&#39;&lt;/span&gt; IDENTIFIED &lt;span class=&#34;token keyword&#34;&gt;BY&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;密码&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改用户密码&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;ALTER&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;USER&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;用户名&#39;&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;@&#39;主机名&#39;&lt;/span&gt; IDENTIFIED &lt;span class=&#34;token keyword&#34;&gt;WITH&lt;/span&gt; mysql_native_password &lt;span class=&#34;token keyword&#34;&gt;BY&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;新密码&#39;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除用户&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;DROP&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;USER&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;用户名&#39;&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;@&#39;主机名&#39;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;注意事项:&lt;/p&gt;
@@ -671,7 +679,7 @@
 &lt;li&gt;这类 SQL 开发人员操作的比较少，主要是 DBA（ Database Administrator 数据库管理员）使用。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h3 id=&#34;权限控制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#权限控制&#34;&gt;#&lt;/a&gt; 权限控制&lt;/h3&gt;
+&lt;h3 id=&#34;权限控制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#权限控制&#34;&gt;#&lt;/a&gt; 🎁权限控制&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -714,6 +722,196 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;查询权限&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SHOW&lt;/span&gt; GRANTS &lt;span class=&#34;token keyword&#34;&gt;FOR&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;用户名&#39;&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;@&#39;主机名&#39;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;授予权限&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;GRANT&lt;/span&gt; 权限列表 &lt;span class=&#34;token keyword&#34;&gt;ON&lt;/span&gt; 数据库名&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;表名 &lt;span class=&#34;token keyword&#34;&gt;TO&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;用户名&#39;&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;@&#39;主机名&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;撤销权限&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;REVOKE&lt;/span&gt; 权限列表 &lt;span class=&#34;token keyword&#34;&gt;ON&lt;/span&gt; 数据库名&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;表名 &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;用户名&#39;&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;@&#39;主机名&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;注意事项：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多个权限之间，使用 &lt;code&gt;逗号&lt;/code&gt; 分隔&lt;/li&gt;
+&lt;li&gt;授权时， 数据库名和表名可以使用 &lt;code&gt;*&lt;/code&gt;  进行通配，代表 &lt;code&gt;所有&lt;/code&gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数&#34;&gt;#&lt;/a&gt; 👛函数&lt;/h1&gt;
+&lt;p&gt;函数 是指一段可以直接被另一段程序调用的程序或代码。&lt;/p&gt;
+&lt;p&gt;MySQL 中的函数主要分为以下四类：  &lt;code&gt;字符串函数&lt;/code&gt; 、 &lt;code&gt;数值函数&lt;/code&gt; 、 &lt;code&gt;日期函数&lt;/code&gt; 、 &lt;code&gt;流程函数&lt;/code&gt; 。&lt;/p&gt;
+&lt;h2 id=&#34;字符串函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字符串函数&#34;&gt;#&lt;/a&gt; 🏆字符串函数&lt;/h2&gt;
+&lt;p&gt;MySQL 中内置了很多字符串函数，常用的几个如下：&lt;/p&gt;
+&lt;h2 id=&#34;数值函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数值函数&#34;&gt;#&lt;/a&gt; 🏆数值函数&lt;/h2&gt;
+&lt;p&gt;常见的数值函数如下：&lt;/p&gt;
+&lt;h2 id=&#34;日期函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#日期函数&#34;&gt;#&lt;/a&gt; 🏆日期函数&lt;/h2&gt;
+&lt;p&gt;常见的日期函数如下：&lt;/p&gt;
+&lt;h2 id=&#34;流程函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#流程函数&#34;&gt;#&lt;/a&gt; 🏆流程函数&lt;/h2&gt;
+&lt;h1 id=&#34;约束&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#约束&#34;&gt;#&lt;/a&gt; 👛约束&lt;/h1&gt;
+&lt;h2 id=&#34;概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概述&#34;&gt;#&lt;/a&gt; 🏆概述&lt;/h2&gt;
+&lt;p&gt;概念：约束是作用于表中字段上的规则，用于限制存储在表中的数据。&lt;/p&gt;
+&lt;p&gt;目的：保证数据库中数据的正确、有效性和完整性。&lt;/p&gt;
+&lt;p&gt;分类:&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;注意：约束是作用于表中字段上的，可以在创建表 / 修改表的时候添加约束&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;外键约束&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#外键约束&#34;&gt;#&lt;/a&gt; 🏆外键约束&lt;/h2&gt;
+&lt;h3 id=&#34;介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#介绍&#34;&gt;#&lt;/a&gt; 🎁介绍&lt;/h3&gt;
+&lt;p&gt;外键：用来让两张表的数据之间建立连接，从而保证数据的一致性和完整性。&lt;/p&gt;
+&lt;h3 id=&#34;语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#语法&#34;&gt;#&lt;/a&gt; 🎁语法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;添加外键&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt; 表名&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;字段名    数据类型&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;CONSTRAINT&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;   &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;ALTER&lt;/span&gt;   &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt;  表名   &lt;span class=&#34;token keyword&#34;&gt;ADD&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;CONSTRAINT&lt;/span&gt;   外键名称   &lt;span class=&#34;token keyword&#34;&gt;FOREIGN&lt;/span&gt;   &lt;span class=&#34;token keyword&#34;&gt;KEY&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;外键字段名&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;REFERENCES&lt;/span&gt;  主表 &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;主表列名&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除外键&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;ALTER&lt;/span&gt;   &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt;  表名   &lt;span class=&#34;token keyword&#34;&gt;DROP&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;FOREIGN&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;KEY&lt;/span&gt;  外键名称&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;删除更新行为&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除更新行为&#34;&gt;#&lt;/a&gt; 🎁 删除 / 更新行为&lt;/h3&gt;
+&lt;p&gt;添加了外键之后，再删除父表数据时产生的约束行为，我们就称为删除 / 更新行为。具体的删除 / 更新行 为有以下几种:&lt;/p&gt;
+&lt;p&gt;具体语法为：&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;ALTER&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt;  表名  &lt;span class=&#34;token keyword&#34;&gt;ADD&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;CONSTRAINT&lt;/span&gt;  外键名称  &lt;span class=&#34;token keyword&#34;&gt;FOREIGN&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;KEY&lt;/span&gt;  &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;外键字段&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;   &lt;span class=&#34;token keyword&#34;&gt;REFERENCES&lt;/span&gt;   &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;主表名 &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;主表字段名&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;   &lt;span class=&#34;token keyword&#34;&gt;ON&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;UPDATE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;CASCADE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;ON&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;DELETE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;CASCADE&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;在一般的业务系统中，不会修改一张表的主键值。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;多表联查&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多表联查&#34;&gt;#&lt;/a&gt; 👛多表联查&lt;/h1&gt;
+&lt;h2 id=&#34;多表关系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多表关系&#34;&gt;#&lt;/a&gt; 🏆多表关系&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;一对多 (多对一)&lt;/li&gt;
+&lt;li&gt;多对多&lt;/li&gt;
+&lt;li&gt;一对一&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;概述-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概述-2&#34;&gt;#&lt;/a&gt; 🎁概述&lt;/h3&gt;
+&lt;p&gt;多表查询就是指从多张表中查询数据。&lt;/p&gt;
+&lt;h3 id=&#34;分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分类&#34;&gt;#&lt;/a&gt; 🎁分类&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;连接查询&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;内连接：相当于查询 A、B 交集部分数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;外连接：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;左外连接：查询左表所有数据，以及两张表交集部分数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;右外连接：查询右表所有数据，以及两张表交集部分数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自连接：当前表与自身的连接查询，自连接必须使用表别名&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;子查询&lt;/p&gt;
+&lt;h2 id=&#34;内连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内连接&#34;&gt;#&lt;/a&gt; 🏆内连接&lt;/h2&gt;
+&lt;p&gt;内连接的语法分为两种:  &lt;code&gt;隐式内连接&lt;/code&gt; 、 &lt;code&gt;显式内连接&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;隐式内连接&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;  字段列表   &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt;   表&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;   &lt;span class=&#34;token keyword&#34;&gt;WHERE&lt;/span&gt;   条件 &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;显式内连接&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;  字段列表   &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt;   表&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;  &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;INNER&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;JOIN&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;ON&lt;/span&gt;  连接条件 &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;表的别名:&lt;/p&gt;
+&lt;p&gt;①. tablea as 别名 1 , tableb as 别名 2 ; ②. tablea 别名 1 , tableb 别名 2 ;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;注意事项:&lt;/p&gt;
+&lt;p&gt;一旦为表起了别名，就不能再使用表名来指定对应的字段了，此时只能够使用别名来指定字 段。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;外连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#外连接&#34;&gt;#&lt;/a&gt; 🏆外连接&lt;/h2&gt;
+&lt;p&gt;外连接分为两种，分别是：左外连接 和 右外连接&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;左外连接&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;  字段列表   &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt;   表&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;LEFT&lt;/span&gt;  &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;OUTER&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;JOIN&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;ON&lt;/span&gt;  条件 &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;左外连接相当于查询表 1 (左表) 的所有数据，当然也包含表 1 和表 2 交集部分的数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;右外连接&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;  字段列表   &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt;   表&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;RIGHT&lt;/span&gt;  &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;OUTER&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;JOIN&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;ON&lt;/span&gt;  条件 &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;右外连接相当于查询表 2 (右表) 的所有数据，当然也包含表 1 和表 2 交集部分的数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;注意事项： 左外连接和右外连接是可以相互替换的，只需要调整在连接查询时 SQL 中，表结构的先后顺 序就可以了。而我们在日常开发使用时，更偏向于左外连接。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;自连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自连接&#34;&gt;#&lt;/a&gt; 🏆自连接&lt;/h2&gt;
+&lt;h3 id=&#34;自连接查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自连接查询&#34;&gt;#&lt;/a&gt; 🎁自连接查询&lt;/h3&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;  字段列表   &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt;   表A   别名A   &lt;span class=&#34;token keyword&#34;&gt;JOIN&lt;/span&gt;  表A    别名B   &lt;span class=&#34;token keyword&#34;&gt;ON&lt;/span&gt;  条件 &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;而对于自连接查询，可以是内连接查询，也可以是外连接查询。&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;注意事项:&lt;/p&gt;
+&lt;p&gt;在自连接查询中，必须要为表起别名，要不然我们不清楚所指定的条件、返回的字段，到底是哪一张表的字段。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;联合查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#联合查询&#34;&gt;#&lt;/a&gt; 🎁联合查询&lt;/h3&gt;
+&lt;p&gt;对于 union 查询，就是把多次查询的结果合并起来，形成一个新的查询结果集。&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;  字段列表   &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt;   表A  &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;UNION&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;ALL&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;  字段列表  &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt;   表B  &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;对于联合查询的多张表的列数必须保持一致，字段类型也需要保持一致。&lt;/li&gt;
+&lt;li&gt;union all 会将全部的数据直接合并在一起，union 会对合并之后的数据去重。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;子查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#子查询&#34;&gt;#&lt;/a&gt; 🏆子查询&lt;/h2&gt;
+&lt;h3 id=&#34;概述-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概述-3&#34;&gt;#&lt;/a&gt; 🎁概述&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;概念&lt;/p&gt;
+&lt;p&gt;SQL 语句中嵌套 SELECT 语句，称为嵌套查询，又称子查询。&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;  &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;  &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt;   t1   &lt;span class=&#34;token keyword&#34;&gt;WHERE&lt;/span&gt;  column1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;  &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;  column1  &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt;  t2 &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;子查询外部的语句可以是 INSERT / UPDATE / DELETE / SELECT 的任何一个。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;分类&lt;/p&gt;
+&lt;p&gt;根据子查询结果不同，分为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;标量子查询（子查询结果为单个值）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;列子查询 (子查询结果为一列)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;行子查询 (子查询结果为一行)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;表子查询 (子查询结果为多行多列)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;根据子查询位置，分为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;WHERE 之后&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;FROM 之后&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SELECT 之后&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;标量子查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标量子查询&#34;&gt;#&lt;/a&gt; 🎁标量子查询&lt;/h3&gt;
+&lt;p&gt;子查询返回的结果是 &lt;code&gt;单个值&lt;/code&gt; （数字、字符串、日期等），最简单的形式，这种子查询称为标量子查询。&lt;/p&gt;
+&lt;p&gt;常用的操作符： &lt;code&gt;=  &amp;lt;&amp;gt;  &amp;gt;   &amp;gt;=   &amp;lt;  &amp;lt;=  &lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;列子查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列子查询&#34;&gt;#&lt;/a&gt; 🎁列子查询&lt;/h3&gt;
+&lt;p&gt;子查询返回的结果是一列（可以是多行），这种子查询称为列子查询。&lt;/p&gt;
+&lt;p&gt;常用的操作符： &lt;code&gt;IN &lt;/code&gt; 、 &lt;code&gt;NOT IN&lt;/code&gt;  、  &lt;code&gt;ANY &lt;/code&gt; 、 &lt;code&gt;SOME&lt;/code&gt;  、  &lt;code&gt;ALL&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;行子查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#行子查询&#34;&gt;#&lt;/a&gt; 🎁行子查询&lt;/h3&gt;
+&lt;p&gt;子查询返回的结果是 &lt;code&gt;一行&lt;/code&gt; （可以是 &lt;code&gt;多列&lt;/code&gt; ），这种子查询称为行子查询。&lt;/p&gt;
+&lt;p&gt;常用的操作符： &lt;code&gt;=&lt;/code&gt;  、 &lt;code&gt;&amp;lt;&amp;gt; &lt;/code&gt; 、 &lt;code&gt;IN&lt;/code&gt;  、 &lt;code&gt;NOT IN&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;表子查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表子查询&#34;&gt;#&lt;/a&gt; 🎁表子查询&lt;/h3&gt;
+&lt;p&gt;子查询返回的结果是多行多列，这种子查询称为表子查询。&lt;/p&gt;
+&lt;p&gt;常用的操作符： &lt;code&gt;IN&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&#34;事务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事务&#34;&gt;#&lt;/a&gt; 👛事务&lt;/h1&gt;
+&lt;h2 id=&#34;事务简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事务简介&#34;&gt;#&lt;/a&gt; 🏆事务简介&lt;/h2&gt;
+&lt;p&gt;事务 是一组操作的集合，它是一个不可分割的工作单位，事务会把所有的操作作为一个整体一起向系 统提交或撤销操作请求，即这些操作要么同时成功，要么同时失败&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;注意： 默认 MySQL 的事务是自动提交的，也就是说，当执行完一条 DML 语句时，MySQL 会立即隐 式的提交事务&lt;/p&gt;
+&lt;/div&gt;
 </content>
         <category term="Backend" scheme="https://slx-world.top/categories/backend/" />
         <category term="Database" scheme="https://slx-world.top/categories/backend/database/" />
