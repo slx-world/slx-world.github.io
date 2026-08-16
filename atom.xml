@@ -8,7 +8,7 @@
     <author>
       <name>Mr.Song</name>
     </author>
-    <updated>2026-08-16T08:48:33.802Z</updated>
+    <updated>2026-08-16T12:57:34.276Z</updated>
     <category term="柳神，火灵儿" />
     <entry>
         <id>https://slx-world.top/hello-world/</id>
@@ -25,14 +25,165 @@
 &lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2026-08-16T08:48:33.802Z</updated>
+        <updated>2026-08-16T12:57:34.276Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/bigdata/hadoop/mapreduce/</id>
         <title></title>
         <link rel="alternate" href="https://slx-world.top/bigdata/hadoop/mapreduce/"/>
         <content type="html"></content>
-        <updated>2026-08-16T08:48:33.786Z</updated>
+        <updated>2026-08-16T12:57:34.260Z</updated>
+    </entry>
+    <entry>
+        <id>https://slx-world.top/tutorial/blog/hexo-shoka-source-guide/</id>
+        <title>四、博客源码说明与维护指南</title>
+        <link rel="alternate" href="https://slx-world.top/tutorial/blog/hexo-shoka-source-guide/"/>
+        <content type="html">&lt;div class=&#34;note primary&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;/tutorial/blog/hexo-shoka/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;一、博客搭建&lt;/ins&gt;&lt;/a&gt; ✈️ &lt;a href=&#34;/tutorial/blog/github-picgo-typora/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;二、图床搭建&lt;/ins&gt;&lt;/a&gt; ✈️ &lt;a href=&#34;/tutorial/blog/hexo-shoka-appveyor/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;三、备份与持续集成&lt;/ins&gt;&lt;/a&gt; ✈️ &lt;a href=&#34;/tutorial/blog/hexo-shoka-source-guide/&#34;&gt;&lt;ins class=&#34;info&#34;&gt;四、源码说明与维护指南&lt;/ins&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;项目简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#项目简介&#34;&gt;#&lt;/a&gt; 🌸 项目简介&lt;/h1&gt;
+&lt;p&gt;本博客使用 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt; 7 和经过定制的 Shoka 主题构建，源码托管在 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NseC13b3JsZC9oZXhvLXNob2thLXNvdXJjZQ==&#34;&gt;slx-world/hexo-shoka-source&lt;/span&gt;，生成后的静态站点发布到 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NseC13b3JsZC9zbHgtd29ybGQuZ2l0aHViLmlv&#34;&gt;slx-world/slx-world.github.io&lt;/span&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;线上地址：&lt;a href=&#34;https://slx-world.top&#34;&gt;https://slx-world.top&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;站内搜索：Algolia&lt;/li&gt;
+&lt;li&gt;评论系统：Giscus + GitHub Discussions&lt;/li&gt;
+&lt;li&gt;浏览计数：Vercount&lt;/li&gt;
+&lt;li&gt;自动构建和部署：AppVeyor&lt;/li&gt;
+&lt;li&gt;静态站点托管：GitHub Pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;目录结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#目录结构&#34;&gt;#&lt;/a&gt; 💝 目录结构&lt;/h1&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ _config.yml              # Hexo 站点、部署和 Algolia 配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ appveyor.yml             # AppVeyor 构建与部署流程&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ package.json             # npm 依赖和运行命令&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ scaffolds/               # Hexo 文章模板&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ source/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;│  ├─ _posts/               # Markdown 文章&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;│  ├─ about/                # 关于页面&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;│  ├─ friends/              # 友链页面&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;│  └─ links/                # 常用链接页面&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;└─ themes/shoka/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   ├─ _config.yml           # 主题、评论、计数和音乐配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   ├─ _images.yml           # 顶部随机背景图列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   ├─ layout/               # 页面模板&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   ├─ scripts/              # Hexo 扩展&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   └─ source/               # 样式、脚本和主题资源&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;code&gt;node_modules/&lt;/code&gt; 、 &lt;code&gt;public/&lt;/code&gt;  和  &lt;code&gt;db.json&lt;/code&gt;  都是安装或构建生成的内容，不需要提交到源码仓库。&lt;/p&gt;
+&lt;h1 id=&#34;本地安装与预览&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#本地安装与预览&#34;&gt;#&lt;/a&gt; 💝 本地安装与预览&lt;/h1&gt;
+&lt;p&gt;建议安装 Node.js 20 LTS 和 Git，然后执行：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; clone https://github.com/slx-world/hexo-shoka-source.git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; hexo-shoka-source&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; ci&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; run clean&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; run server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;浏览器打开  &lt;code&gt;http://localhost:4000&lt;/code&gt;  即可预览。&lt;/p&gt;
+&lt;p&gt;常用命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; run server   &lt;span class=&#34;token comment&#34;&gt;# 启动本地预览&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; run clean    &lt;span class=&#34;token comment&#34;&gt;# 清理 Hexo 缓存和 public 目录&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; run build    &lt;span class=&#34;token comment&#34;&gt;# 生成静态站点&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; run deploy   &lt;span class=&#34;token comment&#34;&gt;# 按站点配置部署，使用前应确认目标仓库&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;修改主题模板、脚本或配置后，建议先清理再构建，避免旧缓存影响页面结果：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; run clean&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; run build&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;发布新文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#发布新文章&#34;&gt;#&lt;/a&gt; 💝 发布新文章&lt;/h1&gt;
+&lt;p&gt;使用 Hexo 命令创建文章：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npx hexo new post &lt;span class=&#34;token string&#34;&gt;&#34;文章标题&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;文章保存在  &lt;code&gt;source/_posts/&lt;/code&gt; 。教程类博客文章可以使用以下 Front Matter：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 文章标题&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token datetime number&#34;&gt;2026-08-16 20:47:42&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;categories&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; 教程&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;tags&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; 博客&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;cover&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; https&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;//example.com/images/cover.webp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 一句话文章摘要&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;comment&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;comment: false&lt;/code&gt;  可以关闭单篇文章的评论。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cover&lt;/code&gt;  建议使用可公开访问的 HTTPS 图片地址。&lt;/li&gt;
+&lt;li&gt;当前没有启用文章资源文件夹，文章图片建议使用稳定图床或放在  &lt;code&gt;source/&lt;/code&gt;  目录统一管理。&lt;/li&gt;
+&lt;li&gt;“教程” 和 “博客” 的公开路径仍分别使用  &lt;code&gt;tutorial&lt;/code&gt;  与  &lt;code&gt;blog&lt;/code&gt; ，因此旧链接保持不变。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;背景图和文章封面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景图和文章封面&#34;&gt;#&lt;/a&gt; 💝 背景图和文章封面&lt;/h1&gt;
+&lt;p&gt;顶部随机背景图在  &lt;code&gt;themes/shoka/_images.yml&lt;/code&gt;  中维护。相对文件名通过下列链路加载：&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;slx-world/blog-images → jsDelivr → images.weserv.nl&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;使用位置&lt;/th&gt;
+&lt;th&gt;推荐尺寸&lt;/th&gt;
+&lt;th&gt;注意事项&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;顶部背景或轮播图&lt;/td&gt;
+&lt;td&gt;2560 × 1440&lt;/td&gt;
+&lt;td&gt;最低 1920 × 1080，主体放在中央&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;偏重桌面端的顶部图&lt;/td&gt;
+&lt;td&gt;2560 × 1080&lt;/td&gt;
+&lt;td&gt;电脑端裁剪较少，手机会裁掉更多左右区域&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;首页文章封面&lt;/td&gt;
+&lt;td&gt;1200 × 675&lt;/td&gt;
+&lt;td&gt;也可以使用 1600 × 900&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;主题使用  &lt;code&gt;cover&lt;/code&gt;  方式居中裁剪，顶部轮播动画还会放大到约 110%。人物、文字和其他关键元素不要靠近边缘。推荐使用 WebP，并将单张图片控制在约 300–800 KB。&lt;/p&gt;
+&lt;p&gt;教程截图不适合作为随机背景：截图尺寸和比例通常不一致，容易造成严重裁剪或模糊。&lt;/p&gt;
+&lt;h1 id=&#34;algolia-搜索&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#algolia-搜索&#34;&gt;#&lt;/a&gt; 💝 Algolia 搜索&lt;/h1&gt;
+&lt;p&gt;Algolia 配置位于根目录  &lt;code&gt;_config.yml&lt;/code&gt; 。浏览器端仅使用 Search-Only API Key；更新索引所需的受限写入密钥只允许通过环境变量提供：&lt;/p&gt;
+&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;figcaption data-lang=&#34;PowerShell&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token variable&#34;&gt;$env&lt;/span&gt;:ALGOLIA_ADMIN_API_KEY = &lt;span class=&#34;token string&#34;&gt;&#34;&amp;lt;受限索引密钥&amp;gt;&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npx hexo algolia&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;不要把 Algolia 管理密钥写入配置文件、文章、README 或 Git 历史。AppVeyor 只在  &lt;code&gt;master&lt;/code&gt;  分支的正式构建中更新搜索索引，Pull Request 构建不会修改线上索引。&lt;/p&gt;
+&lt;p&gt;如果搜索没有结果，可以检查：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Application ID、Search-Only API Key 和索引名称是否匹配。&lt;/li&gt;
+&lt;li&gt;Algolia 脚本是否被浏览器扩展拦截。&lt;/li&gt;
+&lt;li&gt;最近一次 AppVeyor 正式构建是否成功更新索引。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;giscus-评论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#giscus-评论&#34;&gt;#&lt;/a&gt; 💝 Giscus 评论&lt;/h1&gt;
+&lt;p&gt;评论配置位于  &lt;code&gt;themes/shoka/_config.yml&lt;/code&gt; 。当前评论数据存放在本仓库的 GitHub Discussions  &lt;code&gt;Announcements&lt;/code&gt;  分类中，并使用文章路径进行映射。&lt;/p&gt;
+&lt;p&gt;评论功能支持：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;懒加载&lt;/li&gt;
+&lt;li&gt;PJAX 页面切换&lt;/li&gt;
+&lt;li&gt;明暗主题同步&lt;/li&gt;
+&lt;li&gt;加载失败时不阻塞文章正文&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;访客必须登录 GitHub 才能发表评论。仓库需要保持公开、启用 Discussions，并允许 Giscus App 访问本仓库。为减少授权范围，Giscus App 应只选择  &lt;code&gt;slx-world/hexo-shoka-source&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;LeanCloud/MiniValine 运行时代码已经移除，旧 LeanCloud 评论不会自动迁移至 GitHub Discussions。Giscus 没有适用于当前场景的匿名最新评论接口，因此侧栏最新评论组件默认关闭。&lt;/p&gt;
+&lt;h1 id=&#34;vercount-浏览计数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vercount-浏览计数&#34;&gt;#&lt;/a&gt; 💝 Vercount 浏览计数&lt;/h1&gt;
+&lt;p&gt;浏览计数与评论系统相互独立，配置位于  &lt;code&gt;themes/shoka/_config.yml&lt;/code&gt; ：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;view_counter&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;endpoint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; https&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;//events.vercount.one/api/v2/log&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;timeout&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5000&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;计数请求异步执行并设置了超时，即使第三方计数服务异常，也不会阻塞文章内容。计数没有显示时，可以检查浏览器网络请求、内容拦截扩展和 Vercount 服务状态。&lt;/p&gt;
+&lt;h1 id=&#34;appveyor-自动部署&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#appveyor-自动部署&#34;&gt;#&lt;/a&gt; 💝 AppVeyor 自动部署&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;appveyor.yml&lt;/code&gt;  定义了完整发布流程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用  &lt;code&gt;npm ci&lt;/code&gt;  安装锁定依赖。&lt;/li&gt;
+&lt;li&gt;清理缓存并生成  &lt;code&gt;public/&lt;/code&gt;  静态站点。&lt;/li&gt;
+&lt;li&gt;正式构建更新 Algolia 索引。&lt;/li&gt;
+&lt;li&gt;将  &lt;code&gt;public/&lt;/code&gt;  同步至静态站点仓库。&lt;/li&gt;
+&lt;li&gt;提交并推送目标分支，由 GitHub Pages 发布。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;AppVeyor 需要配置以下环境变量：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;变量&lt;/th&gt;
+&lt;th&gt;用途&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;STATIC_SITE_REPO&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;静态站点仓库地址&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;TARGET_BRANCH&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;静态站点目标分支&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;GIT_USER_NAME&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;自动提交使用的 Git 用户名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;GIT_USER_EMAIL&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;自动提交使用的 Git 邮箱&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ALGOLIA_ADMIN_API_KEY&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Algolia 受限索引密钥，必须加密保存&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;access_token&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;推送静态站点的 GitHub Token，必须加密保存&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Pull Request 只进行构建验证，不更新索引，也不发布线上站点。合并到  &lt;code&gt;master&lt;/code&gt;  后，AppVeyor 才会执行正式部署。&lt;/p&gt;
+&lt;h1 id=&#34;常见问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常见问题&#34;&gt;#&lt;/a&gt; 💝 常见问题&lt;/h1&gt;
+&lt;h2 id=&#34;图片无法显示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片无法显示&#34;&gt;#&lt;/a&gt; 图片无法显示&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;检查图片地址是否使用 HTTPS。&lt;/li&gt;
+&lt;li&gt;检查  &lt;code&gt;_images.yml&lt;/code&gt;  中的文件名是否真实存在于图片仓库。&lt;/li&gt;
+&lt;li&gt;注意文件名和路径大小写。&lt;/li&gt;
+&lt;li&gt;通过浏览器 Network 面板查看请求状态码。&lt;/li&gt;
+&lt;li&gt;CDN 更新后可能存在短暂缓存延迟，可直接访问源图验证。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;页面仍是旧样式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#页面仍是旧样式&#34;&gt;#&lt;/a&gt; 页面仍是旧样式&lt;/h2&gt;
+&lt;p&gt;先执行清理和构建，再强制刷新浏览器。如果线上仍未变化，检查 AppVeyor 构建结果以及静态站点仓库的最新提交。&lt;/p&gt;
+&lt;h2 id=&#34;评论区不显示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#评论区不显示&#34;&gt;#&lt;/a&gt; 评论区不显示&lt;/h2&gt;
+&lt;p&gt;检查文章是否关闭评论、Discussions 是否开启、Giscus App 权限以及仓库 ID 和分类 ID 是否正确。浏览器如果拦截  &lt;code&gt;giscus.app&lt;/code&gt; ，评论组件也无法加载。&lt;/p&gt;
+&lt;h1 id=&#34;内容许可&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内容许可&#34;&gt;#&lt;/a&gt; 💝 内容许可&lt;/h1&gt;
+&lt;p&gt;当前主题配置使用 Creative Commons  &lt;code&gt;BY-NC-SA 4.0&lt;/code&gt;  作为博客内容声明。第三方主题、依赖、图片和其他素材仍遵循各自的许可证或授权条款。&lt;/p&gt;
+</content>
+        <category term="教程" scheme="https://slx-world.top/categories/tutorial/" />
+        <category term="博客" scheme="https://slx-world.top/tags/blog/" />
+        <updated>2026-08-16T12:47:42.000Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/backend/framework/mybatisplus/mybatisplus-notes/</id>
@@ -3890,144 +4041,6 @@
 </content>
         <category term="Python" scheme="https://slx-world.top/categories/Python/" />
         <category term="Python" scheme="https://slx-world.top/tags/python/" />
-        <updated>2024-10-10T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/test/test-basis/day02/</id>
-        <title>测试基础 Day02</title>
-        <link rel="alternate" href="https://slx-world.top/test/test-basis/day02/"/>
-        <content type="html">&lt;h1 id=&#34;等价类划分法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#等价类划分法&#34;&gt;#&lt;/a&gt; 🌺等价类划分法&lt;/h1&gt;
-&lt;h2 id=&#34;说明&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#说明&#34;&gt;#&lt;/a&gt; 🌱说明&lt;/h2&gt;
-&lt;p&gt;在所有测试数据中，具有某种&lt;span class=&#34;yellow&#34;&gt;共同特征&lt;/span&gt;的数据集合进行划分&lt;/p&gt;
-&lt;h2 id=&#34;分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分类&#34;&gt;#&lt;/a&gt; 🌱分类&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;有效等价类&lt;/span&gt;：满足需求的数据集合&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;无效等价类&lt;/span&gt;：不满足需求的数据集合&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤&#34;&gt;#&lt;/a&gt; 🌱步骤&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;明确需求&lt;/li&gt;
-&lt;li&gt;确定有效和无效等价类&lt;/li&gt;
-&lt;li&gt;提取数据编写测试用例&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;适用场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#适用场景&#34;&gt;#&lt;/a&gt; 🌱适用场景&lt;/h2&gt;
-&lt;p&gt;针对需要有大量数据测试输入，但是没办法穷举测试的地方&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;输入框&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;下拉列表&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;单选复选框&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;典型代表：页面的输入框类测试&lt;/p&gt;
-&lt;h1 id=&#34;边界值分析法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#边界值分析法&#34;&gt;#&lt;/a&gt; 🌺边界值分析法&lt;/h1&gt;
-&lt;h2 id=&#34;边界范围节点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#边界范围节点&#34;&gt;#&lt;/a&gt; 🌱边界范围节点&lt;/h2&gt;
-&lt;p&gt;选取&lt;span class=&#34;yellow&#34;&gt;正好等于&lt;/span&gt;、&lt;span class=&#34;yellow&#34;&gt;刚好大于&lt;/span&gt;、&lt;span class=&#34;yellow&#34;&gt;刚好小于&lt;/span&gt;边界的值作为测试数据&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;上点&lt;/span&gt;：边界上的点（正好等于）&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;离点&lt;/span&gt;：距离上点最近的点（刚好大于、刚好小于）&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;内点&lt;/span&gt;：范围内的点（区间范围内的数据）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;步骤-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤-2&#34;&gt;#&lt;/a&gt; 🌱步骤&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;明确需求&lt;/li&gt;
-&lt;li&gt;确定有效和无效等价类&lt;/li&gt;
-&lt;li&gt;确定边界范围值&lt;/li&gt;
-&lt;li&gt;提取数据编写测试用例&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;优化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#优化&#34;&gt;#&lt;/a&gt; 🌱优化&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;上点&lt;/span&gt;：必选（不考虑区间开闭）&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;内点&lt;/span&gt;：必选（建议选择中间范围）&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;离点&lt;/span&gt;：&lt;span class=&#34;yellow&#34;&gt;开内闭外&lt;/span&gt;（考虑开闭区间，开区间选择内部离点，闭区间选择外部离点）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;例如：标题长度大于 0，小于等于 30 个字符，离点选择 1，31&lt;/p&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;使用场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用场景&#34;&gt;#&lt;/a&gt; 🌱使用场景&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;在等价类的基础上，针对有边界范围的测试数据输入的地方（重点关注边界）&lt;/li&gt;
-&lt;li&gt;常见词语描述：大小、尺寸、重量、最大、最小、至多、至少等修饰词语&lt;/li&gt;
-&lt;li&gt;典型代表：有边界范围的&lt;span class=&#34;yellow&#34;&gt;输入框&lt;/span&gt;类测试&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;判定表法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#判定表法&#34;&gt;#&lt;/a&gt; 🌺判定表法&lt;/h1&gt;
-&lt;h2 id=&#34;定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义&#34;&gt;#&lt;/a&gt; 🌱定义&lt;/h2&gt;
-&lt;p&gt;是一种以&lt;span class=&#34;yellow&#34;&gt;表格&lt;/span&gt;形式表达多条件逻辑判断的工具&lt;/p&gt;
-&lt;h2 id=&#34;组成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#组成&#34;&gt;#&lt;/a&gt; 🌱组成&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;条件桩&lt;/span&gt;：列出问题中的所有条件，列出条件的次序无关紧要&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;动作桩&lt;/span&gt;：列出问题中可能采取的操作，操作的排序顺序没有约束&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;条件项&lt;/span&gt;：列出条件对应的取值，所有可能情况下的真假值&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;动作项&lt;/span&gt;：列出条件项的、各种取值情况下应该采取的动作结果&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;练习&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#练习&#34;&gt;#&lt;/a&gt; 🌱练习&lt;/h2&gt;
-&lt;p&gt;1）、输入的第一列字符必须是 A 或 B&lt;/p&gt;
-&lt;p&gt;2）、第二列字符必须是一个数字&lt;/p&gt;
-&lt;p&gt;3）、如果第一列字符不正确，则给出信息 L&lt;/p&gt;
-&lt;p&gt;4）、如果第二列字符不正确，则给出信息 M&lt;/p&gt;
-&lt;p&gt;5）、如果两列字符输入正确，则修改文件成功&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241020084629674&#34; data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241020084629674.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;规则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#规则&#34;&gt;#&lt;/a&gt; 🌱规则&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;判定表中贯穿条件项和动作项的一列就是一条规则&lt;/li&gt;
-&lt;li&gt;假设有 n 个条件，每个条件的取值有两个（0, 1），全组合有 2 的 n 次方种规则&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;步骤-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤-3&#34;&gt;#&lt;/a&gt; 🌱步骤&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;明确需求&lt;/li&gt;
-&lt;li&gt;画出判定表
-&lt;ol&gt;
-&lt;li&gt;列出条件桩和动作桩&lt;/li&gt;
-&lt;li&gt;填写条件项、对条件进行全组合&lt;/li&gt;
-&lt;li&gt;根据条件项的组合确定动作项&lt;/li&gt;
-&lt;li&gt;简化、合并相似规则（有相同的动作）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;根据规则编写测试用例&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;使用场景-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用场景-2&#34;&gt;#&lt;/a&gt; 🌱使用场景&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;有多个输入条件，多个输出结果，输入条件之间有&lt;span class=&#34;yellow&#34;&gt;组合&lt;/span&gt;关系，输入条件和输出结果之间有依赖（制约）关系&lt;/li&gt;
-&lt;li&gt;判定表一般适用于条件组合数量较少的情况（比如 4 个条件以下）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;场景法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#场景法&#34;&gt;#&lt;/a&gt; 🌺场景法&lt;/h1&gt;
-&lt;h2 id=&#34;流程图&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#流程图&#34;&gt;#&lt;/a&gt; 🌱流程图&lt;/h2&gt;
-&lt;p&gt;使用标准图形和箭头来表达程序或业务的走向&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241019192905832&#34; data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241019192905832.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;流程图对测试人员有什么作用？&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;能够看懂流程图，设计业务用例&lt;/li&gt;
-&lt;li&gt;当需求文档信息不全时，能够根据需求，梳理出流程&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;网页版工具：&lt;ins class=&#34;info&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucHJvY2Vzc29uLmNvbS8=&#34;&gt;https://www.processon.com/&lt;/span&gt;&lt;/ins&gt;&lt;/p&gt;
-&lt;p&gt;Windows 工具：visio&lt;/p&gt;
-&lt;h2 id=&#34;介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#介绍&#34;&gt;#&lt;/a&gt; 🌱介绍&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;说明：&lt;/p&gt;
-&lt;p&gt;场景法也可以叫流程图法，是用流程图描述用户的使用场景，然后通过覆盖流程路径来设计测试用例&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;意义：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;用户使用角度&lt;/span&gt;：用户平时使用的不是单个功能，而是多个功能组合起来进行使用&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;测试人员角度&lt;/span&gt;：平时测试的都是单个功能点进行测试，容易忽略多个功能的组合测试&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;适用场景-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#适用场景-2&#34;&gt;#&lt;/a&gt; 🌱适用场景&lt;/h2&gt;
-&lt;p&gt;根据实际的应用场景，来测试业务用例，可以使用场景法&lt;/p&gt;
-&lt;h1 id=&#34;错误推测法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#错误推测法&#34;&gt;#&lt;/a&gt; 🌺错误推测法&lt;/h1&gt;
-&lt;h2 id=&#34;定义-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义-2&#34;&gt;#&lt;/a&gt; 🌱定义&lt;/h2&gt;
-&lt;p&gt;通过&lt;span class=&#34;yellow&#34;&gt;经验&lt;/span&gt;推测系统可能出现的问题&lt;/p&gt;
-&lt;h2 id=&#34;思想&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#思想&#34;&gt;#&lt;/a&gt; 🌱思想&lt;/h2&gt;
-&lt;p&gt;根据经验列举出可能出现问题的清单，根据清单分析问题可能原因，推测发现缺陷&lt;/p&gt;
-&lt;h2 id=&#34;场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#场景&#34;&gt;#&lt;/a&gt; 🌱场景&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;时间紧，任务量大时，根据之前项目类似经验找出易出错的模块重点测试&lt;/li&gt;
-&lt;li&gt;时间宽裕，通过该方法列出之前出现问题较多的模块再次测试&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-        <category term="Test" scheme="https://slx-world.top/categories/test/" />
-        <category term="Test-Basis" scheme="https://slx-world.top/tags/test-basis/" />
         <updated>2024-10-10T16:00:00.000Z</updated>
     </entry>
 </feed>
