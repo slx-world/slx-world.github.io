@@ -8,7 +8,7 @@
     <author>
       <name>Mr.Song</name>
     </author>
-    <updated>2026-08-22T06:41:29.580Z</updated>
+    <updated>2026-08-22T09:18:24.088Z</updated>
     <category term="柳神，火灵儿" />
     <entry>
         <id>https://slx-world.top/hello-world/</id>
@@ -25,14 +25,602 @@
 &lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2026-08-22T06:41:29.580Z</updated>
+        <updated>2026-08-22T09:18:24.088Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/bigdata/hadoop/mapreduce/</id>
         <title></title>
         <link rel="alternate" href="https://slx-world.top/bigdata/hadoop/mapreduce/"/>
         <content type="html"></content>
-        <updated>2026-08-22T06:41:29.563Z</updated>
+        <updated>2026-08-22T09:18:24.088Z</updated>
+    </entry>
+    <entry>
+        <id>https://slx-world.top/ai-app/amazon-balance-collection-automation/</id>
+        <title>亚马逊店铺余额自动采集：浏览器自动化与 Excel 汇总实践</title>
+        <link rel="alternate" href="https://slx-world.top/ai-app/amazon-balance-collection-automation/"/>
+        <content type="html">&lt;div class=&#34;note primary&#34;&gt;
+&lt;p&gt;批量采集店铺余额，看似只是 “打开页面、抄一个数字”，真正的难点却是确认店铺身份、市场站点和币种，处理登录与页面漂移，并确保 Excel 写入可以审计和回滚。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;本文以多店铺运营场景为例，说明如何把本地浏览器桥接、亚马逊 Payments Dashboard 数据读取和 Excel 汇总组织成一条安全、可恢复的自动化流程。文中不包含账号、密钥、内网地址或真实店铺信息。&lt;/p&gt;
+&lt;p&gt;第三方浏览器、页面结构和平台政策会持续变化。正式运行前，应确认当前版本、账号授权、自动化政策和数据使用边界。验证码与多因素认证必须由人工完成，不应尝试绕过平台安全机制。&lt;/p&gt;
+&lt;h1 id=&#34;一-先明确数据口径&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-先明确数据口径&#34;&gt;#&lt;/a&gt; 一、先明确数据口径&lt;/h1&gt;
+&lt;p&gt;本项目读取的目标字段是 Payments Dashboard 页面上的  &lt;code&gt;All Accounts Total Balance&lt;/code&gt; 。它是特定时间点、特定店铺和市场站点下的运营数据，不应直接等同于最终会计结算金额。&lt;/p&gt;
+&lt;p&gt;在编写脚本前，应先确定以下数据契约：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;字段&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;店铺 ID&lt;/td&gt;
+&lt;td&gt;稳定且唯一的业务标识&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;shop_001&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;店铺名称&lt;/td&gt;
+&lt;td&gt;便于人工识别的显示名称&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;US Store A&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;市场站点&lt;/td&gt;
+&lt;td&gt;数据所属站点&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;amazon.com&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;币种&lt;/td&gt;
+&lt;td&gt;与页面金额一致&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;USD&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;余额&lt;/td&gt;
+&lt;td&gt;使用定点小数保存&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1234.56&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;采集时间&lt;/td&gt;
+&lt;td&gt;包含明确时区&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;2026-08-22T17:08:06+08:00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;数据状态&lt;/td&gt;
+&lt;td&gt;成功、空值、待复核或失败&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;success&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;金额不应直接使用二进制浮点数计算。可以使用  &lt;code&gt;Decimal&lt;/code&gt; ，同时保留原始文本，便于后续核对千位分隔符、负数、零值和不同币种格式。&lt;/p&gt;
+&lt;h1 id=&#34;二-推荐的系统分层&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-推荐的系统分层&#34;&gt;#&lt;/a&gt; 二、推荐的系统分层&lt;/h1&gt;
+&lt;p&gt;一个可维护的实现通常包含以下模块：&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;配置与凭据层&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;本地浏览器桥接客户端&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;店铺与调试端口解析器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;页面导航和身份校验器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;余额提取与数据校验器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;预览、Excel 写入和审计日志&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;各模块只承担一种职责：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;config&lt;/code&gt; ：读取非敏感业务配置，并从环境变量或凭据管理器获取秘密；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bridge_client&lt;/code&gt; ：与已授权的本地浏览器桥接服务通信；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;session_resolver&lt;/code&gt; ：打开指定店铺并获取本次会话的连接信息；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;collector&lt;/code&gt; ：导航、验证身份并读取余额；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;report_writer&lt;/code&gt; ：生成预览，执行幂等写入和原子替换；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;batch_runner&lt;/code&gt; ：控制批量顺序、失败策略和最终汇总；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;skill&lt;/code&gt; ：记录经过验证的运行条件、命令、成功标志和排错决策。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;三-把流程写成状态机&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-把流程写成状态机&#34;&gt;#&lt;/a&gt; 三、把流程写成状态机&lt;/h1&gt;
+&lt;p&gt;与一段从头点到尾的脚本相比，显式状态机更容易恢复和审计：&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;PRECHECK&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  → LIST_STORES&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  → OPEN_STORE&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  → VERIFY_IDENTITY&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  → SWITCH_MARKETPLACE&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  → NAVIGATE_PAYMENTS&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  → EXTRACT&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  → VALIDATE&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  → PREVIEW&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  → COMMIT&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  → CLOSE_OWN_SESSION&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;每个状态都应记录开始时间、结束时间、输入摘要、输出摘要和结果。失败时保存当前状态，而不是让调用方只能看到 “任务失败”。&lt;/p&gt;
+&lt;h2 id=&#34;31-运行前检查&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#31-运行前检查&#34;&gt;#&lt;/a&gt; 3.1 运行前检查&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;PRECHECK&lt;/code&gt;  至少验证：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;本地桥接服务是否可达；&lt;/li&gt;
+&lt;li&gt;当前调用者是否拥有目标店铺权限；&lt;/li&gt;
+&lt;li&gt;输出目录是否可写；&lt;/li&gt;
+&lt;li&gt;报表是否被其他程序占用；&lt;/li&gt;
+&lt;li&gt;目标站点、币种和时区是否已配置；&lt;/li&gt;
+&lt;li&gt;是否启用了只预览不落盘的  &lt;code&gt;dry-run&lt;/code&gt;  模式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;32-店铺身份校验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#32-店铺身份校验&#34;&gt;#&lt;/a&gt; 3.2 店铺身份校验&lt;/h2&gt;
+&lt;p&gt;店铺显示名称可能被修改、重复或包含空格差异，因此不能作为唯一依据。推荐使用：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;环境 ID 或店铺 ID 作为主键；&lt;/li&gt;
+&lt;li&gt;页面展示的店铺名称作为二次校验；&lt;/li&gt;
+&lt;li&gt;市场站点和账号尾号作为附加证据；&lt;/li&gt;
+&lt;li&gt;任一关键标识不一致时立即停止该店铺流程。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;身份不匹配属于安全错误，不能通过刷新页面或盲目重试来掩盖。&lt;/p&gt;
+&lt;h2 id=&#34;33-市场站点切换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#33-市场站点切换&#34;&gt;#&lt;/a&gt; 3.3 市场站点切换&lt;/h2&gt;
+&lt;p&gt;同一卖家账号可能覆盖多个市场站点。脚本进入财务页面前，应确认目标域名、站点名称和币种三者一致。若页面自动跳转到其他站点，必须重新校验，而不是继续读取屏幕上出现的第一个金额。&lt;/p&gt;
+&lt;h1 id=&#34;四-安全地接管浏览器会话&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四-安全地接管浏览器会话&#34;&gt;#&lt;/a&gt; 四、安全地接管浏览器会话&lt;/h1&gt;
+&lt;p&gt;本地桥接服务应只监听回环地址，例如  &lt;code&gt;127.0.0.1&lt;/code&gt; ，并要求短期令牌或其他访问控制。令牌只能存放在操作系统凭据管理器或环境变量中，不能写进文章、仓库、命令历史或截图。&lt;/p&gt;
+&lt;p&gt;WebDriver 地址和 Chrome DevTools Protocol 调试端口是不同概念，具体连接方式取决于浏览器产品、版本与操作系统。应先通过官方文档或受控测试验证，再将适配细节封装在  &lt;code&gt;session_resolver&lt;/code&gt;  中。&lt;/p&gt;
+&lt;p&gt;脚本只应关闭自己创建并能够确认归属的会话，不要按进程名批量结束 Chrome，也不要假定调试端口永远固定。&lt;/p&gt;
+&lt;h1 id=&#34;五-页面导航与等待策略&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#五-页面导航与等待策略&#34;&gt;#&lt;/a&gt; 五、页面导航与等待策略&lt;/h1&gt;
+&lt;p&gt;稳定的浏览器自动化依赖页面状态，而不是固定等待秒数。选择器优先级可以是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;平台提供的稳定语义属性；&lt;/li&gt;
+&lt;li&gt;可访问性角色和可见文本；&lt;/li&gt;
+&lt;li&gt;相对稳定的结构关系；&lt;/li&gt;
+&lt;li&gt;CSS 类名或绝对 XPath 作为最后手段。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;每一步同时定义成功和失败条件。例如，点击 Payments 后，成功条件可以是页面标题、目标 URL 路径和余额区域同时出现；失败条件可以是登录页、权限不足页、验证码页或超时。&lt;/p&gt;
+&lt;p&gt;遇到验证码或多因素认证时，自动化程序应暂停并提示人工接管。人工完成后重新执行身份校验，再从安全检查点继续。&lt;/p&gt;
+&lt;h1 id=&#34;六-余额提取与校验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#六-余额提取与校验&#34;&gt;#&lt;/a&gt; 六、余额提取与校验&lt;/h1&gt;
+&lt;p&gt;读取页面文字后，不要立即写入报表。建议先构造标准记录：&lt;/p&gt;
+&lt;figure class=&#34;highlight json&#34;&gt;&lt;figcaption data-lang=&#34;JSON&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;{&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;shop_id&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;shop_001&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;marketplace&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;amazon.com&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;currency&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;USD&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;balance&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;1234.56&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;raw_text&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;$1,234.56&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;collected_at&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;2026-08-22T17:08:06+08:00&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;status&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;success&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;校验器需要覆盖以下情况：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;金额包含货币符号、千位分隔符或空格；&lt;/li&gt;
+&lt;li&gt;余额为零或负数；&lt;/li&gt;
+&lt;li&gt;页面显示占位符、加载动画或空值；&lt;/li&gt;
+&lt;li&gt;页面币种与配置不一致；&lt;/li&gt;
+&lt;li&gt;同一字段出现多个候选值；&lt;/li&gt;
+&lt;li&gt;页面结构变化导致选择器失效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对不确定的数据标记为  &lt;code&gt;needs_review&lt;/code&gt; ，不要自动转换成零。&lt;/p&gt;
+&lt;h1 id=&#34;七-批量执行的失败策略&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#七-批量执行的失败策略&#34;&gt;#&lt;/a&gt; 七、批量执行的失败策略&lt;/h1&gt;
+&lt;p&gt;批量模式不意味着所有错误都应 “记录后继续”。可以按性质分类：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;错误类型&lt;/th&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;th&gt;建议处理&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;可重试技术错误&lt;/td&gt;
+&lt;td&gt;临时超时、短暂网络失败&lt;/td&gt;
+&lt;td&gt;指数退避后有限重试&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;会话错误&lt;/td&gt;
+&lt;td&gt;登录过期、MFA&lt;/td&gt;
+&lt;td&gt;暂停并等待人工处理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;安全错误&lt;/td&gt;
+&lt;td&gt;店铺身份不匹配&lt;/td&gt;
+&lt;td&gt;立即熔断，不写入数据&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;业务错误&lt;/td&gt;
+&lt;td&gt;币种冲突、金额含义不明&lt;/td&gt;
+&lt;td&gt;标记待复核，不盲重试&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;文件错误&lt;/td&gt;
+&lt;td&gt;Excel 被占用&lt;/td&gt;
+&lt;td&gt;保留临时结果并提示关闭文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;是否采用  &lt;code&gt;continue-on-error&lt;/code&gt;  或  &lt;code&gt;fail-fast&lt;/code&gt;  应由任务风险决定。涉及身份、权限或数据口径的异常，默认应触发  &lt;code&gt;fail-fast&lt;/code&gt; 。&lt;/p&gt;
+&lt;h1 id=&#34;八-excel-的幂等与原子写入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#八-excel-的幂等与原子写入&#34;&gt;#&lt;/a&gt; 八、Excel 的幂等与原子写入&lt;/h1&gt;
+&lt;p&gt;报表至少可以分为三张表：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;余额明细&lt;/code&gt; ：每个店铺、站点和采集批次的原始记录；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;执行汇总&lt;/code&gt; ：成功、失败、待复核数量与总耗时；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;错误明细&lt;/code&gt; ：错误码、阶段、脱敏说明和是否可重试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;业务唯一键建议使用：&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;店铺 ID + 市场站点 + 币种 + 采集批次&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;安全写入流程如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;读取原文件并确认工作表结构；&lt;/li&gt;
+&lt;li&gt;在内存中完成更新，先生成变更预览；&lt;/li&gt;
+&lt;li&gt;将结果写入同一磁盘上的临时文件；&lt;/li&gt;
+&lt;li&gt;重新打开临时文件，校验表头、行数和关键单元格；&lt;/li&gt;
+&lt;li&gt;为原文件创建带时间戳的备份；&lt;/li&gt;
+&lt;li&gt;使用原子替换提交新文件；&lt;/li&gt;
+&lt;li&gt;失败时保留原文件并输出可恢复信息。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;写入文本前还要防止公式注入。以  &lt;code&gt;=&lt;/code&gt; ,  &lt;code&gt;+&lt;/code&gt; ,  &lt;code&gt;-&lt;/code&gt; ,  &lt;code&gt;@&lt;/code&gt;  开头的外部文本不应被 Excel 当作公式执行。&lt;/p&gt;
+&lt;h1 id=&#34;九-日志-证据与隐私&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#九-日志-证据与隐私&#34;&gt;#&lt;/a&gt; 九、日志、证据与隐私&lt;/h1&gt;
+&lt;p&gt;结构化日志可以包含：&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;run_id、shop_id_hash、stage、marketplace、result、duration_ms、error_code&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;日志、截图、HTML 和网络记录都可能携带账号、Token、订单信息或个人数据，因此应在采集时脱敏，并设置最短必要留存期限。成功路径通常无需保存完整页面；失败截图也应裁剪到能证明问题的最小区域。&lt;/p&gt;
+&lt;h1 id=&#34;十-推荐配置方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#十-推荐配置方式&#34;&gt;#&lt;/a&gt; 十、推荐配置方式&lt;/h1&gt;
+&lt;p&gt;非敏感业务配置可以进入版本控制：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;target_marketplace&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; amazon.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;expected_currency&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; USD&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;output_file&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; reports/amazon&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;balance.xlsx&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;dry_run&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;max_retries&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;continue_on_error&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;敏感配置只写变量名和用途：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token assign-left variable&#34;&gt;BRIDGE_BASE_URL&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;http://127.0.0.1:&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;port&lt;span class=&#34;token operator&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token assign-left variable&#34;&gt;BRIDGE_ACCESS_TOKEN&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;read-from-credential-store&lt;span class=&#34;token operator&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;首次运行建议保持  &lt;code&gt;dry_run: true&lt;/code&gt; ，只连接一个已授权的测试店铺，展示将写入的记录而不修改报表。通过人工核对后，再开启单店提交。&lt;/p&gt;
+&lt;h1 id=&#34;十一-从单店走向批量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#十一-从单店走向批量&#34;&gt;#&lt;/a&gt; 十一、从单店走向批量&lt;/h1&gt;
+&lt;p&gt;批量准入不应只凭 “一次跑通”。一个可操作的门槛是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;单元测试覆盖金额解析、映射、唯一键和幂等更新；&lt;/li&gt;
+&lt;li&gt;集成测试覆盖桥接连接、页面导航和临时文件写入；&lt;/li&gt;
+&lt;li&gt;授权单店覆盖正常余额、零值、登录失效和文件占用；&lt;/li&gt;
+&lt;li&gt;连续多次运行结果一致，不产生重复行；&lt;/li&gt;
+&lt;li&gt;身份不匹配、币种冲突和验证码都能安全暂停；&lt;/li&gt;
+&lt;li&gt;备份恢复与失败续跑经过演练。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;只有达到这些退出条件，才逐步扩大店铺数量，并设置速率限制和批量熔断阈值。&lt;/p&gt;
+&lt;h1 id=&#34;十二-沉淀为可复用-skill&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#十二-沉淀为可复用-skill&#34;&gt;#&lt;/a&gt; 十二、沉淀为可复用 Skill&lt;/h1&gt;
+&lt;p&gt;当流程稳定后，可将运行知识整理为 Skill。Skill 不是账号凭据，也不是替代业务代码的巨型提示词，而是一份与代码版本对应的操作和诊断契约。&lt;/p&gt;
+&lt;p&gt;建议包含：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;适用场景和触发条件；&lt;/li&gt;
+&lt;li&gt;授权范围与人工审批点；&lt;/li&gt;
+&lt;li&gt;输入参数及数据契约；&lt;/li&gt;
+&lt;li&gt;运行前检查；&lt;/li&gt;
+&lt;li&gt;单店  &lt;code&gt;dry-run&lt;/code&gt;  和正式执行方式；&lt;/li&gt;
+&lt;li&gt;批量准入门槛；&lt;/li&gt;
+&lt;li&gt;成功标志和输出文件；&lt;/li&gt;
+&lt;li&gt;错误分类与排错决策树；&lt;/li&gt;
+&lt;li&gt;禁止事项和隐私要求；&lt;/li&gt;
+&lt;li&gt;对应代码版本与变更记录。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当页面、命令或数据字段发生变化时，应同时更新测试、自动化程序和 Skill，避免操作说明与实际实现脱节。&lt;/p&gt;
+&lt;h1 id=&#34;十三-上线前检查清单&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#十三-上线前检查清单&#34;&gt;#&lt;/a&gt; 十三、上线前检查清单&lt;/h1&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_0&#34;&gt; 所有账号均获得明确授权；&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_1&#34;&gt; 本地桥接只监听回环地址并启用访问控制；&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_2&#34;&gt; 稳定店铺 ID、显示名称、站点和币种完成交叉校验；&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_3&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_3&#34;&gt; 登录、验证码和 MFA 有人工接管机制；&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_4&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_4&#34;&gt; 金额解析覆盖零值、负数、空值和格式差异；&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_5&#34;&gt;  &lt;code&gt;dry-run&lt;/code&gt;  不会修改 Excel；&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_6&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_6&#34;&gt; 写入采用临时文件、校验、备份和原子替换；&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_7&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_7&#34;&gt; 重复执行不会产生重复行；&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_8&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_8&#34;&gt; 日志与截图已脱敏并设置留存期限；&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_9&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_9&#34;&gt; 脚本只关闭自己创建的会话；&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_10&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_10&#34;&gt; 单店验收通过后才允许受控批量运行。&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;结语&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结语&#34;&gt;#&lt;/a&gt; 结语&lt;/h1&gt;
+&lt;p&gt;财务数据自动化的价值不只是节省点击时间，而是建立一条身份明确、口径一致、过程可审计、失败可恢复的数据链路。&lt;/p&gt;
+&lt;p&gt;当店铺身份、页面状态、金额解析、写入事务和人工审批点都被写成可验证规则后，浏览器自动化才真正从 “能运行的脚本” 升级为可长期维护的业务系统。&lt;/p&gt;
+</content>
+        <category term="AI 应用" scheme="https://slx-world.top/categories/ai-app/" />
+        <category term="AI" scheme="https://slx-world.top/tags/AI/" />
+        <category term="浏览器自动化" scheme="https://slx-world.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96/" />
+        <category term="亚马逊" scheme="https://slx-world.top/tags/%E4%BA%9A%E9%A9%AC%E9%80%8A/" />
+        <category term="财务自动化" scheme="https://slx-world.top/tags/%E8%B4%A2%E5%8A%A1%E8%87%AA%E5%8A%A8%E5%8C%96/" />
+        <category term="Excel" scheme="https://slx-world.top/tags/Excel/" />
+        <updated>2026-08-22T09:08:06.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://slx-world.top/ai-app/amazon-product-research-ai-pipeline/</id>
+        <title>AI 驱动的亚马逊选品流水线：从 MCP 筛选到 Excel 报表</title>
+        <link rel="alternate" href="https://slx-world.top/ai-app/amazon-product-research-ai-pipeline/"/>
+        <content type="html">&lt;div class=&#34;note primary&#34;&gt;
+&lt;p&gt;一套可靠的 AI 选品系统，不应只是 “搜索商品后让模型打分”，而应把数据检索、规则过滤、视觉分析、侵权预警、浏览器采集和报表交付组织成可验证、可恢复的工程流水线。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;本文基于一个亚马逊美国站选品项目的代码结构，梳理其设计思路、执行顺序和改进方向。文中的模块名用于说明架构；账号、密钥、内网地址和真实人员信息均已移除。&lt;/p&gt;
+&lt;p&gt;第三方平台页面、接口和自动化政策可能变化。实施前应确认当前版本、账号权限、调用配额和平台规则，并优先使用获准的官方能力。&lt;/p&gt;
+&lt;h1 id=&#34;一-项目要解决什么问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-项目要解决什么问题&#34;&gt;#&lt;/a&gt; 一、项目要解决什么问题&lt;/h1&gt;
+&lt;p&gt;人工选品通常需要反复完成以下工作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;根据关键词搜索大量商品；&lt;/li&gt;
+&lt;li&gt;判断标题、主图和使用场景是否符合目标类目；&lt;/li&gt;
+&lt;li&gt;分析价格趋势与异常波动；&lt;/li&gt;
+&lt;li&gt;排查品牌、角色和知识产权风险；&lt;/li&gt;
+&lt;li&gt;打开第三方分析页面补充数据；&lt;/li&gt;
+&lt;li&gt;汇总为带图片、可审阅的 Excel 报表。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这个项目把上述过程拆成三层：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;层次&lt;/th&gt;
+&lt;th&gt;主要职责&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;数据检索层&lt;/td&gt;
+&lt;td&gt;通过 MCP 工具获取商品、价格趋势和流量关键词&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;AI 与规则筛选层&lt;/td&gt;
+&lt;td&gt;使用 Dify 工作流、确定性规则和词库逐步缩小候选集&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;采集与交付层&lt;/td&gt;
+&lt;td&gt;通过受控浏览器补充页面证据，最终写入 Excel&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;核心目标不是让 AI 代替所有判断，而是让确定性规则、模型判断和人工复核各自承担合适的职责。&lt;/p&gt;
+&lt;h1 id=&#34;二-总体架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-总体架构&#34;&gt;#&lt;/a&gt; 二、总体架构&lt;/h1&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;关键词与业务参数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;MCP 商品搜索&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;逐轮候选集&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;标题分析 → 主图分析 → 价格趋势 → 风险词检测&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ASIN 清单与检查点&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;第三方数据导出&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;浏览器采集与视觉分析&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ↓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;数据校验、图片嵌入与 Excel 报表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;项目采用 “逐轮处理” 而不是一次加载全部商品。每轮搜索完成后立即筛选，并把通过的 ASIN 交给后续阶段。这种设计有三个好处：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;降低一次性内存占用；&lt;/li&gt;
+&lt;li&gt;让长任务尽早产出结果；&lt;/li&gt;
+&lt;li&gt;单轮失败时可以从检查点恢复，不必全部重跑。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;21-建议的代码分层&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#21-建议的代码分层&#34;&gt;#&lt;/a&gt; 2.1 建议的代码分层&lt;/h2&gt;
+&lt;p&gt;原项目的活动代码集中在  &lt;code&gt;scrpit_test/&lt;/code&gt; 。从长期维护角度看，建议逐步迁移为更清晰的结构：&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;src/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├── config/             # 配置模型、参数校验、密钥引用&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├── adapters/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;│   ├── mcp/            # 商品、Keepa、流量词等 MCP 适配器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;│   ├── dify/           # 文本与图片工作流适配器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;│   ├── browser/        # 浏览器会话与页面适配器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;│   └── excel/          # 报表输出与回滚&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├── domain/             # 商品、价格序列、筛选结果等领域模型&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├── pipeline/           # 阶段编排、状态机、检查点&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├── policies/           # 类目、价格、侵权和失败策略&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;└── observability/      # 日志、指标、审计与通知&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;这样可以把平台变化限制在适配器中，避免页面选择器、业务规则和 Excel 写入逻辑互相耦合。&lt;/p&gt;
+&lt;h1 id=&#34;三-三阶段流水线&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-三阶段流水线&#34;&gt;#&lt;/a&gt; 三、三阶段流水线&lt;/h1&gt;
+&lt;h2 id=&#34;31-阶段一mcp-搜索与多层筛选&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#31-阶段一mcp-搜索与多层筛选&#34;&gt;#&lt;/a&gt; 3.1 阶段一：MCP 搜索与多层筛选&lt;/h2&gt;
+&lt;p&gt;主编排器以生成器方式逐轮获取商品。逻辑步骤编号与实际执行顺序并不完全相同，当前推荐顺序是：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;执行顺序&lt;/th&gt;
+&lt;th&gt;逻辑步骤&lt;/th&gt;
+&lt;th&gt;能力&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;Step 1&lt;/td&gt;
+&lt;td&gt;MCP 商品搜索&lt;/td&gt;
+&lt;td&gt;分页获取候选商品并写入本轮原始文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
+&lt;td&gt;Step 2&lt;/td&gt;
+&lt;td&gt;Dify 文本分析&lt;/td&gt;
+&lt;td&gt;根据标题判断类目、场景和初步价值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
+&lt;td&gt;Step 3&lt;/td&gt;
+&lt;td&gt;暂停&lt;/td&gt;
+&lt;td&gt;五点描述筛选当前直接放行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;4&lt;/td&gt;
+&lt;td&gt;Step 5&lt;/td&gt;
+&lt;td&gt;暂停&lt;/td&gt;
+&lt;td&gt;上架时长移动到后续采集阶段&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;5&lt;/td&gt;
+&lt;td&gt;Step 6&lt;/td&gt;
+&lt;td&gt;Dify 视觉分析&lt;/td&gt;
+&lt;td&gt;先用主图过滤明显不合适的商品&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;td&gt;Step 4&lt;/td&gt;
+&lt;td&gt;MCP + 统计规则&lt;/td&gt;
+&lt;td&gt;对缩小后的集合执行价格趋势分析&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;7&lt;/td&gt;
+&lt;td&gt;Step 7&lt;/td&gt;
+&lt;td&gt;MCP + 词库&lt;/td&gt;
+&lt;td&gt;获取流量词并进行知识产权风险预警&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;8&lt;/td&gt;
+&lt;td&gt;Step 8&lt;/td&gt;
+&lt;td&gt;本地输出&lt;/td&gt;
+&lt;td&gt;生成 JSON、ASIN 清单和检查点&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;主图分析提前到价格趋势之前，可以减少较昂贵的数据请求，但需要用真实数据验证 “节省配额” 是否会牺牲召回率。&lt;/p&gt;
+&lt;h3 id=&#34;为什么暂停步骤不能被悄悄忽略&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么暂停步骤不能被悄悄忽略&#34;&gt;#&lt;/a&gt; 为什么暂停步骤不能被悄悄忽略&lt;/h3&gt;
+&lt;p&gt;Step 3 和 Step 5 虽然暂时跳过，仍应在结果中明确记录：&lt;/p&gt;
+&lt;figure class=&#34;highlight json&#34;&gt;&lt;figcaption data-lang=&#34;JSON&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;{&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;step&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;description_filter&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;status&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;skipped&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;reason&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;disabled_by_policy&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;policy_version&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;2026-08&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;否则下游使用者容易把 “未执行” 误认为 “已通过”。&lt;/p&gt;
+&lt;h2 id=&#34;32-阶段二第三方分析数据导出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#32-阶段二第三方分析数据导出&#34;&gt;#&lt;/a&gt; 3.2 阶段二：第三方分析数据导出&lt;/h2&gt;
+&lt;p&gt;阶段二读取本轮 ASIN 清单，通过受控浏览器进入第三方分析工具并下载竞品数据。&lt;/p&gt;
+&lt;p&gt;关键控制点包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;只操作明确授权的账号和店铺；&lt;/li&gt;
+&lt;li&gt;使用稳定的任务 ID 关联输入清单与下载文件；&lt;/li&gt;
+&lt;li&gt;记录运行前后的下载目录快照；&lt;/li&gt;
+&lt;li&gt;校验导出文件中的 ASIN 覆盖率；&lt;/li&gt;
+&lt;li&gt;不按文件修改时间盲目选择 “最新文件”；&lt;/li&gt;
+&lt;li&gt;下载文件进入隔离目录后再解析。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果导出数量低于预期阈值，应把本轮标记为 “不完整”，而不是直接进入最终报表。&lt;/p&gt;
+&lt;h2 id=&#34;33-阶段三浏览器采集与-ai-分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#33-阶段三浏览器采集与-ai-分析&#34;&gt;#&lt;/a&gt; 3.3 阶段三：浏览器采集与 AI 分析&lt;/h2&gt;
+&lt;p&gt;阶段三读取导出的 Excel，为每个 ASIN 补充页面数据和图片证据：&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;打开商品页&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 校验 ASIN 和站点&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 获取流量关键词&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 采集价格与销量图表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 下载主图和必要截图&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 识别变体与上架信息&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 执行风险规则和 AI 分析&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 增量写入中间结果&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 生成最终带图报表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;验证码、MFA 和安全挑战应转交人工处理，不应通过模型或脚本绕过。自动化恢复后，需要重新校验 ASIN、账号和页面状态。&lt;/p&gt;
+&lt;h1 id=&#34;四-核心模块职责&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四-核心模块职责&#34;&gt;#&lt;/a&gt; 四、核心模块职责&lt;/h1&gt;
+&lt;h2 id=&#34;41-配置中心&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#41-配置中心&#34;&gt;#&lt;/a&gt; 4.1 配置中心&lt;/h2&gt;
+&lt;p&gt;配置层应负责：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;命令行参数和环境变量解析；&lt;/li&gt;
+&lt;li&gt;关键词、节日和日期区间映射；&lt;/li&gt;
+&lt;li&gt;并发、限流、超时和重试参数；&lt;/li&gt;
+&lt;li&gt;允许域名、目标站点和输出路径；&lt;/li&gt;
+&lt;li&gt;策略版本与功能开关；&lt;/li&gt;
+&lt;li&gt;必填项、格式和互斥项校验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;配置不应直接保存真实密钥。推荐只保存 “密钥名称” 或安全存储引用。&lt;/p&gt;
+&lt;h2 id=&#34;42-mcp-适配器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#42-mcp-适配器&#34;&gt;#&lt;/a&gt; 4.2 MCP 适配器&lt;/h2&gt;
+&lt;p&gt;MCP 适配器统一包装：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;商品搜索；&lt;/li&gt;
+&lt;li&gt;Keepa 或同类价格序列；&lt;/li&gt;
+&lt;li&gt;流量关键词；&lt;/li&gt;
+&lt;li&gt;商品详情。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;适配器应把平台响应转换为稳定的内部模型，例如：&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token decorator annotation punctuation&#34;&gt;@dataclass&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;ProductCandidate&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    asin&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    marketplace&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    title&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    image_url&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    price_currency&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    source_timestamp&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; datetime&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;上层流水线不应直接依赖第三方返回字段。&lt;/p&gt;
+&lt;h2 id=&#34;43-dify-工作流客户端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#43-dify-工作流客户端&#34;&gt;#&lt;/a&gt; 4.3 Dify 工作流客户端&lt;/h2&gt;
+&lt;p&gt;Dify 客户端承担文本和图片工作流调用，但不应该成为业务规则的唯一来源。&lt;/p&gt;
+&lt;p&gt;建议为每次调用记录：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;工作流与 Prompt 版本；&lt;/li&gt;
+&lt;li&gt;输入内容哈希；&lt;/li&gt;
+&lt;li&gt;模型输出原文；&lt;/li&gt;
+&lt;li&gt;结构化解析结果；&lt;/li&gt;
+&lt;li&gt;解析失败原因；&lt;/li&gt;
+&lt;li&gt;调用耗时和重试次数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;模型输出必须经过 JSON Schema 或等价结构校验，不能仅靠正则从自由文本中 “猜” 结果。&lt;/p&gt;
+&lt;h2 id=&#34;44-价格趋势分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#44-价格趋势分析&#34;&gt;#&lt;/a&gt; 4.4 价格趋势分析&lt;/h2&gt;
+&lt;p&gt;原有逻辑包含最低价、月内跌幅、跨月跌幅、整体趋势和异常点等规则。更稳妥的做法是把规则配置化：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;price_policy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;minimum_price&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;first_month_drawdown_limit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0.20&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;month_to_month_drop_limit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0.08&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;overall_drop_limit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0.08&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;currency&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; USD&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;timezone&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; America/Los_Angeles&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;还应明确：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;缺失天数如何处理；&lt;/li&gt;
+&lt;li&gt;促销价、优惠券和变体价是否纳入；&lt;/li&gt;
+&lt;li&gt;使用均值、中位数还是加权价格；&lt;/li&gt;
+&lt;li&gt;异常点剔除前后是否保留两份结论；&lt;/li&gt;
+&lt;li&gt;数据不足时返回 “无法判断”，而不是默认通过。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;统计检验只能辅助解释，不能替代业务阈值与数据质量检查。&lt;/p&gt;
+&lt;h2 id=&#34;45-知识产权风险预警&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#45-知识产权风险预警&#34;&gt;#&lt;/a&gt; 4.5 知识产权风险预警&lt;/h2&gt;
+&lt;p&gt;词库匹配适合作为低成本预警层，但不等同于法律结论。&lt;/p&gt;
+&lt;p&gt;推荐采用：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;标准化大小写、连字符和 Unicode；&lt;/li&gt;
+&lt;li&gt;词边界与短词例外；&lt;/li&gt;
+&lt;li&gt;品牌、角色、作品和高风险主题分组；&lt;/li&gt;
+&lt;li&gt;标题、关键词、图片 OCR 分别记录命中来源；&lt;/li&gt;
+&lt;li&gt;白名单、别名和误报复核；&lt;/li&gt;
+&lt;li&gt;定期更新词库版本。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;最终结果应写成 “风险提示，需要复核”，而不是 “确认侵权”。&lt;/p&gt;
+&lt;h1 id=&#34;五-并发-限流与重试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#五-并发-限流与重试&#34;&gt;#&lt;/a&gt; 五、并发、限流与重试&lt;/h1&gt;
+&lt;p&gt;项目同时使用异步任务、线程池和浏览器并发。并发越高不一定越快，必须同时受以下资源约束：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;资源&lt;/th&gt;
+&lt;th&gt;需要控制的内容&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;MCP&lt;/td&gt;
+&lt;td&gt;每分钟配额、突发限制、分页大小&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Dify&lt;/td&gt;
+&lt;td&gt;工作流并发、上传大小、总超时&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;浏览器&lt;/td&gt;
+&lt;td&gt;标签页数量、内存、渲染稳定性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Excel&lt;/td&gt;
+&lt;td&gt;文件锁、写入互斥、图片内存&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;网络&lt;/td&gt;
+&lt;td&gt;连接池、DNS、代理和总带宽&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;重试策略应按错误类型决定：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;错误类型&lt;/th&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;th&gt;策略&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;瞬时错误&lt;/td&gt;
+&lt;td&gt;超时、限流、临时网络失败&lt;/td&gt;
+&lt;td&gt;指数退避并限制次数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;数据错误&lt;/td&gt;
+&lt;td&gt;字段缺失、金额格式异常&lt;/td&gt;
+&lt;td&gt;记录并进入人工复核&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;身份错误&lt;/td&gt;
+&lt;td&gt;ASIN、账号或站点不匹配&lt;/td&gt;
+&lt;td&gt;立即停止当前任务&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;安全挑战&lt;/td&gt;
+&lt;td&gt;CAPTCHA、MFA&lt;/td&gt;
+&lt;td&gt;人工接管&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;页面漂移&lt;/td&gt;
+&lt;td&gt;选择器或字段结构改变&lt;/td&gt;
+&lt;td&gt;熔断并维护适配器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;输出错误&lt;/td&gt;
+&lt;td&gt;文件占用、写入校验失败&lt;/td&gt;
+&lt;td&gt;回滚，不继续覆盖&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;非幂等动作不能自动重试。&lt;/p&gt;
+&lt;h1 id=&#34;六-检查点与断点续跑&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#六-检查点与断点续跑&#34;&gt;#&lt;/a&gt; 六、检查点与断点续跑&lt;/h1&gt;
+&lt;p&gt;检查点文件是长任务可恢复的关键，但仅保存 “已处理列表” 还不够。建议包含：&lt;/p&gt;
+&lt;figure class=&#34;highlight json&#34;&gt;&lt;figcaption data-lang=&#34;JSON&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;{&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;run_id&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;run_demo_001&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;round&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;step&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;price_filter&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;input_hash&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;&amp;lt;sha256&amp;gt;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;policy_version&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;2026-08&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;completed_asins&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;failed_asins&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;created_at&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;&amp;lt;ISO-8601&amp;gt;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;&#34;updated_at&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;&amp;lt;ISO-8601&amp;gt;&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;恢复前必须校验输入哈希、策略版本和代码版本。否则旧检查点可能把已经变化的商品或规则错误地标记为完成。&lt;/p&gt;
+&lt;p&gt;检查点应先写临时文件，再通过同卷原子替换提交，避免进程中断留下半个 JSON。&lt;/p&gt;
+&lt;h1 id=&#34;七-excel-报表的可靠写入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#七-excel-报表的可靠写入&#34;&gt;#&lt;/a&gt; 七、Excel 报表的可靠写入&lt;/h1&gt;
+&lt;p&gt;最终报表不仅是展示结果，也是交付物。推荐流程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;先生成结构化中间数据；&lt;/li&gt;
+&lt;li&gt;校验 ASIN 唯一性、站点、币种和必填字段；&lt;/li&gt;
+&lt;li&gt;把图片下载到受控缓存并验证类型与大小；&lt;/li&gt;
+&lt;li&gt;写入临时工作簿；&lt;/li&gt;
+&lt;li&gt;重新打开并校验工作表、行数、主键和公式；&lt;/li&gt;
+&lt;li&gt;为已有文件创建备份；&lt;/li&gt;
+&lt;li&gt;原子替换正式文件；&lt;/li&gt;
+&lt;li&gt;记录文件哈希、运行 ID 和生成时间。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;外部文本以  &lt;code&gt;= + - @&lt;/code&gt;  开头时，需要防范 Excel 公式注入。图片、URL 和模型输出也应视为不可信输入。&lt;/p&gt;
+&lt;h1 id=&#34;八-prompt-设计原则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#八-prompt-设计原则&#34;&gt;#&lt;/a&gt; 八、Prompt 设计原则&lt;/h1&gt;
+&lt;p&gt;标题和主图筛选可以采用分层 Prompt：&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;第一层：一票否决条件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 明显不属于目标场景&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 高风险品牌或角色元素&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;第二层：核心保留条件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 节日或主题氛围&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 设计功能&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 目标符号或使用场景&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;第三层：价值分级&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 可扩展的高优先级&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 形态单一的普通优先级&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 证据不足，人工复核&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;Prompt 中应要求模型输出 “结论 + 证据 + 置信度 + 不确定性”，并保留结构化 Schema。业务阈值和禁止项仍应由代码配置控制。&lt;/p&gt;
+&lt;h1 id=&#34;九-安全配置示例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#九-安全配置示例&#34;&gt;#&lt;/a&gt; 九、安全配置示例&lt;/h1&gt;
+&lt;p&gt;公开文档只能使用占位符：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-env&#34;&gt;MCP_URL=https://mcp.example.com/mcp
+MCP_API_KEY=&amp;lt;FROM_SECRET_STORE&amp;gt;
+DIFY_BASE_URL=https://dify.example.com/v1
+DIFY_APP_KEY=&amp;lt;FROM_SECRET_STORE&amp;gt;
+MODEL_API_KEY=&amp;lt;FROM_SECRET_STORE&amp;gt;
+BROWSER_ACCOUNT=&amp;lt;FROM_SECRET_STORE&amp;gt;
+BROWSER_PASSWORD=&amp;lt;FROM_SECRET_STORE&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;推荐优先级：&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;系统凭据库或密钥服务&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ CI/CD 加密变量&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 仅限本机且不进入版本控制的环境文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;还应执行：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.env&lt;/code&gt;  加入  &lt;code&gt;.gitignore&lt;/code&gt; ；&lt;/li&gt;
+&lt;li&gt;日志按字段白名单脱敏；&lt;/li&gt;
+&lt;li&gt;URL 不记录密钥查询参数；&lt;/li&gt;
+&lt;li&gt;截图和下载文件设置访问权限与留存期限；&lt;/li&gt;
+&lt;li&gt;泄露过的密钥立即吊销和轮换；&lt;/li&gt;
+&lt;li&gt;测试环境与生产环境使用不同凭据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;十-安全的运行方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#十-安全的运行方式&#34;&gt;#&lt;/a&gt; 十、安全的运行方式&lt;/h1&gt;
+&lt;p&gt;示例命令使用匿名参数，不包含密钥或人员信息：&lt;/p&gt;
+&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;figcaption data-lang=&#34;PowerShell&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;python run&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;py `&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;keyword &lt;span class=&#34;token string&#34;&gt;&#34;Halloween decor&#34;&lt;/span&gt; `&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;operator &lt;span class=&#34;token string&#34;&gt;&#34;test-user&#34;&lt;/span&gt; `&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;marketplace &lt;span class=&#34;token string&#34;&gt;&#34;US&#34;&lt;/span&gt; `&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;month &lt;span class=&#34;token string&#34;&gt;&#34;2026-09&#34;&lt;/span&gt; `&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;date-range &lt;span class=&#34;token string&#34;&gt;&#34;7-10&#34;&lt;/span&gt; `&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;max-rounds 1 `&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;dry-run&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;推荐按以下顺序晋级：&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;配置校验&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 单元测试&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 录制数据回放&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 单轮 dry-run&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 单轮只读执行&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 人工检查结果&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 小批量金丝雀&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;→ 正式批量&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;十一-验收清单&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#十一-验收清单&#34;&gt;#&lt;/a&gt; 十一、验收清单&lt;/h1&gt;
+&lt;h2 id=&#34;数据与规则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据与规则&#34;&gt;#&lt;/a&gt; 数据与规则&lt;/h2&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_0&#34;&gt; 关键词、站点、账期和币种定义明确&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_1&#34;&gt; 每个筛选步骤能区分通过、拒绝、跳过和无法判断&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_2&#34;&gt; 价格趋势规则有版本和测试样例&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_3&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_3&#34;&gt; 风险词库有来源、版本和误报复核机制&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_4&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_4&#34;&gt; AI 输出经过结构校验&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;稳定性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#稳定性&#34;&gt;#&lt;/a&gt; 稳定性&lt;/h2&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_5&#34;&gt; 检查点包含输入、代码和策略版本&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_6&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_6&#34;&gt; 限流、超时、退避和总时间预算明确&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_7&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_7&#34;&gt; 页面漂移和安全挑战能熔断&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_8&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_8&#34;&gt; 单轮与小批量结果可重复&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_9&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_9&#34;&gt; 浏览器只关闭本次任务创建的会话&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;输出与安全&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输出与安全&#34;&gt;#&lt;/a&gt; 输出与安全&lt;/h2&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_10&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_10&#34;&gt; Excel 经过临时写入、重新读取和原子替换&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_11&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_11&#34;&gt; 日志、截图和下载文件均已脱敏&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_12&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_12&#34;&gt; 凭据不出现在代码、文档、命令历史和日志中&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_13&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_13&#34;&gt; 失败任务有可追踪的错误码和人工复核清单&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_14&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_14&#34;&gt; 最终报表能够追溯到输入、策略和运行版本&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;结语&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结语&#34;&gt;#&lt;/a&gt; 结语&lt;/h1&gt;
+&lt;p&gt;AI 选品流水线的价值，不只在于减少人工点击，更在于把选品逻辑变成可审阅的规则、证据和数据契约。&lt;/p&gt;
+&lt;p&gt;当 MCP 负责稳定取数、AI 负责处理非结构化判断、确定性代码负责校验与安全边界、人工负责授权和疑难复核时，这套系统才具备持续演进的基础。&lt;/p&gt;
+</content>
+        <category term="AI 应用" scheme="https://slx-world.top/categories/ai-app/" />
+        <category term="AI" scheme="https://slx-world.top/tags/AI/" />
+        <category term="跨境电商" scheme="https://slx-world.top/tags/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/" />
+        <category term="MCP" scheme="https://slx-world.top/tags/MCP/" />
+        <category term="Dify" scheme="https://slx-world.top/tags/Dify/" />
+        <category term="数据分析" scheme="https://slx-world.top/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" />
+        <updated>2026-08-22T09:07:06.000Z</updated>
     </entry>
     <entry>
         <id>https://slx-world.top/ai-app/sop-driven-ai-automation/</id>
@@ -486,10 +1074,10 @@
 </content>
         <category term="AI 应用" scheme="https://slx-world.top/categories/ai-app/" />
         <category term="AI" scheme="https://slx-world.top/tags/AI/" />
+        <category term="浏览器自动化" scheme="https://slx-world.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96/" />
         <category term="自动化" scheme="https://slx-world.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/" />
         <category term="SOP" scheme="https://slx-world.top/tags/SOP/" />
         <category term="AI-Skill" scheme="https://slx-world.top/tags/AI-Skill/" />
-        <category term="浏览器自动化" scheme="https://slx-world.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96/" />
         <updated>2026-08-22T06:12:27.000Z</updated>
     </entry>
     <entry>
@@ -2994,210 +3582,5 @@
         <category term="Framework" scheme="https://slx-world.top/categories/backend/framework/" />
         <category term="Spring" scheme="https://slx-world.top/tags/spring/" />
         <updated>2024-10-12T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/bigdata/zk/zk-notes/</id>
-        <title>Zookeeper 笔记</title>
-        <link rel="alternate" href="https://slx-world.top/bigdata/zk/zk-notes/"/>
-        <content type="html">&lt;h1 id=&#34;zookeeper-数据模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#zookeeper-数据模型&#34;&gt;#&lt;/a&gt; 🌨Zookeeper 数据模型&lt;/h1&gt;
-&lt;p&gt;ZooKeeper 是一个树形目录服务，其数据模型和 Unix 的文件系统目录树很类似，拥有一个层次化结构。&lt;/p&gt;
-&lt;p&gt;这里面的每一个节点都被称为： ZNode，每个节点上都会保存自己的数据和节点信息。&lt;/p&gt;
-&lt;p&gt;节点可以拥有子节点，同时也允许少量（1MB）数据存储在该节点之下。&lt;/p&gt;
-&lt;p&gt;节点可以分为四大类：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;PERSISTENT&lt;/span&gt; 持久化节点&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;EPHEMERAL&lt;/span&gt; 临时节点 ：&lt;span class=&#34;red&#34;&gt;-e&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;PERSISTENT_SEQUENTIAL&lt;/span&gt; 持久化顺序节点 ：&lt;span class=&#34;red&#34;&gt;-s&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;EPHEMERAL_SEQUENTIAL&lt;/span&gt; 临时顺序节点  ：&lt;span class=&#34;red&#34;&gt;-es&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;zookeeper-常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#zookeeper-常用命令&#34;&gt;#&lt;/a&gt; 🌨Zookeeper 常用命令&lt;/h1&gt;
-&lt;h2 id=&#34;️服务端常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️服务端常用命令&#34;&gt;#&lt;/a&gt; ☃️服务端常用命令&lt;/h2&gt;
-&lt;p&gt;启动 ZooKeeper 服务&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;./zkServer.sh start&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查看 ZooKeeper 服务状态&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;./zkServer.sh status&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;停止 ZooKeeper 服务&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;./zkServer.sh stop&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;重启 ZooKeeper 服务&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;./zkServer.sh restart&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;️客户端常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️客户端常用命令&#34;&gt;#&lt;/a&gt; ☃️客户端常用命令&lt;/h2&gt;
-&lt;p&gt;连接 ZooKeeper 服务端&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;./zkCli.sh –server ip:port&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;断开连接&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;quit&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查看命令帮助&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;help&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;显示指定目录下节点&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ls&lt;/span&gt; 目录&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;创建节点&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;create /节点path value&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;获取节点值&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;get /节点path&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;设置节点值&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; /节点path value&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;删除单个节点&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;delete /节点path&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;删除带有子节点的节点&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;deleteall /节点path&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;创建临时节点&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;create &lt;span class=&#34;token parameter variable&#34;&gt;-e&lt;/span&gt; /节点path value&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;创建顺序节点&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;create &lt;span class=&#34;token parameter variable&#34;&gt;-s&lt;/span&gt; /节点path value&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查询节点详细信息&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;Zookeeper 服务端常用命令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ls&lt;/span&gt; –s /节点path&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;czxid：节点被创建的事务 ID ctime: 创建时间 mzxid: 最后一次被更新的事务 ID mtime: 修改时间 pzxid：子节点列表最后一次被更新的事务 IDcversion：子节点的版本号&lt;/p&gt;
-&lt;p&gt;dataversion：数据版本号 aclversion：权限版本号 ephemeralOwner：用于临时节点，代表临时节点的事务 ID，如果为持久节点则为 0 dataLength：节点存储的数据的长度 numChildren：当前节点的子节点个数&lt;/p&gt;
-&lt;h1 id=&#34;curator-api-常用操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#curator-api-常用操作&#34;&gt;#&lt;/a&gt; 🌨Curator API 常用操作&lt;/h1&gt;
-&lt;p&gt;建立连接&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;添加节点&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;删除节点&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;修改节点&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;查询节点&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Watch 事件监听&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;分布式锁实现&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;zookeeper-分布式锁原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#zookeeper-分布式锁原理&#34;&gt;#&lt;/a&gt; 🌨ZooKeeper 分布式锁原理&lt;/h1&gt;
-&lt;p&gt;核心思想：当客户端要获取锁，则创建节点，使用完锁，则删除该节点。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;客户端获取锁时，在 lock 节点下创建临时顺序节点。&lt;/li&gt;
-&lt;li&gt;然后获取 lock 下面的所有子节点，客户端获取到所有的子节点之后，如果发现自己创建的子节点序号最小，那么就认为该客户端获取到了锁。使用完锁后，将该节点删除。&lt;/li&gt;
-&lt;li&gt;如果发现自己创建的节点并非 lock 所有子节点中最小的，说明自己还没有获取到锁，此时客户端需要找到比自己小的那个节点，同时对其注册事件监听器，监听删除事件。&lt;/li&gt;
-&lt;li&gt;如果发现比自己小的那个节点被删除，则客户端的 Watcher 会收到相应通知，此时再次判断自己创建的节点    是否是 lock 子节点中序号最小的，如果是则获取到了锁，    如果不是则重复以上步骤继续获取到比自己小的一个节点    并注册监听。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;curator-分布式锁-api&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#curator-分布式锁-api&#34;&gt;#&lt;/a&gt; 🌨Curator 分布式锁 API&lt;/h1&gt;
-&lt;p&gt;在 Curator 中有五种锁方案：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;InterProcessSemaphoreMutex&lt;/span&gt;：分布式排它锁（非可重入锁）&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;InterProcessMutex&lt;/span&gt;：分布式可重入排它锁&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;InterProcessReadWriteLock&lt;/span&gt;：分布式读写锁&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;InterProcessMultiLock&lt;/span&gt;：将多个锁作为单个实体管理的容器&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;InterProcessSemaphoreV2&lt;/span&gt;：共享信号量&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <category term="BigData" scheme="https://slx-world.top/categories/bigdata/" />
-        <category term="Zookeeper" scheme="https://slx-world.top/tags/zk/" />
-        <updated>2024-10-11T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://slx-world.top/test/test-basis/day03/</id>
-        <title>测试基础 Day03</title>
-        <link rel="alternate" href="https://slx-world.top/test/test-basis/day03/"/>
-        <content type="html">&lt;h1 id=&#34;缺陷介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缺陷介绍&#34;&gt;#&lt;/a&gt; 🌺缺陷介绍&lt;/h1&gt;
-&lt;h2 id=&#34;定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义&#34;&gt;#&lt;/a&gt; 🌱定义&lt;/h2&gt;
-&lt;p&gt;软件在使用过程中存在的任何&lt;span class=&#34;yellow&#34;&gt;问题&lt;/span&gt;都叫软件的缺陷，简称 bug。&lt;/p&gt;
-&lt;h2 id=&#34;判断标准&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#判断标准&#34;&gt;#&lt;/a&gt; 🌱判断标准&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;软件未实现需求（规格）说明书中明确要求的功能 —— &lt;span class=&#34;rainbow&#34;&gt;少功能&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;软件出现了需求（规格）说明书中指明不应该出现的错误 —— &lt;span class=&#34;rainbow&#34;&gt;功能错误&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;软件实现的功能超出需求（规格）说明书指明的范围 —— &lt;span class=&#34;rainbow&#34;&gt;多功能&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;软件未实现需求（规格）说明书中虽未明确指明但应该实现的要求 —— &lt;span class=&#34;rainbow&#34;&gt;隐性功能错误&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;软件难于理解，不易使用，运行缓慢，用户体验不好 —— &lt;span class=&#34;rainbow&#34;&gt;不易使用&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;产生原因&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#产生原因&#34;&gt;#&lt;/a&gt; 🌱产生原因&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;需求阶段&lt;/span&gt;：需求描述不易理解，有歧义、错误等&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;设计阶段&lt;/span&gt;：设计文档存在错误或者缺陷&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;编码阶段&lt;/span&gt;：代码出现错误&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;运行阶段&lt;/span&gt;：软硬件系统本身故障导致软件缺陷&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;生命周期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生命周期&#34;&gt;#&lt;/a&gt; 🌱生命周期&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241020000426164&#34; data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241020000426164.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;核心内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#核心内容&#34;&gt;#&lt;/a&gt; 🌱核心内容&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷的标题&lt;/span&gt;：描述缺陷的核心问题&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷的预置条件&lt;/span&gt;：缺陷产生的前提&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷的复选步骤&lt;/span&gt;：复选缺陷的过程&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷的预期结果&lt;/span&gt;：希望得到的结果&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷的实际结果&lt;/span&gt;：实际得到的结果&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷的必要附件&lt;/span&gt;：图片、日志等信息（证据）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;提交要素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提交要素&#34;&gt;#&lt;/a&gt; 🌱提交要素&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷报告编号&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;严重程度&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷优先级&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;Bug 类型&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷状态&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241020001117816&#34; data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241020001117816.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;缺陷类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缺陷类型&#34;&gt;#&lt;/a&gt; 🌱缺陷类型&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;功能错误&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;界面（UI）错误&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;兼容性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;数据&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;易用性&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;改进建议&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;架构&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;缺陷编写&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缺陷编写&#34;&gt;#&lt;/a&gt; 🌺缺陷编写&lt;/h1&gt;
-&lt;h2 id=&#34;报告示例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#报告示例&#34;&gt;#&lt;/a&gt; 🌱报告示例&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷 ID&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷标题&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷状态&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;严重程度&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;优先级&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;所属模块&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;缺陷描述&lt;/span&gt;&lt;/th&gt;
-&lt;th&gt;&lt;span class=&#34;rainbow&#34;&gt;附件&lt;/span&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;跟踪流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#跟踪流程&#34;&gt;#&lt;/a&gt; 🌱跟踪流程&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241020001848778&#34; data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241020001848778.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;注意事项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注意事项&#34;&gt;#&lt;/a&gt; 🌱注意事项&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;可重现&lt;/span&gt;：缺陷可以复现&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;规范性&lt;/span&gt;：符合公司或者项目要求&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;唯一性&lt;/span&gt;：一个缺陷上报一个问题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;编写规范&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编写规范&#34;&gt;#&lt;/a&gt; 🌱编写规范&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;准确&lt;/span&gt;：描述的信息是正确的&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;具体&lt;/span&gt;：有细节且是真实特定的&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;简洁易懂&lt;/span&gt;：描述简单容易理解&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;rainbow&#34;&gt;次序清晰&lt;/span&gt;：描述缺陷过程有条件，有先后顺序&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;管理工具&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#管理工具&#34;&gt;#&lt;/a&gt; 🌺管理工具&lt;/h1&gt;
-&lt;h2 id=&#34;禅道介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#禅道介绍&#34;&gt;#&lt;/a&gt; 🌱禅道介绍&lt;/h2&gt;
-&lt;p&gt;地址：&lt;ins class=&#34;info&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZW1vLnplbnRhby5uZXQvdXNlci1sb2dpbi5odG1s&#34;&gt;https://demo.zentao.net/user-login.html&lt;/span&gt;&lt;/ins&gt;&lt;/p&gt;
-&lt;h2 id=&#34;禅道特点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#禅道特点&#34;&gt;#&lt;/a&gt; 🌱禅道特点&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;国产、免费、开源、简单、轻量级&lt;/li&gt;
-&lt;li&gt;三管融合（产品管理、项目管理、质量管理）&lt;/li&gt;
-&lt;li&gt;三权分立
-&lt;ol&gt;
-&lt;li&gt;产品部门 -—— 构想者&lt;/li&gt;
-&lt;li&gt;研发部门 —— 执行者&lt;/li&gt;
-&lt;li&gt;测试部门 —— 保证者&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;四角协同
-&lt;ol&gt;
-&lt;li&gt;产品经理&lt;/li&gt;
-&lt;li&gt;项目经理&lt;/li&gt;
-&lt;li&gt;研发团队&lt;/li&gt;
-&lt;li&gt;测试团队&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;使用流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用流程&#34;&gt;#&lt;/a&gt; 🌱使用流程&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241020072959229&#34; data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241020072959229.png&#34;&gt;&lt;/p&gt;
-</content>
-        <category term="Test" scheme="https://slx-world.top/categories/test/" />
-        <category term="Test-Basis" scheme="https://slx-world.top/tags/test-basis/" />
-        <updated>2024-10-11T16:00:00.000Z</updated>
     </entry>
 </feed>
