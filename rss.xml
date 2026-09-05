@@ -10,14 +10,14 @@
         </author>
         <description>他年，我若立于万古诸天上，将与你们共岁月！</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 27 Aug 2026 14:19:17 +0000</pubDate>
-        <lastBuildDate>Thu, 27 Aug 2026 14:19:17 +0000</lastBuildDate>
+        <pubDate>Sat, 05 Sep 2026 03:06:57 +0000</pubDate>
+        <lastBuildDate>Sat, 05 Sep 2026 03:06:57 +0000</lastBuildDate>
         <category term="柳神，火灵儿" />
         <item>
             <guid isPermalink="true">https://slx-world.top/hello-world/</guid>
             <title>Hello World</title>
             <link>https://slx-world.top/hello-world/</link>
-            <pubDate>Thu, 27 Aug 2026 14:19:17 +0000</pubDate>
+            <pubDate>Sat, 05 Sep 2026 03:06:57 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
@@ -34,8 +34,26 @@
             <guid isPermalink="true">https://slx-world.top/bigdata/hadoop/mapreduce/</guid>
             <title></title>
             <link>https://slx-world.top/bigdata/hadoop/mapreduce/</link>
-            <pubDate>Thu, 27 Aug 2026 14:19:17 +0000</pubDate>
+            <pubDate>Sat, 05 Sep 2026 03:06:57 +0000</pubDate>
             <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://slx-world.top/sop-flowcharts/emag-daily-report/</guid>
+            <title>eMAG 日报表流程</title>
+            <link>https://slx-world.top/sop-flowcharts/emag-daily-report/</link>
+            <category term="SOP 流程图" scheme="https://slx-world.top/categories/sop-flowcharts/" />
+            <category term="SOP" scheme="https://slx-world.top/tags/SOP/" />
+            <category term="流程图" scheme="https://slx-world.top/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/" />
+            <category term="eMAG" scheme="https://slx-world.top/tags/eMAG/" />
+            <category term="报表" scheme="https://slx-world.top/tags/%E6%8A%A5%E8%A1%A8/" />
+            <pubDate>Sat, 05 Sep 2026 03:03:22 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;eMAG 日报表制作流程，包含后台报表下载、Excel 数据整理、日报汇总与数据展示。&lt;/p&gt;
+&lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;查看流程图&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看流程图&#34;&gt;#&lt;/a&gt; 查看流程图&lt;/h2&gt;
+&lt;p&gt;这是一张纵向长图。点击下方链接查看高清原图，放大后可以逐步阅读操作说明和表格细节。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/sop-flowcharts/emag-daily-report.png&#34;&gt;查看高清原图（4692 × 13937）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;eMAG 日报表流程：后台数据下载、Excel 整理及日报汇总&#34; data-src=&#34;/images/sop-flowcharts/emag-daily-report.png&#34;&gt;&lt;/p&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://slx-world.top/ai-app/rpa-automation-demand-overview/</guid>
@@ -5605,272 +5623,6 @@ BROWSER_PASSWORD=&amp;lt;FROM_SECRET_STORE&amp;gt;
 &lt;h2 id=&#34;服务降级&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务降级&#34;&gt;#&lt;/a&gt; 🔩服务降级&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;red&#34;&gt;Random LoadBalance&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://slx-world.top/bigdata/sql/day01/</guid>
-            <title>MySQL 条件查询</title>
-            <link>https://slx-world.top/bigdata/sql/day01/</link>
-            <category term="BigData" scheme="https://slx-world.top/categories/bigdata/" />
-            <category term="SQL" scheme="https://slx-world.top/tags/sql/" />
-            <pubDate>Sun, 10 Nov 2024 16:00:00 +0000</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;比较运算符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#比较运算符&#34;&gt;#&lt;/a&gt; 比较运算符&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;等于&lt;/td&gt;
-&lt;td&gt;=&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;大于&lt;/td&gt;
-&lt;td&gt;&amp;gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;大于等于&lt;/td&gt;
-&lt;td&gt;&amp;gt;=&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;小于&lt;/td&gt;
-&lt;td&gt;&amp;lt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;小于等于&lt;/td&gt;
-&lt;td&gt;&amp;lt;=&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;不等于&lt;/td&gt;
-&lt;td&gt;!= 或 &lt;span class=&#34;red&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id=&#34;逻辑运算符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#逻辑运算符&#34;&gt;#&lt;/a&gt; 逻辑运算符&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;与&lt;/th&gt;
-&lt;th&gt;and&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;或&lt;/td&gt;
-&lt;td&gt;or&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;非&lt;/td&gt;
-&lt;td&gt;not&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id=&#34;where-条件查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#where-条件查询&#34;&gt;#&lt;/a&gt; where 条件查询&lt;/h1&gt;
-&lt;h2 id=&#34;模糊查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模糊查询&#34;&gt;#&lt;/a&gt; 模糊查询&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;red&#34;&gt;like&lt;/span&gt; 是模糊查询关键字&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;%&lt;/span&gt;：多个任意字符&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;_&lt;/span&gt;：一个任意字符&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;范围查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#范围查询&#34;&gt;#&lt;/a&gt; 范围查询&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;between ... and ...&lt;/span&gt;：在一个连续的范围内查询&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;in&lt;/span&gt;：在一个非连续的范围内查询&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;空判断查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#空判断查询&#34;&gt;#&lt;/a&gt; 空判断查询&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;判断为空使用：&lt;span class=&#34;red&#34;&gt;is null&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;判断非空使用：&lt;span class=&#34;red&#34;&gt;is not null&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;note warning&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;不能使用 &lt;span class=&#34;yellow&#34;&gt;= null&lt;/span&gt; 判断为空&lt;/li&gt;
-&lt;li&gt;不能使用 &lt;span class=&#34;yellow&#34;&gt;!= null&lt;/span&gt; 判断非空&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;h1 id=&#34;order-by-排序查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#order-by-排序查询&#34;&gt;#&lt;/a&gt; order by 排序查询&lt;/h1&gt;
-&lt;p&gt;排序使用 &lt;span class=&#34;red&#34;&gt;order by&lt;/span&gt; 关键字&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;asc&lt;/span&gt;：升序&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;desc&lt;/span&gt;：降序&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;limit-分页查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#limit-分页查询&#34;&gt;#&lt;/a&gt; limit 分页查询&lt;/h1&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;limit 分页查询&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;limit&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;当前页码 &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; 每页数量&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; 每页数量&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;扩展mysql-五子句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#扩展mysql-五子句&#34;&gt;#&lt;/a&gt; 扩展：MySQL 五子句&lt;/h1&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;MySQL 五子句&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; 数据表 &lt;span class=&#34;token keyword&#34;&gt;where&lt;/span&gt; 子句 &lt;span class=&#34;token keyword&#34;&gt;group&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;by&lt;/span&gt; 分组子句 &lt;span class=&#34;token keyword&#34;&gt;having&lt;/span&gt; 子句 &lt;span class=&#34;token keyword&#34;&gt;order&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;by&lt;/span&gt; 子句 &lt;span class=&#34;token keyword&#34;&gt;limit&lt;/span&gt; 子句&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol&gt;
-&lt;li&gt;where&lt;/li&gt;
-&lt;li&gt;group by&lt;/li&gt;
-&lt;li&gt;having&lt;/li&gt;
-&lt;li&gt;order by&lt;/li&gt;
-&lt;li&gt;limit&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;合称 MySQL 五子句，五子句顺序不能颠倒&lt;/p&gt;
-&lt;h1 id=&#34;聚合函数组函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合函数组函数&#34;&gt;#&lt;/a&gt; 聚合函数（组函数）&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;总行数&lt;/th&gt;
-&lt;th&gt;count(col)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;最大值&lt;/td&gt;
-&lt;td&gt;max(col)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;最小值&lt;/td&gt;
-&lt;td&gt;min(col)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;求和&lt;/td&gt;
-&lt;td&gt;sum(col)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;求平均&lt;/td&gt;
-&lt;td&gt;avg(col)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;red&#34;&gt;ifnull()&lt;/span&gt; 函数：表示判断指定字段的值是否为 null，如果为空，则使用自己提供的值&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;ifnull (字段，默认值)&lt;/span&gt;：如果这个字段为 null，系统会自动将其设置为默认值&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;聚合函数的特点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合函数的特点&#34;&gt;#&lt;/a&gt; 聚合函数的特点&lt;/h2&gt;
-&lt;p&gt;聚合函数默认忽略字段为 null 的记录，如果想要列值为 null 的记录也参与计算，必须使用 &lt;span class=&#34;red&#34;&gt;ifnull()&lt;/span&gt; 函数对 null 值做替换&lt;/p&gt;
-&lt;h1 id=&#34;分组查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分组查询&#34;&gt;#&lt;/a&gt; 分组查询&lt;/h1&gt;
-&lt;h2 id=&#34;分组查询介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分组查询介绍&#34;&gt;#&lt;/a&gt; 分组查询介绍&lt;/h2&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;分组查询语法&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;group&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;by&lt;/span&gt; 列名 &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;having&lt;/span&gt; 条件表达式&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;with rollup&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
-&lt;li&gt;列名：是指按照指定字段的值进行分组&lt;/li&gt;
-&lt;li&gt;having 条件表达式：用来过滤分组后的数据&lt;/li&gt;
-&lt;li&gt;with rollup：在所有记录的最后加上一条记录，显示 select 查询时聚合函数的统计和计算结果&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;group-by-的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by-的使用&#34;&gt;#&lt;/a&gt; group by 的使用&lt;/h2&gt;
-&lt;p&gt;group by 可用于单个字段分组，也可用于多个字段分组&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;group by 可以实现去重操作&lt;/li&gt;
-&lt;li&gt;group by 的作用是为了实现分组统计，&lt;span class=&#34;yellow&#34;&gt;group by&lt;/span&gt; 与&lt;span class=&#34;yellow&#34;&gt;聚合函数&lt;/span&gt;搭配使用&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;group-by-搭配-group_concat&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by-搭配-group_concat&#34;&gt;#&lt;/a&gt; group by 搭配 group_concat ()&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;red&#34;&gt;group_concat (字段名)&lt;/span&gt;：统计每个分组指定字段的信息集合，每个信息之间使用逗号进行分割&lt;/p&gt;
-&lt;h2 id=&#34;group-by-搭配-having&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by-搭配-having&#34;&gt;#&lt;/a&gt; group by 搭配 having&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;red&#34;&gt;having&lt;/span&gt; 作用和 where 类似，都是过滤数据的，但 having 是过滤分组数据的，只能用于 group by&lt;/p&gt;
-&lt;h2 id=&#34;group-by-搭配-with-rollup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by-搭配-with-rollup&#34;&gt;#&lt;/a&gt; group by 搭配 with rollup&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;red&#34;&gt;with rollup&lt;/span&gt; 的作用是：在最后记录后面新增一行，显示 select 查询时聚合函数的统计和计算结果&lt;/p&gt;
-&lt;h1 id=&#34;连接查询之内-外-自连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#连接查询之内-外-自连接&#34;&gt;#&lt;/a&gt; 连接查询之内、外、自连接&lt;/h1&gt;
-&lt;h2 id=&#34;交叉连接了解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#交叉连接了解&#34;&gt;#&lt;/a&gt; 交叉连接（了解）&lt;/h2&gt;
-&lt;p&gt;没有意思，但是它是所有连接的基础。其功能就是将表 1 和表 2 中的每一条数据进行连接。&lt;/p&gt;
-&lt;p&gt;结果：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;字段数 = 表 1 字段 + 表 2 的字段&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;记录数 = 表 1 中的总数量 * 表 2 中的总数量（笛卡尔积）&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;交叉连接&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; students &lt;span class=&#34;token keyword&#34;&gt;cross&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; classes&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;或&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;交叉连接&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; students&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; classes&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;内连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内连接&#34;&gt;#&lt;/a&gt; 内连接&lt;/h2&gt;
-&lt;p&gt;连接查询可以分为:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;内连接查询&lt;/li&gt;
-&lt;li&gt;左连接查询&lt;/li&gt;
-&lt;li&gt;右连接查询&lt;/li&gt;
-&lt;li&gt;自连接查询&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;内连接查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内连接查询&#34;&gt;#&lt;/a&gt; 内连接查询&lt;/h3&gt;
-&lt;p&gt;查询两个表中符合条件的共有记录&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241114232701203&#34; data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241114232701203.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;内连接查询语法格式:&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;内连接查询&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; 字段 &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;inner&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;on&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;inner join&lt;/span&gt;：内连接查询关键字&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;on&lt;/span&gt;：连接查询条件&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;左外连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#左外连接&#34;&gt;#&lt;/a&gt; 左外连接&lt;/h2&gt;
-&lt;h3 id=&#34;左连接查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#左连接查询&#34;&gt;#&lt;/a&gt; 左连接查询&lt;/h3&gt;
-&lt;p&gt;以左表为主根据条件查询右表数据，如果根据条件查询右表数据不存在使用 null 值填充&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241114233245081&#34; data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241114233245081.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;左连接查询语法格式:&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;左连接查询&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; 字段 &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;on&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;left join&lt;/span&gt;：左连接查询关键字&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;on&lt;/span&gt;：连接查询条件&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;表 1&lt;/span&gt;：左表&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;表 2&lt;/span&gt;：右表&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;右外连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#右外连接&#34;&gt;#&lt;/a&gt; 右外连接&lt;/h2&gt;
-&lt;h3 id=&#34;右外连接查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#右外连接查询&#34;&gt;#&lt;/a&gt; 右外连接查询&lt;/h3&gt;
-&lt;p&gt;以右表为主根据条件查询左表数据，如果根据条件查询左表数据不存在使用 null 值填充&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241114233628006&#34; data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241114233628006.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;右连接查询语法格式:&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;右外连接查询&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; 字段 &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;right&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;on&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;1.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; 表&lt;span class=&#34;token number&#34;&gt;2.&lt;/span&gt;字段&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;right join&lt;/span&gt;：右连接查询关键字&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;on&lt;/span&gt;：连接查询条件&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;表 1&lt;/span&gt;：左表&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;yellow&#34;&gt;表 2&lt;/span&gt;：右表&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;自连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自连接&#34;&gt;#&lt;/a&gt; 自连接&lt;/h2&gt;
-&lt;h3 id=&#34;自连接查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自连接查询&#34;&gt;#&lt;/a&gt; 自连接查询&lt;/h3&gt;
-&lt;p&gt;左表和右表是同一个表，根据连接查询条件查询两个表中的数据。&lt;/p&gt;
-&lt;h1 id=&#34;子查询三步走&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#子查询三步走&#34;&gt;#&lt;/a&gt; 子查询（三步走）&lt;/h1&gt;
-&lt;p&gt;在一个 select 语句中，嵌入了另外一个 select 语句，那么被嵌入的 select 语句称之为子查询语句，外部那个 select 语句则称为主查询.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;主查询和子查询的关系:&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;子查询是嵌入到主查询中&lt;/li&gt;
-&lt;li&gt;子查询是辅助主查询的，要么充当条件，要么充当数据源（数据表）&lt;/li&gt;
-&lt;li&gt;子查询是可以独立存在的语句，是一条完整的 select 语句&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;子查询是一个完整的 SQL 语句，子查询被嵌入到一对小括号里面&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id=&#34;数据库设计三范式了解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库设计三范式了解&#34;&gt;#&lt;/a&gt; 数据库设计三范式（了解）&lt;/h1&gt;
-&lt;p&gt;范式：对设计数据库提出的一些规范，目前有迹可寻的共有 8 种范式，一般遵守 3 范式即可。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;第一范式（1NF）：强调的是列的&lt;span class=&#34;red&#34;&gt;原子性&lt;/span&gt;，即列不能够再分成其他几列。&lt;/li&gt;
-&lt;li&gt;第二范式（2NF）：满足 1NF，另外包含两部分内容，一是表必须有&lt;span class=&#34;red&#34;&gt;一个主键&lt;/span&gt;；二是&lt;span class=&#34;red&#34;&gt;非主键字段 必须完全依赖于主键，而不能只依赖于主键的一部分&lt;/span&gt;。（一个表中只能有一类数据）&lt;/li&gt;
-&lt;li&gt;第三范式（3NF）：满足 2NF，另外&lt;span class=&#34;red&#34;&gt;非主键列必须直接依赖于主键，不能存在传递依赖&lt;/span&gt;。即不能存在：非主键列 A 依赖于非主键列 B，非主键列 B 依赖于主键的情况。（非主键字段必须直接依赖主键）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;e-r-模型的介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#e-r-模型的介绍&#34;&gt;#&lt;/a&gt; E-R 模型的介绍&lt;/h2&gt;
-&lt;p&gt;E-R 模型即&lt;span class=&#34;red&#34;&gt;实体 - 关系&lt;/span&gt;模型，E-R 模型就是描述数据库存储数据的结构模型。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;E-R 模型的使用场景:&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;对于大型公司开发项目，我们需要根据产品经理的设计，我们先使用建模工具，如: power designer，db desinger 等这些软件来画出实体 - 关系模型（E-R 模型）&lt;/li&gt;
-&lt;li&gt;然后根据三范式设计数据库表结构&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;E-R 模型的效果图:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241114235251067&#34; data-src=&#34;https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/slx-world/blog-images@master/image-20241114235251067.png&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;实体：用矩形表示，并标注实体名称&lt;/li&gt;
-&lt;li&gt;属性：用椭圆表示，并标注属性名称，&lt;/li&gt;
-&lt;li&gt;关系：用菱形表示，并标注关系名称&lt;/li&gt;
-&lt;li&gt;一对一&lt;/li&gt;
-&lt;li&gt;一对多&lt;/li&gt;
-&lt;li&gt;多对多&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;外键扩展&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#外键扩展&#34;&gt;#&lt;/a&gt; 外键（扩展）&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;主键：&lt;span class=&#34;red&#34;&gt;primary key&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;外键：&lt;span class=&#34;red&#34;&gt;foreign key&lt;/span&gt;（应用场景：在两表或多表关联的时候设置的，用于标志两个表之间的联系）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;外键约束作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#外键约束作用&#34;&gt;#&lt;/a&gt; 外键约束作用&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;外键约束：对外键字段的值进行更新和插入时会和引用表中字段的数据进行验证，数据如果不合法则更新和插入会失败，保证数据的有效性。&lt;/li&gt;
-&lt;li&gt;外键设计原则：保证两张表的关联关系，保证数据的一致性。在选择时，一般在一个表中时关联字段，在另外一个表中是主键，则这个字段建议设置为外键。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;SET FOREIGN_KEY_CHECKS=0 外键检查&lt;/p&gt;
-&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;添加外键约束:&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;alter&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;table&lt;/span&gt; 从表 &lt;span class=&#34;token keyword&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;foreign&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;外键字段&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;references&lt;/span&gt; 主表&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;主键字段&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;删除外键约束:&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;alter&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;table&lt;/span&gt; 表名 &lt;span class=&#34;token keyword&#34;&gt;drop&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;foreign&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;key&lt;/span&gt; 外键名&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
